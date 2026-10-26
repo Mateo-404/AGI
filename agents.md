@@ -32,10 +32,28 @@ Antes de cerrar un cambio: `bun test`, `bun run verificar`, `bun run build`. Si 
 - El render en servidor (build) no tiene `localStorage` ni `speechSynthesis`: los componentes deben dar el mismo HTML en el servidor y en el navegador (usar `rndDe(semilla)` en lugar de `Math.random`, y `getServerSnapshot` en stores).
 - Los enlaces internos se generan con `ruta()` (`src/logica/rutas.ts`), que respeta la base `/AGI/`. No escribas URLs a mano.
 - Las páginas del curso se generan desde `rutasCurso()`; agregar una lección no requiere tocar rutas.
-- No agregues dependencias de ejecución. Hoy sólo `react` y `react-dom`. Las herramientas van como devDependencies.
+- Dependencias de ejecución actuales: `astro`, `@astrojs/react`, `react`, `react-dom`, `@fontsource-variable/roboto-flex`, `@material-symbols/svg-400` (solo para generar iconos) y `lottie-web`. Cualquier dependencia nueva requiere justificar el peso y la licencia. Las herramientas van como devDependencies.
 - Todo funciona sin conexión una vez cargado. No llames APIs externas para contenido esencial.
 - Accesibilidad: foco visible, controles con nombre, `prefers-reduced-motion` respetado, contraste AA en ambos temas (`bun run scripts/contraste.ts`).
 - Idioma de la interfaz y de los textos: español rioplatense (voseo), con tildes correctas.
+
+## Tipografía
+- Toda la interfaz usa **Roboto Flex**, servida desde el propio sitio con `@fontsource-variable/roboto-flex` (importada en `src/layouts/Base.astro`). No cargues la fuente desde Google en tiempo de ejecución.
+- Las variables `--sans` y `--serif` apuntan a Roboto Flex. Los títulos usan ejes de ancho (`wdth`) y de tamaño óptico (`opsz`) en `global.css`; el cuerpo usa los valores normales.
+- Tamaño de letra: `normal`, `grande` y `muy-grande` (clases en `<html>`, guardadas en el progreso local).
+
+## Iconos
+- Iconos de **Material Symbols** (Google, Apache-2.0), en `src/componentes/iconos.ts`. Este archivo **se genera**: no lo edites a mano.
+- Para usar un icono nuevo: agregá su nombre a la lista `NOMBRES` de `scripts/generar-iconos.ts`, corré `bun run iconos` y usá `<Icono nombre="..." />` (`src/componentes/Icono.tsx`). El nombre debe existir en `@material-symbols/svg-400/rounded`.
+- El icono hereda color y tamaño (`currentColor`, `1em`). Si no es decorativo, pasá `etiqueta`.
+- No uses emojis ni caracteres Unicode como iconos.
+
+## Imágenes y animaciones
+- **No crees ilustraciones ni animaciones propias.** Buscá material en fuentes verificables (LottieFiles, Wikimedia Commons, Storyset, unDraw, etc.), comprobá la licencia de cada archivo en su página y registrala en `docs/creditos-multimedia.md` (título, autor, licencia, página de origen y fecha de verificación).
+- Licencias aceptables: CC0, dominio público, Lottie Simple License, licencias Creative Commons que permitan uso comercial y redistribución (con atribución cuando se exija). Si la licencia no está clara, no se usa.
+- Las animaciones Lottie van en `public/media/lottie/<nombre>.json` y se muestran con el bloque `animacion` (`src/componentes/Animacion.tsx`). Se cargan con `lottie-web/build/player/lottie_light.min.js` (sin `eval`) y solo cuando la figura se acerca a la pantalla.
+- Con «reducir movimiento» activo se muestra el primer cuadro fijo. Toda imagen o animación lleva texto alternativo o descripción y un crédito visible.
+- Las figuras SVG existentes en `src/componentes/Figuras.tsx` son dibujos del proyecto y están pendientes de reemplazo por material verificado; no agregues más figuras de ese tipo.
 
 ## Lectura en voz alta
 `src/logica/voz.ts` usa la síntesis de voz del navegador. Divide en fragmentos cortos por una limitación de los navegadores. No la reemplaces por un servicio externo sin pedirlo.
@@ -44,6 +62,8 @@ Antes de cerrar un cambio: `bun test`, `bun run verificar`, `bun run build`. Si 
 Un push a `main` ejecuta `.github/workflows/pages.yml` (prueba, `astro check`, build y publica `dist/`). No cambies la rama de publicación sin confirmarlo: el repositorio es público.
 
 ## Lo que no hacer
+- No crear imágenes, ilustraciones ni animaciones propias: buscar y verificar la licencia.
+- No cargar fuentes, iconos ni animaciones desde CDN externos en tiempo de ejecución.
 - No subir `fuentes/`, `materiales/` ni `dist/` al repositorio.
 - No activar ni desactivar la visibilidad del repositorio sin pedido explícito.
 - No borrar progreso de usuario ni tocar `localStorage` de forma destructiva.

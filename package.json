@@ -12,7 +12,8 @@
     "verificar": "bun run scripts/verificar.ts",
     "contraste": "bun run scripts/contraste.ts",
     "materiales": "bun run scripts/materiales.tsx",
-    "pdf": "bun run scripts/pdf.ts"
+    "pdf": "bun run scripts/pdf.ts",
+    "iconos": "bun run scripts/generar-iconos.ts"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.1",
