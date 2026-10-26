@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test'
-import { lecciones } from '../contenido/indice'
+import { lecciones } from '../contenido/marketing/indice'
 import { plano } from '../src/logica/inline'
 
 /** Control de fidelidad: términos, autores, cifras y listas del cuaderno que NO deben perderse en la síntesis. */

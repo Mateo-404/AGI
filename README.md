@@ -2,17 +2,17 @@
 
 Sitio de estudio de la Licenciatura en Administración y Gestión de la Información (CCC, UNRaf). **Es un proyecto personal de Mateo Gariboglio; no es un sitio oficial de la Universidad Nacional de Rafaela.** Los datos de la carrera provienen de sus páginas públicas, que se enlazan en el sitio.
 
-**Sitio publicado:** https://mateo-404.github.io/AGI/ (inicio) · https://mateo-404.github.io/AGI/#/marketing (curso de Marketing Digital)
+**Sitio publicado:** https://mateo-404.github.io/AGI/ (inicio) · https://mateo-404.github.io/AGI/marketing/ (curso de Marketing Digital)
 
 ## Rutas
 | Ruta | Qué es |
 |---|---|
-| `#/` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
-| `#/marketing` | Curso interactivo de Marketing Digital |
-| `#/marketing/leccion/l2-1` | Una lección |
-| `#/marketing/practica`, `/tarjetas`, `/glosario`, `/repaso` | Práctica, tarjetas, glosario y progreso |
+| `/AGI/` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
+| `/AGI/marketing/` | Curso interactivo de Marketing Digital |
+| `/AGI/marketing/leccion/l2-1/` | Una lección |
+| `/AGI/marketing/practica/`, `tarjetas/`, `glosario/`, `repaso/` | Práctica, tarjetas, glosario y progreso |
 
-Cada materia nueva tiene su propia ruta (ver `skills/agregar-materia`).
+Cada materia tiene su carpeta y su ruta (ver `skills/agregar-materia`).
 
 ## Qué incluye el curso
 - **30 lecciones** en 8 unidades, con explicaciones, ejemplos, diagramas animados y simuladores (SEO/SEM, embudo, precio).
@@ -29,18 +29,20 @@ Requisito: [bun](https://bun.sh) ≥ 1.1.
 
 ```bash
 bun install
-bun run dev          # http://localhost:5173
+bun run dev          # http://localhost:4321/AGI/
 bun test             # pruebas
 bun run verificar    # validación del contenido
-bun run build        # compila a dist/
+bun run check        # tipos de Astro y TypeScript
+bun run build        # compila a dist/ (117 páginas estáticas)
+bun run preview      # sirve dist/ localmente
 ```
 
 Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): `bun run materiales` y `bun run pdf`. Requieren la carpeta `fuentes/` local y Chromium.
 
 ## Estructura
 ```
-src/            aplicación: componentes/, logica/ (repaso, progreso, voz), estilos/
-contenido/      lecciones, glosario, cobertura y guía (datos tipados)
+src/            Astro (pages/, layouts/) + componentes/ React (islas), logica/ (repaso, progreso, voz, rutas), estilos/
+contenido/      tipos y validación compartidos; marketing/ (una carpeta por materia: lecciones, glosario, unidades, cobertura)
 tests/          pruebas de lógica, contenido, render y voz
 scripts/        verificar, materiales, pdf, contraste, offline
 docs/           auditoría académica, matriz de cobertura, decisiones técnicas
@@ -51,12 +53,15 @@ agents.md       instrucciones para agentes de IA
 `fuentes/` (cuaderno de cátedra y TPI), `materiales/` y `dist/` no se publican (ver `.gitignore`).
 
 ## Publicación
-La rama `marketing` se publica en GitHub Pages con `.github/workflows/pages.yml` en cada push: prueba, compila y despliega. Los enlaces profundos (`/AGI/marketing`) redirigen a la ruta de hash mediante `public/404.html`.
+La rama `main` se publica en GitHub Pages con `.github/workflows/pages.yml` en cada push: prueba, verifica tipos, compila con Astro y despliega `dist/`. Cada ruta es una página HTML real, así que los enlaces directos funcionan sin trucos.
+
+**Organización:** una carpeta por materia, una rama `main` permanente. Las ramas nuevas son solo para cambios temporales que se integran y se borran.
 
 ## Verificación
 - `bun test`: pruebas de repaso, puntajes, fórmulas, progreso corrupto, validez del contenido, renderizado de lecciones y voz.
 - `bun run verificar`: enlaces, ids y cobertura del contenido.
 - `bun run scripts/contraste.ts`: contraste WCAG AA en claro y oscuro.
+- `bun run check`: tipos de Astro y TypeScript.
 - Revisión en navegador: portada de AGI, curso en claro y oscuro, reproductor, móvil de 375 px.
 
 ## Limitaciones

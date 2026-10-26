@@ -3,10 +3,10 @@
 Instrucciones para agentes de IA que trabajen en este repositorio. Leé también `README.md` y las skills de `skills/`.
 
 ## Qué es
-Sitio estático (React + TypeScript + Vite, con **bun**) publicado en GitHub Pages desde la rama `marketing`:
-- `#/` → inicio de la carrera (Somos #AGI). Proyecto personal de Mateo Gariboglio; **no es oficial de la UNRaf**. Puede usar la identidad visual de la UNRaf como referencia, pero debe aclararlo.
-- `#/marketing` → curso interactivo de Marketing Digital (30 lecciones, práctica, glosario, tarjetas, progreso local).
-- Cada materia nueva tiene su propia ruta `#/<materia>`. Ver `skills/agregar-materia/SKILL.md`.
+Sitio estático con **Astro** (islas de React + TypeScript, con **bun**) publicado en GitHub Pages desde la rama `main`:
+- `/AGI/` → inicio de la carrera (Somos #AGI). Proyecto personal de Mateo Gariboglio; **no es oficial de la UNRaf**. Puede usar la identidad visual de la UNRaf como referencia, pero debe aclararlo.
+- `/AGI/marketing/` → curso interactivo de Marketing Digital (30 lecciones, práctica, glosario, tarjetas, progreso local). Cada página es un HTML real generado por Astro.
+- **Una carpeta por materia** (`contenido/<materia>/` y, si hace falta, `src/pages/<materia>/`). Una rama `main` permanente; las ramas son solo para cambios temporales. Ver `skills/agregar-materia/SKILL.md`.
 
 ## Comandos (siempre con bun)
 ```bash
@@ -14,7 +14,8 @@ bun install
 bun run dev          # desarrollo
 bun test             # pruebas (deben pasar todas)
 bun run verificar    # valida contenido: ids, enlaces, cobertura
-bun run build        # tsc + vite build → dist/
+bun run check        # tipos de Astro y TypeScript
+bun run build        # tsc + astro build → dist/
 bun run materiales   # manual, banco, glosario y guía en materiales/ (requiere fuentes/ local)
 bun run pdf          # PDF de materiales (requiere Chromium)
 ```
@@ -27,8 +28,10 @@ Antes de cerrar un cambio: `bun test`, `bun run verificar`, `bun run build`. Si 
 - Los datos de la carrera (planes, contactos) vienen de páginas públicas de la UNRaf. Citá la fuente y no inventes fechas ni teléfonos.
 
 ## Reglas de código
-- Lógica pura en `src/logica/` (con pruebas); presentación en `src/componentes/`; datos en `contenido/` (tipados, sin dependencias de UI).
-- Los enlaces internos del curso empiezan con `#/marketing/`. Un enlace sin ese prefijo es un bug.
+- Lógica pura en `src/logica/` (con pruebas); componentes React en `src/componentes/` (se hidratan como islas); datos en `contenido/<materia>/` (tipados, sin dependencias de UI). `contenido/tipos.ts` y `contenido/validar.ts` son compartidos.
+- El render en servidor (build) no tiene `localStorage` ni `speechSynthesis`: los componentes deben dar el mismo HTML en el servidor y en el navegador (usar `rndDe(semilla)` en lugar de `Math.random`, y `getServerSnapshot` en stores).
+- Los enlaces internos se generan con `ruta()` (`src/logica/rutas.ts`), que respeta la base `/AGI/`. No escribas URLs a mano.
+- Las páginas del curso se generan desde `rutasCurso()`; agregar una lección no requiere tocar rutas.
 - No agregues dependencias de ejecución. Hoy sólo `react` y `react-dom`. Las herramientas van como devDependencies.
 - Todo funciona sin conexión una vez cargado. No llames APIs externas para contenido esencial.
 - Accesibilidad: foco visible, controles con nombre, `prefers-reduced-motion` respetado, contraste AA en ambos temas (`bun run scripts/contraste.ts`).
@@ -38,7 +41,7 @@ Antes de cerrar un cambio: `bun test`, `bun run verificar`, `bun run build`. Si 
 `src/logica/voz.ts` usa la síntesis de voz del navegador. Divide en fragmentos cortos por una limitación de los navegadores. No la reemplaces por un servicio externo sin pedirlo.
 
 ## Despliegue
-Un push a `marketing` ejecuta `.github/workflows/pages.yml` (prueba, compila y publica). No cambies la rama de publicación sin confirmarlo: el repositorio es público.
+Un push a `main` ejecuta `.github/workflows/pages.yml` (prueba, `astro check`, build y publica `dist/`). No cambies la rama de publicación sin confirmarlo: el repositorio es público.
 
 ## Lo que no hacer
 - No subir `fuentes/`, `materiales/` ni `dist/` al repositorio.

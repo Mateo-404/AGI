@@ -1,3 +1,4 @@
+import { ruta } from '@/logica/rutas'
 import { useEffect } from 'react'
 
 /** Portada del proyecto. Usa la identidad visual de UNRaf como referencia; no es un sitio oficial. */
@@ -16,13 +17,13 @@ export function AgiInicio() {
         <h2 id="materias">Materias</h2>
         <p>Hoy hay un curso interactivo publicado: Marketing Digital. El resto del plan figura abajo para ubicarlo; todavía no tienen contenido en este proyecto.</p>
         <ul className="agi-materias">
-          <li><a className="agi-materia activa" href="#/marketing"><b>Marketing Digital</b><span>Curso interactivo · 30 lecciones · práctica, glosario y tarjetas</span></a></li>
+          <li><a className="agi-materia activa" href={ruta('marketing/')}><b>Marketing Digital</b><span>Curso interactivo · 30 lecciones · práctica, glosario y tarjetas</span></a></li>
         </ul>
         <details className="agi-plan">
           <summary>Plan de estudios del CCC (por cuatrimestre)</summary>
           <ol>
             <li><b>1.º cuatrimestre:</b> Administración de capital humano · Administración y diseño de procesos organizacionales · Introducción a las Comunicaciones · Paradigmas de Programación · Inglés I</li>
-            <li><b>2.º cuatrimestre:</b> Universidad, sociedad y conocimientos · <a href="#/marketing">Marketing digital</a> · Cálculo de Costos y Rendimiento · Ingeniería de Software · Gestión de Ventas</li>
+            <li><b>2.º cuatrimestre:</b> Universidad, sociedad y conocimientos · <a href={ruta('marketing/')}>Marketing digital</a> · Cálculo de Costos y Rendimiento · Ingeniería de Software · Gestión de Ventas</li>
             <li><b>3.º cuatrimestre:</b> Control de Gestión · Introducción a la Optimización · Introducción a la Gestión de Datos · Gestión de Operaciones</li>
             <li><b>4.º cuatrimestre:</b> Gestión Estratégica · Financiamiento e Inversión · Gestión y Administración de las Tecnologías · Inglés II</li>
             <li><b>5.º cuatrimestre:</b> Unidad Curricular Electiva · Aprendizaje Automático y Minería de Datos · Prospectiva Tecnológica · Trabajo Final de Grado</li>

@@ -101,5 +101,6 @@ export function setVelocidad(v: number) {
 export function setContinuo(c: boolean) { set({ continuo: c }) }
 
 const suscribir = (f: () => void) => { oyentes.add(f); return () => { oyentes.delete(f) } }
-export const useVoz = (): Estado => useSyncExternalStore(suscribir, () => estado, () => estado)
+const sinVoz: Estado = { ...estado, soportada: false }
+export const useVoz = (): Estado => useSyncExternalStore(suscribir, () => estado, () => sinVoz)
 export const estadoVoz = () => estado

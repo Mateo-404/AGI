@@ -1,6 +1,6 @@
 import { validarContenido } from '../contenido/validar'
-import { glosario, lecciones, unidades } from '../contenido/indice'
-import { cobertura } from '../contenido/cobertura'
+import { glosario, lecciones, unidades } from '../contenido/marketing/indice'
+import { cobertura } from '../contenido/marketing/cobertura'
 
 const errores = validarContenido()
 const preguntas = lecciones.reduce((a, l) => a + l.preguntas.length, 0)

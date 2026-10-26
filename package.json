@@ -4,15 +4,19 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc --noEmit && vite build",
-    "preview": "vite preview",
+    "dev": "astro dev",
+    "build": "tsc --noEmit && astro build",
+    "preview": "astro preview",
+    "check": "astro check && tsc --noEmit",
     "test": "bun test",
     "verificar": "bun run scripts/verificar.ts",
+    "contraste": "bun run scripts/contraste.ts",
     "materiales": "bun run scripts/materiales.tsx",
     "pdf": "bun run scripts/pdf.ts"
   },
   "dependencies": {
+    "@astrojs/react": "^7.1.1",
+    "astro": "^7.4.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
@@ -20,8 +24,6 @@
     "@types/bun": "^1.4.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "typescript": "^7.0.2",
-    "vite": "^8.3.5"
+    "typescript": "6"
   }
 }

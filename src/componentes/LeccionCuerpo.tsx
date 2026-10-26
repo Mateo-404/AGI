@@ -1,3 +1,4 @@
+import { ruta } from '@/logica/rutas'
 import type { Leccion } from '@contenido/tipos'
 import { Bloques, etiquetaOrigen } from './Bloques'
 import { Tx } from './contexto'
@@ -10,7 +11,7 @@ export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreg
       <h3 className="sub">Objetivos de aprendizaje</h3>
       <ul>{l.objetivos.map((o, i) => <li key={i}>{o}</li>)}</ul>
       {l.previos.length > 0 && (
-        <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={`#/marketing/leccion/${id}`}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
+        <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
       )}
       <Bloques bloques={l.bloques} />
       <h3>Conceptos clave</h3>
@@ -18,7 +19,7 @@ export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreg
       <h3>Síntesis</h3>
       <ul>{l.sintesis.map((s, i) => <li key={i}><Tx t={s} /></li>)}</ul>
       {l.conexiones.length > 0 && (
-        <p>Conexiones: {l.conexiones.map((id, i) => <span key={id}>{i > 0 && ' · '}<a href={`#/marketing/leccion/${id}`}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
+        <p>Conexiones: {l.conexiones.map((id, i) => <span key={id}>{i > 0 && ' · '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
       )}
       <h3>Referencias al material original</h3>
       <ul>{l.referencias.map((o, i) => <li key={i}>{etiquetaOrigen(o)}</li>)}</ul>

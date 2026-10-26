@@ -1,5 +1,5 @@
-import { cobertura } from './cobertura'
-import { glosario, lecciones, unidades } from './indice'
+import { cobertura } from './marketing/cobertura'
+import { glosario, lecciones, unidades } from './marketing/indice'
 import type { Bloque } from './tipos'
 
 /** Recorre todo el texto de una lección (para comprobar enlaces [[...]]). */

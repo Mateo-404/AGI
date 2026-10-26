@@ -1,0 +1,148 @@
+import { amp, cap, corta, did, mc } from '../../ayudas'
+import type { Leccion } from '../../tipos'
+
+export const l36: Leccion = {
+  id: 'l3-6',
+  unidad: 3,
+  titulo: 'Objetivos SMART, KPI, POEM y Martech',
+  resumen: 'Cómo formular objetivos medibles, elegir indicadores y clasificar los medios (pagos, propios, ganados). POEM y Martech requieren ampliación.',
+  minutos: 30,
+  objetivos: [
+    'Formular un objetivo con estructura SMART y con el patrón verbo + objeto + medida + plazo.',
+    'Distinguir objetivo estratégico, comercial y de campaña, y asociarles KPI.',
+    'Clasificar medios con POEM (ampliación) y ubicar la analítica digital.',
+  ],
+  previos: ['l3-1'],
+  bloques: [
+    {
+      t: 'p',
+      x: 'En la etapa 3 del plan se definen objetivos de marketing **en función de los objetivos de la organización**. La pregunta es «¿dónde queremos estar?» y puede incluir una visión y **objetivos numéricos específicos para los canales digitales**. De ellos dependen medios, estrategias, recursos, inversión y plazo realista.',
+      o: cap('2', '45'),
+    },
+    {
+      t: 'p',
+      x: 'Los objetivos deben pensarse con estructura **SMART** (metodología de Administración y diseño de procesos organizacionales) junto con **indicadores (KPI)**: métricas que permiten **validar la estrategia** y determinar el éxito de su implementación.',
+      o: cap('2', '45'),
+    },
+    {
+      t: 'callout',
+      tipo: 'didactico',
+      titulo: 'Qué significa SMART',
+      x: 'El cuaderno usa la sigla sin desarrollarla. En la formulación habitual en gestión, un objetivo SMART es **específico (Specific), medible (Measurable), alcanzable (Achievable), relevante (Relevant) y acotado en el tiempo (Time-bound)**. Es una aclaración didáctica, no del cuaderno; lo que el cuaderno sí aclara es que el objetivo debe estar *al alcance de la organización, sobre todo en lo realista y lo temporal* (p. 118).',
+      o: did,
+    },
+    {
+      t: 'callout',
+      tipo: 'clave',
+      titulo: 'Patrón práctico (Cap. 9)',
+      x: '**verbo / acción + objeto + medida + plazo.** Ejemplo del cuaderno: *«Aumentar las visitas a la web y redes sociales en un 40 % en 6 meses.»*',
+      o: cap('9', '164'),
+    },
+    {
+      t: 'tabla',
+      titulo: 'Objetivos SMART del cuaderno (generados con prompt de IA y revisados)',
+      cab: ['Objetivo original', 'Objetivo SMART'],
+      filas: [
+        ['Mejorar la comunicación de la Facultad con el personal docente', 'Aumentar en un 30 % la tasa de apertura de los correos enviados al personal docente en tres meses, con mensajes personalizados y segmentación por áreas de interés.'],
+        ['Generar mayor interés en el proceso de pasantías', 'Lograr que al menos el 50 % de las organizaciones abran y hagan clic en la información sobre pasantías en dos meses, con email marketing de llamados a la acción claros y contenido atractivo.'],
+      ],
+      o: cap('6', '117-118'),
+    },
+    {
+      t: 'ejemplo',
+      titulo: 'De objetivo estratégico a objetivo de campaña (cascada de Google Ads)',
+      pasos: [
+        '**Objetivo estratégico:** incrementar las ventas online de productos ecológicos.',
+        '**Objetivo comercial:** aumentar un 20 % las visitas del e-commerce en los próximos 3 meses.',
+        '**Objetivo de campaña en Google Ads:** generar más visitas al sitio web atrayendo usuarios interesados en consumo sustentable.',
+        'KPI posibles (didáctico, de la tabla de métricas): impresiones, clics, CTR, CPC y tasa de conversión. Cada objetivo de campaña determina el tipo de anuncio y los indicadores relevantes.',
+      ],
+      o: cap('8', '147'),
+    },
+    {
+      t: 'asociar',
+      titulo: 'Asociá el KPI con lo que mide',
+      pares: [
+        ['Tasa de apertura (open rate)', 'Porcentaje de destinatarios que abren el email'],
+        ['Tasa de clics (CTR)', 'Clics respecto de las veces que se muestra el enlace, anuncio o email'],
+        ['Tasa de conversión', 'Personas que realizaron la acción deseada'],
+        ['Costo por conversión', 'Gasto total dividido por el número de conversiones'],
+      ],
+    },
+    {
+      t: 'callout',
+      tipo: 'discrepancia',
+      titulo: 'ROCEF: mencionado, no desarrollado',
+      x: 'El cuaderno dice que, para usar IA, «se propuso el método **ROCEF** para la elaboración de los objetivos bajo la metodología SMART», pero no explica qué significa la sigla ni sus pasos (solo muestra el prompt resultante). Se registra como tema mencionado.',
+      o: cap('6', '117'),
+    },
+    { t: 'h', x: 'POEM Framework' },
+    {
+      t: 'callout',
+      tipo: 'ampliacion',
+      titulo: 'POEM (ampliación; el cuaderno solo lo nombra en el Anexo 2)',
+      x: 'En el cuaderno, POEM aparece únicamente como consigna del TP integrador (Parte 6c): «POEM: qué medios utilizarán para llegar al público objetivo» (p. 177). Según las fuentes externas consultadas el 2026-10-26, POEM es el marco de **medios pagos (*Paid*), propios (*Owned*) y ganados (*Earned*)**: **pagos** = medios en los que se paga por exposición (anuncios en buscadores, redes, display); **propios** = canales que la marca controla (sitio web, blog, lista de email, perfiles sociales); **ganados** = exposición que otros generan (reseñas, menciones, prensa, contenido compartido). Se suelen ver como **interdependientes**: lo propio bien trabajado impulsa lo ganado. *Advertencia:* la búsqueda no localizó la versión original de Chaffey/Smart Insights; para cumplir el programa corresponde consultar Chaffey y Ellis-Chadwick (2015, Cap. 4).',
+      o: amp('poem'),
+    },
+    {
+      t: 'clasificar',
+      titulo: 'Clasificá según POEM (ampliación)',
+      categorias: ['Pago (Paid)', 'Propio (Owned)', 'Ganado (Earned)'],
+      items: [
+        { x: 'Anuncio de Google Ads', cat: 0, porque: 'Se paga por la exposición.' },
+        { x: 'Newsletter a la base propia de suscriptores', cat: 1, porque: 'Canal que la marca controla.' },
+        { x: 'Reseñas espontáneas de clientes en Google Maps', cat: 2, porque: 'Exposición generada por otros.' },
+        { x: 'Perfil de Instagram de la marca', cat: 1, porque: 'Canal propio (la distribución orgánica depende de la plataforma).' },
+      ],
+    },
+    { t: 'h', x: 'Martech' },
+    {
+      t: 'callout',
+      tipo: 'ampliacion',
+      titulo: 'Martech (tema del programa no desarrollado en el cuaderno)',
+      x: 'El término **no aparece** en el cuaderno. Lo que sí hay son herramientas dispersas: Semrush, SimilarWeb, Google Analytics, Mailchimp, Brevo, Meta Business Suite, Google Ads. **Síntesis didáctica (sin fuente externa verificada):** *martech* suele nombrar al conjunto de tecnologías y plataformas que un equipo usa para planificar, ejecutar y medir marketing (analítica, email, automatización, gestión de contenidos, publicidad). Como criterio, el cuaderno ya da una guía: «no hay una herramienta mejor que la otra»; se elige según objetivos, recursos y capacidad. Requiere bibliografía complementaria.',
+      o: amp('cpl'),
+    },
+  ],
+  claves: ['objetivos-smart', 'kpi', 'poem', 'martech', 'plan-marketing'],
+  preguntas: [
+    mc('l36-q1', 'Objetivos', 1, '¿Cuál de estos objetivos cumple mejor el patrón verbo + objeto + medida + plazo?', [
+      ['Mejorar la presencia digital', 'No tiene medida ni plazo.'],
+      ['Aumentar las visitas a la web en un 40 % en 6 meses', 'Correcto: ejemplo del propio cuaderno.'],
+      ['Tener más seguidores', 'Falta medida y plazo.'],
+      ['Ser la marca líder', 'Es difuso y sin plazo.'],
+    ], 1, cap('9', '164')),
+    mc('l36-q2', 'KPI', 2, 'Para qué sirven los KPI en el plan, según el cuaderno?', [
+      ['Para decorar el informe', 'No es su propósito.'],
+      ['Para validar la estrategia y determinar el éxito de su implementación', 'Correcto.'],
+      ['Para reemplazar los objetivos', 'Complementan a los objetivos.'],
+      ['Para elegir el logo', 'No guarda relación.'],
+    ], 1, cap('2', '45')),
+    mc('l36-q3', 'POEM', 2, 'Un blog propio de la empresa es, en POEM, un medio…', [
+      ['Pago', 'Pago implica pagar por exposición.'],
+      ['Propio', 'Correcto: la marca lo controla.'],
+      ['Ganado', 'Ganado es lo que otros generan.'],
+      ['Ninguno', 'Encaja como propio.'],
+    ], 1, amp('poem')),
+    mc('l36-q4', 'Honestidad de fuentes', 3, '¿Qué dice el cuaderno de POEM?', [
+      ['Lo define y explica en el Cap. 2', 'No lo hace.'],
+      ['Solo lo nombra como consigna en el Anexo 2 (Parte 6c)', 'Correcto.'],
+      ['Lo critica', 'No lo menciona así.'],
+      ['Lo reemplaza por AIDA', 'No hay tal reemplazo.'],
+    ], 1, cap('Anexo 2', '177')),
+    corta('l36-q5', 'Objetivos', 3, 'Reformulá «queremos más ventas por Instagram» como objetivo SMART y proponé dos KPI.', 'Ej.: «Aumentar un 25 % los pedidos recibidos por Instagram/WhatsApp en los próximos 3 meses mediante publicaciones con catálogo y publicidad geolocalizada». KPI: cantidad de pedidos por canal, tasa de conversión de mensajes a pedidos, CTR de los anuncios.', [
+      'Incluye verbo, objeto, medida y plazo',
+      'Es realista para la organización',
+      'Propone KPI coherentes',
+    ], cap('9', '164')),
+  ],
+  tarjetas: [
+    { id: 'l36-t1', f: 'Patrón de objetivo', b: 'Verbo/acción + objeto + medida + plazo. Ej.: aumentar las visitas un 40 % en 6 meses.' },
+    { id: 'l36-t2', f: 'KPI', b: 'Indicadores que validan la estrategia y el éxito de su implementación.' },
+    { id: 'l36-t3', f: 'POEM (ampliación)', b: 'Paid, Owned, Earned media: medios pagos, propios y ganados.' },
+    { id: 'l36-t4', f: 'Cascada de objetivos (Google Ads)', b: 'Estratégico → comercial → de campaña.' },
+  ],
+  sintesis: ['Un objetivo claro se puede medir y tiene plazo.', 'KPI validan la estrategia.', 'POEM y Martech son temas del programa que requieren bibliografía complementaria.'],
+  conexiones: ['l4-3', 'l7-2', 'l8-1'],
+  referencias: [cap('2', '45'), cap('6', '111-118'), cap('9', '164'), cap('Anexo 2', '177')],
+}

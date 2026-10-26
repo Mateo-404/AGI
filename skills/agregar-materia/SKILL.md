@@ -1,15 +1,18 @@
 ---
 name: agregar-materia
-description: Agregar una materia nueva al sitio Somos #AGI con su propia ruta (#/<materia>). Usar cuando se pida "otra materia", "/nueva-materia" o un curso nuevo.
+description: Agregar una materia nueva a Somos #AGI en su propia carpeta (contenido/<materia>/) y ruta (/AGI/<materia>/). Usar cuando se pida "otra materia", "nueva materia" o un curso nuevo.
 ---
 
 # Agregar una materia
 
-1. **Contenido:** creá `contenido/<materia>/` con `unidades.ts`, `glosario.ts` y `lecciones/*.ts` siguiendo `skills/agregar-leccion/SKILL.md`. Usá los tipos de `contenido/tipos.ts`.
-2. **Enrutado:** en `src/App.tsx`, reconocé el primer segmento de la ruta (`marketing` hoy). Duplicá la lógica de `enCurso` para la materia nueva o generalizalo a `const materia = ruta[0]`. Prefijá todos los enlaces internos con `#/<materia>/`.
-3. **Portada:** en `src/componentes/AgiInicio.tsx`, agregá la materia a la lista `agi-materias` (activa si tiene contenido) y mantené el plan de estudios de la carrera.
-4. **Pruebas:** agregá la materia a `tests/` (renderizado y enlaces). Corré `bun test` y `bun run verificar`.
-5. **Verificación en navegador:** abrí `#/<materia>` en 375 px y en escritorio, en claro y oscuro.
-6. **Documentación:** sumá la materia al `README.md` y a `agents.md`.
+Regla: **una carpeta por materia, una rama `main`**. Las ramas son solo para cambios temporales.
 
-No tocar los datos de otra materia. Si una materia no tiene contenido, no la enlaces como activa.
+1. **Contenido:** creá `contenido/<materia>/` con `indice.ts` (lecciones), `unidades.ts`, `glosario.ts`, `cobertura.ts` y `lecciones/<id>.ts`. Copiá la forma de `contenido/marketing/` y usá los tipos de `contenido/tipos.ts`.
+2. **Rutas:** en `src/logica/rutas.ts`, generalizá `rutasCurso()` para recibir la materia. Agregá `src/pages/<materia>/[...ruta].astro` (copiá el de `marketing`, cambiando el import del índice).
+3. **Portada:** en `src/componentes/AgiInicio.tsx`, agregá la materia a `agi-materias` (activa solo si tiene contenido).
+4. **Shell:** en `src/componentes/Shell.tsx`, la barra lateral y los enlaces deben apuntar a `ruta('<materia>/…')`.
+5. **Validación:** agregá la materia a `scripts/verificar.ts` y a `tests/`. Corré `bun test`, `bun run verificar` y `bun run check`.
+6. **Navegador:** abrí `/AGI/<materia>/` en 375 px y en escritorio, en claro y oscuro.
+7. **Documentación:** sumá la materia al README y a `agents.md`.
+
+No toques los datos de otra materia. No enlaces como activa una materia sin contenido.

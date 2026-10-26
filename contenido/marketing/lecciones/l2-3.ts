@@ -1,0 +1,146 @@
+import { cap, corta, mc } from '../../ayudas'
+import type { Leccion } from '../../tipos'
+
+export const l23: Leccion = {
+  id: 'l2-3',
+  unidad: 2,
+  titulo: 'Marketing mix: producto y marca',
+  resumen: 'Qué es el marketing mix, los cinco niveles del producto de Kotler y la marca como activo intangible.',
+  minutos: 30,
+  objetivos: [
+    'Definir marketing mix y justificar por qué las 4P son variables controlables.',
+    'Clasificar una oferta en los cinco niveles del producto.',
+    'Explicar marca y branding y su relación con el posicionamiento.',
+  ],
+  previos: ['l1-2'],
+  bloques: [
+    {
+      t: 'def',
+      termino: 'Marketing mix',
+      x: 'Conjunto de **herramientas tácticas** que la organización combina para obtener la respuesta que desea en el mercado meta; todo lo que puede hacer para influir en la demanda de su producto. Se clasifica en cuatro grupos: **producto, precio, promoción (comunicación) y plaza (distribución)**. Son las **variables controlables** porque los especialistas pueden decidir sobre ellas y se vinculan directamente con las estrategias organizacionales.',
+      o: cap('5', '89', 'Las 4P "tradicionales"'),
+    },
+    {
+      t: 'callout',
+      tipo: 'clave',
+      titulo: 'Las 4P no son piezas aisladas',
+      x: 'Cada decisión impacta en las otras («como un juego de ajedrez») y las acciones deben ser consistentes con la estrategia definida. «Un programa de marketing eficaz combina todos los elementos de la mezcla en un programa integrado» (Kotler y Keller, 2012). Además, no siempre abrir un Instagram es la solución.',
+      o: cap('5', '107', 'Factos'),
+    },
+    { t: 'figura', id: 'mix' },
+    { t: 'h', x: 'Producto' },
+    {
+      t: 'def',
+      termino: 'Producto',
+      x: '«Cualquier cosa que se pueda ofrecer a un mercado para su atención, adquisición, uso o consumo y que pudiera satisfacer un deseo o necesidad» (Kotler, 2012, p. 224).',
+      o: cap('5', '89'),
+    },
+    {
+      t: 'explorable',
+      titulo: 'Los cinco niveles del producto (Kotler)',
+      variante: 'capas',
+      nodos: [
+        { id: 'n1', titulo: '1. Beneficio básico', resumen: 'Lo que el cliente realmente compra', detalle: 'El servicio o beneficio que el cliente está comprando en realidad.' },
+        { id: 'n2', titulo: '2. Producto genérico', resumen: 'El beneficio hecho producto', detalle: 'Los beneficios básicos se transforman en productos genéricos.' },
+        { id: 'n3', titulo: '3. Producto esperado', resumen: 'Atributos y condiciones habituales', detalle: 'Conjunto de atributos y condiciones que los compradores normalmente esperan cuando compran el producto.' },
+        { id: 'n4', titulo: '4. Producto ampliado', resumen: 'Excede las expectativas', detalle: 'Agrega valor más allá de lo esperado: puede ser la base de la diferenciación frente a la competencia.' },
+        { id: 'n5', titulo: '5. Producto potencial', resumen: 'Mejoras futuras posibles', detalle: 'Abarca todas las mejoras y transformaciones que pudieran realizarse al producto o a su oferta en el futuro.' },
+      ],
+      o: cap('5', '90', 'fig. 18'),
+    },
+    {
+      t: 'ejemplo',
+      titulo: 'La estudiante y el agua (ejemplo del cuaderno)',
+      pasos: [
+        'Contexto: una estudiante de 19 años vive en un piso 7 sin escaleras y no consume agua de la canilla.',
+        'Opciones evaluadas: (1) bidones de 5 l del supermercado — difícil trasladarlos; (2) botellas — resuelven el traslado pero rinden menos y obligan a reponer seguido; (3) filtro — no accesible en precio-impacto; (4) **dispenser con recarga de bidones** (elegida).',
+        'Todas responden a la misma necesidad; al decidir pesan otras variables. Datos que facilitaron la 4: recarga el día del aviso, servicio puerta a puerta y obsequio de una bebida al superar un monto de compra.',
+        'Pregunta del cuaderno: ¿en qué nivel está cada propuesta y qué producto potencial se podría ofrecer? Lectura posible (didáctica, no del cuaderno): beneficio básico = agua segura para beber; producto genérico = agua envasada; esperado = calidad y disponibilidad; **ampliado** = recarga el mismo día, puerta a puerta y obsequio; **potencial** = por ejemplo, reposición automática por suscripción.',
+      ],
+      o: cap('5', '90-91'),
+    },
+    {
+      t: 'callout',
+      tipo: 'clave',
+      titulo: 'Para qué le sirve a un/a AGI',
+      x: 'El cuaderno propone que un/a AGI participe en: **identificar niveles de producto**, **desarrollar segmentos para cada nivel** y **definir las propuestas de valor** para cada caso.',
+      o: cap('5', '91'),
+    },
+    { t: 'h', x: 'Marca y branding' },
+    {
+      t: 'def',
+      termino: 'Marca',
+      x: '«Un nombre, término, símbolo o diseño, o una combinación de dichos elementos, cuyo propósito es representar los bienes o servicios de un vendedor o grupo de vendedores y diferenciarlos de la competencia» (Kotler). Es uno de los **activos intangibles** más valiosos de la organización.',
+      o: cap('5', '91'),
+    },
+    {
+      t: 'def',
+      termino: 'Branding',
+      x: 'Proceso de hacer y construir una marca (en inglés, *brand equity*) mediante la administración estratégica del conjunto de activos vinculados al nombre y/o símbolo que la identifican, influyendo en su valor para el cliente y para la empresa. Consiste en **transmitir a productos y servicios el poder de una marca**, creando factores que los distingan. Aunque la empresa la construye, **la percepción de la marca reside en la mente de los consumidores** (lo que enlaza con el posicionamiento).',
+      o: cap('5', '92'),
+    },
+    {
+      t: 'p',
+      x: 'La P de producto contempla más (envasado, etiquetado, garantías); el cuaderno trata «los que se consideran primordiales» para un/a AGI. Actividad propuesta (p. 92): completar una tabla con *marcas que me gustan / no me gustan · motivo · qué busca reflejar la marca*.',
+      o: cap('5', '92'),
+    },
+    {
+      t: 'callout',
+      tipo: 'ampliacion',
+      titulo: 'Marca digital y e-branding (tema del programa)',
+      x: 'El cuaderno **no** desarrolla «e-branding» ni «construcción de la marca digital»; solo trata marca y branding en general (Cap. 5) y la coherencia de la identidad en redes, web y marketplace (ejemplo de la librería, p. 105-106). Para el programa corresponde estudiar la bibliografía obligatoria de la Unidad 3. **Síntesis didáctica (no de la cátedra):** el e-branding es aplicar el branding en los entornos digitales, cuidando que nombre, identidad visual, voz y promesa de marca sean consistentes en sitio web, redes, email y marketplaces, donde además las reseñas y comentarios de usuarios (la «P» de par a par) influyen en la percepción.',
+      o: { tipo: 'ampliacion', ref: 'Síntesis didáctica; requiere bibliografía del programa' },
+    },
+    {
+      t: 'asociar',
+      titulo: 'Asociá cada nivel del producto con su descripción',
+      pares: [
+        ['Beneficio básico', 'Lo que el cliente realmente compra'],
+        ['Producto esperado', 'Atributos que se dan por supuestos al comprar'],
+        ['Producto ampliado', 'Excede las expectativas del cliente'],
+        ['Producto potencial', 'Mejoras y transformaciones futuras posibles'],
+      ],
+    },
+  ],
+  claves: ['marketing-mix', 'producto', 'niveles-producto', 'marca', 'branding', 'e-branding'],
+  preguntas: [
+    mc('l23-q1', 'Marketing mix', 1, 'Las 4P se denominan «variables controlables» porque…', [
+      ['Las define el Estado', 'No hay tal referencia.'],
+      ['Quienes hacen marketing pueden tomar decisiones sobre ellas', 'Correcto.'],
+      ['No cambian nunca', 'Pueden ajustarse; el precio es el más fácil de ajustar.'],
+      ['Se miden con Google Analytics', 'No es el criterio.'],
+    ], 1, cap('5', '89')),
+    mc('l23-q2', 'Niveles del producto', 2, 'Un proveedor de bidones agrega entrega el mismo día y puerta a puerta, algo que sus competidores no ofrecen. ¿Qué nivel del producto es?', [
+      ['Beneficio básico', 'El beneficio básico es tener agua para beber.'],
+      ['Producto esperado', 'Lo esperado es lo que cualquiera ofrece; esto supera lo normal.'],
+      ['Producto ampliado', 'Correcto: excede las expectativas y diferencia.'],
+      ['Producto potencial', 'El potencial son mejoras futuras, no algo ya ofrecido.'],
+    ], 2, cap('5', '90')),
+    mc('l23-q3', 'Marca', 2, '¿Dónde reside, en última instancia, la percepción de la marca según el cuaderno?', [
+      ['En el logo', 'El logo es un elemento, no donde reside la percepción.'],
+      ['En la mente de los consumidores', 'Correcto.'],
+      ['En el registro de marcas', 'Es un aspecto legal.'],
+      ['En el área de ventas', 'No es lo que sostiene el cuaderno.'],
+    ], 1, cap('5', '92')),
+    mc('l23-q4', 'E-branding', 3, '¿Cuál es la afirmación honesta sobre e-branding y el cuaderno?', [
+      ['Está desarrollado en el Cap. 5 con el nombre de e-branding', 'No aparece el término.'],
+      ['El cuaderno trata marca/branding en general; e-branding requiere bibliografía complementaria', 'Correcto.'],
+      ['El e-branding reemplaza al branding', 'No hay tal afirmación.'],
+      ['No es un tema del programa', 'Sí figura en la Unidad 3 del programa.'],
+    ], 1, cap('5', '91-92')),
+    corta('l23-q5', 'Niveles del producto', 3, 'Elegí un producto de tu rubro y describí los cinco niveles de Kotler.', 'Ej. servicio de pastelería por encargo: beneficio básico = resolver un festejo; genérico = tortas; esperado = frescura, sabor, puntualidad; ampliado = diseño personalizado y entrega con packaging; potencial = suscripción de tortas mensual o kits para armar en casa.', [
+      'Describe los cinco niveles',
+      'El ampliado supera lo esperado',
+      'El potencial es una mejora futura plausible',
+    ], cap('5', '90')),
+  ],
+  tarjetas: [
+    { id: 'l23-t1', f: 'Las 4P', b: 'Producto, precio, plaza (distribución) y promoción (comunicación): variables controlables del marketing mix.' },
+    { id: 'l23-t2', f: 'Cinco niveles del producto', b: 'Beneficio básico · genérico · esperado · ampliado · potencial.' },
+    { id: 'l23-t3', f: 'Marca (Kotler)', b: 'Nombre, término, símbolo o diseño (o combinación) que representa bienes/servicios de un vendedor y los diferencia de la competencia.' },
+    { id: 'l23-t4', f: 'Branding', b: 'Proceso de construir una marca gestionando estratégicamente sus activos; la percepción reside en la mente del consumidor.' },
+  ],
+  sintesis: ['Las 4P forman un programa integrado.', 'El producto se piensa en capas; la diferenciación suele estar en el nivel ampliado.', 'La marca es un activo intangible que se construye (branding) y se percibe (posicionamiento).'],
+  conexiones: ['l2-4', 'l3-3', 'l2-6'],
+  referencias: [cap('5', '89-92'), cap('5', '107', 'Factos')],
+}

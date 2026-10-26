@@ -1,4 +1,4 @@
-import { lecciones, glosario, unidades } from '@contenido/indice'
+import { lecciones, glosario, unidades } from '@contenido/marketing/indice'
 import type { Leccion, Pregunta, Tarjeta } from '@contenido/tipos'
 
 export { lecciones, glosario, unidades }

@@ -1,7 +1,8 @@
+import { ruta } from '@/logica/rutas'
 import { useMemo, useState } from 'react'
 import type { Pregunta, PreguntaCorta, PreguntaMC } from '@contenido/tipos'
 import { registrarIntento, registrarQuiz } from '@/logica/progreso'
-import { barajar, puntajeCorregido } from '@/logica/repaso'
+import { barajar, puntajeCorregido, rndDe } from '@/logica/repaso'
 import { leccionDePregunta } from '@/logica/datos'
 import { Tx } from './contexto'
 import { Origen_ } from './Bloques'
@@ -10,7 +11,7 @@ export function PreguntaMCView({ p, onFin }: { p: PreguntaMC; onFin: (ok: boolea
   const [sel, setSel] = useState<number | null>(null)
   const [seguro, setSeguro] = useState(false)
   // Las alternativas se mezclan en cada intento para que la posición no delate la respuesta.
-  const orden = useMemo(() => barajar(p.opciones.map((_, i) => i)), [p])
+  const orden = useMemo(() => barajar(p.opciones.map((_, i) => i), rndDe(p.id)), [p])
   const ok = sel === p.correcta
   return (
     <div>
@@ -90,7 +91,7 @@ export function QuizRunner({ preguntas, alcance, titulo, onSalir }: { preguntas:
         <p className="res">{res.filter((r) => r.ok).length} / {res.length}<small>Aciertos brutos (incluye respuestas cortas autoevaluadas)</small></p>
         {mcs.length > 0 && <p>Puntaje de opción múltiple corregido por azar: <b>{corr.toFixed(1)}</b> de {mcRes.length} <span className="meta">(aciertos − errores/({k}−1))</span></p>}
         <p className="aviso">Un buen resultado hoy no significa dominio: el tema se marca como <b>consolidado</b> recién con aciertos repetidos en días distintos.</p>
-        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={`#/marketing/leccion/${l!.id}`}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
+        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={ruta(`marketing/leccion/${l!.id}`)}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
         <div className="fila"><button className="btn pri" onClick={() => { setI(0); setRes([]); setGuardado(false) }}>Repetir</button>{onSalir && <button className="btn" onClick={onSalir}>Volver</button>}</div>
       </section>
     )

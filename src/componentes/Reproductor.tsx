@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { alternar, alTerminarCapitulo, detener, reproducir, setContinuo, setVelocidad, tomarPendienteContinuo, textoDeElemento, useVoz } from '@/logica/voz'
 
 const VELOCIDADES = [0.8, 1, 1.25, 1.5]
@@ -6,8 +6,10 @@ const VELOCIDADES = [0.8, 1, 1.25, 1.5]
 /** Barra de audio tipo podcast. Lee el texto visible de la página principal. */
 export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: string; siguienteHref?: string }) {
   const v = useVoz()
+  const [montado, setMontado] = useState(false)
+  useEffect(() => setMontado(true), [])
   useEffect(() => {
-    alTerminarCapitulo(() => { if (siguienteHref) location.hash = siguienteHref })
+    alTerminarCapitulo(() => { if (siguienteHref) location.href = siguienteHref })
     // Modo continuo: si el capítulo anterior terminó con la opción activa, leer la lección nueva.
     const t = tomarPendienteContinuo() ? setTimeout(() => {
       const el = document.getElementById('principal')
@@ -16,7 +18,7 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
     return () => { alTerminarCapitulo(() => {}); if (t) clearTimeout(t) }
   }, [siguienteHref])
   useEffect(() => () => { if (estadoLector()) detener() }, [])
-  if (!v.soportada) return <p className="voz-aviso no-print">Tu navegador no tiene lectura en voz alta. Probá Chrome, Edge o Safari.</p>
+  if (montado && !v.soportada) return <p className="voz-aviso no-print">Tu navegador no tiene lectura en voz alta. Probá Chrome, Edge o Safari.</p>
   const leer = () => {
     const el = document.getElementById('principal')
     if (!el) return

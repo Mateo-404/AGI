@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test'
 import { renderToStaticMarkup } from 'react-dom/server'
-import { lecciones } from '../contenido/indice'
+import { lecciones } from '../contenido/marketing/indice'
 import { LeccionCuerpo } from '../src/componentes/LeccionCuerpo'
 import { ImprimirCtx } from '../src/componentes/contexto'
 import { embudo, equilibrio, metricas } from '../src/componentes/Calculadoras'
@@ -39,7 +39,7 @@ describe('calculadoras (fórmulas de la Tabla 15 del cuaderno)', () => {
 
 describe('marcado en línea y progreso', () => {
   test('texto plano', () => expect(plano('**a** [[>l1-1|b]] [[marketing]]')).toBe('a b marketing'))
-  test('nodos de enlaces', () => expect(renderToStaticMarkup(<>{inline('ver [[>l2-3|mix]]')}</>)).toContain("href=\"#/marketing/leccion/l2-3\""))
+  test('nodos de enlaces', () => expect(renderToStaticMarkup(<>{inline('ver [[>l2-3|mix]]')}</>)).toContain('href="/marketing/leccion/l2-3/"'))
   test('progreso corrupto o de otra versión no rompe', () => {
     expect(parsear('{no es json').v).toBe(1)
     expect(parsear(JSON.stringify({ v: 2 })).vistas).toEqual({})

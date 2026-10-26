@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro'
+import { ruta } from '../logica/rutas'
+---
+<Base titulo="Página no encontrada · Somos #AGI">
+  <main class="cont">
+    <h1>Página no encontrada</h1>
+    <p><a href={ruta()}>Ir al inicio de Somos #AGI</a> o <a href={ruta('marketing/')}>abrir Marketing Digital</a>.</p>
+  </main>
+</Base>

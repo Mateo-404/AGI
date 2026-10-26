@@ -57,11 +57,13 @@ function guardar() {
 
 export const hayPersistencia = () => persistente
 export const instantaneo = () => estado
+/** En el servidor (build) no hay localStorage: se renderiza el estado vacío y luego el del navegador. */
+const vacioServidor = vacio()
 export const useProgreso = (): Estado =>
   useSyncExternalStore(
     (f) => (oyentes.add(f), () => void oyentes.delete(f)),
     () => estado,
-    () => estado,
+    () => vacioServidor,
   )
 
 const ahora = () => new Date().toISOString()

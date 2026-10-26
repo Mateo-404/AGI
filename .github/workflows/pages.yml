@@ -1,7 +1,7 @@
-name: Publicar el curso en GitHub Pages
+name: Publicar Somos #AGI en GitHub Pages
 on:
   push:
-    branches: [marketing]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -18,6 +18,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
       - run: bun test
+      - run: bun run check
       - run: bun run build
       - uses: actions/upload-pages-artifact@v3
         with:

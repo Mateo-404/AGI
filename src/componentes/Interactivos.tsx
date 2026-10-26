@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from 'react'
 import type { Bloque, Nodo } from '@contenido/tipos'
 import { Tx, useImprimir } from './contexto'
+import { barajar, rndDe } from '@/logica/repaso'
 
 type De<T extends Bloque['t']> = Extract<Bloque, { t: T }>
 
@@ -45,7 +46,7 @@ export function Explorable({ b }: { b: De<'explorable'> }) {
 
 export function Asociar({ b }: { b: De<'asociar'> }) {
   const imprimir = useImprimir()
-  const [orden] = useState(() => b.pares.map((_, i) => i).sort(() => Math.random() - 0.5))
+  const [orden] = useState(() => barajar(b.pares.map((_, i) => i), rndDe(b.titulo)))
   const [resp, setResp] = useState<Record<number, number>>({})
   const [rev, setRev] = useState(false)
   if (imprimir)
