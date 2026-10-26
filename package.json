@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "tsc --noEmit && astro build",
     "preview": "astro preview",
-    "check": "astro check && tsc --noEmit",
+    "check": "tsc --noEmit",
     "test": "bun test",
     "verificar": "bun run scripts/verificar.ts",
     "contraste": "bun run scripts/contraste.ts",
@@ -28,7 +28,7 @@
     "@types/bun": "^1.4.4",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "typescript": "6"
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=22.23.4",

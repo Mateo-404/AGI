@@ -4,7 +4,7 @@ import '../estilos/global.css'
 
 interface Props { titulo: string; descripcion?: string }
 const { titulo, descripcion = 'Proyecto personal de estudio de la Licenciatura en Administración y Gestión de la Información (UNRaf).' } = Astro.props
-const base = import.meta.env.BASE_URL
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/')
 ---
 <!doctype html>
 <html lang="es">
@@ -16,6 +16,10 @@ const base = import.meta.env.BASE_URL
     <meta name="theme-color" content="#15120d" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f4efe6" media="(prefers-color-scheme: light)" />
     <link rel="icon" href={`${base}favicon.svg`} type="image/svg+xml" />
+    <link rel="manifest" href={`${base}manifest.webmanifest`} />
+    <link rel="apple-touch-icon" href={`${base}icons/apple-touch-icon.png`} />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Somos #AGI" />
     <title>{titulo}</title>
     <!-- Tema antes del primer pintado: evita el parpadeo entre claro y oscuro. -->
     <script is:inline>
@@ -33,5 +37,11 @@ const base = import.meta.env.BASE_URL
   </head>
   <body>
     <slot />
+    <!-- Sin conexión y "instalar app": el service worker solo existe en el build (sw.js lo genera astro.config.mjs). -->
+    {import.meta.env.PROD && (
+      <script define:vars={{ base }}>
+        if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register(base + 'sw.js', { scope: base }).catch(() => {}))
+      </script>
+    )}
   </body>
 </html>

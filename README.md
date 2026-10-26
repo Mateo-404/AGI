@@ -2,15 +2,24 @@
 
 Sitio de estudio de la Licenciatura en Administración y Gestión de la Información (CCC, UNRaf). **Es un proyecto personal de Mateo Gariboglio; no es un sitio oficial de la Universidad Nacional de Rafaela.** Los datos de la carrera provienen de sus páginas públicas, que se enlazan en el sitio.
 
-**Sitio publicado:** https://mateo-404.github.io/AGI/ (inicio) · https://mateo-404.github.io/AGI/marketing/ (curso de Marketing Digital)
+**Sitio publicado:** https://mateo-404.github.io/AGI (inicio) · https://mateo-404.github.io/AGI/marketing (curso de Marketing Digital)
 
 ## Rutas
 | Ruta | Qué es |
 |---|---|
-| `/AGI/` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
-| `/AGI/marketing/` | Curso interactivo de Marketing Digital |
-| `/AGI/marketing/leccion/l2-1/` | Una lección |
-| `/AGI/marketing/practica/`, `tarjetas/`, `glosario/`, `repaso/` | Práctica, tarjetas, glosario y progreso |
+| `/AGI` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
+| `/AGI/marketing` | Curso interactivo de Marketing Digital |
+| `/AGI/marketing/leccion/l2-1` | Una lección |
+| `/AGI/marketing/practica`, `tarjetas`, `glosario`, `repaso` | Práctica, tarjetas, glosario y progreso |
+
+Las URLs no llevan barra final: `ruta()` en `src/logica/rutas.ts` es la única forma de armar enlaces internos.
+
+## App en el móvil
+El sitio es una app web instalable (PWA): tiene manifiesto, iconos y un service worker que guarda todo el sitio al primer uso, así que sigue funcionando sin conexión.
+- **Android (Chrome, Edge):** aparece el botón «Instalar la app» arriba de la página.
+- **iPhone y iPad (Safari):** tocar Compartir → «Agregar a pantalla de inicio».
+
+El service worker (`sw.js`) lo genera `astro.config.mjs` al terminar el build a partir de `src/pwa/sw.template.js`. Solo existe en `dist/`, no en `bun run dev`.
 
 Cada materia tiene su carpeta y su ruta (ver `skills/agregar-materia`).
 
@@ -32,7 +41,7 @@ bun install
 bun run dev          # http://localhost:4321/AGI/
 bun test             # pruebas
 bun run verificar    # validación del contenido
-bun run check        # tipos de Astro y TypeScript
+bun run check        # tipos de TypeScript
 bun run build        # compila a dist/ (117 páginas estáticas)
 bun run preview      # sirve dist/ localmente
 ```
@@ -61,7 +70,7 @@ La rama `main` se publica en GitHub Pages con `.github/workflows/pages.yml` en c
 - `bun test`: pruebas de repaso, puntajes, fórmulas, progreso corrupto, validez del contenido, renderizado de lecciones y voz.
 - `bun run verificar`: enlaces, ids y cobertura del contenido.
 - `bun run scripts/contraste.ts`: contraste WCAG AA en claro y oscuro.
-- `bun run check`: tipos de Astro y TypeScript.
+- `bun run check`: tipos de TypeScript (`tsc`). Los archivos `.astro` no se revisan hasta que `astro check` soporte TypeScript 7.
 - Revisión en navegador: portada de AGI, curso en claro y oscuro, reproductor, móvil de 375 px.
 
 ## Limitaciones

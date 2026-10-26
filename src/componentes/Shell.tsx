@@ -6,6 +6,7 @@ import { setTamano, setTema, useProgreso } from '@/logica/progreso'
 import { AcercaPag, CoberturaPag, GlosarioPag, Inicio, LeccionPag, NoEncontrado, Practica, RepasoPag, TarjetasPag, UnidadPag } from './Paginas'
 import { AgiInicio } from './AgiInicio'
 import { Reproductor } from './Reproductor'
+import { Instalar } from './Instalar'
 
 class Limite extends Component<{ children: ReactNode }, { error?: Error }> {
   state: { error?: Error } = {}
@@ -74,6 +75,7 @@ export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
       <>
         <a className="saltar" href="#principal">Saltar al contenido</a>
         <Barra />
+        <Instalar />
         <main id="principal" className="cont" tabIndex={-1}><Limite><AgiInicio /></Limite></main>
       </>
     )
@@ -82,6 +84,7 @@ export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
     <>
       <a className="saltar" href="#principal">Saltar al contenido</a>
       <Barra />
+      <Instalar />
       <div className="topbar no-print">
         <button className="btn sm" aria-expanded={menu} aria-controls="nav" onClick={() => setMenu(!menu)}><Icono nombre={menu ? 'close' : 'menu'} /> Menú</button>
         <b style={{ fontFamily: 'var(--serif)' }}>Marketing Digital</b>

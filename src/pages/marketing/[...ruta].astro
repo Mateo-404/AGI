@@ -4,7 +4,7 @@ import { Shell } from '../../componentes/Shell'
 import { rutasCurso } from '../../logica/rutas'
 import { lecciones, unidades } from '@contenido/marketing/indice'
 
-/** Una página HTML real por cada ruta del curso: /AGI/marketing/, /AGI/marketing/leccion/l2-1/, etc. */
+/** Una página HTML real por cada ruta del curso: /AGI/marketing, /AGI/marketing/leccion/l2-1, etc. */
 export function getStaticPaths() {
   return rutasCurso().map((r) => ({ params: { ruta: r || undefined }, props: { sub: r ? r.split('/') : [] } }))
 }

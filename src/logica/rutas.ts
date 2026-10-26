@@ -4,10 +4,11 @@ import { lecciones, unidades } from '@contenido/marketing/indice'
 const entorno = (import.meta as unknown as { env?: { BASE_URL?: string } }).env
 const BASE = (entorno?.BASE_URL ?? '/').replace(/\/?$/, '/')
 
-/** URL absoluta dentro del sitio: `ruta('marketing/leccion/l2-1')` → `/AGI/marketing/leccion/l2-1/`. */
+/** URL absoluta dentro del sitio, sin barra final: `ruta('marketing/leccion/l2-1')` → `/AGI/marketing/leccion/l2-1`. La raíz es `/AGI`. */
 export function ruta(p = ''): string {
   const limpio = p.replace(/^\/+|\/+$/g, '')
-  return limpio ? `${BASE}${limpio}/` : BASE
+  if (limpio) return `${BASE}${limpio}`
+  return BASE.length > 1 ? BASE.slice(0, -1) : BASE
 }
 
 /** Todas las rutas del curso (relativas a `marketing/`), para generar las páginas estáticas. */

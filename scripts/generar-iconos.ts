@@ -9,7 +9,7 @@ const NOMBRES = [
   'text_fields', 'school', 'menu_book', 'quiz', 'style', 'spellcheck', 'update', 'fact_check', 'info', 'home', 'link',
   'check_circle', 'cancel', 'lightbulb', 'warning', 'arrow_forward', 'arrow_back', 'schedule', 'open_in_new', 'search',
   'target', 'touch_app', 'timeline', 'campaign', 'mail', 'trending_up', 'shopping_cart', 'record_voice_over', 'podcasts',
-  'mark_email_read', 'share', 'person_search', 'graphic_eq',
+  'mark_email_read', 'share', 'person_search', 'graphic_eq', 'download', 'ios_share',
 ] as const
 
 const base = new URL('../node_modules/@material-symbols/svg-400/rounded/', import.meta.url).pathname
