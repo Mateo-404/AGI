@@ -142,4 +142,44 @@ describe('avance y detener', () => {
     expect(voz.estadoVoz().estado).toBe('parado')
     expect(hablado).toHaveLength(0)
   })
+
+  test('un fragmento que dispara error y end avanza una sola vez, no dos', async () => {
+    voz.reproducir(raiz, 'Lección')
+    const primero = emisiones[0]!
+    primero.onerror?.({})
+    primero.onend?.({})
+    await tick()
+    expect(hablado).toEqual([frases[0]!, frases[1]!])
+    expect(voz.estadoVoz().indice).toBe(1)
+  })
+})
+
+describe('modo continuo', () => {
+  test('al terminar la lección pasa a la siguiente una sola vez, aunque el último fragmento avise dos veces', async () => {
+    let saltos = 0
+    voz.alTerminarCapitulo(() => { saltos++ })
+    voz.setContinuo(true)
+    voz.reproducir(raiz, 'Lección')
+    for (let i = 0; i < frases.length - 1; i++) { terminarActual(); await tick() }
+    const ultimo = emisiones.at(-1)!
+    ultimo.onend?.({})
+    ultimo.onend?.({})
+    ultimo.onerror?.({})
+    await tick()
+    expect(saltos).toBe(1)
+    expect(voz.tomarPendienteContinuo()).toBe(true)
+    expect(voz.tomarPendienteContinuo()).toBe(false) // se consume: la lección nueva la lee una sola vez
+    expect(voz.estadoVoz().estado).toBe('parado')
+    voz.setContinuo(false)
+    voz.alTerminarCapitulo(() => {})
+  })
+  test('sin modo continuo no navega ni deja pendiente', async () => {
+    let saltos = 0
+    voz.alTerminarCapitulo(() => { saltos++ })
+    voz.reproducir(raiz, 'Lección')
+    for (let i = 0; i < frases.length; i++) { terminarActual(); await tick() }
+    expect(saltos).toBe(0)
+    expect(voz.tomarPendienteContinuo()).toBe(false)
+    voz.alTerminarCapitulo(() => {})
+  })
 })

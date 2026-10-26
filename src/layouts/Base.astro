@@ -47,6 +47,12 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/')
         var f = /\/leccion\/l(\d+)-(\d+)\/?$/, a = f.exec(e.from.pathname), b = f.exec(e.to.pathname);
         if (a && b) e.direction = (+b[1] < +a[1] || (+b[1] === +a[1] && +b[2] < +a[2])) ? 'back' : 'forward';
       });
+      // Si una navegación interrumpe a otra (toques seguidos), Astro salta la transición anterior y el navegador rechaza su promesa
+      // con AbortError. No tiene efecto visible: solo ese error exacto se descarta para no ensuciar la consola ni los monitores de errores.
+      addEventListener('unhandledrejection', function (e) {
+        var r = e.reason;
+        if (r && r.name === 'AbortError' && /Transition was skipped/.test(r.message)) e.preventDefault();
+      });
       // El aviso de "instalar la app" llega una sola vez y puede ser antes de que React hidrate: se guarda acá.
       addEventListener('beforeinstallprompt', function (e) {
         e.preventDefault();

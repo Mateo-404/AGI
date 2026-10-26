@@ -111,6 +111,7 @@ function terminar() {
 function hablar(i: number) {
   const { fragmentos, velocidad } = estado
   if (i >= fragmentos.length) {
+    turno++ // lo que quede pendiente del último fragmento ya no puede volver a terminar la lectura
     if (estado.continuo) { pendienteContinuo = true; terminar(); siguienteCapitulo?.(); return }
     terminar(); return
   }
@@ -122,8 +123,11 @@ function hablar(i: number) {
   const voces = speechSynthesis.getVoices().filter((v) => v.lang.startsWith('es'))
   const pref = voces.find((v) => v.lang === 'es-AR') ?? voces[0]
   if (pref) u.voice = pref
-  // Un evento de un fragmento cortado (pausa, velocidad, detener) llega con otro turno y no avanza.
-  const alFinalizar = () => { if (t === turno) hablar(i + 1) }
+  // Un evento de un fragmento cortado (pausa, velocidad, detener) llega con otro turno y no avanza. Y cada fragmento avanza
+  // la lectura una sola vez: algunos navegadores disparan `error` y `end` para el mismo, y saltearía un fragmento (o, en el
+  // último, navegaría dos veces a la lección siguiente).
+  let avanzo = false
+  const alFinalizar = () => { if (avanzo || t !== turno) return; avanzo = true; hablar(i + 1) }
   u.onend = alFinalizar
   u.onerror = alFinalizar
   set({ indice: i })
