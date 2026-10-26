@@ -4,8 +4,8 @@ import { Bloques, etiquetaOrigen } from './Bloques'
 import { Tx } from './contexto'
 import { leccionPorId, terminoPorId } from '@/logica/datos'
 
-/** Cuerpo de una lección, compartido por la app web y el manual imprimible. */
-export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+/** Objetivos y conocimientos previos: lo que va antes de los bloques. */
+export function LeccionCabecera({ l }: { l: Leccion }) {
   return (
     <>
       <h2 className="sub">Objetivos de aprendizaje</h2>
@@ -13,7 +13,14 @@ export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreg
       {l.previos.length > 0 && (
         <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
       )}
-      <Bloques bloques={l.bloques} />
+    </>
+  )
+}
+
+/** Conceptos clave, síntesis, conexiones y referencias: lo que va después de los bloques. */
+export function LeccionPie({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+  return (
+    <>
       <h3>Conceptos clave</h3>
       <p>{l.claves.map((id, i) => <span key={id}>{i > 0 && ' · '}<Tx t={`[[${id}]]`} /></span>)}</p>
       <h3>Síntesis</h3>
@@ -25,6 +32,17 @@ export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreg
       <ul>{l.referencias.map((o, i) => <li key={i}>{etiquetaOrigen(o)}</li>)}</ul>
       {conPreguntas && <PreguntasImpresas l={l} />}
       <span hidden>{terminoPorId.size}</span>
+    </>
+  )
+}
+
+/** Cuerpo de una lección para el manual imprimible y las pruebas. En la web se arma en LeccionEstatica.astro, con los interactivos como islas. */
+export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+  return (
+    <>
+      <LeccionCabecera l={l} />
+      <Bloques bloques={l.bloques} />
+      <LeccionPie l={l} conPreguntas={conPreguntas} />
     </>
   )
 }

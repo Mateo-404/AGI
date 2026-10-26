@@ -1,4 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 import type { Leccion } from '../tipos'
 import { parsearLeccion } from '../../src/logica/mdLeccion'
 
@@ -6,7 +7,8 @@ import { parsearLeccion } from '../../src/logica/mdLeccion'
  * Lee las lecciones de esta carpeta: `lecciones/lN-M.md` (apunte) y `lecciones/lN-M.practica.yaml` (preguntas y tarjetas).
  * Solo corre en el servidor (build, pruebas, scripts): el navegador recibe una versión liviana (ver astro.config.mjs).
  */
-const carpeta = new URL('./lecciones/', import.meta.url)
+/** Relativa al proyecto, no al módulo: el build empaqueta este archivo en dist/.prerender/ y `import.meta.url` dejaría de apuntar acá. */
+const carpeta = join(process.cwd(), 'contenido/marketing/lecciones')
 
 const orden = (a: string, b: string): number => {
   const [ua, na] = a.match(/\d+/g)!.map(Number)
@@ -19,7 +21,7 @@ export function cargarLecciones(): Leccion[] {
     .filter((f) => /^l\d+-\d+\.md$/.test(f))
     .sort(orden)
     .map((f) => {
-      const practica = new URL(f.replace(/\.md$/, '.practica.yaml'), carpeta)
-      return parsearLeccion(readFileSync(new URL(f, carpeta), 'utf8'), existsSync(practica) ? readFileSync(practica, 'utf8') : '')
+      const practica = join(carpeta, f.replace(/\.md$/, '.practica.yaml'))
+      return parsearLeccion(readFileSync(join(carpeta, f), 'utf8'), existsSync(practica) ? readFileSync(practica, 'utf8') : '')
     })
 }

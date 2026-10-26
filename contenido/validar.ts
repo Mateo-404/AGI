@@ -19,6 +19,7 @@ function textos(b: Bloque, out: string[]): void {
     case 'clasificar': b.items.forEach((i) => push(i.x, i.porque)); break
     case 'caso': push(b.escenario); b.pasos.forEach((p) => { push(p.pregunta); p.opciones.forEach((o) => push(o.x, o.consecuencia)) }); break
     case 'calc': case 'figura': break
+    case 'diagrama': push(b.titulo); break
     case 'animacion': push(b.descripcion); break
   }
 }
@@ -57,11 +58,14 @@ export function validarContenido(): string[] {
       } else if (p.criterios.length < 2 || !p.modelo.trim()) err(`${p.id}: respuesta corta incompleta`)
     }
     const txt: string[] = []
-    const rec = (bs: Bloque[]) => bs.forEach((b) => {
+    const rec = (bs: Bloque[], dentroDeAcordeon = false) => bs.forEach((b) => {
       textos(b, txt)
+      // Toda afirmación del curso lleva origen (cuaderno, didáctico o ampliación): ver agents.md.
+      if (['p', 'def', 'lista', 'tabla', 'callout', 'ejemplo', 'comparar'].includes(b.t) && !(b as { o?: unknown }).o) err(`${l.id}: bloque "${b.t}" sin origen`)
+      if (dentroDeAcordeon && ['explorable', 'asociar', 'clasificar', 'caso', 'calc', 'animacion'].includes(b.t)) err(`${l.id}: un bloque interactivo (${b.t}) no puede ir dentro de un acordeón`)
       if (b.t === 'clasificar') b.items.forEach((i) => { if (i.cat < 0 || i.cat >= b.categorias.length) err(`${l.id}: categoría fuera de rango en clasificar`) })
       if (b.t === 'caso') b.pasos.forEach((p) => { if (!p.opciones.some((o) => o.ok)) err(`${l.id}: paso de caso sin opción correcta`) })
-      if (b.t === 'acordeon') rec(b.bloques)
+      if (b.t === 'acordeon') rec(b.bloques, true)
     })
     rec(l.bloques)
     txt.push(...l.sintesis)

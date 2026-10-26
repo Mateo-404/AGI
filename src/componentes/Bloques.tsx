@@ -6,6 +6,7 @@ import type { NombreIcono } from './iconos'
 import { Figura } from './Figuras'
 import { Animacion } from './Animacion'
 import { CalcEmbudo, CalcMetricas, CalcPrecio } from './Calculadoras'
+import { Diagrama } from './Diagrama'
 
 export const etiquetaOrigen = (o?: Origen): string => {
   if (!o) return ''
@@ -31,7 +32,7 @@ export function Bloques({ bloques }: { bloques: Bloque[] }) {
   return <>{bloques.map((b, i) => <BloqueView key={i} b={b} />)}</>
 }
 
-function BloqueView({ b }: { b: Bloque }) {
+export function BloqueView({ b }: { b: Bloque }) {
   const imprimir = useImprimir()
   switch (b.t) {
     case 'p':
@@ -88,5 +89,7 @@ function BloqueView({ b }: { b: Bloque }) {
       return <Clasificar b={b} />
     case 'caso':
       return <Caso b={b} />
+    case 'diagrama':
+      return <Diagrama b={b} />
   }
 }

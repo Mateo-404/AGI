@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro'
 import { Shell } from '../../componentes/Shell'
+import LeccionEstatica from '../../componentes/LeccionEstatica.astro'
 import { rutasCurso } from '../../logica/rutas'
 import { lecciones, unidades } from '@contenido/marketing/indice'
 
@@ -17,5 +18,7 @@ const titulo = leccion ? `${leccion.titulo} · Marketing Digital` : unidad ? `Un
 const descripcion = leccion ? leccion.resumen : 'Curso interactivo de Marketing Digital (UNRaf 2026) basado en el cuaderno de cátedra.'
 ---
 <Base titulo={titulo} descripcion={descripcion}>
-  <Shell client:load sub={sub} enCurso={true} />
+  <Shell client:load sub={sub} enCurso={true}>
+    {a === 'leccion' && leccion && <LeccionEstatica l={leccion} />}
+  </Shell>
 </Base>

@@ -1,0 +1,27 @@
+---
+import type { Leccion } from '@contenido/tipos'
+import { BloqueView } from './Bloques'
+import { LeccionCabecera, LeccionPie } from './LeccionCuerpo'
+import { Asociar, Caso, Clasificar, Explorable } from './Interactivos'
+import { CalcEmbudo, CalcMetricas, CalcPrecio } from './Calculadoras'
+import { Animacion } from './Animacion'
+
+/**
+ * Cuerpo de una lección como HTML estático. Solo los bloques con estado (explorables, asociar, clasificar, caso,
+ * calculadoras y la animación) son islas que se hidratan al acercarse a la pantalla: el resto no manda JavaScript.
+ */
+const { l } = Astro.props as { l: Leccion }
+---
+<LeccionCabecera l={l} />
+{l.bloques.map((b) =>
+  b.t === 'explorable' ? <Explorable client:visible b={b} /> :
+  b.t === 'asociar' ? <Asociar client:visible b={b} /> :
+  b.t === 'clasificar' ? <Clasificar client:visible b={b} /> :
+  b.t === 'caso' ? <Caso client:visible b={b} /> :
+  b.t === 'animacion' ? <Animacion client:visible archivo={b.archivo} titulo={b.titulo} descripcion={b.descripcion} credito={b.credito} /> :
+  b.t === 'calc' && b.tipo === 'metricas' ? <CalcMetricas client:visible /> :
+  b.t === 'calc' && b.tipo === 'embudo' ? <CalcEmbudo client:visible /> :
+  b.t === 'calc' ? <CalcPrecio client:visible /> :
+  <BloqueView b={b} />
+)}
+<LeccionPie l={l} />

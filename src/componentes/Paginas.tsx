@@ -1,12 +1,11 @@
 import { ruta } from '@/logica/rutas'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { anteriorLeccion, glosario, leccionDePregunta, leccionPorId, lecciones, leccionesDe, siguienteLeccion, todasLasPreguntas, todasLasTarjetas, unidades } from '@/logica/datos'
 import { exportar, hayPersistencia, importar, marcarVista, calificar, reiniciar, useProgreso } from '@/logica/progreso'
 import { dominada, estaVencida, fechasSugeridas, nivel, rndDe, seleccionPonderada, type Nivel } from '@/logica/repaso'
 import { cobertura, ESTADOS } from '@contenido/marketing/cobertura'
 import { ampliaciones } from '@contenido/marketing/ampliaciones'
 import type { Leccion } from '@contenido/tipos'
-import { LeccionCuerpo } from './LeccionCuerpo'
 import { QuizRunner } from './Quiz'
 import { Tx } from './contexto'
 
@@ -116,7 +115,8 @@ export function UnidadPag({ n }: { n: number }) {
   )
 }
 
-export function LeccionPag({ id }: { id: string }) {
+/** El cuerpo de la lección llega ya dibujado como HTML estático (children): ver LeccionEstatica.astro. */
+export function LeccionPag({ id, children }: { id: string; children?: ReactNode }) {
   const l = leccionPorId.get(id)
   const [practica, setPractica] = useState(false)
   useEffect(() => { setPractica(false); if (l) marcarVista(l.id) }, [l])
@@ -128,7 +128,7 @@ export function LeccionPag({ id }: { id: string }) {
       <p className="meta"><a href={ruta('marketing/')}>Inicio</a> › <a href={ruta(`marketing/unidad/${l.unidad}`)}>Unidad {l.unidad}</a> › {l.id}</p>
       <h1>{l.titulo}</h1>
       <p className="meta">{l.minutos} min · {l.resumen}</p>
-      <LeccionCuerpo l={l} />
+      {children}
       <h2>Practicá lo aprendido</h2>
       {practica ? <QuizRunner preguntas={l.preguntas} alcance={`lección ${l.id}`} titulo={l.titulo} onSalir={() => setPractica(false)} /> : (
         <div className="fila"><button className="btn pri" onClick={() => setPractica(true)}>Responder {l.preguntas.length} preguntas</button><a className="btn" href={ruta(`marketing/tarjetas/${l.id}`)}>Tarjetas de esta lección ({l.tarjetas.length})</a></div>

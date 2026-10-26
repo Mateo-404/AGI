@@ -18,12 +18,12 @@ class Limite extends Component<{ children: ReactNode }, { error?: Error }> {
   }
 }
 
-function PaginaCurso({ ruta }: { ruta: string[] }) {
+function PaginaCurso({ ruta, children }: { ruta: string[]; children?: ReactNode }) {
   const [a, b, c] = ruta
   switch (a) {
     case undefined: return <Inicio />
     case 'unidad': return <UnidadPag n={Number(b)} />
-    case 'leccion': return <LeccionPag id={b ?? ''} />
+    case 'leccion': return <LeccionPag id={b ?? ''}>{children}</LeccionPag>
     case 'practica': return <Practica alcance={b} ref_={c} />
     case 'tarjetas': return <TarjetasPag lec={b} />
     case 'repaso': return <RepasoPag />
@@ -55,7 +55,7 @@ function Barra() {
   )
 }
 
-export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
+export function Shell({ sub, enCurso, children }: { sub: string[]; enCurso: boolean; children?: ReactNode }) {
   const p = useProgreso()
   const [menu, setMenu] = useState(false)
   useEffect(() => setMenu(false), [sub.join('/')])
@@ -117,7 +117,7 @@ export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
         </nav>
         <main id="principal" className="cont" tabIndex={-1}>
           <Reproductor tituloPagina={`Marketing Digital · ${sub.join(' ') || 'inicio'}`} siguienteHref={hrefSig} />
-          <Limite key={sub.join('/')}><PaginaCurso ruta={sub} /></Limite>
+          <Limite key={sub.join('/')}><PaginaCurso ruta={sub}>{children}</PaginaCurso></Limite>
         </main>
       </div>
     </>

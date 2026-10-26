@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
+import { cursoLiviano } from './scripts/vite-curso-liviano'
 
 // Sitio estático publicado en GitHub Pages: https://mateo-404.github.io/AGI
 const base = '/AGI/'
@@ -49,5 +50,5 @@ export default defineConfig({
   trailingSlash: 'never',
   integrations: [react(), sinConexion()],
   build: { format: 'file' },
-  vite: { resolve: { alias: { '@contenido': new URL('./contenido', import.meta.url).pathname, '@': new URL('./src', import.meta.url).pathname } } },
+  vite: { plugins: [cursoLiviano()], resolve: { alias: { '@contenido': new URL('./contenido', import.meta.url).pathname, '@': new URL('./src', import.meta.url).pathname } } },
 })
