@@ -56,7 +56,7 @@ Antes de cerrar un cambio: `bun test`, `bun run verificar`, `bun run build`. Si 
 - Las figuras SVG existentes en `src/componentes/Figuras.tsx` son dibujos del proyecto y están pendientes de reemplazo por material verificado; no agregues más figuras de ese tipo.
 
 ## Lectura en voz alta
-`src/logica/voz.ts` usa la síntesis de voz del navegador. Divide en fragmentos cortos por una limitación de los navegadores. No la reemplaces por un servicio externo sin pedirlo.
+`src/logica/voz.ts` usa la síntesis de voz del navegador. Divide en fragmentos cortos por una limitación de los navegadores. Pausar corta el fragmento y relee al seguir: no uses `speechSynthesis.pause()`, no funciona en varios móviles. No la reemplaces por un servicio externo sin pedirlo.
 
 ## Despliegue
 Un push a `main` ejecuta `.github/workflows/pages.yml` (prueba, `astro check`, build y publica `dist/`). No cambies la rama de publicación sin confirmarlo: el repositorio es público.

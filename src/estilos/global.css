@@ -270,17 +270,34 @@ h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
 
 /* ---- Audio: icono circular fijo abajo a la derecha con panel de opciones ---- */
 .voz { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 70; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-.voz-icono { width: 56px; height: 56px; border-radius: 50%; border: 0; background: var(--marca); color: var(--marca-t); display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0,0,0,.25); cursor: pointer; }
+.voz-icono { position: relative; width: 56px; height: 56px; border-radius: 50%; border: 0; background: var(--marca); color: var(--marca-t); display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0,0,0,.25); cursor: pointer; }
 .voz-icono svg { width: 26px; height: 26px; fill: currentColor; }
 .voz-icono.activo { box-shadow: 0 0 0 4px var(--acento-bg), 0 6px 18px rgba(0,0,0,.25); }
 .voz-icono:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
-.voz-panel { width: min(320px, calc(100vw - 32px)); background: var(--surf); border: 1px solid var(--linea); border-radius: 14px; padding: 14px; display: grid; gap: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.voz-panel { width: min(340px, calc(100vw - 32px)); background: var(--surf); border: 1px solid var(--linea); border-radius: 16px; padding: 16px; display: grid; gap: 14px; box-shadow: 0 12px 32px rgba(0,0,0,.22); }
+.voz-cab { display: flex; gap: 12px; align-items: center; min-width: 0; }
+.voz-punto { flex: none; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--surf2); color: var(--ink2); }
+.voz-punto.hablando { background: var(--marca); color: var(--marca-t); }
+.voz-punto.pausado { background: var(--acento-bg); color: var(--ink); }
+.voz-cab-txt { min-width: 0; }
 .voz-titulo { margin: 0; font-weight: 600; font-size: .95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.voz-fila { display: flex; gap: 8px; flex-wrap: wrap; }
+.voz-sub { margin: 0; font-size: .85rem; color: var(--ink2); font-variant-numeric: tabular-nums; }
+.voz-fila { display: flex; gap: 8px; }
+.voz-principal { flex: 1; justify-content: center; }
 .voz-barra { width: 100%; height: 6px; accent-color: var(--marca); }
-.voz-op { display: flex; gap: 8px; align-items: center; font-size: .92rem; margin: 0; }
-.voz-op select { width: auto; min-height: 44px; }
-.voz-check input { width: 22px; height: 22px; }
+.voz-grupo { display: flex; gap: 6px; flex-wrap: wrap; }
+.voz-etiq { flex: 1 0 100%; font-size: .85rem; color: var(--ink2); }
+.voz-chip { flex: 1 1 0; min-height: 38px; padding: 0 6px; border-radius: 999px; border: 1px solid var(--linea); background: var(--surf2); color: var(--ink); font: inherit; font-weight: 600; }
+.voz-chip[aria-pressed="true"] { background: var(--marca); border-color: var(--marca); color: var(--marca-t); }
+.voz-op { display: flex; gap: 10px; align-items: center; font-size: .92rem; margin: 0; }
+.voz-check input { width: 22px; height: 22px; accent-color: var(--marca); flex: none; }
+/* Fragmento que se está leyendo: resaltado y visible (la página se desplaza sola) */
+.voz-leyendo { background: var(--acento-bg); border-radius: 4px; box-shadow: 0 0 0 4px var(--acento-bg); transition: background-color .3s ease; }
+.voz-icono .voz-anillo { position: absolute; left: -8px; top: -8px; width: 72px; height: 72px; fill: none; transform: rotate(-90deg); pointer-events: none; }
+.voz-anillo circle { stroke-width: 2.5; }
+.voz-anillo .pista { stroke: var(--linea); }
+.voz-anillo .avance { stroke: var(--marca); stroke-linecap: round; transition: stroke-dasharray .6s linear; }
+@media (prefers-reduced-motion: reduce) { .voz-leyendo, .voz-anillo .avance { transition: none; } }
 .btn { min-height: 44px; }
 @media (prefers-reduced-motion: reduce) { .voz-icono { transition: none; } }
 

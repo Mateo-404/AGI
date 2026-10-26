@@ -25,7 +25,7 @@ describe('texto de la página', () => {
     const fake = {
       cloneNode() { return this },
       querySelectorAll() { return { forEach() {} } },
-      innerText: 'Texto visible',
+      textContent: 'Texto visible',
     } as unknown as Element
     expect(textoDeElemento(fake)).toBe('Texto visible')
   })

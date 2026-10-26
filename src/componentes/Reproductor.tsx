@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as PE } from 'react'
 import { Icono } from './Icono'
-import { alternar, alTerminarCapitulo, detener, reproducir, setContinuo, setVelocidad, tomarPendienteContinuo, textoDeElemento, useVoz } from '@/logica/voz'
+import { alternar, alTerminarCapitulo, detener, reproducir, setContinuo, setVelocidad, tomarPendienteContinuo, useVoz } from '@/logica/voz'
 
 const VELOCIDADES = [0.8, 1, 1.25, 1.5]
 
@@ -15,7 +15,7 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
     // Modo continuo: si el capítulo anterior terminó con la opción activa, leer la lección nueva.
     const t = tomarPendienteContinuo() ? setTimeout(() => {
       const el = document.getElementById('principal')
-      if (el) reproducir(textoDeElemento(el), document.title)
+      if (el) reproducir(el, document.title)
     }, 900) : undefined
     return () => { alTerminarCapitulo(() => {}); if (t) clearTimeout(t) }
   }, [siguienteHref])
@@ -55,28 +55,38 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
 
   const leer = () => {
     const el = document.getElementById('principal')
-    if (el) alternar(textoDeElemento(el), tituloPagina)
+    if (el) alternar(el, tituloPagina)
   }
   const activo = v.estado !== 'parado'
   const pct = v.fragmentos.length ? Math.round((v.indice / v.fragmentos.length) * 100) : 0
-  const etiqueta = v.estado === 'hablando' ? 'Pausar lectura' : v.estado === 'pausado' ? 'Seguir leyendo' : 'Escuchar esta página'
+  const icono = v.estado === 'hablando' ? 'graphic_eq' : v.estado === 'pausado' ? 'pause' : 'volume_up'
+  const estadoTexto = v.estado === 'hablando' ? 'Leyendo' : v.estado === 'pausado' ? 'En pausa' : 'Listo para escuchar'
 
   if (montado && !v.soportada) return null
   return (
     <div className={`voz no-print ${pos ? 'libre' : ''}`} style={pos ? { left: pos.x, top: pos.y, flexDirection: pos.y < innerHeight / 2 ? 'column-reverse' : 'column' } : undefined}>
       {abierto && (
         <section className="voz-panel" aria-label="Opciones de lectura en voz alta">
-          <p className="voz-titulo">{activo ? tituloPagina : 'Escuchar esta página'}</p>
-          <div className="voz-fila">
-            <button className="btn pri" onClick={leer}><Icono nombre={v.estado === 'hablando' ? 'pause' : 'play_arrow'} /> {v.estado === 'hablando' ? 'Pausar' : v.estado === 'pausado' ? 'Seguir' : 'Reproducir'}</button>
-            {activo && <button className="btn" onClick={detener}><Icono nombre="stop" /> Detener</button>}
+          <div className="voz-cab">
+            <span className={`voz-punto ${v.estado}`} aria-hidden="true"><Icono nombre={icono} /></span>
+            <div className="voz-cab-txt">
+              <p className="voz-titulo">{tituloPagina}</p>
+              <p className="voz-sub">{estadoTexto}{activo ? ` · ${pct} %` : ''}</p>
+            </div>
           </div>
-          {activo && <progress className="voz-barra" value={pct} max={100} aria-label="Avance de la lectura">{pct}%</progress>}
-          <label className="voz-op">Velocidad
-            <select value={v.velocidad} onChange={(e) => setVelocidad(Number(e.target.value))}>
-              {VELOCIDADES.map((x) => <option key={x} value={x}>{x}×</option>)}
-            </select>
-          </label>
+          <progress className="voz-barra" value={pct} max={100} aria-label="Avance de la lectura">{pct}%</progress>
+          <div className="voz-fila">
+            <button className="btn pri voz-principal" onClick={leer}>
+              <Icono nombre={v.estado === 'hablando' ? 'pause' : 'play_arrow'} /> {v.estado === 'hablando' ? 'Pausar' : v.estado === 'pausado' ? 'Seguir' : 'Reproducir'}
+            </button>
+            <button className="btn" onClick={detener} disabled={!activo}><Icono nombre="stop" /> Detener</button>
+          </div>
+          <div className="voz-grupo" role="group" aria-label="Velocidad de lectura">
+            <span className="voz-etiq">Velocidad</span>
+            {VELOCIDADES.map((x) => (
+              <button key={x} className="voz-chip" aria-pressed={v.velocidad === x} onClick={() => setVelocidad(x)}>{x}×</button>
+            ))}
+          </div>
           <label className="voz-op voz-check">
             <input type="checkbox" checked={v.continuo} onChange={(e) => setContinuo(e.target.checked)} /> Seguir con la lección siguiente
           </label>
@@ -85,13 +95,19 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
       <button
         className={`voz-icono ${activo ? 'activo' : ''}`}
         aria-expanded={abierto}
-        aria-label={abierto ? 'Cerrar opciones de audio' : etiqueta}
+        aria-label={abierto ? 'Cerrar opciones de audio' : activo ? `Opciones de audio: ${estadoTexto.toLowerCase()}` : 'Escuchar esta página'}
         onPointerDown={alBajar}
         onPointerMove={alMover}
         onPointerUp={alSoltar}
         onPointerCancel={() => { arrastre.current = null }}
       >
-        {activo && v.estado === 'hablando' ? <Icono nombre="pause" /> : activo ? <Icono nombre="play_arrow" /> : <Icono nombre="volume_up" />}
+        {activo && (
+          <svg className="voz-anillo" viewBox="0 0 36 36" aria-hidden="true">
+            <circle className="pista" cx="18" cy="18" r="16" pathLength={100} />
+            <circle className="avance" cx="18" cy="18" r="16" pathLength={100} strokeDasharray={`${pct} 100`} />
+          </svg>
+        )}
+        <Icono nombre={icono} />
       </button>
     </div>
   )
