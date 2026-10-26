@@ -6,6 +6,7 @@ import type { NombreIcono } from './iconos'
 import { Animacion } from './Animacion'
 import { CalcEmbudo, CalcMetricas, CalcPrecio } from './Calculadoras'
 import { Diagrama } from './Diagrama'
+import { archivo as urlArchivo } from '@/logica/rutas'
 
 export const etiquetaOrigen = (o?: Origen): string => {
   if (!o) return ''
@@ -88,5 +89,12 @@ export function BloqueView({ b }: { b: Bloque }) {
       return <Caso b={b} />
     case 'diagrama':
       return <Diagrama b={b} />
+    case 'imagen':
+      return (
+        <figure className="imagen">
+          <img src={urlArchivo(b.archivo)} alt={b.alt} width={b.ancho} height={b.alto} loading="lazy" decoding="async" />
+          <figcaption>{b.alt} <span className="credito">{b.credito}{b.fuente && <> · <a href={b.fuente} rel="noopener noreferrer">fuente</a></>}</span></figcaption>
+        </figure>
+      )
   }
 }

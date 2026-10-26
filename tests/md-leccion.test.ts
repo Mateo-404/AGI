@@ -119,4 +119,13 @@ describe('práctica', () => {
     expect(preguntas[1]).toMatchObject({ id: 'l99-q2', tipo: 'corta', modelo: 'M' })
     expect(tarjetas).toEqual([{ id: 'l99-t1', f: 'Frente', b: 'Dorso' }, { id: 'l99-x', f: 'F2', b: 'D2' }])
   })
+  test('una tarjeta con comas sin comillas se rechaza en vez de usar un pedazo como id', () => {
+    expect(() => parsearPractica('tarjetas:\n  - [Frente, Dorso, con, comas]\n', 'l9-9')).toThrow('debe ser [frente, dorso]')
+    expect(() => parsearPractica('tarjetas:\n  - [Solo frente]\n', 'l9-9')).toThrow('debe ser [frente, dorso]')
+    expect(parsearPractica('tarjetas:\n  - ["Frente", "Dorso, con comas"]\n', 'l9-9').tarjetas[0]).toEqual({ id: 'l99-t1', f: 'Frente', b: 'Dorso, con comas' })
+  })
+  test('una opción con comas sin comillas se rechaza', () => {
+    const y = 'preguntas:\n  - tema: T\n    dif: 1\n    enunciado: E\n    opciones:\n      - [Uno, porque sí, y además]\n      - [Dos, no]\n    correcta: 0\n'
+    expect(() => parsearPractica(y, 'l9-9')).toThrow('debe ser [texto, porqué]')
+  })
 })

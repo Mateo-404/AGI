@@ -14,7 +14,8 @@
     "materiales": "bun run scripts/materiales.tsx",
     "pdf": "bun run scripts/pdf.ts",
     "iconos": "bun run scripts/generar-iconos.ts",
-    "diagramas": "bun run scripts/diagramas.ts"
+    "diagramas": "bun run scripts/diagramas.ts",
+    "ilustracion": "bun run scripts/ilustracion.ts"
   },
   "dependencies": {
     "@astrojs/react": "^7.1.1",

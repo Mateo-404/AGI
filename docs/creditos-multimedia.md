@@ -16,5 +16,8 @@ Todo el material gráfico y animado de este sitio proviene de fuentes externas c
 
 La Lottie Simple License permite uso comercial y publicación. La atribución no es obligatoria pero se recomienda, y las copias distribuidas deben conservar los mismos términos (ver https://lottiefiles.com/page/license).
 
-## Figuras del proyecto
-Los diagramas SVG de `src/componentes/Figuras.tsx` (evolución, mix, lío del medio, embudo, subasta y embudo del email) fueron dibujados por el proyecto y no son de terceros. Están pendientes de reemplazo por material verificado.
+## Diagramas del proyecto
+Los diagramas de las lecciones son **texto Mermaid** escrito por el proyecto (```` ```mermaid ```` en los `.md`) y se dibujan en el build con `mermaid` (MIT) a través de `mermaid-isomorphic` (MIT). No hay dibujos de terceros: las seis figuras SVG hechas a mano que existían antes (`Figuras.tsx`) fueron reemplazadas por diagramas de texto.
+
+## Imágenes e iconos de lecciones
+Se obtienen **solo** con `bun run ilustracion` (Iconify y Wikimedia Commons). La herramienta verifica la licencia contra la API, guarda el archivo en `public/media/` y agrega una fila a la tabla de esta sección. Todo archivo de `public/media/` debe figurar acá (lo comprueba `tests/creditos.test.ts`). Licencias aceptadas: CC0, dominio público, MIT, ISC, Apache-2.0, BSD y CC BY. **unDraw no se usa**: su licencia prohíbe la descarga automatizada y el uso con IA.

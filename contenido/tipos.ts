@@ -28,6 +28,8 @@ export type Bloque =
   | { t: 'explorable'; titulo: string; variante: 'pasos' | 'capas' | 'embudo' | 'linea'; nodos: Nodo[]; o?: Origen }
   | { t: 'animacion'; archivo: 'seo' | 'marketing-digital'; titulo: string; descripcion: string; credito: string; o?: Origen }
   | { t: 'calc'; tipo: 'metricas' | 'embudo' | 'precio' }
+  /** Imagen o icono de terceros con licencia verificada (la agrega `bun run ilustracion`, que también registra el crédito). */
+  | { t: 'imagen'; archivo: string; alt: string; credito: string; fuente?: string; ancho?: number; alto?: number; o?: Origen }
   /** Diagrama Mermaid: se dibuja en el build como SVG (ver src/logica/diagramas.ts). */
   | { t: 'diagrama'; titulo?: string; codigo: string; o?: Origen }
   | { t: 'asociar'; titulo: string; pares: [string, string][] }

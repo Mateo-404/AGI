@@ -358,3 +358,9 @@ html { -webkit-tap-highlight-color: transparent; }
 @keyframes mm-entra-der { from { opacity: 0; transform: translateX(28px); } }
 @keyframes mm-sale-der { to { opacity: 0; transform: translateX(28px); } }
 @keyframes mm-entra-izq { from { opacity: 0; transform: translateX(-28px); } }
+
+/* Imágenes e iconos de terceros (bloque imagen): siempre con crédito visible */
+.imagen { margin: 18px 0; text-align: center; break-inside: avoid; }
+.imagen img { max-width: 100%; height: auto; border-radius: var(--r); background: var(--surf); }
+.imagen figcaption { font-size: .85rem; color: var(--ink2); margin-top: 6px; }
+.imagen .credito { display: block; font-size: .78rem; opacity: .9; }

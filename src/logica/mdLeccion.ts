@@ -186,15 +186,21 @@ const prefijo = (id: string) => id.replace('-', '')
  * - Tarjeta: `[frente, dorso]` (o `[frente, dorso, id]` si el id no sigue la convención).
  */
 export function parsearPractica(yaml: string, leccionId: string): { preguntas: Pregunta[]; tarjetas: Tarjeta[] } {
-  const datos = (leerYaml(yaml) ?? {}) as { preguntas?: Record<string, unknown>[]; tarjetas?: string[][] }
+  const datos = (leerYaml(yaml) ?? {}) as { preguntas?: Record<string, unknown>[]; tarjetas?: unknown[] }
   const pre = prefijo(leccionId)
   const preguntas = (datos.preguntas ?? []).map(({ o, opciones, id, ...p }, n) => {
     const base = { id: id ?? `${pre}-q${n + 1}`, tipo: 'modelo' in p ? 'corta' : 'mc', ...p }
     const origen = comoOrigen(o)
-    const ops = Array.isArray(opciones) ? { opciones: (opciones as string[][]).map(([x, porque]) => ({ x, porque })) } : {}
+    const ops = Array.isArray(opciones) ? { opciones: (opciones as unknown[]).map((op, k) => {
+      if (!Array.isArray(op) || op.length !== 2) throw new ErrorMd(`${leccionId}: la opción ${k + 1} de la pregunta ${n + 1} debe ser [texto, porqué] (dos elementos). Si un texto lleva comas, ponelo entre comillas.`)
+      return { x: String(op[0]), porque: String(op[1]) }
+    }) } : {}
     return { ...base, ...ops, ...(origen ? { o: origen } : {}) } as unknown as Pregunta
   })
-  const tarjetas = (datos.tarjetas ?? []).map(([f, b, id], n) => ({ id: id ?? `${pre}-t${n + 1}`, f: f!, b: b! }))
+  const tarjetas = (datos.tarjetas ?? []).map((t, n) => {
+    if (!Array.isArray(t) || t.length < 2 || t.length > 3) throw new ErrorMd(`${leccionId}: la tarjeta ${n + 1} debe ser [frente, dorso] (o [frente, dorso, id]). Si un texto lleva comas, ponelo entre comillas.`)
+    return { id: t[2] === undefined ? `${pre}-t${n + 1}` : String(t[2]), f: String(t[0]), b: String(t[1]) }
+  })
   return { preguntas, tarjetas }
 }
 

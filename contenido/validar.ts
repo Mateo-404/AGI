@@ -1,3 +1,4 @@
+import { existsSync, readFileSync } from 'node:fs'
 import { cobertura } from './marketing/cobertura'
 import { glosario, lecciones, unidades } from './marketing/indice'
 import type { Bloque } from './tipos'
@@ -20,9 +21,26 @@ function textos(b: Bloque, out: string[]): void {
     case 'caso': push(b.escenario); b.pasos.forEach((p) => { push(p.pregunta); p.opciones.forEach((o) => push(o.x, o.consecuencia)) }); break
     case 'calc': break
     case 'diagrama': push(b.titulo); break
+    case 'imagen': push(b.alt); break
     case 'animacion': push(b.descripcion); break
   }
 }
+
+/** Tipos de Mermaid que se ven bien con la paleta del sitio en claro y oscuro (probados). Los demás salen negros o con colores fijos. */
+const TIPOS_MERMAID = /^(flowchart|graph|sequenceDiagram|stateDiagram(-v2)?|classDiagram|erDiagram)\b/
+const PROHIBIDO_MERMAID = /^\s*(classDef|style|linkStyle|click)\b|%%\{/m
+
+/** Devuelve el problema de un diagrama Mermaid, o undefined si está bien. */
+export function problemaDiagrama(codigo: string): string | undefined {
+  const primera = codigo.split('\n').map((l) => l.trim()).find((l) => l && !l.startsWith('%%'))
+  if (!primera || !TIPOS_MERMAID.test(primera)) return `tipo no admitido «${primera?.split(/\s/)[0] ?? ''}»: usá flowchart, sequenceDiagram, stateDiagram-v2, classDiagram o erDiagram (los demás no se adaptan al modo oscuro)`
+  const m = PROHIBIDO_MERMAID.exec(codigo)
+  if (m) return `no uses «${m[0].trim()}»: los colores los pone el tema (claro/oscuro) y uno propio se rompería en el otro modo`
+  return undefined
+}
+
+let docCreditos: string | undefined
+const creditos = (): string => (docCreditos ??= readFileSync(new URL('../docs/creditos-multimedia.md', import.meta.url), 'utf8'))
 
 export function validarContenido(): string[] {
   const errores: string[] = []
@@ -62,6 +80,13 @@ export function validarContenido(): string[] {
       textos(b, txt)
       // Toda afirmación del curso lleva origen (cuaderno, didáctico o ampliación): ver agents.md.
       if (['p', 'def', 'lista', 'tabla', 'callout', 'ejemplo', 'comparar'].includes(b.t) && !(b as { o?: unknown }).o) err(`${l.id}: bloque "${b.t}" sin origen`)
+      if (b.t === 'diagrama') { const pb = problemaDiagrama(b.codigo); if (pb) err(`${l.id}: diagrama «${b.titulo ?? b.codigo.split('\n')[0]}»: ${pb}`) }
+      if (b.t === 'imagen') {
+        if (!b.alt.trim()) err(`${l.id}: imagen sin texto alternativo`)
+        if (!b.credito.trim()) err(`${l.id}: imagen sin crédito visible`)
+        if (!existsSync(new URL(`../public/${b.archivo}`, import.meta.url))) err(`${l.id}: la imagen ${b.archivo} no existe en public/`)
+        else if (!creditos().includes(`public/${b.archivo}`)) err(`${l.id}: la imagen ${b.archivo} no figura en docs/creditos-multimedia.md (usá bun run ilustracion)`)
+      }
       if (dentroDeAcordeon && ['explorable', 'asociar', 'clasificar', 'caso', 'calc', 'animacion'].includes(b.t)) err(`${l.id}: un bloque interactivo (${b.t}) no puede ir dentro de un acordeón`)
       if (b.t === 'clasificar') b.items.forEach((i) => { if (i.cat < 0 || i.cat >= b.categorias.length) err(`${l.id}: categoría fuera de rango en clasificar`) })
       if (b.t === 'caso') b.pasos.forEach((p) => { if (!p.opciones.some((o) => o.ok)) err(`${l.id}: paso de caso sin opción correcta`) })

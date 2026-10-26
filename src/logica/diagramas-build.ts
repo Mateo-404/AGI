@@ -22,6 +22,7 @@ const MARCADORES: Record<string, string> = {
   '#010001': 'nodo', '#010002': 'texto', '#010003': 'borde', '#010004': 'linea', '#010005': 'sec', '#010006': 'terc', '#010007': 'fondo',
   '#fefff8': 'fondo', '#fefff9': 'fondo', '#fefffb': 'fondo', '#000': 'texto', '#000000': 'texto', '#333': 'texto',
   '#666': 'linea', '#999': 'borde', '#eaeaea': 'sec', '#fff5ad': 'nota', '#fff': 'fondo', '#ffffff': 'fondo',
+  '#edf2ae': 'nota', '#e0e0e0': 'sec', '#efefef': 'sec',
 }
 
 const TEMA = {

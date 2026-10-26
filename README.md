@@ -24,17 +24,20 @@ El service worker (`sw.js`) lo genera `astro.config.mjs` al terminar el build a 
 Cada materia tiene su carpeta y su ruta (ver `skills/agregar-materia`).
 
 ## Qué incluye el curso
-- **30 lecciones** en 8 unidades, con explicaciones, ejemplos, diagramas animados y simuladores (SEO/SEM, embudo, precio).
+- **30 lecciones** en 8 unidades, con explicaciones, ejemplos, diagramas Mermaid animados y simuladores (SEO/SEM, embudo, precio). Los apuntes están escritos en **Markdown**.
 - Cada afirmación indica su origen: **cuaderno** (capítulo y página), **explicación didáctica** o **ampliación externa**.
 - **Práctica:** 147 preguntas con explicación de cada alternativa, simulacro integrador, 122 tarjetas con repaso espaciado y un glosario de 186 términos. Son material de práctica propio, no preguntas de la cátedra.
 - **Progreso local:** se guarda en el navegador. Se puede exportar e importar.
-- **Modo claro y oscuro**, tamaños de letra y **lectura en voz alta** tipo podcast, con velocidad y modo continuo.
+- **Modo claro y oscuro**, tamaños de letra y **lectura en voz alta** tipo podcast: marca el bloque que suena y desplaza la página, con velocidad, pausa, modo continuo y controles en la notificación del móvil.
+- **Pensado para el celular:** barra inferior, deslizar entre lecciones, menú arrastrable y tarjetas que se califican deslizando; cada gesto tiene su botón.
 
 ## Lectura en voz alta
 Usa la síntesis de voz del navegador: no envía texto a ningún servicio. Funciona sin conexión si el dispositivo tiene voces en español. En Chrome y Edge hay voces de Google o del sistema; en Safari y en Android dependen del sistema. Si no hay soporte, el reproductor muestra un aviso.
 
 ## Desarrollo
-Requisito: [bun](https://bun.sh) ≥ 1.1.
+Requisito: [bun](https://bun.sh) ≥ 1.1. El CI usa Node 26; Astro exige Node ≥ 22.23.4 (con una versión menor, ejecutalo con el runtime de bun: `bun --bun node_modules/astro/bin/astro.mjs build`).
+
+**Escribir una lección:** `contenido/marketing/lecciones/lN-M.md` y `lN-M.practica.yaml`. El formato está en [`skills/apuntes-md`](skills/apuntes-md/SKILL.md); los diagramas, en [`skills/diagramas`](skills/diagramas/SKILL.md).
 
 ```bash
 bun install
@@ -43,6 +46,8 @@ bun test             # pruebas
 bun run verificar    # validación del contenido
 bun run check        # tipos de TypeScript
 bun run build        # compila a dist/ (117 páginas estáticas)
+bun run diagramas    # dibuja los diagramas Mermaid nuevos (necesita Chromium)
+bun run ilustracion  # busca y descarga iconos e imágenes con licencia verificada
 bun run preview      # sirve dist/ localmente
 ```
 
@@ -50,12 +55,12 @@ Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): 
 
 ## Estructura
 ```
-src/            Astro (pages/, layouts/) + componentes/ React (islas), logica/ (repaso, progreso, voz, rutas), estilos/
-contenido/      tipos y validación compartidos; marketing/ (una carpeta por materia: lecciones, glosario, unidades, cobertura)
-tests/          pruebas de lógica, contenido, render y voz
-scripts/        verificar, materiales, pdf, contraste
-docs/           auditoría académica, matriz de cobertura, decisiones técnicas
-skills/         skills para agentes: agregar materia, lección, desplegar, lectura en voz
+src/            Astro (pages/, layouts/) + componentes/ React (islas), logica/ (parser de Markdown, repaso, progreso, voz, gestos, rutas), pwa/, estilos/
+contenido/      tipos, validación y cargador compartidos; marketing/ (una carpeta por materia: lecciones/*.md, diagramas/*.svg, glosario, unidades, cobertura)
+tests/          pruebas de lógica, contenido, parser, diagramas, gestos, licencias y voz
+scripts/        verificar, diagramas, ilustracion, materiales, pdf, contraste
+docs/           auditoría académica, matriz de cobertura, decisiones técnicas, créditos multimedia
+skills/         skills para agentes: apuntes-md, diagramas, ilustraciones, agregar materia y lección, desplegar, lectura en voz
 agents.md       instrucciones para agentes de IA
 .github/        workflow de publicación en GitHub Pages
 ```
@@ -67,8 +72,8 @@ La rama `main` se publica en GitHub Pages con `.github/workflows/pages.yml` en c
 **Organización:** una carpeta por materia, una rama `main` permanente. Las ramas nuevas son solo para cambios temporales que se integran y se borran.
 
 ## Verificación
-- `bun test`: pruebas de repaso, puntajes, fórmulas, progreso corrupto, validez del contenido, renderizado de lecciones y voz.
-- `bun run verificar`: enlaces, ids y cobertura del contenido.
+- `bun test`: pruebas de repaso, puntajes, fórmulas, progreso corrupto, validez del contenido, parser de Markdown, diagramas, gestos, licencias de imágenes, renderizado de lecciones y voz.
+- `bun run verificar`: enlaces, ids, cobertura, origen en cada bloque, diagramas admitidos y créditos de las imágenes.
 - `bun run scripts/contraste.ts`: contraste WCAG AA en claro y oscuro.
 - `bun run check`: tipos de TypeScript (`tsc`). Los archivos `.astro` no se revisan hasta que `astro check` soporte TypeScript 7.
 - Revisión en navegador: portada de AGI, curso en claro y oscuro, reproductor, móvil de 375 px.
