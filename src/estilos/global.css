@@ -344,3 +344,17 @@ html { -webkit-tap-highlight-color: transparent; }
   .pista-gesto.derecha { left: 0; border-radius: 0 14px 14px 0; }
 }
 @media (prefers-reduced-motion: reduce) { .barra-inf, .voz { transition: none; } }
+
+/* ---- Transición entre páginas: solo se desliza el contenido; la barra y el botón de audio no se mueven ---- */
+#principal { view-transition-name: contenido; }
+::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(contenido) { animation: .22s ease both mm-sale-izq; }
+  ::view-transition-new(contenido) { animation: .22s ease both mm-entra-der; }
+  html[data-astro-transition="back"]::view-transition-old(contenido) { animation-name: mm-sale-der; }
+  html[data-astro-transition="back"]::view-transition-new(contenido) { animation-name: mm-entra-izq; }
+}
+@keyframes mm-sale-izq { to { opacity: 0; transform: translateX(-28px); } }
+@keyframes mm-entra-der { from { opacity: 0; transform: translateX(28px); } }
+@keyframes mm-sale-der { to { opacity: 0; transform: translateX(28px); } }
+@keyframes mm-entra-izq { from { opacity: 0; transform: translateX(-28px); } }

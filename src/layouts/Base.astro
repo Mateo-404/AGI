@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/roboto-flex'
 import '../estilos/global.css'
+import { ClientRouter } from 'astro:transitions'
 
 interface Props { titulo: string; descripcion?: string }
 const { titulo, descripcion = 'Proyecto personal de estudio de la Licenciatura en Administración y Gestión de la Información (UNRaf).' } = Astro.props
@@ -21,6 +22,8 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/')
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Somos #AGI" />
     <title>{titulo}</title>
+    <!-- Navegación sin recargar, con transición: el estado (progreso, voz) sobrevive y la página nueva aparece al instante. -->
+    <ClientRouter />
     <!-- Tema antes del primer pintado: evita el parpadeo entre claro y oscuro. -->
     <script is:inline>
       (function () {
@@ -33,6 +36,23 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/')
           if (tam !== 'normal') root.classList.add('tamano-' + tam);
         } catch (e) { document.documentElement.dataset.tema = 'auto'; }
       })();
+      // Al cambiar de página, Astro reemplaza los atributos de <html>: se conservan el tema y el tamaño de letra.
+      document.addEventListener('astro:before-swap', function (e) {
+        var actual = document.documentElement, nuevo = e.newDocument.documentElement;
+        nuevo.dataset.tema = actual.dataset.tema;
+        nuevo.className = actual.className;
+      });
+      // Dirección de la transición según el orden del curso: ir a una lección anterior se anima hacia atrás.
+      document.addEventListener('astro:before-preparation', function (e) {
+        var f = /\/leccion\/l(\d+)-(\d+)\/?$/, a = f.exec(e.from.pathname), b = f.exec(e.to.pathname);
+        if (a && b) e.direction = (+b[1] < +a[1] || (+b[1] === +a[1] && +b[2] < +a[2])) ? 'back' : 'forward';
+      });
+      // El aviso de "instalar la app" llega una sola vez y puede ser antes de que React hidrate: se guarda acá.
+      addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.__pwaInstalar = e;
+        dispatchEvent(new Event('pwa-instalable'));
+      });
     </script>
   </head>
   <body>
@@ -40,7 +60,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/')
     <!-- Sin conexión y "instalar app": el service worker solo existe en el build (sw.js lo genera astro.config.mjs). -->
     {import.meta.env.PROD && (
       <script define:vars={{ base }}>
-        if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register(base + 'sw.js', { scope: base }).catch(() => {}))
+        if ('serviceWorker' in navigator && !window.__swRegistrado) { window.__swRegistrado = true; addEventListener('load', () => navigator.serviceWorker.register(base + 'sw.js', { scope: base }).catch(() => {})) }
       </script>
     )}
   </body>

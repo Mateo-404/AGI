@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { anteriorLeccion, siguienteLeccion } from '@/logica/datos'
 import { clasificarGesto, direccionEnCurso, objetivoExcluido, RECORRIDO, vibrar, type Direccion } from '@/logica/gestos'
+import { irA } from '@/logica/navegar'
 import { ruta } from '@/logica/rutas'
 import { Icono } from './Icono'
 
@@ -41,7 +42,7 @@ export function NavMovil({ actual, menu, setMenu }: { actual?: string; menu: boo
       if (!i || !c) return
       const d = clasificarGesto({ dx: c.clientX - i.x, dy: c.clientY - i.y, dt: e.timeStamp - i.t, x0: i.x, ancho: innerWidth })
       const l = d && destino(d)
-      if (l) { vibrar(); location.href = ruta(`marketing/leccion/${l.id}`) }
+      if (l) { vibrar(); irA(ruta(`marketing/leccion/${l.id}`)) }
     }
     const alCancelar = () => { ini = null; setPista(null) }
     addEventListener('touchstart', alIniciar, { passive: true })

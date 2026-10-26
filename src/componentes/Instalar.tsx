@@ -17,11 +17,14 @@ export function Instalar() {
     const safari = /iPhone|iPad|iPod/.test(navigator.userAgent) && !/CriOS|FxiOS|EdgiOS/.test(navigator.userAgent)
     setInstalada(standalone)
     setIos(safari && !standalone)
-    const alPedir = (e: Event) => { e.preventDefault(); setEvento(e as EventoInstalar) }
+    // Base.astro guarda el evento en window apenas llega: puede ser antes de hidratar, y no se repite al cambiar de página.
+    const guardado = (window as { __pwaInstalar?: EventoInstalar }).__pwaInstalar
+    if (guardado) setEvento(guardado)
+    const alPedir = () => setEvento((window as { __pwaInstalar?: EventoInstalar }).__pwaInstalar ?? null)
     const alInstalar = () => { setEvento(null); setInstalada(true) }
-    addEventListener('beforeinstallprompt', alPedir)
+    addEventListener('pwa-instalable', alPedir)
     addEventListener('appinstalled', alInstalar)
-    return () => { removeEventListener('beforeinstallprompt', alPedir); removeEventListener('appinstalled', alInstalar) }
+    return () => { removeEventListener('pwa-instalable', alPedir); removeEventListener('appinstalled', alInstalar) }
   }, [])
 
   if (instalada) return null

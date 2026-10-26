@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as PE } from 'react'
 import { Icono } from './Icono'
+import { irA } from '@/logica/navegar'
 import { alternar, alTerminarCapitulo, detener, reproducir, setContinuo, setVelocidad, tomarPendienteContinuo, useVoz } from '@/logica/voz'
 
 const VELOCIDADES = [0.8, 1, 1.25, 1.5]
@@ -11,7 +12,7 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
   const [abierto, setAbierto] = useState(false)
   useEffect(() => setMontado(true), [])
   useEffect(() => {
-    alTerminarCapitulo(() => { if (siguienteHref) location.href = siguienteHref })
+    alTerminarCapitulo(() => { if (siguienteHref) irA(siguienteHref) })
     // Modo continuo: si el capítulo anterior terminó con la opción activa, leer la lección nueva.
     const t = tomarPendienteContinuo() ? setTimeout(() => {
       const el = document.getElementById('principal')
