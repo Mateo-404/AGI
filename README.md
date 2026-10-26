@@ -44,7 +44,7 @@ Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): 
 src/            Astro (pages/, layouts/) + componentes/ React (islas), logica/ (repaso, progreso, voz, rutas), estilos/
 contenido/      tipos y validación compartidos; marketing/ (una carpeta por materia: lecciones, glosario, unidades, cobertura)
 tests/          pruebas de lógica, contenido, render y voz
-scripts/        verificar, materiales, pdf, contraste, offline
+scripts/        verificar, materiales, pdf, contraste
 docs/           auditoría académica, matriz de cobertura, decisiones técnicas
 skills/         skills para agentes: agregar materia, lección, desplegar, lectura en voz
 agents.md       instrucciones para agentes de IA
@@ -69,6 +69,12 @@ La rama `main` se publica en GitHub Pages con `.github/workflows/pages.yml` en c
 - La respuesta corta se autoevalúa; no hay corrección automática.
 - La voz depende de las voces que tenga el dispositivo; la calidad varía.
 - Hay temas del programa que el cuaderno no desarrolla; están marcados en la matriz de cobertura (`docs/matriz-de-cobertura.md`).
+
+## Contribuir
+Ver [`CONTRIBUTING.md`](CONTRIBUTING.md). Las reglas del proyecto para agentes de IA están en [`agents.md`](agents.md). Seguridad: [`SECURITY.md`](SECURITY.md). Convivencia: [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
+## Licencia
+Pendiente de definir por el autor. Hasta entonces, todos los derechos están reservados: el contenido del cuaderno pertenece a la cátedra.
 
 ## Créditos y fuentes
 Contenido basado en el cuaderno de cátedra «Pensando AGIlmente a la disciplina del marketing» y en el Programa 2026 de Marketing Digital (UNRaf). Los colores de la portada de AGI son una referencia visual de la identidad de la UNRaf, usada solo como guía.

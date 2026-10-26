@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Preguntas sobre la carrera
+    url: https://www.unraf.edu.ar/component/content/article/carrera-ccc-agi?Itemid=120&catid=159
+    about: Inscripción, plan de estudios y condiciones: consultá en la UNRaf, no en este repositorio.
+  - name: Seguridad
+    url: mailto:mateogariboglio@gmail.com?subject=Seguridad%20%C2%B7%20Somos%20%23AGI
+    about: Reportes de vulnerabilidades por correo, sin issues públicos.
