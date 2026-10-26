@@ -53,6 +53,9 @@ bun run preview      # sirve dist/ localmente
 
 Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): `bun run materiales` y `bun run pdf`. Requieren la carpeta `fuentes/` local y Chromium.
 
+## Apuntes
+Los apuntes de las demás materias (excepto Marketing Digital) están en `apuntes/<materia>/`.
+
 ## Estructura
 ```
 src/            Astro (pages/, layouts/) + componentes/ React (islas), logica/ (parser de Markdown, repaso, progreso, voz, gestos, rutas), pwa/, estilos/
