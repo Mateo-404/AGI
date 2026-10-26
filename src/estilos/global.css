@@ -176,22 +176,19 @@ kbd { background: var(--surf2); border: 1px solid var(--linea); border-bottom-wi
 h3.sub { font-family: var(--sans); font-size: 1.02rem; margin: 1.2em 0 .4em; }
 .inter > h3.sub, .ejemplo > h3.sub { margin-top: 0; }
 
-/* Figuras SVG y animaciones */
-.figura { margin: 18px 0; padding: 10px; background: var(--surf); border: 1px solid var(--linea); border-radius: var(--r); box-shadow: var(--sombra); break-inside: avoid; }
-.figura svg { width: 100%; height: auto; display: block; }
-.figura figcaption { font-size: .85rem; color: var(--ink2); margin-top: 4px; } .figura figcaption span { opacity: .9; }
-.ft { font: 600 15px var(--sans); fill: var(--ink); } .ft.f-s { font-weight: 400; font-size: 12px; fill: var(--ink2); }
-.f-linea { stroke: var(--marca); stroke-width: 2.5; stroke-linecap: round; fill: none; }
-.f-c { fill: var(--clave-bg); stroke: var(--marca); stroke-width: 2.5; } .f-r { fill: var(--clave-bg); stroke: var(--marca); stroke-width: 2; } .f-emb { fill: var(--acento-bg); }
-.f-ok { fill: var(--ok-bg); stroke: var(--ok); }
-.f-nodo, .f-barra { animation: aparece .6s ease both; }
-.f-pulso { animation: pulso 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-.f-flujo { stroke-dasharray: 6 8; animation: flujo 1.6s linear infinite; }
-@keyframes pulso { 50% { transform: scale(1.07); } } @keyframes flujo { to { stroke-dashoffset: -28; } }
+/* Diagramas Mermaid: se dibujan en el build (src/logica/diagramas-build.ts) y sus colores salen de los tokens del tema, así valen en claro y oscuro */
+.diagrama { --mm-nodo: var(--clave-bg); --mm-borde: var(--marca); --mm-texto: var(--ink); --mm-linea: var(--marca); --mm-sec: var(--surf2); --mm-terc: var(--surf2); --mm-fondo: var(--surf); --mm-nota: var(--acento-bg); margin: 18px 0; padding: 12px; background: var(--surf); border: 1px solid var(--linea); border-radius: var(--r); box-shadow: var(--sombra); break-inside: avoid; }
+.diagrama svg { display: block; width: 100%; height: auto; margin: 0 auto; }
+.diagrama figcaption { font-size: .85rem; color: var(--ink2); margin-top: 8px; }
+.diagrama-fallo { margin: 0; overflow-x: auto; font-size: .8rem; }
+/* Los nodos entran de a uno (solo opacidad: Mermaid los ubica con transform) */
+.diagrama g.node { animation: mm-aparece .6s ease both; }
+.diagrama g.node:nth-of-type(2) { animation-delay: .15s; } .diagrama g.node:nth-of-type(3) { animation-delay: .3s; }
+.diagrama g.node:nth-of-type(4) { animation-delay: .45s; } .diagrama g.node:nth-of-type(5) { animation-delay: .6s; } .diagrama g.node:nth-of-type(n+6) { animation-delay: .75s; }
+@keyframes mm-aparece { from { opacity: 0; } to { opacity: 1; } }
 /* Lectura: barra de progreso y revelado */
 .lectura { position: fixed; top: 0; left: 0; height: 3px; background: var(--marca); z-index: 60; width: 0; transition: width .1s; }
 .rev { animation: aparece .5s ease both; }
-@media (prefers-reduced-motion: reduce) { .f-flujo, .f-pulso { animation: none !important; } }
 
 /* ---- Rediseño: portada como mapa de ruta, sin degradados ni etiquetas en mayúsculas ---- */
 .kicker { font: 500 .9rem var(--sans); color: var(--ink2); margin: 0 0 .4rem; }

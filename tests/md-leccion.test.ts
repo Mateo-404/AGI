@@ -85,7 +85,7 @@ describe('bloques', () => {
     expect(a).toMatchObject({ t: 'acordeon', titulo: 'Más' })
     expect((a as { bloques: unknown[] }).bloques).toHaveLength(2)
   })
-  test('figura y calculadora en una línea', () => expect(bloques('::figura mix\n\n::calc embudo\n')).toEqual([{ t: 'figura', id: 'mix' }, { t: 'calc', tipo: 'embudo' }]))
+  test('calculadora en una línea', () => expect(bloques('::calc embudo\n')).toEqual([{ t: 'calc', tipo: 'embudo' }]))
   test('bloques interactivos en YAML, con origen', () => {
     const [b] = bloques('```explorable\ntitulo: Capas\nvariante: capas\nnodos:\n  - {id: a, titulo: A, resumen: r, detalle: d}\no: d\n```\n')
     expect(b).toEqual({ t: 'explorable', titulo: 'Capas', variante: 'capas', nodos: [{ id: 'a', titulo: 'A', resumen: 'r', detalle: 'd' }], o: { tipo: 'didactico' } })

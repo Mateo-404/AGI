@@ -9,6 +9,10 @@ import { etiquetaOrigen } from '../src/componentes/Bloques'
 import { ImprimirCtx, Tx } from '../src/componentes/contexto'
 import { LeccionCuerpo } from '../src/componentes/LeccionCuerpo'
 import { plano } from '../src/logica/inline'
+import { sincronizarDiagramas } from '../src/logica/diagramas-build'
+
+// Los diagramas Mermaid del manual salen de contenido/marketing/diagramas/ (los dibuja `bun run diagramas`).
+await sincronizarDiagramas({ estricto: false })
 
 const OUT = new URL('../materiales/', import.meta.url).pathname
 mkdirSync(OUT, { recursive: true })

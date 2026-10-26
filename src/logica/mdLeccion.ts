@@ -128,12 +128,11 @@ function bloques(lineas: string[], ctx: Ctx, desde: number): Bloque[] {
       continue
     }
 
-    // Figura y calculadora en una línea: ::figura mix
+    // Calculadora en una línea: ::calc embudo
     const simple = /^::(\w+)\s+(\S+)\s*$/.exec(linea)
     if (simple) {
       i++
-      if (simple[1] === 'figura') out.push({ t: 'figura', id: simple[2] as never })
-      else if (simple[1] === 'calc') out.push({ t: 'calc', tipo: simple[2] as never })
+      if (simple[1] === 'calc') out.push({ t: 'calc', tipo: simple[2] as never })
       else falla(`directiva desconocida ::${simple[1]}`)
       continue
     }

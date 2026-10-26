@@ -1,6 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
+import { createHash } from 'node:crypto'
+import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
+import { join, relative, sep } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { cursoLiviano } from './scripts/vite-curso-liviano'
 
 // Sitio estático publicado en GitHub Pages: https://mateo-404.github.io/AGI
@@ -14,11 +18,7 @@ const sinConexion = () => ({
   name: 'sin-conexion',
   hooks: {
     /** @param {{ dir: URL, logger: { info(m: string): void } }} args */
-    'astro:build:done': async ({ dir, logger }) => {
-      const { readdirSync, readFileSync, statSync, writeFileSync } = await import('node:fs')
-      const { createHash } = await import('node:crypto')
-      const { fileURLToPath } = await import('node:url')
-      const { join, relative, sep } = await import('node:path')
+    'astro:build:done': ({ dir, logger }) => {
       const raiz = fileURLToPath(dir)
       /** @param {string} d @returns {string[]} */
       const listar = (d) => readdirSync(d).flatMap((n) => (statSync(join(d, n)).isDirectory() ? listar(join(d, n)) : [join(d, n)]))

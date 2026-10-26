@@ -25,7 +25,7 @@ interface Estado {
 /** Bloques que se leen y se marcan. Cada uno lee solo su texto directo: los anidados se leen aparte. */
 const BLOQUES = 'h1,h2,h3,h4,h5,h6,p,li,blockquote,dt,dd,figcaption,td,th,pre'
 /** Lo que no se lee: controles, figuras, diagramas y las preguntas de práctica. */
-const NO_LEER = 'button, svg, .no-print, .quiz, script, style, .origen, .figura, .aviso.no-leer'
+const NO_LEER = 'button, svg, .no-print, .quiz, script, style, .origen, .aviso.no-leer'
 
 const hayVoz = (): boolean => typeof globalThis !== 'undefined' && 'speechSynthesis' in globalThis && typeof (globalThis as { SpeechSynthesisUtterance?: unknown }).SpeechSynthesisUtterance === 'function'
 

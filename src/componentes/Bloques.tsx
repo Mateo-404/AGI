@@ -3,7 +3,6 @@ import { Tx, useImprimir } from './contexto'
 import { Asociar, Caso, Clasificar, Explorable } from './Interactivos'
 import { Icono } from './Icono'
 import type { NombreIcono } from './iconos'
-import { Figura } from './Figuras'
 import { Animacion } from './Animacion'
 import { CalcEmbudo, CalcMetricas, CalcPrecio } from './Calculadoras'
 import { Diagrama } from './Diagrama'
@@ -77,8 +76,6 @@ export function BloqueView({ b }: { b: Bloque }) {
       )
     case 'explorable':
       return <Explorable b={b} />
-    case 'figura':
-      return <Figura id={b.id} />
     case 'animacion':
       return <Animacion archivo={b.archivo} titulo={b.titulo} descripcion={b.descripcion} credito={b.credito} />
     case 'calc':
