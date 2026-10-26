@@ -1,0 +1,141 @@
+import { cap, corta, did, mc } from '../ayudas'
+import type { Leccion } from '../tipos'
+
+export const l21: Leccion = {
+  id: 'l2-1',
+  unidad: 2,
+  titulo: 'Del marketing 1.0 al 4.0 y la omnicanalidad',
+  resumen: 'Cuatro etapas de orientación (producto, cliente, valores, tecnología), su forma de comunicar y por qué la brecha digital exige omnicanalidad.',
+  minutos: 30,
+  objetivos: [
+    'Ordenar y caracterizar las etapas 1.0 a 4.0 por foco, objetivo y tipo de comunicación.',
+    'Explicar qué es la omnicanalidad y qué beneficios aporta al usuario.',
+    'Argumentar la pregunta del programa «¿nuevo marketing o nuevo contexto?».',
+  ],
+  previos: ['l1-1'],
+  bloques: [
+    {
+      t: 'p',
+      x: 'El cuaderno presenta la evolución como un reflejo de cómo cambió **la forma en que las organizaciones se relacionan con sus clientes**, adaptándose a nuevas tecnologías, tendencias y demandas. Cada etapa no borra a la anterior: describe el foco dominante.',
+      o: cap('1', '16', 'Evolución del concepto: del marketing 1.0 al 5.0'),
+    },
+    { t: 'figura', id: 'evolucion' },
+    {
+      t: 'explorable',
+      titulo: 'Línea de evolución 1.0 → 4.0',
+      variante: 'linea',
+      nodos: [
+        { id: 'm1', titulo: 'Marketing 1.0 · Producto', resumen: 'Orientado al producto', detalle: 'El foco es el producto: producción eficiente y mejora de calidad. Se comunican características y beneficios para convencer de que el producto supera a la competencia. La innovación apunta a mejorar el producto, no las ventas. Comunicación por medios tradicionales (TV), masiva y **unidireccional** (sin respuesta de la audiencia).' },
+        { id: 'm2', titulo: 'Marketing 2.0 · Cliente', resumen: 'Orientado al cliente', detalle: 'El foco pasa a entender y satisfacer necesidades específicas: segmentación, personalización de mensajes, escucha activa y retroalimentación. No solo satisfacer sino **retener y fidelizar**. Comunicación **interactiva y bidireccional**.' },
+        { id: 'm3', titulo: 'Marketing 3.0 · Valores', resumen: 'Orientado a los valores', detalle: 'Conexión emocional y ética: alinear los valores de la empresa con los del cliente. El cliente busca satisfacción funcional, emocional y también «espiritual». La diferenciación está en los valores; el objetivo no es solo vender sino aportar soluciones a problemáticas sociales y ambientales.' },
+        { id: 'm4', titulo: 'Marketing 4.0 · Tecnología', resumen: 'Orientado a la tecnología', detalle: 'Influencia de Internet y las redes sociales; plataformas digitales para llegar de forma más eficiente y personalizada; énfasis en marketing digital, analítica de datos y automatización. Aparece la **brecha digital** y, con ella, la necesidad de **omnicanalidad**.' },
+      ],
+      o: cap('1', '16-19'),
+    },
+    {
+      t: 'tabla',
+      titulo: 'Cuadro de Shum Xie (2019), transcripto de la figura del cuaderno',
+      cab: ['', 'Marketing 1.0', 'Marketing 2.0', 'Marketing 3.0', 'Marketing 4.0'],
+      filas: [
+        ['**Centrado en**', 'el producto', 'el consumidor', 'los valores', 'la colaboración'],
+        ['**Objetivo**', 'Crear y posicionar un producto en la mente del consumidor', 'Satisfacer y fidelizar a los consumidores', 'Que la marca impulse valores y haga un mundo mejor', 'Construir valores, lazos y conversación con base en la colaboración'],
+        ['**Fuerzas propulsoras**', 'Revolución industrial', 'Tecnología de la información', 'Nueva ola tecnológica', 'La creación de redes'],
+        ['**Percepción del mercado**', 'Mercado en masas; necesidades físicas', 'Consumidores más inteligentes, con mente y corazón', 'Consumidores integrales: mente, corazón, conciencia y espíritu', 'Consumidores integrales con fuerza colaborativa'],
+        ['**Concepto fundamental**', 'Desarrollo de productos', 'Diferenciación respecto de la competencia', 'Valores únicos de la marca', 'Creación de comunidad colaborativa'],
+        ['**Directrices**', 'Especificaciones del producto', 'Posicionamiento de marca (misión, visión, valores) con productos y servicios', 'Propuesta de valor de la marca', 'Guiar a los clientes en su viaje desde el *awareness* hasta la recomendación'],
+      ],
+      o: cap('1', '20', 'figura de Shum Xie, 2019'),
+    },
+    {
+      t: 'callout',
+      tipo: 'discrepancia',
+      titulo: 'Dos rótulos para el Marketing 4.0',
+      x: 'El texto del cuaderno rotula el 4.0 como «Orientado a la **Tecnología**» (p. 19); el cuadro de Shum Xie que transcribe lo rotula «Centrado en la **Colaboración**» (p. 20). No se contradicen (la tecnología y las redes habilitan la colaboración), pero conviene saber que **ambos rótulos aparecen** y no resolverlo arbitrariamente.',
+      o: cap('1', '19-20'),
+    },
+    { t: 'h', x: 'Omnicanalidad' },
+    {
+      t: 'def',
+      termino: 'Omnicanalidad',
+      x: 'Vinculación de acciones **offline y online** de manera que, si el usuario inicia su contacto por un canal digital, pueda continuarlo en uno físico (o al revés) **sin tener que repetir información**. La estrategia une los canales de forma eficiente; el beneficio para el usuario es una experiencia **personalizada** y la **rápida satisfacción** de sus necesidades.',
+      o: cap('1', '19'),
+    },
+    {
+      t: 'p',
+      x: 'Por qué importa: «la brecha digital es una realidad, no toda la población accede a los medios digitales de la misma manera», lo que exige estrategias que contemplen distintos canales. El cuaderno retoma la omnicanalidad al hablar de email (Cap. 6: «ya no alcanza con operar en un solo canal») y de tienda online («integración con otros canales», Cap. 7).',
+      o: cap('1', '19'),
+    },
+    {
+      t: 'callout',
+      tipo: 'didactico',
+      titulo: 'Ecosistema digital (tema del programa)',
+      x: 'El cuaderno no define «ecosistema digital» como concepto propio: lo usa en «ecosistema integrado» (Apple, Tabla 1) y «ecosistema de datos» (Marketing 5.0). Para estudiar: pensá el ecosistema como **el conjunto de canales, plataformas, datos y herramientas conectados** con los que la organización se relaciona con su público; la omnicanalidad es la forma de integrarlos desde la experiencia del cliente. Esta síntesis es didáctica (no del cuaderno).',
+      o: did,
+    },
+    { t: 'h', x: '¿Nuevo marketing o nuevo contexto?' },
+    {
+      t: 'comparar',
+      titulo: 'Dos posturas que recoge el cuaderno',
+      a: { titulo: 'Mirada ampliada', items: ['El marketing digital es el mismo marketing con una mirada más amplia', 'Las técnicas offline se adaptan al mundo digital (Shum Xie)'] },
+      b: { titulo: 'Un canal más', items: ['Lo digital es un canal adicional donde ejercer la disciplina', 'Cambian los medios, no el objetivo de crear y captar valor'] },
+      o: cap('1', '15'),
+    },
+    {
+      t: 'p',
+      x: 'Lo que el cuaderno **sí** afirma: cambió el estilo de vida y las formas de comunicarse, lo que obligó a las marcas a transformar cómo comunican, comercializan y conectan; y el marketing digital permite una relación más cercana, constante y bidireccional gracias al contenido de valor.',
+      o: cap('1', '14-15'),
+    },
+    {
+      t: 'clasificar',
+      titulo: '¿A qué etapa corresponde cada situación?',
+      categorias: ['1.0 Producto', '2.0 Cliente', '3.0 Valores', '4.0 Tecnología'],
+      items: [
+        { x: 'Una fábrica comunica por TV las características técnicas de su heladera', cat: 0, porque: 'Foco en el producto y comunicación masiva unidireccional.' },
+        { x: 'Una marca pregunta a sus clientes qué esperan y ajusta su oferta por segmento', cat: 1, porque: 'Escucha activa, segmentación y retroalimentación.' },
+        { x: 'Una marca de ropa se posiciona por el cuidado ambiental de su cadena', cat: 2, porque: 'La diferenciación está en los valores y problemáticas sociales/ambientales.' },
+        { x: 'Un comercio unifica pedidos por Instagram, web y local con automatización', cat: 3, porque: 'Plataformas digitales, datos y omnicanalidad.' },
+      ],
+    },
+  ],
+  claves: ['marketing-1-0', 'marketing-2-0', 'marketing-3-0', 'marketing-4-0', 'omnicanalidad', 'brecha-digital', 'ecosistema-digital'],
+  preguntas: [
+    mc('l21-q1', 'Etapas', 1, '¿Qué etapa se caracteriza por centrarse en los valores y las emociones y por la diferenciación a través de ellos?', [
+      ['Marketing 1.0', 'Se centra en el producto.'],
+      ['Marketing 2.0', 'Se centra en el cliente y su satisfacción/fidelización.'],
+      ['Marketing 3.0', 'Correcto: busca alinear valores de la empresa y del cliente.'],
+      ['Marketing 4.0', 'Se asocia a tecnología/colaboración.'],
+    ], 2, cap('1', '18')),
+    mc('l21-q2', 'Comunicación', 2, 'La comunicación unidireccional por medios masivos como la TV corresponde principalmente a:', [
+      ['Marketing 1.0', 'Correcto: los medios no permiten respuesta de la audiencia.'],
+      ['Marketing 2.0', 'En 2.0 comienza a ser interactiva y bidireccional.'],
+      ['Marketing 3.0', 'Su énfasis es valores, no el tipo de medio.'],
+      ['Marketing 5.0', 'Etapa de integración tecnología-humanidad.'],
+    ], 0, cap('1', '16')),
+    mc('l21-q3', 'Omnicanalidad', 2, 'Un cliente consulta por WhatsApp, va al local y debe repetir todos sus datos. ¿Qué falla?', [
+      ['La segmentación geográfica', 'No es el problema descripto.'],
+      ['La omnicanalidad: los canales no están integrados', 'Correcto: se exige poder continuar entre canales sin repetir información.'],
+      ['El posicionamiento SEO', 'No tiene relación con el caso.'],
+      ['El branding', 'No es la falla central.'],
+    ], 1, cap('1', '19')),
+    mc('l21-q4', 'Etapas', 3, '¿Qué rasgo aparece por primera vez en 2.0 respecto de 1.0 según el cuaderno?', [
+      ['Segmentación, personalización y retención/fidelización', 'Correcto.'],
+      ['Big data y predicción', 'Es propio de Marketing 5.0.'],
+      ['Chatbots y asistentes virtuales', 'Corresponde a marketing aumentado (5.0).'],
+      ['Tienda online propia', 'No es un rasgo de esa etapa en el cuaderno.'],
+    ], 0, cap('1', '17')),
+    corta('l21-q5', 'Omnicanalidad', 2, 'Definí omnicanalidad, da un ejemplo cotidiano y explicá el beneficio para el usuario.', 'Omnicanalidad: unir acciones offline y online para que el usuario continúe su contacto en cualquier canal sin repetir información. Ejemplo: elegir un producto en la app y retirarlo en el local con el mismo pedido. Beneficio: experiencia personalizada y satisfacción más rápida de necesidades.', [
+      'Define unión offline/online sin repetir información',
+      'Ejemplo coherente',
+      'Menciona personalización/rapidez como beneficio',
+    ], cap('1', '19')),
+  ],
+  tarjetas: [
+    { id: 'l21-t1', f: 'Marketing 1.0 a 4.0: foco', b: '1.0 producto · 2.0 cliente · 3.0 valores · 4.0 tecnología (cuadro de Shum Xie: colaboración).' },
+    { id: 'l21-t2', f: 'Omnicanalidad', b: 'Integrar offline y online para continuar entre canales sin repetir información; beneficio: personalización y satisfacción rápida.' },
+    { id: 'l21-t3', f: 'Comunicación: 1.0 vs. 2.0', b: '1.0 unidireccional y masiva (TV); 2.0 interactiva y bidireccional con feedback.' },
+    { id: 'l21-t4', f: '¿Por qué importa la brecha digital?', b: 'No toda la población accede igual a lo digital: obliga a estrategias que contemplen distintos canales (omnicanalidad).' },
+  ],
+  sintesis: ['Cada etapa cambia el foco: producto → cliente → valores → tecnología/colaboración.', 'La omnicanalidad integra canales para una experiencia continua.', 'El cuaderno deja abierta la pregunta «mirada ampliada o canal más».'],
+  conexiones: ['l2-2', 'l2-6', 'l7-1'],
+  referencias: [cap('1', '14-20')],
+}

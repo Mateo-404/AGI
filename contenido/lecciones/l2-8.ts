@@ -1,0 +1,142 @@
+import { cap, corta, did, mc } from '../ayudas'
+import type { Leccion } from '../tipos'
+
+export const l28: Leccion = {
+  id: 'l2-8',
+  unidad: 2,
+  titulo: 'Decisión de compra y nuevo consumidor digital',
+  resumen: 'Las cinco fases de la decisión B2C, baja implicación, y cómo el recorrido digital (Messy Middle, 4S) desafía al embudo lineal.',
+  minutos: 35,
+  objetivos: [
+    'Recorrer las cinco fases del proceso de decisión y las fuentes de información.',
+    'Distinguir baja implicación y búsqueda de variedad.',
+    'Explicar el modelo «Messy Middle» y los comportamientos 4S como rasgos del consumidor digital.',
+  ],
+  previos: ['l2-7'],
+  bloques: [
+    {
+      t: 'p',
+      x: 'Antes de comprar, las personas investigan: pasan por etapas antes de decidir, y lo mismo hacen los clientes potenciales. **El proceso se inicia antes de la compra real y tiene consecuencias mucho después.** Además, **no siempre se pasa por las cinco etapas**: se pueden omitir algunas y volver a experimentar otras.',
+      o: cap('3', '56'),
+    },
+    {
+      t: 'explorable',
+      titulo: 'Proceso de decisión de compra B2C: cinco fases',
+      variante: 'pasos',
+      nodos: [
+        { id: 'f1', titulo: '1. Reconocimiento del problema', resumen: 'Estímulos internos o externos', detalle: 'El comprador reconoce un problema o necesidad a partir de estímulos internos o externos. Objetivo del marketing: identificar las circunstancias que disparan una necesidad específica.' },
+        { id: 'f2', titulo: '2. Búsqueda de información', resumen: 'Atención intensificada o búsqueda activa', detalle: 'Dos niveles de implicación: **atención intensificada** (la persona se vuelve más receptiva) y **búsqueda activa** (consultar material, pedir sugerencias). Fuentes: **personales, comerciales, públicas y de experiencia**; cada una cumple una función distinta en la influencia. Dinámica de búsqueda: conjuntos sucesivos de marcas implicadas en la decisión.' },
+        { id: 'f3', titulo: '3. Evaluación de alternativas', resumen: 'Atributos, creencias, actitudes', detalle: 'El consumidor busca satisfacer una necesidad, quiere ciertos **beneficios** y percibe cada producto como un conjunto de **atributos** con distinta capacidad de entregarlos. Pesan las **creencias** (pensamientos descriptivos sobre algo) y las **actitudes** (evaluaciones, sentimientos y tendencias perdurables a la acción, favorables o no).' },
+        { id: 'f4', titulo: '4. Decisión de compra', resumen: 'Hasta cinco subdecisiones', detalle: 'Subdecisiones: **marca, distribuidor, cantidad, tiempo y forma de pago**. Entre la intención y la decisión intervienen las **actitudes de otras personas** (según la intensidad de su actitud negativa y mi motivación para ajustarme a ellas) y **factores situacionales imprevistos**. Modificar, posponer o evitar la compra se ve influido por **riesgos percibidos** (funcional, físico, financiero, etc.).' },
+        { id: 'f5', titulo: '5. Comportamiento posterior', resumen: 'Satisfacción, acciones, uso y desecho', detalle: 'El trabajo no termina con la compra: el cliente busca información que apoye su decisión, por lo que las comunicaciones deben darle creencias y evaluaciones que **refuercen su elección**. La empresa supervisa **satisfacción post compra** (decepción, satisfacción o consumidor encantado según la cercanía entre expectativas y resultado percibido), **acciones post compra** (devoluciones, cancelaciones) y **uso y desecho** (la frecuencia de uso impulsa el consumo; si se desecha, ¿daña el medio ambiente?).' },
+      ],
+      o: cap('3', '56-60', 'figuras de pp. 56, 59 y 60'),
+    },
+    {
+      t: 'comparar',
+      titulo: 'Dos situaciones de baja implicación',
+      a: { titulo: 'Baja implicación sin diferencias de marca', items: ['Productos de bajo costo', 'La compra se repite **por hábito, no por lealtad a la marca**', 'Entre las marcas no hay diferencias significativas'] },
+      b: { titulo: 'Búsqueda de variedad', items: ['Baja implicación **con diferencias de marca significativas**', 'Cambio de marca muy frecuente', 'Ejemplo del cuaderno: las masitas'] },
+      o: cap('3', '60'),
+    },
+    { t: 'h', x: 'El recorrido digital: de la línea al «lío del medio»' },
+    {
+      t: 'p',
+      x: 'El cuaderno plantea que el «embudo de marketing» **«hoy queda corto»**: el recorrido actual es **dinámico, fragmentado y personalizado**; la persona interactúa con múltiples puntos de contacto (redes, buscadores, marketplaces, recomendaciones) de forma simultánea, cruzada y muchas veces impulsiva. **«Es una red, no un embudo.»**',
+      o: cap('9', '167'),
+    },
+    {
+      t: 'def',
+      termino: 'Messy Middle («el lío del medio»)',
+      x: 'Modelo de Google basado en el análisis del comportamiento digital de miles de personas: ante un deseo o necesidad, la persona entra en un **bucle mental** que alterna entre **exploración** (búsqueda activa de opciones, información y comparaciones) y **evaluación** (análisis crítico y selección entre las opciones encontradas). El cuaderno lo fecha en 2019 (dato a verificar). Se enlaza con el uso de **sesgos** (atajos mentales) que influyen en las decisiones aun cuando creemos decidir racionalmente.',
+      o: cap('9', '167-168'),
+    },
+    { t: 'figura', id: 'messy' },
+    {
+      t: 'explorable',
+      titulo: 'Los comportamientos 4S (Boston Consulting Group, 2025)',
+      variante: 'pasos',
+      nodos: [
+        { id: 'sm', titulo: 'Streaming', resumen: 'Consumo de contenido continuo', detalle: 'YouTube, podcasts, Twitch, TV conectada: se consume contenido de forma activa y personalizada. Clave: **secuenciar bien los mensajes**, contar historias relevantes y aprovechar la IA para personalizar.' },
+        { id: 'sc', titulo: 'Scrolling', resumen: 'Descubrimiento sin intención de compra', detalle: 'El «scrolleo» es el nuevo «mirar vidrieras»: sin intención clara, el contenido adecuado en el momento justo puede disparar una acción. Destacan piezas con **diseño atractivo, narrativa clara y persuasiva y personalización** (a menudo con IA).' },
+        { id: 'se', titulo: 'Searching', resumen: 'Búsqueda con intención, en evolución', detalle: 'Buscar ya no es solo escribir en Google: incluye cámara (búsqueda visual), preguntar a una IA, combinar texto, imagen y voz; YouTube sirve para comparar y ver reseñas. Desafío: estar presente con respuestas relevantes, rápidas y adaptadas al contexto.' },
+        { id: 'sh', titulo: 'Shopping', resumen: 'Compras cada vez más fluidas', detalle: 'Se compra desde donde se está (redes, apps, recomendaciones, anuncios): no hay un único «momento de compra» sino múltiples disparadores. Clave: integrar oportunidades de compra en todos los puntos de contacto con ofertas personalizadas.' },
+      ],
+      o: cap('9', '168-169', 'fig. 42'),
+    },
+    {
+      t: 'callout',
+      tipo: 'ampliacion',
+      titulo: 'ZMOT — el «momento cero de la verdad» (bibliografía del programa, U3)',
+      x: 'El programa incluye a Lecinski (2011), *ZMOT: ganando el momento cero de la verdad* (Google), pero **el cuaderno no lo menciona**. Idea central del libro, según la versión oficial publicada por Think with Google (consulta 2026-10-26): el **ZMOT** es el momento en que la persona **investiga online sobre un producto antes de comprar**, entre el estímulo (p. ej., un anuncio) y la primera experiencia con el producto. Se relaciona con la fase 2 (búsqueda de información) y con el «lío del medio». Para cumplir el programa hay que leer el ebook completo.',
+      o: { tipo: 'ampliacion', ref: 'Lecinski (2011), Think with Google' },
+    },
+    {
+      t: 'clasificar',
+      titulo: 'Fase del proceso de decisión',
+      categorias: ['Reconocimiento', 'Búsqueda', 'Evaluación', 'Decisión', 'Post compra'],
+      items: [
+        { x: 'Le empieza a doler la espalda con la silla vieja', cat: 0, porque: 'Estímulo que genera la necesidad.' },
+        { x: 'Pide recomendaciones a amigos y mira reseñas', cat: 1, porque: 'Búsqueda activa en fuentes personales y públicas.' },
+        { x: 'Compara tres modelos por precio, ergonomía y garantía', cat: 2, porque: 'Evalúa atributos y beneficios.' },
+        { x: 'Decide marca, local, cantidad, momento y forma de pago', cat: 3, porque: 'Las cinco subdecisiones.' },
+        { x: 'Compara la silla con lo que esperaba y la recomienda', cat: 4, porque: 'Satisfacción posterior a la compra.' },
+      ],
+    },
+    {
+      t: 'callout',
+      tipo: 'didactico',
+      titulo: '¿Embudo o red?',
+      x: 'No son excluyentes para estudiar: el **embudo** ([[>l3-4|l3-4]]) ordena las etapas para planificar acciones; el **lío del medio** y el **4S** advierten que el recorrido real es no lineal. En la práctica, se planifica por etapas pero se asume que cada persona puede entrar, salir y volver a explorar. (Síntesis didáctica.)',
+      o: did,
+    },
+  ],
+  claves: ['decision-compra', 'riesgo-percibido', 'baja-implicacion', 'busqueda-variedad', 'messy-middle', '4s', 'zmot', 'sesgos'],
+  preguntas: [
+    mc('l28-q1', 'Fases', 1, 'Evaluar alternativas como conjuntos de atributos con distintas capacidades de brindar beneficios ocurre en la fase:', [
+      ['Reconocimiento del problema', 'Allí se identifica la necesidad.'],
+      ['Búsqueda de información', 'Allí se recopila información.'],
+      ['Evaluación de alternativas', 'Correcto.'],
+      ['Comportamiento post compra', 'Es posterior a la compra.'],
+    ], 2, cap('3', '58')),
+    mc('l28-q2', 'Baja implicación', 2, 'Cambiar de marca de galletitas seguido, por probar, aunque el producto sea barato, es:', [
+      ['Baja implicación sin diferencias de marca', 'Allí se repite por hábito.'],
+      ['Comportamiento de búsqueda de variedad', 'Correcto: baja implicación con diferencias de marca significativas.'],
+      ['Compra de alta implicación', 'Es una compra barata y poco meditada.'],
+      ['Compra B2B', 'No es compra organizacional.'],
+    ], 1, cap('3', '60')),
+    mc('l28-q3', 'Messy Middle', 2, 'El «lío del medio» describe el proceso de decisión como…', [
+      ['Lineal y predecible', 'Es lo que el modelo discute.'],
+      ['Un bucle que alterna exploración y evaluación', 'Correcto.'],
+      ['Solo offline', 'Es digital.'],
+      ['Un embudo de cuatro etapas', 'Es la visión tradicional.'],
+    ], 1, cap('9', '167-168')),
+    mc('l28-q4', 'Riesgo percibido', 3, 'Un cliente posterga la compra de un producto caro por miedo a quedar endeudado. ¿Qué riesgo percibido es?', [
+      ['Funcional', 'Es el temor a que no funcione.'],
+      ['Físico', 'Es el daño físico.'],
+      ['Financiero', 'Correcto.'],
+      ['No es un riesgo', 'Sí lo es: modifica la decisión.'],
+    ], 2, cap('3', '59')),
+    mc('l28-q5', '4S', 2, 'Las personas usan la cámara del celular o preguntan a una IA para encontrar un producto. ¿Qué «S» ilustra?', [
+      ['Streaming', 'Es consumo de contenido continuo.'],
+      ['Scrolling', 'Es descubrimiento sin intención.'],
+      ['Searching', 'Correcto: la búsqueda incluye cámara, IA y voz.'],
+      ['Shopping', 'Es la compra desde cualquier punto.'],
+    ], 2, cap('9', '169')),
+    corta('l28-q6', 'Recorrido', 3, '¿Por qué un esquema de embudo lineal puede ser insuficiente para explicar el comportamiento del consumidor actual? Usá dos ideas del cuaderno.', 'Porque el recorrido es dinámico, fragmentado y personalizado: hay múltiples puntos de contacto simultáneos y cruzados, y el modelo del «lío del medio» muestra un bucle entre exploración y evaluación; además, los 4S indican que se descubre y se compra en cualquier momento.', [
+      'Menciona recorrido no lineal/múltiples puntos de contacto',
+      'Menciona exploración-evaluación o los 4S',
+    ], cap('9', '167-169')),
+  ],
+  tarjetas: [
+    { id: 'l28-t1', f: 'Cinco fases de la decisión B2C', b: 'Reconocimiento del problema · búsqueda de información · evaluación de alternativas · decisión de compra · comportamiento post compra.' },
+    { id: 'l28-t2', f: 'Fuentes de información', b: 'Personales, comerciales, públicas y de experiencia.' },
+    { id: 'l28-t3', f: 'Subdecisiones de compra', b: 'Marca, distribuidor, cantidad, tiempo y forma de pago.' },
+    { id: 'l28-t4', f: 'Messy Middle', b: 'Bucle entre exploración y evaluación en el recorrido digital (Google).' },
+    { id: 'l28-t5', f: '4S (BCG, 2025)', b: 'Streaming, Scrolling, Searching, Shopping.' },
+    { id: 'l28-t6', f: 'ZMOT (Lecinski, 2011)', b: 'Momento en que la persona investiga online antes de comprar (ampliación; no está en el cuaderno).' },
+  ],
+  sintesis: ['La decisión es un proceso con 5 fases que puede omitir o repetir etapas.', 'El consumidor digital recorre una red de puntos de contacto.', 'Los 4S orientan dónde estar presente y cómo.'],
+  conexiones: ['l3-4', 'l5-2', 'l4-1'],
+  referencias: [cap('3', '56-60'), cap('9', '167-169')],
+}

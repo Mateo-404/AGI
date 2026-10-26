@@ -1,0 +1,137 @@
+import { cap, corta, did, mc } from '../ayudas'
+import type { Leccion } from '../tipos'
+
+export const l41: Leccion = {
+  id: 'l4-1',
+  unidad: 4,
+  titulo: 'SEO: posicionamiento orgánico',
+  resumen: 'Qué factores on page y off page hacen que un sitio aparezca entre los primeros resultados sin pagar.',
+  minutos: 40,
+  objetivos: [
+    'Definir SEO y diferenciar SEO on page de off page.',
+    'Aplicar los factores on page: contenido, palabras clave, HTML, datos estructurados, estructura técnica.',
+    'Explicar backlinks y link building y qué prácticas evitar.',
+  ],
+  previos: ['l2-8'],
+  bloques: [
+    {
+      t: 'def',
+      termino: 'SEO (Search Engine Optimization)',
+      x: 'Práctica que permite que una página web mejore su **visibilidad en los resultados no pagos (orgánicos)** de motores de búsqueda como Google o Bing: aparecer entre los primeros resultados cuando alguien busca una palabra o frase relacionada. No es casual ni automático: responde a múltiples factores que los algoritmos evalúan para determinar la **relevancia y calidad** de una página frente a una consulta. A diferencia del SEM, que paga por aparecer, el SEO busca «ganarse» esos espacios con buenas prácticas.',
+      o: cap('8', '141-142', 'SEO y SEM: conceptos y diferencias'),
+    },
+    {
+      t: 'callout',
+      tipo: 'discrepancia',
+      titulo: 'Qué no desarrolla el cuaderno',
+      x: 'El programa incluye «concepto y **evolución** del SEO» y «**claves del algoritmo** de Google». El cuaderno no trata la evolución histórica del SEO; y sobre el algoritmo solo ofrece criterios generales (relevancia, calidad, intención de búsqueda, experiencia de usuario). Se estudian aquí esos criterios; la historia y el detalle del algoritmo requieren la bibliografía obligatoria (Maciá, 2018, Cap. 5; CACE, 2020).',
+      o: cap('8', '141-143'),
+    },
+    {
+      t: 'comparar',
+      titulo: 'SEO on page vs. off page (Tabla 13)',
+      a: { titulo: 'SEO on page', items: ['Optimizaciones **dentro** del sitio', 'Permiten a los buscadores entender mejor el contenido y considerarlo relevante', 'Incluye aspectos técnicos (código HTML, velocidad) y de contenido (palabras clave, estructura de los textos)'] },
+      b: { titulo: 'SEO off page', items: ['Estrategias **fuera** del sitio para mejorar su autoridad y reconocimiento', 'Objetivo principal: que sitios de calidad enlacen al nuestro (señal de valor para Google)', 'También: participación en redes, menciones en medios digitales, comentarios en blogs especializados'] },
+      o: cap('8', '142', 'Tabla 13'),
+    },
+    { t: 'h', x: 'SEO on page: factores' },
+    {
+      t: 'explorable',
+      titulo: 'Factores del SEO on page',
+      variante: 'pasos',
+      nodos: [
+        { id: 'cont', titulo: 'Contenido de calidad', resumen: 'Pilar fundamental', detalle: 'Google premia el valor real al usuario. Características: **extensión suficiente** (el cuaderno recomienda más de 2000 palabras: criterio de la cátedra, no se verificó con documentación de Google); **relevancia** (responder a la intención de búsqueda: informativa, transaccional, navegacional); **actualización**; **originalidad** (se penaliza el contenido duplicado).' },
+        { id: 'kw', titulo: 'Palabras clave', resumen: 'Términos que las personas buscan', detalle: '**Short-tail** (generales y amplias; ej. «celulares») vs. **long-tail** (frases específicas, menor competencia, intención más clara; ej. «celulares con buena cámara por menos de 100 mil pesos»). **Keyword stuffing**: repetir excesivamente una palabra clave para manipular el ranking; Google lo penaliza porque perjudica la experiencia.' },
+        { id: 'html', titulo: 'Código HTML', resumen: 'Title, meta description, encabezados', detalle: '**<title>** (aparece en la pestaña y en los resultados; con palabras clave y atractivo); **meta description** (~160 caracteres; no influye directamente en el ranking pero sí en el **CTR**); **encabezados** h1, h2, h3: solo un <h1> como título principal y luego subtítulos.' },
+        { id: 'schema', titulo: 'Datos estructurados', resumen: 'Schema markup y rich snippets', detalle: 'Etiquetas en el código que describen con precisión el contenido y generan **fragmentos enriquecidos (rich snippets)**: estrellas de valoración, precios, recetas, eventos. Mejoran el **CTR** (resultados más atractivos) y la **comprensión semántica** por parte de los buscadores (ejemplos en las figs. 30 y 31: receta y review).' },
+        { id: 'tec', titulo: 'Estructura técnica', resumen: 'Rastreo e indexación', detalle: '**Velocidad de carga** (se evalúa con PageSpeed Insights o Lighthouse), certificado **HTTPS** (factor de ranking), **URLs amigables** (cortas y descriptivas), **redirecciones** bien gestionadas (si no, errores 404 o pérdida de autoridad), diseño **responsive**, **enlaces internos** (distribuyen autoridad y facilitan la navegación) y **sitemap XML** (informa qué páginas existen y deben indexarse).' },
+      ],
+      o: cap('8', '142-145'),
+    },
+    { t: 'h', x: 'SEO off page: factores' },
+    {
+      t: 'p',
+      x: '**Backlinks** (enlaces entrantes desde otros sitios): «votos de confianza» externos y uno de los factores más importantes del off page. Cuanto mayor la **autoridad** del sitio que enlaza, mayor el beneficio; el **Domain Authority** mide la reputación de un dominio. **Link building:** técnicas **naturales** (colaboraciones, menciones en medios, contenido de valor que otros quieran enlazar).',
+      o: cap('8', '145'),
+    },
+    {
+      t: 'callout',
+      tipo: 'ojo',
+      titulo: 'Prácticas a evitar',
+      x: 'Compra de enlaces, spam en foros y enlaces desde páginas irrelevantes. Y el keyword stuffing en el contenido. Sobre redes sociales: los enlaces en redes **no influyen directamente** en el posicionamiento, pero la difusión puede atraer tráfico, generar menciones y backlinks legítimos: ayudan de forma **indirecta**.',
+      o: cap('8', '145-146'),
+    },
+    {
+      t: 'clasificar',
+      titulo: '¿On page u off page?',
+      categorias: ['On page', 'Off page'],
+      items: [
+        { x: 'Reescribir el <title> con la palabra clave principal', cat: 0, porque: 'Optimización dentro del sitio (HTML).' },
+        { x: 'Lograr que un medio digital enlace a tu nota', cat: 1, porque: 'Enlace entrante: autoridad externa.' },
+        { x: 'Instalar HTTPS y un sitemap XML', cat: 0, porque: 'Estructura técnica del sitio.' },
+        { x: 'Que blogs especializados mencionen tu marca', cat: 1, porque: 'Menciones externas.' },
+      ],
+    },
+    {
+      t: 'ejemplo',
+      titulo: 'Optimizar la ficha de un producto (panadería con tienda online, ejemplo didáctico)',
+      pasos: [
+        'Palabra clave **long-tail:** «budín de limón casero Rosario» (menor competencia, intención clara) en lugar de «budín».',
+        '**<title>:** «Budín de limón casero en Rosario | La Ventanita» (con la palabra clave, atractivo). **Meta description** de ~160 caracteres con beneficio y llamado a la acción (para mejorar CTR).',
+        '**Un solo <h1>** con el nombre del producto; subtítulos con ingredientes y envíos.',
+        '**Datos estructurados** de producto (precio, disponibilidad, valoraciones) para aspirar a un rich snippet.',
+        '**Técnica:** URL clara (/budines/limon), imágenes livianas, HTTPS y vista responsive para teléfonos.',
+        '**Off page:** pedir a medios gastronómicos locales una mención con enlace (link building natural).',
+      ],
+      o: did,
+    },
+  ],
+  claves: ['seo', 'seo-on-page', 'seo-off-page', 'palabras-clave', 'keyword-stuffing', 'meta-description', 'schema-markup', 'rich-snippet', 'backlink', 'link-building', 'sitemap'],
+  preguntas: [
+    mc('l41-q1', 'SEO', 1, '¿Cuál es la diferencia central entre SEO y SEM?', [
+      ['El SEO es pago y el SEM orgánico', 'Es al revés.'],
+      ['El SEO busca ganarse posiciones orgánicas; el SEM paga anuncios para aparecer', 'Correcto.'],
+      ['Son lo mismo', 'No lo son.'],
+      ['El SEM solo existe en redes', 'Es en buscadores.'],
+    ], 1, cap('8', '141-142')),
+    mc('l41-q2', 'On page', 2, 'La meta description…', [
+      ['Es un factor de ranking directo', 'No influye directamente en el ranking.'],
+      ['Acompaña al título en los resultados e impacta en el CTR', 'Correcto.'],
+      ['Debe repetirse 20 veces con la palabra clave', 'Eso es keyword stuffing.'],
+      ['Reemplaza al h1', 'Cumplen funciones distintas.'],
+    ], 1, cap('8', '143')),
+    mc('l41-q3', 'Palabras clave', 2, 'Cuál es una palabra clave long-tail?', [
+      ['celulares', 'Es short-tail (general y amplia).'],
+      ['celulares con buena cámara por menos de 100 mil pesos', 'Correcto.'],
+      ['ropa', 'Es short-tail.'],
+      ['tienda', 'Es short-tail.'],
+    ], 1, cap('8', '143')),
+    mc('l41-q4', 'Off page', 2, '¿Qué práctica de link building debe evitarse?', [
+      ['Colaboraciones con otros sitios', 'Es una técnica natural.'],
+      ['Comprar enlaces', 'Correcto: el cuaderno la desaconseja.'],
+      ['Menciones en medios', 'Técnica natural.'],
+      ['Contenido de valor que otros enlazan', 'Técnica natural.'],
+    ], 1, cap('8', '145')),
+    mc('l41-q5', 'Datos estructurados', 3, '¿Para qué sirven los datos estructurados (schema markup)?', [
+      ['Para ocultar contenido', 'No es su fin.'],
+      ['Para describir el contenido con precisión, generar rich snippets, mejorar el CTR y la comprensión semántica', 'Correcto.'],
+      ['Para aumentar los backlinks automáticamente', 'No lo hacen.'],
+      ['Para reemplazar el HTTPS', 'No.'],
+    ], 1, cap('8', '144')),
+    corta('l41-q6', 'SEO', 3, 'Explicá por qué una tienda online debería combinar on page y off page y dá un ejemplo de cada uno.', 'On page mejora cómo los buscadores entienden y valoran el sitio (ej.: title con palabra clave, HTTPS, velocidad). Off page construye autoridad externa (ej.: backlinks de medios). Se complementan: un sitio bien optimizado pero sin autoridad rankea peor que uno con ambas.', [
+      'Distingue on page y off page',
+      'Da un ejemplo de cada uno',
+      'Justifica la combinación',
+    ], cap('8', '142-146')),
+  ],
+  tarjetas: [
+    { id: 'l41-t1', f: 'SEO on page vs. off page', b: 'On page: optimizaciones dentro del sitio (contenido, HTML, técnica). Off page: autoridad desde afuera (backlinks, menciones).' },
+    { id: 'l41-t2', f: 'Factores on page', b: 'Contenido de calidad, palabras clave, código HTML (title, meta description, h1), datos estructurados, estructura técnica.' },
+    { id: 'l41-t3', f: 'Short-tail vs. long-tail', b: 'Short: generales y amplias. Long: frases específicas, menor competencia, intención más clara.' },
+    { id: 'l41-t4', f: 'Backlink', b: 'Enlace entrante desde otro sitio: «voto de confianza»; pesa más cuanto mayor la autoridad del sitio que enlaza.' },
+    { id: 'l41-t5', f: 'Rich snippets', b: 'Fragmentos enriquecidos (estrellas, precios, recetas) obtenidos con schema markup; mejoran el CTR.' },
+  ],
+  sintesis: ['El SEO se gana con contenido de calidad y buena estructura técnica.', 'Los backlinks naturales son votos de confianza.', 'Evolución del SEO y claves del algoritmo exigen bibliografía complementaria.'],
+  conexiones: ['l4-2', 'l4-3', 'l6-3'],
+  referencias: [cap('8', '141-146')],
+}
