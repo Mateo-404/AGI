@@ -13,12 +13,12 @@ export function inline(texto: string, terminoPorId?: Map<string, { termino: stri
     if (m.index! > ult) partes.push(texto.slice(ult, m.index))
     if (m[1] !== undefined) partes.push(<strong key={k++}>{inline(m[1], terminoPorId)}</strong>)
     else if (m[2] !== undefined) partes.push(<em key={k++}>{inline(m[2], terminoPorId)}</em>)
-    else if (m[3] !== undefined) partes.push(<a key={k++} href={`#/leccion/${m[3]}`}>{m[4]}</a>)
+    else if (m[3] !== undefined) partes.push(<a key={k++} href={`#/marketing/leccion/${m[3]}`}>{m[4]}</a>)
     else {
       const id = m[5]!
       const t = terminoPorId?.get(id)
       partes.push(
-        <a key={k++} className="termino" href={`#/glosario/${id}`} title="Ver en el glosario">
+        <a key={k++} className="termino" href={`#/marketing/glosario/${id}`} title="Ver en el glosario">
           {t?.termino ?? id}
         </a>,
       )

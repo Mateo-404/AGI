@@ -1,54 +1,69 @@
-# Curso interactivo de Marketing Digital · UNRaf 2026
+# Somos #AGI · Proyecto personal
 
-Sistema de estudio construido a partir del **Programa 2026** (CCC AGI, Marketing Digital) y del **cuaderno de cátedra «Pensando AGIlmente a la disciplina del marketing»**. Aplicación web local (React + TypeScript + Vite), materiales imprimibles y documentos de auditoría.
+Sitio de estudio de la Licenciatura en Administración y Gestión de la Información (CCC, UNRaf). **Es un proyecto personal de Mateo Gariboglio; no es un sitio oficial de la Universidad Nacional de Rafaela.** Los datos de la carrera provienen de sus páginas públicas, que se enlazan en el sitio.
 
-## Qué incluye
-- **30 lecciones** en 8 unidades (7 del programa + integración), con objetivos, explicación estructurada, ejemplos paso a paso, diagramas explorables, comparaciones, actividades de asociación/clasificación, casos con decisiones, simuladores (métricas SEO/SEM, embudo, precio), síntesis y referencias a capítulo y página del cuaderno.
-- **Práctica**: 147 preguntas (opción múltiple con explicación de cada alternativa y respuesta corta autoevaluada), cuestionarios por lección y por unidad, **simulacro integrador**, repaso de errores, **122 tarjetas** con repaso espaciado (+1, +3, +7, +14, +30 días), **glosario de 186 términos** y seguimiento local del progreso.
-- **Materiales** (`materiales/`): manual de estudio (PDF/HTML, ~150 págs.), banco de preguntas (MD/PDF, con respuestas separadas), glosario (MD/PDF) y guía de repaso (MD/PDF).
-- **Documentación** (`docs/`): auditoría académica, matriz de cobertura, arquitectura pedagógica, decisiones técnicas y ampliaciones externas.
+**Sitio publicado:** https://mateo-404.github.io/AGI/ (inicio) · https://mateo-404.github.io/AGI/#/marketing (curso de Marketing Digital)
 
-## Requisitos
-[bun](https://bun.sh) ≥ 1.1. Para generar PDF: Chromium o Chrome instalado (o `CHROME=/ruta/al/binario`).
+## Rutas
+| Ruta | Qué es |
+|---|---|
+| `#/` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
+| `#/marketing` | Curso interactivo de Marketing Digital |
+| `#/marketing/leccion/l2-1` | Una lección |
+| `#/marketing/practica`, `/tarjetas`, `/glosario`, `/repaso` | Práctica, tarjetas, glosario y progreso |
 
-## Uso
+Cada materia nueva tiene su propia ruta (ver `skills/agregar-materia`).
+
+## Qué incluye el curso
+- **30 lecciones** en 8 unidades, con explicaciones, ejemplos, diagramas animados y simuladores (SEO/SEM, embudo, precio).
+- Cada afirmación indica su origen: **cuaderno** (capítulo y página), **explicación didáctica** o **ampliación externa**.
+- **Práctica:** 147 preguntas con explicación de cada alternativa, simulacro integrador, 122 tarjetas con repaso espaciado y un glosario de 186 términos. Son material de práctica propio, no preguntas de la cátedra.
+- **Progreso local:** se guarda en el navegador. Se puede exportar e importar.
+- **Modo claro y oscuro**, tamaños de letra y **lectura en voz alta** tipo podcast, con velocidad y modo continuo.
+
+## Lectura en voz alta
+Usa la síntesis de voz del navegador: no envía texto a ningún servicio. Funciona sin conexión si el dispositivo tiene voces en español. En Chrome y Edge hay voces de Google o del sistema; en Safari y en Android dependen del sistema. Si no hay soporte, el reproductor muestra un aviso.
+
+## Desarrollo
+Requisito: [bun](https://bun.sh) ≥ 1.1.
+
 ```bash
 bun install
-bun run dev        # http://localhost:5173
-bun run build      # compila a dist/ (funciona sin servidor y sin conexión)
-bun run preview
-bun test           # pruebas
-bun run verificar  # valida el contenido (ids, enlaces, cobertura, preguntas)
-bun run materiales # genera materiales/*.md y *.html
-bun run pdf        # genera materiales/*.pdf (Chromium headless)
+bun run dev          # http://localhost:5173
+bun test             # pruebas
+bun run verificar    # validación del contenido
+bun run build        # compila a dist/
 ```
+
+Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): `bun run materiales` y `bun run pdf`. Requieren la carpeta `fuentes/` local y Chromium.
 
 ## Estructura
 ```
-fuentes/      documentos originales (sin modificar)
-docs/         auditoría, matriz de cobertura, arquitectura pedagógica, decisiones, ampliaciones
-contenido/    lecciones, glosario, cobertura y guía (datos tipados; sin dependencia de la UI)
-src/          app: componentes/ (UI), logica/ (repaso, progreso, marcado), estilos/
-scripts/      verificar.ts, materiales.tsx, pdf.ts
-materiales/   manual, banco de preguntas, glosario, guía de repaso
-tests/        pruebas de lógica, contenido, renderizado y fidelidad
+src/            aplicación: componentes/, logica/ (repaso, progreso, voz), estilos/
+contenido/      lecciones, glosario, cobertura y guía (datos tipados)
+tests/          pruebas de lógica, contenido, render y voz
+scripts/        verificar, materiales, pdf, contraste, offline
+docs/           auditoría académica, matriz de cobertura, decisiones técnicas
+skills/         skills para agentes: agregar materia, lección, desplegar, lectura en voz
+agents.md       instrucciones para agentes de IA
+.github/        workflow de publicación en GitHub Pages
 ```
+`fuentes/` (cuaderno de cátedra y TPI), `materiales/` y `dist/` no se publican (ver `.gitignore`).
 
-## Cómo se distingue cada afirmación
-Cada bloque muestra su origen: **Cuaderno, Cap. X, p. Y** (páginas del PDF de 178 págs.), **Explicación didáctica** (nuestra) o **Ampliación externa** (con fuente y fecha en `docs/ampliaciones-externas.md`). Las preguntas son *material de práctica creado para este curso*, no preguntas de la cátedra ni un examen oficial.
+## Publicación
+La rama `marketing` se publica en GitHub Pages con `.github/workflows/pages.yml` en cada push: prueba, compila y despliega. Los enlaces profundos (`/AGI/marketing`) redirigen a la ruta de hash mediante `public/404.html`.
 
-## Progreso y persistencia
-Se guarda en `localStorage` del navegador (sin cuentas ni servidores). **Límites:** por navegador/dispositivo, se pierde al borrar datos del sitio o en ventanas privadas; usá *Repaso y progreso → Exportar/Importar*. Un tema se marca **consolidado** solo con evidencia sostenida (≥3 aciertos en ≥2 días, al menos uno sin pista); un acierto aislado no cuenta como dominio. La respuesta corta es autoevaluada.
+## Verificación
+- `bun test`: pruebas de repaso, puntajes, fórmulas, progreso corrupto, validez del contenido, renderizado de lecciones y voz.
+- `bun run verificar`: enlaces, ids y cobertura del contenido.
+- `bun run scripts/contraste.ts`: contraste WCAG AA en claro y oscuro.
+- Revisión en navegador: portada de AGI, curso en claro y oscuro, reproductor, móvil de 375 px.
 
-## Verificación realizada
-- `bun test`: 62 pruebas (repaso espaciado y dominio, puntaje corregido por azar, fórmulas, progreso corrupto, validez del contenido, renderizado web/impresión de las 30 lecciones, fidelidad de términos clave del cuaderno).
-- `bun run build` sin errores de TypeScript; sin errores de consola en la navegación por todas las rutas.
-- Revisión en navegador: 30 lecciones sin desborde horizontal en 375 px; navegación, explorables, quiz y guardado local probados; encabezados y etiquetas de formularios revisados con script.
-- PDF: revisados visualmente portada, tablas, diagramas, banco y guía.
-- **No verificado:** lectores de pantalla, Lighthouse/axe, impresión en otros navegadores, ni los contenidos enlazados del cuaderno (videos, Genially, informes).
+## Limitaciones
+- El progreso es por navegador: se pierde si se borran los datos del sitio.
+- La respuesta corta se autoevalúa; no hay corrección automática.
+- La voz depende de las voces que tenga el dispositivo; la calidad varía.
+- Hay temas del programa que el cuaderno no desarrolla; están marcados en la matriz de cobertura (`docs/matriz-de-cobertura.md`).
 
-## Temas que requieren bibliografía complementaria
-POEM, Martech, e-branding, ZMOT, storytelling, marketing relacional, remarketing/retargeting, CPL, Google Play y Google Business, m-commerce, medios de pago y logística, evolución del SEO e investigación de palabras clave. Ver `docs/matriz-de-cobertura.md`.
-
-## Limitaciones conocidas
-Discrepancias del cuaderno (numeración de pasos del email, referencias cruzadas, secciones vacías) y de las figuras transcriptas están en `docs/auditoria-academica.md`. Los Cap. 3–5 no figuran como lectura obligatoria del programa pero se incluyeron por ser soporte de los temas.
+## Créditos y fuentes
+Contenido basado en el cuaderno de cátedra «Pensando AGIlmente a la disciplina del marketing» y en el Programa 2026 de Marketing Digital (UNRaf). Los colores de la portada de AGI son una referencia visual de la identidad de la UNRaf, usada solo como guía.

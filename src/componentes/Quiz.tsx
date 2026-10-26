@@ -90,7 +90,7 @@ export function QuizRunner({ preguntas, alcance, titulo, onSalir }: { preguntas:
         <p className="res">{res.filter((r) => r.ok).length} / {res.length}<small>Aciertos brutos (incluye respuestas cortas autoevaluadas)</small></p>
         {mcs.length > 0 && <p>Puntaje de opción múltiple corregido por azar: <b>{corr.toFixed(1)}</b> de {mcRes.length} <span className="meta">(aciertos − errores/({k}−1))</span></p>}
         <p className="aviso">Un buen resultado hoy no significa dominio: el tema se marca como <b>consolidado</b> recién con aciertos repetidos en días distintos.</p>
-        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={`#/leccion/${l!.id}`}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
+        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={`#/marketing/leccion/${l!.id}`}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
         <div className="fila"><button className="btn pri" onClick={() => { setI(0); setRes([]); setGuardado(false) }}>Repetir</button>{onSalir && <button className="btn" onClick={onSalir}>Volver</button>}</div>
       </section>
     )

@@ -18,9 +18,10 @@ export interface Estado {
   tarjetas: Record<string, EstadoTarjeta>
   quizzes: ResultadoQuiz[]
   tema: 'auto' | 'claro' | 'oscuro'
+  tamano: 'normal' | 'grande' | 'muy-grande'
 }
 
-const vacio = (): Estado => ({ v: 1, vistas: {}, intentos: {}, tarjetas: {}, quizzes: [], tema: 'oscuro' })
+const vacio = (): Estado => ({ v: 1, vistas: {}, intentos: {}, tarjetas: {}, quizzes: [], tema: 'oscuro', tamano: 'normal' })
 
 /** Lee y valida. Si el JSON está corrupto o es de otra versión, se parte de cero (sin romper la app). */
 export function parsear(raw: string | null): Estado {
@@ -89,6 +90,11 @@ export function registrarQuiz(r: Omit<ResultadoQuiz, 'fecha'>) {
 
 export function setTema(tema: Estado['tema']) {
   estado = { ...estado, tema }
+  guardar()
+}
+
+export function setTamano(tamano: Estado['tamano']) {
+  estado = { ...estado, tamano }
   guardar()
 }
 

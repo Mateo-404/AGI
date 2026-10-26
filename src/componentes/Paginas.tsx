@@ -28,7 +28,7 @@ function MapaRuta({ vistas }: { vistas: Set<string> }) {
           const leidas = ls.filter((l) => vistas.has(l.id)).length
           return (
             <g key={u.n}>
-              <a href={`#/unidad/${u.n}`}>
+              <a href={`#/marketing/unidad/${u.n}`}>
                 <circle cx={xs[i]} cy={60} r={14} className={`ruta-est ${leidas === ls.length && ls.length ? 'completa' : ''}`} />
                 <text x={xs[i]} y={64} textAnchor="middle" className="ruta-num">{u.n}</text>
                 <title>{`Unidad ${u.n}: ${u.titulo} (${leidas} de ${ls.length} leídas)`}</title>
@@ -60,8 +60,8 @@ export function Inicio() {
         <h1>Un curso para estudiar de a tramos</h1>
         <p className="bajada">Basado en el cuaderno de cátedra y el programa. Cada lección dice de dónde sale cada idea, y la app distingue lo que dice la cátedra de lo que agregamos.</p>
         <div className="fila">
-          <a className="btn pri" href={sig ? `#/leccion/${sig.id}` : '#/practica'}>{sig ? (vistas ? 'Seguir donde quedé' : 'Empezar por el principio') : 'Ir a practicar'}</a>
-          <a className="btn" href="#/practica">Practicar</a>
+          <a className="btn pri" href={sig ? `#/marketing/leccion/${sig.id}` : '#/marketing/practica'}>{sig ? (vistas ? 'Seguir donde quedé' : 'Empezar por el principio') : 'Ir a practicar'}</a>
+          <a className="btn" href="#/marketing/practica">Practicar</a>
         </div>
       </header>
       <MapaRuta vistas={new Set(Object.keys(p.vistas))} />
@@ -78,7 +78,7 @@ export function Inicio() {
           const v = ls.filter((l) => p.vistas[l.id]).length
           return (
             <li key={u.n}>
-              <a href={`#/unidad/${u.n}`}>
+              <a href={`#/marketing/unidad/${u.n}`}>
                 <span className="est-n">{u.n}</span>
                 <span className="est-t">{u.titulo}</span>
                 <span className="meta">{v} de {ls.length} leídas · {ls.reduce((a, l) => a + l.minutos, 0)} min</span>
@@ -99,18 +99,18 @@ export function UnidadPag({ n }: { n: number }) {
   const ls = leccionesDe(n)
   return (
     <>
-      <p className="meta"><a href="#/">Inicio</a> › Unidad {n}</p>
+      <p className="meta"><a href="#/marketing">Inicio</a> › Unidad {n}</p>
       <h1>Unidad {n}. {u.titulo}</h1>
       <p className="meta">Programa 2026: {u.programa}. Lectura obligatoria según el programa: {u.lecturaObligatoria}.</p>
       <div className="grid" style={{ gridTemplateColumns: '1fr' }}>
         {ls.map((l) => (
-          <a key={l.id} href={`#/leccion/${l.id}`} className="tarjeta" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <a key={l.id} href={`#/marketing/leccion/${l.id}`} className="tarjeta" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="fila"><span className="chip">{l.id}</span><span className="chip">{NIVEL_TXT[nivelDe(l)]}</span>{p.vistas[l.id] && <span className="chip did">vista</span>}<span className="meta">{l.minutos} min</span></div>
             <h3 style={{ margin: '6px 0' }}>{l.titulo}</h3><p className="meta" style={{ margin: 0 }}>{l.resumen}</p>
           </a>
         ))}
       </div>
-      <p><a className="btn pri" href={`#/practica/unidad/${n}`}>Cuestionario acumulativo de la unidad</a></p>
+      <p><a className="btn pri" href={`#/marketing/practica/unidad/${n}`}>Cuestionario acumulativo de la unidad</a></p>
     </>
   )
 }
@@ -124,17 +124,17 @@ export function LeccionPag({ id }: { id: string }) {
   const ant = anteriorLeccion(l.id)
   return (
     <article className="leccion">
-      <p className="meta"><a href="#/">Inicio</a> › <a href={`#/unidad/${l.unidad}`}>Unidad {l.unidad}</a> › {l.id}</p>
+      <p className="meta"><a href="#/marketing">Inicio</a> › <a href={`#/marketing/unidad/${l.unidad}`}>Unidad {l.unidad}</a> › {l.id}</p>
       <h1>{l.titulo}</h1>
       <p className="meta">{l.minutos} min · {l.resumen}</p>
       <LeccionCuerpo l={l} />
       <h2>Practicá lo aprendido</h2>
       {practica ? <QuizRunner preguntas={l.preguntas} alcance={`lección ${l.id}`} titulo={l.titulo} onSalir={() => setPractica(false)} /> : (
-        <div className="fila"><button className="btn pri" onClick={() => setPractica(true)}>Responder {l.preguntas.length} preguntas</button><a className="btn" href={`#/tarjetas/${l.id}`}>Tarjetas de esta lección ({l.tarjetas.length})</a></div>
+        <div className="fila"><button className="btn pri" onClick={() => setPractica(true)}>Responder {l.preguntas.length} preguntas</button><a className="btn" href={`#/marketing/tarjetas/${l.id}`}>Tarjetas de esta lección ({l.tarjetas.length})</a></div>
       )}
       <nav className="fila no-print" style={{ justifyContent: 'space-between', marginTop: 30 }} aria-label="Navegación entre lecciones">
-        {ant ? <a className="btn" href={`#/leccion/${ant.id}`}>← {ant.titulo}</a> : <span />}
-        {sig && <a className="btn pri" href={`#/leccion/${sig.id}`}>{sig.titulo} →</a>}
+        {ant ? <a className="btn" href={`#/marketing/leccion/${ant.id}`}>← {ant.titulo}</a> : <span />}
+        {sig && <a className="btn pri" href={`#/marketing/leccion/${sig.id}`}>{sig.titulo} →</a>}
       </nav>
     </article>
   )
@@ -161,21 +161,21 @@ export function Practica({ alcance, ref_ }: { alcance?: string; ref_?: string })
         <h1>Práctica y evaluación</h1>
         <p className="sello">Todo el material de esta sección fue creado para este curso. No son preguntas oficiales de la cátedra ni anticipan un examen.</p>
         <div className="grid">
-          <a className="tarjeta" href="#/practica/simulacro" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Simulacro integrador</h3><p className="meta">40 preguntas de todo el programa, priorizando lo no dominado.</p></a>
-          <a className="tarjeta" href="#/practica/errores" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Repaso de errores</h3><p className="meta">{errores} pregunta(s) cuyo último intento fue incorrecto.</p></a>
-          <a className="tarjeta" href="#/tarjetas" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Tarjetas de memoria</h3><p className="meta">Recuperación activa con repaso espaciado.</p></a>
+          <a className="tarjeta" href="#/marketing/practica/simulacro" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Simulacro integrador</h3><p className="meta">40 preguntas de todo el programa, priorizando lo no dominado.</p></a>
+          <a className="tarjeta" href="#/marketing/practica/errores" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Repaso de errores</h3><p className="meta">{errores} pregunta(s) cuyo último intento fue incorrecto.</p></a>
+          <a className="tarjeta" href="#/marketing/tarjetas" style={{ textDecoration: 'none', color: 'inherit' }}><h3>Tarjetas de memoria</h3><p className="meta">Recuperación activa con repaso espaciado.</p></a>
         </div>
         <h2>Por unidad</h2>
-        <div className="fila">{unidades.map((u) => <a key={u.n} className="btn" href={`#/practica/unidad/${u.n}`}>Unidad {u.n}</a>)}</div>
+        <div className="fila">{unidades.map((u) => <a key={u.n} className="btn" href={`#/marketing/practica/unidad/${u.n}`}>Unidad {u.n}</a>)}</div>
         <h2>Por lección</h2>
-        <ul>{lecciones.map((l) => <li key={l.id}><a href={`#/practica/leccion/${l.id}`}>{l.id} · {l.titulo}</a> <span className="meta">({l.preguntas.length})</span></li>)}</ul>
+        <ul>{lecciones.map((l) => <li key={l.id}><a href={`#/marketing/practica/leccion/${l.id}`}>{l.id} · {l.titulo}</a> <span className="meta">({l.preguntas.length})</span></li>)}</ul>
       </>
     )
   }
   const titulo = alcance === 'simulacro' ? 'Simulacro integrador' : alcance === 'errores' ? 'Repaso de errores' : alcance === 'unidad' ? `Unidad ${ref_}` : `Lección ${ref_}`
   return (
     <>
-      <p className="meta"><a href="#/practica">Práctica</a> › {titulo}</p>
+      <p className="meta"><a href="#/marketing/practica">Práctica</a> › {titulo}</p>
       <h1>{titulo}</h1>
       {set.length === 0 ? <p className="aviso">{alcance === 'errores' ? 'No tenés errores pendientes. Buen trabajo, pero repasá igual.' : 'No hay preguntas.'}</p>
         : <QuizRunner key={`${alcance}${ref_}${semilla}`} preguntas={set} alcance={`${alcance}${ref_ ? ' ' + ref_ : ''}`} titulo={titulo} onSalir={() => setSemilla(semilla + 1)} />}
@@ -224,14 +224,14 @@ export function RepasoPag() {
     <>
       <h1>Repaso y progreso</h1>
       <h2>Recomendaciones</h2>
-      {vistas.length === 0 ? <p>Todavía no viste ninguna lección.</p> : debiles.length === 0 ? <p>Todas las lecciones vistas están consolidadas. Hacé el <a href="#/practica/simulacro">simulacro</a>.</p> : (
-        <ul className="rec">{debiles.map((l) => <li key={l.id}><a href={`#/leccion/${l.id}`}>{l.titulo}</a> — {NIVEL_TXT[nivelDe(l)]}. <a href={`#/practica/leccion/${l.id}`}>Practicar</a></li>)}</ul>
+      {vistas.length === 0 ? <p>Todavía no viste ninguna lección.</p> : debiles.length === 0 ? <p>Todas las lecciones vistas están consolidadas. Hacé el <a href="#/marketing/practica/simulacro">simulacro</a>.</p> : (
+        <ul className="rec">{debiles.map((l) => <li key={l.id}><a href={`#/marketing/leccion/${l.id}`}>{l.titulo}</a> — {NIVEL_TXT[nivelDe(l)]}. <a href={`#/marketing/practica/leccion/${l.id}`}>Practicar</a></li>)}</ul>
       )}
       <h2>Calendario de repaso espaciado sugerido</h2>
       <p className="meta">Fechas sugeridas a +1, +3, +7, +14 y +30 días desde la primera vez que abriste cada lección. Es una propuesta, no una obligación.</p>
       <div className="tabla-w"><table><thead><tr><th>Lección</th><th>Vista</th><th>Repasos sugeridos</th></tr></thead><tbody>
         {vistas.map((l) => (
-          <tr key={l.id}><td><a href={`#/leccion/${l.id}`}>{l.id}</a></td><td>{p.vistas[l.id]!.slice(0, 10)}</td>
+          <tr key={l.id}><td><a href={`#/marketing/leccion/${l.id}`}>{l.id}</a></td><td>{p.vistas[l.id]!.slice(0, 10)}</td>
             <td className="cal">{fechasSugeridas(p.vistas[l.id]!).map((f) => <span key={f} style={f <= hoy ? { background: 'var(--acento-bg)', fontWeight: 700 } : undefined}>{f}</span>)}</td></tr>
         ))}
       </tbody></table></div>
@@ -265,7 +265,7 @@ export function GlosarioPag({ foco }: { foco?: string }) {
       {items.map((t) => (
         <div key={t.id} id={`g-${t.id}`} className="def" style={t.id === foco ? { borderColor: 'var(--acento)', borderWidth: 2 } : undefined}>
           <b className="term">{t.termino}.</b> <Tx t={t.def} />
-          <div className="meta">Lección: <a href={`#/leccion/${t.lec}`}>{leccionPorId.get(t.lec)?.titulo ?? t.lec}</a>{t.rel && t.rel.length > 0 && <> · Ver también: {t.rel.map((r, i) => <span key={r}>{i > 0 && ', '}<Tx t={`[[${r}]]`} /></span>)}</>}</div>
+          <div className="meta">Lección: <a href={`#/marketing/leccion/${t.lec}`}>{leccionPorId.get(t.lec)?.titulo ?? t.lec}</a>{t.rel && t.rel.length > 0 && <> · Ver también: {t.rel.map((r, i) => <span key={r}>{i > 0 && ', '}<Tx t={`[[${r}]]`} /></span>)}</>}</div>
         </div>
       ))}
     </>
@@ -282,7 +282,7 @@ export function CoberturaPag() {
           <h2>Unidad {u.n}. {u.titulo}</h2>
           <div className="tabla-w"><table><thead><tr><th>Tema del programa</th><th>Estado</th><th>Lecciones</th></tr></thead><tbody>
             {cobertura.filter((c) => c.unidad === u.n).map((c) => (
-              <tr key={c.tema}><td>{c.tema}</td><td><span className="chip" title={ESTADOS[c.estado]}>{c.estado}</span></td><td>{c.lecciones.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={`#/leccion/${id}`}>{id}</a></span>)}</td></tr>
+              <tr key={c.tema}><td>{c.tema}</td><td><span className="chip" title={ESTADOS[c.estado]}>{c.estado}</span></td><td>{c.lecciones.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={`#/marketing/leccion/${id}`}>{id}</a></span>)}</td></tr>
             ))}
           </tbody></table></div>
         </div>
@@ -319,4 +319,4 @@ export function AcercaPag() {
   )
 }
 
-export const NoEncontrado = () => <><h1>No encontrado</h1><p><a href="#/">Volver al inicio</a></p></>
+export const NoEncontrado = () => <><h1>No encontrado</h1><p><a href="#/marketing">Volver al inicio</a></p></>
