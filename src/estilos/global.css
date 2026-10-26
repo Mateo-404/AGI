@@ -314,3 +314,33 @@ h1 { font-weight: 800; font-variation-settings: "wdth" 88, "opsz" 48; }
 .animacion-lienzo svg { width: 100%; height: 100%; }
 .animacion figcaption { font-size: .9rem; color: var(--ink2); margin-top: 6px; text-align: left; }
 .animacion .credito { display: block; font-size: .8rem; opacity: .85; }
+
+/* ---- Móvil: gestos, barra inferior y tacto ---- */
+a, button, summary, label, select { touch-action: manipulation; }
+html { -webkit-tap-highlight-color: transparent; }
+.nav, .tabla-w { overscroll-behavior: contain; }
+.barra-inf { display: none; }
+.solo-tactil { display: none; }
+@media (hover: none) { .solo-tactil { display: block; } }
+@media (max-width: 880px) {
+  :root { --barra-inf: calc(56px + env(safe-area-inset-bottom)); }
+  html.barra-oculta { --barra-inf: 0px; }
+  .barra-inf { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; position: fixed; inset: auto 0 0 0; z-index: 55; height: var(--barra-inf, 56px); padding-bottom: env(safe-area-inset-bottom); background: var(--surf); border-top: 1px solid var(--linea); transition: transform .2s ease; }
+  html.barra-oculta .barra-inf { transform: translateY(100%); height: calc(56px + env(safe-area-inset-bottom)); }
+  .barra-inf a, .barra-inf button, .barra-inf .inactivo { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 56px; font-size: .72rem; font-weight: 600; color: var(--ink2); background: none; border: 0; text-decoration: none; }
+  .barra-inf svg { font-size: 1.45rem; }
+  .barra-inf a:active, .barra-inf button:active { background: var(--surf2); }
+  .barra-inf button[aria-expanded="true"] { color: var(--marca); }
+  .barra-inf .inactivo { opacity: .35; }
+  .cont { padding-bottom: calc(96px + var(--barra-inf, 56px)); }
+  .nav { padding-bottom: calc(40px + var(--barra-inf, 56px)); }
+  .voz { bottom: calc(var(--barra-inf, 56px) + 16px); transition: bottom .2s ease; }
+  html.barra-oculta .voz { bottom: max(16px, env(safe-area-inset-bottom)); }
+  .nav a.item, .nav summary { min-height: 44px; align-items: center; }
+  /* Aviso mientras se desliza entre lecciones */
+  .pista-gesto { position: fixed; top: 45%; z-index: 65; display: flex; align-items: center; gap: 8px; max-width: 72vw; padding: 12px 14px; background: var(--marca); color: var(--marca-t); font-weight: 600; font-size: .9rem; box-shadow: 0 6px 18px rgba(0,0,0,.3); pointer-events: none; }
+  .pista-gesto span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pista-gesto.izquierda { right: 0; border-radius: 14px 0 0 14px; }
+  .pista-gesto.derecha { left: 0; border-radius: 0 14px 14px 0; }
+}
+@media (prefers-reduced-motion: reduce) { .barra-inf, .voz { transition: none; } }

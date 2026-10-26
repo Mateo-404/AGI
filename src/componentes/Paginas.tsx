@@ -1,6 +1,7 @@
 import { ruta } from '@/logica/rutas'
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { anteriorLeccion, glosario, leccionDePregunta, leccionPorId, lecciones, leccionesDe, siguienteLeccion, todasLasPreguntas, todasLasTarjetas, unidades } from '@/logica/datos'
+import { clasificarGesto, vibrar } from '@/logica/gestos'
 import { exportar, hayPersistencia, importar, marcarVista, calificar, reiniciar, useProgreso } from '@/logica/progreso'
 import { dominada, estaVencida, fechasSugeridas, nivel, rndDe, seleccionPonderada, type Nivel } from '@/logica/repaso'
 import { cobertura, ESTADOS } from '@contenido/marketing/cobertura'
@@ -193,21 +194,36 @@ export function TarjetasPag({ lec }: { lec?: string }) {
   const [i, setI] = useState(0)
   const [rev, setRev] = useState(false)
   const t = cola[i % Math.max(1, cola.length)]
+  const toque = useRef<{ x: number; y: number; t: number } | null>(null)
+  /** Atajo táctil, con la tarjeta revelada: deslizar a la derecha = la sabía, a la izquierda = no la sabía. Los botones hacen lo mismo. */
+  const responder = (sabia: boolean) => { if (!t) return; calificar(t.id, sabia); setRev(false); setI(i + (solo ? 0 : 1)) }
   return (
     <>
       <h1>Tarjetas de memoria{lec ? ` · ${lec}` : ''}</h1>
       <p className="meta">Intentá responder en voz alta o por escrito <b>antes</b> de revelar. Calificá con honestidad: lo que fallás vuelve mañana; lo que acertás se espacia (1, 3, 7, 14 y 30 días).</p>
       <label style={{ fontWeight: 500 }}><input type="checkbox" checked={solo} onChange={(e) => { setSolo(e.target.checked); setI(0); setRev(false) }} /> Solo nuevas o vencidas</label>
       {!t ? <p className="aviso">No hay tarjetas pendientes. Volvé en la fecha sugerida o desmarcá el filtro.</p> : (
-        <section className="flash" aria-label="Tarjeta">
+        <section
+          className="flash"
+          aria-label="Tarjeta"
+          onTouchStart={(e) => { const c = e.touches[0]; toque.current = e.touches.length === 1 && c ? { x: c.clientX, y: c.clientY, t: e.timeStamp } : null }}
+          onTouchEnd={(e) => {
+            const ini = toque.current, c = e.changedTouches[0]
+            toque.current = null
+            if (!rev || !ini || !c) return
+            const g = clasificarGesto({ dx: c.clientX - ini.x, dy: c.clientY - ini.y, dt: e.timeStamp - ini.t, x0: ini.x, ancho: innerWidth })
+            if (g) { vibrar(); responder(g === 'derecha') }
+          }}
+        >
           <p className="meta">{(i % cola.length) + 1} de {cola.length} · {t.lec}{p.tarjetas[t.id] ? ` · caja ${p.tarjetas[t.id]!.caja}` : ' · nueva'}</p>
           <button className={`cara ${rev ? 'resp' : ''}`} onClick={() => setRev(!rev)} aria-label={rev ? 'Respuesta; tocar para ver la pregunta' : 'Pregunta; tocar para ver la respuesta'}><span><Tx t={rev ? t.b : t.f} /></span></button>
           {rev ? (
             <div className="fila" style={{ marginTop: 10 }}>
-              <button className="btn" onClick={() => { calificar(t.id, false); setRev(false); setI(i + (solo ? 0 : 1)) }}>No la sabía</button>
-              <button className="btn pri" onClick={() => { calificar(t.id, true); setRev(false); setI(i + (solo ? 0 : 1)) }}>La sabía</button>
+              <button className="btn" onClick={() => responder(false)}>No la sabía</button>
+              <button className="btn pri" onClick={() => responder(true)}>La sabía</button>
             </div>
           ) : <p className="meta">Tocá la tarjeta para revelar la respuesta.</p>}
+          {rev && <p className="meta solo-tactil">También podés deslizar: a la derecha, la sabía; a la izquierda, no la sabía.</p>}
         </section>
       )}
     </>

@@ -7,6 +7,7 @@ import { AcercaPag, CoberturaPag, GlosarioPag, Inicio, LeccionPag, NoEncontrado,
 import { AgiInicio } from './AgiInicio'
 import { Reproductor } from './Reproductor'
 import { Instalar } from './Instalar'
+import { NavMovil } from './NavMovil'
 
 class Limite extends Component<{ children: ReactNode }, { error?: Error }> {
   state: { error?: Error } = {}
@@ -85,6 +86,7 @@ export function Shell({ sub, enCurso, children }: { sub: string[]; enCurso: bool
       <a className="saltar" href="#principal">Saltar al contenido</a>
       <Barra />
       <Instalar />
+      <NavMovil actual={actual} menu={menu} setMenu={setMenu} />
       <div className="topbar no-print">
         <button className="btn sm" aria-expanded={menu} aria-controls="nav" onClick={() => setMenu(!menu)}><Icono nombre={menu ? 'close' : 'menu'} /> Menú</button>
         <b style={{ fontFamily: 'var(--serif)' }}>Marketing Digital</b>
