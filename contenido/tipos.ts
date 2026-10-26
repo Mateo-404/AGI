@@ -29,6 +29,8 @@ export type Bloque =
   | { t: 'animacion'; archivo: 'seo' | 'marketing-digital'; titulo: string; descripcion: string; credito: string; o?: Origen }
   | { t: 'figura'; id: 'evolucion' | 'mix' | 'messy' | 'embudo' | 'subasta' | 'email' }
   | { t: 'calc'; tipo: 'metricas' | 'embudo' | 'precio' }
+  /** Diagrama Mermaid: se dibuja en el build como SVG (ver src/logica/diagramas.ts). */
+  | { t: 'diagrama'; titulo?: string; codigo: string; o?: Origen }
   | { t: 'asociar'; titulo: string; pares: [string, string][] }
   | { t: 'clasificar'; titulo: string; categorias: string[]; items: { x: string; cat: number; porque: string }[] }
   | {

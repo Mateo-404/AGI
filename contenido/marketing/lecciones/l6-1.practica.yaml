@@ -1,0 +1,55 @@
+preguntas:
+  - tema: E-commerce vs. e-business
+    dif: 1
+    enunciado: La atención al cliente y el servicio postventa derivados de la venta online forman parte de…
+    opciones:
+      - [Solo el e-commerce, El e-commerce son las transacciones.]
+      - [El e-business, "Correcto: incluye actividades derivadas de la venta online."]
+      - [El SEO, No.]
+      - [El dropshipping, No.]
+    correcta: 1
+    o: c 7 | 128
+  - tema: Mirada comercial
+    dif: 2
+    enunciado: Un ciudadano que paga un impuesto online realiza una transacción…
+    opciones:
+      - [B2C, No es una empresa que vende al consumidor.]
+      - [G2C (gobierno a consumidor), "Correcto: el gobierno ofrece el servicio."]
+      - [C2C, No es entre consumidores.]
+      - [B2B, No.]
+    correcta: 1
+    o: c 7 | 129-130
+  - tema: Plataforma
+    dif: 2
+    enunciado: Una pyme sin equipo técnico que quiere una tienda que se actualice sola elige probablemente…
+    opciones:
+      - [Open source, Exige equipo interno de mantenimiento.]
+      - [On-premises, Requiere gran inversión técnica.]
+      - [SaaS, "Correcto: alquiler con actualizaciones del proveedor."]
+      - [Ninguna, Alguna sirve.]
+    correcta: 2
+    o: c 7 | 132
+  - tema: Plataforma
+    dif: 3
+    enunciado: ¿Cuál es el principal costo oculto de una plataforma open source según el cuaderno?
+    opciones:
+      - [La licencia, El inicial puede ser menor; no es licencia.]
+      - ["Un equipo interno para mantenimiento y evolución, con riesgo de obsolescencia sin inversión constante", Correcto.]
+      - [El hosting incluido, No es un costo oculto.]
+      - [Ninguno, Sí los tiene.]
+    correcta: 1
+    o: c 7 | 131-132
+  - tema: E-commerce vs. e-business
+    dif: 2
+    enunciado: Explicá la diferencia entre e-commerce y e-business con un ejemplo de una tienda online.
+    modelo: "E-commerce son las transacciones electrónicas (la compra en la tienda). E-business es la gestión completa del negocio digital: ventas online, promoción on/offline, actividades offline derivadas (envío, stock) y atención y postventa."
+    criterios:
+      - Define e-commerce como transacciones
+      - Define e-business como gestión integral
+      - Da un ejemplo coherente
+    o: c 7 | 128
+tarjetas:
+  - [E-commerce (Chaffey), Transacciones financieras y de información realizadas electrónicamente entre una organización y cualquier tercero.]
+  - [E-business, "Gestión del proceso completo de un negocio digital: ventas online, promoción, actividades offline derivadas, postventa y atención."]
+  - [Tres miradas del e-commerce, "Comercial (quién vende y compra), de plataforma y de modelo de negocio."]
+  - [Tres tipos de plataforma, "Open source, on-premises (licencia en servidores propios) y SaaS (alquiler)."]

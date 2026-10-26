@@ -1,0 +1,65 @@
+preguntas:
+  - tema: Diseño
+    dif: 1
+    enunciado: Una buena práctica para el asunto del email es…
+    opciones:
+      - [Redactarlo como pregunta, Puede disminuir la tasa de apertura.]
+      - [Personalizarlo y evitar la forma de pregunta, Correcto.]
+      - [Usar «oferta ahora» siempre, Puede activar filtros antispam.]
+      - [Dejarlo vacío, No es recomendable.]
+    correcta: 1
+    o: c 6 | 114
+  - tema: A/B
+    dif: 2
+    enunciado: Para que un A/B test sea válido hay que…
+    opciones:
+      - ["Cambiar asunto, imagen y CTA a la vez", No se sabría qué causó la diferencia.]
+      - [Testear una sola variable definida, Correcto.]
+      - [Enviar solo a una persona, No sería concluyente.]
+      - [No definir objetivo, El objetivo es requisito.]
+    correcta: 1
+    o: c 6 | 116
+  - tema: B2B
+    dif: 2
+    enunciado: El email B2B se caracteriza respecto del B2C por…
+    opciones:
+      - [Apelar casi solo a emociones, Eso describe el B2C.]
+      - ["Mayor racionalidad, decisiones más largas y contenido detallado", Correcto.]
+      - [No incluir información de la empresa, Debe incluirla.]
+      - [No usar métricas, Se usan.]
+    correcta: 1
+    o: c 6 | 124
+  - tema: CTA
+    dif: 2
+    enunciado: "¿Cuántas acciones principales debe tener una campaña, aunque el diseño tenga varios llamados visuales?"
+    opciones:
+      - [Una, Correcto.]
+      - [Tres, No es lo que dice el cuaderno.]
+      - [Ninguna, Necesita una.]
+      - [Tantas como enlaces, Diluye el impacto.]
+    correcta: 0
+    o: c 6 | 115
+  - tema: Desafíos
+    dif: 3
+    enunciado: Limpiar bases obsoletas y reducir envíos innecesarios responde al desafío de…
+    opciones:
+      - [IA y sesgos, Se refiere a autenticidad y sesgos.]
+      - [Sostenibilidad digital, Correcto.]
+      - [Privacidad, Se refiere al uso de datos personales.]
+      - [Saturación, "Se relaciona, pero este desafío apunta al impacto ambiental."]
+    correcta: 1
+    o: c 6 | 125
+  - tema: WhatsApp
+    dif: 3
+    enunciado: Compará email y WhatsApp para comunicar novedades a clientes y mencioná un desafío del chat.
+    modelo: "El email es más formal y permite piezas más completas; WhatsApp ofrece cercanía, inmediatez y diálogo con mensajes breves y conversacionales. Desafíos: no saturar, respetar horarios, cuidar la privacidad y evitar la invasión."
+    criterios:
+      - Contrasta formalidad vs. cercanía/inmediatez
+      - Menciona un desafío del chat
+    o: c 6 | 125-126
+tarjetas:
+  - [Asunto efectivo, Personalizado y no en forma de pregunta.]
+  - [A/B testing, Comparar dos versiones testeando una sola variable con objetivo definido.]
+  - [Indicadores del email, "Tasa de apertura (etapa 1), CTR (etapa 3) y tasa de conversión (etapa 4)."]
+  - [Cuatro desafíos actuales, "Saturación y atención, privacidad, IA y dilemas éticos, sostenibilidad digital."]
+  - [WhatsApp vs. email, "WhatsApp: cercano, inmediato, conversacional; email: más formal. Desafíos: no saturar, horarios, privacidad."]

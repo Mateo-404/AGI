@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Objetivos
+    dif: 1
+    enunciado: ¿Cuál de estos objetivos cumple mejor el patrón verbo + objeto + medida + plazo?
+    opciones:
+      - [Mejorar la presencia digital, No tiene medida ni plazo.]
+      - [Aumentar las visitas a la web en un 40 % en 6 meses, "Correcto: ejemplo del propio cuaderno."]
+      - [Tener más seguidores, Falta medida y plazo.]
+      - [Ser la marca líder, Es difuso y sin plazo.]
+    correcta: 1
+    o: c 9 | 164
+  - tema: KPI
+    dif: 2
+    enunciado: "Para qué sirven los KPI en el plan, según el cuaderno?"
+    opciones:
+      - [Para decorar el informe, No es su propósito.]
+      - [Para validar la estrategia y determinar el éxito de su implementación, Correcto.]
+      - [Para reemplazar los objetivos, Complementan a los objetivos.]
+      - [Para elegir el logo, No guarda relación.]
+    correcta: 1
+    o: c 2 | 45
+  - tema: POEM
+    dif: 2
+    enunciado: "Un blog propio de la empresa es, en POEM, un medio…"
+    opciones:
+      - [Pago, Pago implica pagar por exposición.]
+      - [Propio, "Correcto: la marca lo controla."]
+      - [Ganado, Ganado es lo que otros generan.]
+      - [Ninguno, Encaja como propio.]
+    correcta: 1
+    o: a poem
+  - tema: Honestidad de fuentes
+    dif: 3
+    enunciado: ¿Qué dice el cuaderno de POEM?
+    opciones:
+      - [Lo define y explica en el Cap. 2, No lo hace.]
+      - [Solo lo nombra como consigna en el Anexo 2 (Parte 6c), Correcto.]
+      - [Lo critica, No lo menciona así.]
+      - [Lo reemplaza por AIDA, No hay tal reemplazo.]
+    correcta: 1
+    o: c Anexo 2 | 177
+  - tema: Objetivos
+    dif: 3
+    enunciado: Reformulá «queremos más ventas por Instagram» como objetivo SMART y proponé dos KPI.
+    modelo: "Ej.: «Aumentar un 25 % los pedidos recibidos por Instagram/WhatsApp en los próximos 3 meses mediante publicaciones con catálogo y publicidad geolocalizada». KPI: cantidad de pedidos por canal, tasa de conversión de mensajes a pedidos, CTR de los anuncios."
+    criterios:
+      - "Incluye verbo, objeto, medida y plazo"
+      - Es realista para la organización
+      - Propone KPI coherentes
+    o: c 9 | 164
+tarjetas:
+  - [Patrón de objetivo, "Verbo/acción + objeto + medida + plazo. Ej.: aumentar las visitas un 40 % en 6 meses."]
+  - [KPI, Indicadores que validan la estrategia y el éxito de su implementación.]
+  - [POEM (ampliación), "Paid, Owned, Earned media: medios pagos, propios y ganados."]
+  - [Cascada de objetivos (Google Ads), Estratégico → comercial → de campaña.]

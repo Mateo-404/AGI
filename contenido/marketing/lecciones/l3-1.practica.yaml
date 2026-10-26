@@ -1,0 +1,54 @@
+preguntas:
+  - tema: Plan
+    dif: 1
+    enunciado: "Según el cuaderno, ¿qué elementos contienen invariablemente todos los modelos de plan de organizaciones orientadas al mercado?"
+    opciones:
+      - [Solo presupuesto, No es el listado del cuaderno.]
+      - ["Descripción de la situación, objetivos, estrategias y proyección de resultados", Correcto.]
+      - ["Misión, visión y valores únicamente", "Son parte del análisis inicial, no los cuatro elementos."]
+      - [Organigrama y manual de procesos, No están en el listado.]
+    correcta: 1
+    o: c 2 | 40
+  - tema: Plan
+    dif: 2
+    enunciado: El concepto que la cátedra agrega a la secuencia de etapas respecto de otros modelos es…
+    opciones:
+      - [Rentabilidad, No es el concepto señalado.]
+      - [Oportunidad, "Correcto: «no todos incluyen el concepto de oportunidad»."]
+      - [Logística, No lo es.]
+      - [Franquicia, No lo es.]
+    correcta: 1
+    o: c 2 | 41
+  - tema: Plan
+    dif: 2
+    enunciado: La etapa 3 del plan (objetivos) se caracteriza por…
+    opciones:
+      - [Formularlos con estructura SMART y definir KPI, Correcto.]
+      - [Elegir exclusivamente medios de comunicación, Eso depende de los objetivos.]
+      - [Describir la competencia, Es parte de la etapa 1.]
+      - [Ejecutar las acciones, Es operativo; la etapa 4 define las estrategias.]
+    correcta: 0
+    o: c 2 | 45
+  - tema: Plan
+    dif: 3
+    enunciado: "Una pyme sin área de marketing pregunta si le sirve armar un plan. La respuesta coherente con el cuaderno es:"
+    opciones:
+      - ["No: es solo para grandes empresas", "El cuaderno dice que se aplica a toda la organización, a una unidad, línea o incluso un producto."]
+      - ["Sí: es flexible y su valor está en el proceso de reflexión estratégica", Correcto.]
+      - [Solo si es digital, Puede ser tradicional o 100 % digital.]
+      - [Solo con una agencia, No lo dice el cuaderno.]
+    correcta: 1
+    o: c 2 | 40
+  - tema: Plan
+    dif: 2
+    enunciado: Enumerá las cuatro etapas del plan y explicá qué se decide en cada una.
+    modelo: "1) Análisis de la situación inicial (punto de partida: mercado, sector, competencia). 2) Público objetivo (segmentación y viaje del cliente). 3) Objetivos (SMART y KPI). 4) Estrategia (planes de acción/marketing mix)."
+    criterios:
+      - Menciona las 4 etapas en orden
+      - Explica brevemente cada una
+    o: c 2 | 41-45
+tarjetas:
+  - ["Plan de marketing: definición", "Documento escrito, sistemático y estructurado que define objetivos, programas y medios en un plazo, define responsabilidades y permite controlar la gestión."]
+  - [Etapas del plan (cátedra), 1 análisis de la situación inicial · 2 público objetivo · 3 objetivos (SMART/KPI) · 4 estrategia.]
+  - [¿Por qué es importante el plan?, "Fija cursos de acción, se comparte con otras áreas por escrito, identifica oportunidades y define responsabilidades."]
+  - [Lo importante de planificar, No es el plan en sí sino el proceso de reflexión estratégica.]

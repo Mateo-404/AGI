@@ -1,0 +1,43 @@
+preguntas:
+  - tema: Campañas
+    dif: 1
+    enunciado: ¿Cuál es el primer paso de una campaña de Ads según el cuaderno?
+    opciones:
+      - [Diseñar el anuncio, Es el quinto paso.]
+      - [Definir el objetivo, Correcto.]
+      - [Monitorear, Es el último.]
+      - [Elegir la ubicación, Es el cuarto.]
+    correcta: 1
+    o: c 9 | 170
+  - tema: Audiencias
+    dif: 2
+    enunciado: Una audiencia de personas parecidas a tus clientes actuales es…
+    opciones:
+      - [Personalizada, Esas son quienes ya interactuaron con nosotros.]
+      - [Similar, Correcto.]
+      - [Orgánica, No es un tipo de audiencia.]
+      - [Automática, Se refiere a ubicaciones.]
+    correcta: 1
+    o: c 9 | 171
+  - tema: Presupuesto
+    dif: 2
+    enunciado: "Respecto del presupuesto en Meta Ads, el cuaderno señala que se puede…"
+    opciones:
+      - [Solo fijar un monto total irrevocable, Se puede diario o total y pausar.]
+      - [Elegir presupuesto diario o total y activar o pausar los anuncios en cualquier momento, Correcto.]
+      - [No limitar el gasto, Se define cuánto y por cuánto tiempo.]
+      - [Pagar solo en efectivo, No se menciona.]
+    correcta: 1
+    o: c 9 | 170
+  - tema: Campañas
+    dif: 3
+    enunciado: Elegí un objetivo de negocio y recorré los seis pasos con decisiones concretas.
+    modelo: "Ej.: objetivo de ventas; presupuesto diario bajo por 15 días; audiencia local con intereses; ubicaciones automáticas; anuncio con foto, precio y botón de compra; monitoreo de conversiones y ajuste semanal."
+    criterios:
+      - Recorre los seis pasos en orden
+      - Las decisiones son coherentes con el objetivo
+    o: c 9 | 170-173
+tarjetas:
+  - [Seis pasos de una campaña de Ads, Objetivo · presupuesto · audiencia · ubicaciones · anuncios · monitoreo y optimización.]
+  - [Audiencia personalizada vs. similar, "Personalizada: gente que interactuó con nosotros. Similar: gente parecida a nuestros clientes."]
+  - [Ubicaciones, Automáticas (decide Meta) o manuales (según campaña y audiencia).]

@@ -1,0 +1,44 @@
+preguntas:
+  - tema: 4P digitales
+    dif: 1
+    enunciado: "Cuál de estas NO es una de las 4P digitales del cuaderno:"
+    opciones:
+      - [Personalización, Sí lo es.]
+      - [Par a par, Sí lo es.]
+      - [Posicionamiento, "Correcto: no forma parte de esa lista (la cuarta es predicciones modeladas)."]
+      - [Participación, Sí lo es.]
+    correcta: 2
+    o: c 5 | 103-104
+  - tema: 4P digitales
+    dif: 2
+    enunciado: Lays pidió a los consumidores votar el sabor que quedaría en el mercado. ¿Qué P digital ilustra?
+    opciones:
+      - [Personalización, Se orienta a adaptar la experiencia a cada usuario con datos.]
+      - [Par a par, Se centra en recomendaciones entre usuarios.]
+      - [Participación, "Correcto: involucra directamente a los usuarios y co-crea valor."]
+      - [Predicciones modeladas, Usa análisis cuantitativo de datos para anticipar comportamientos.]
+    correcta: 2
+    o: c 5 | 104
+  - tema: 4P digitales
+    dif: 3
+    enunciado: Una tienda online confía más en las reseñas que en su propio discurso para generar confianza. Esto se explica porque…
+    opciones:
+      - [Los consumidores confían más en sus pares que en lo que expresan las marcas, "Correcto: es el fundamento de «par a par»."]
+      - [Las reseñas siempre son verdaderas, El cuaderno no afirma eso.]
+      - [El precio es más importante, No es el fundamento.]
+      - [Las marcas no pueden comunicar, Pueden; pero el par a par pesa más.]
+    correcta: 0
+    o: c 5 | 103
+  - tema: 4P digitales
+    dif: 3
+    enunciado: Elegí un negocio y proponé una acción para cada una de las 4P digitales.
+    modelo: "Ej. panadería: personalización (promos por WhatsApp según pedidos previos), par a par (mostrar reseñas de Google), participación (votar el nuevo sabor de alfajor), predicciones modeladas (prever demanda por fechas con historial de ventas)."
+    criterios:
+      - Propone una acción por cada P
+      - Cada acción corresponde con la definición
+    o: c 5 | 103-104
+tarjetas:
+  - [Las 4P digitales, "Personalización, par a par, participación y predicciones modeladas."]
+  - [Par a par, Los consumidores confían más en sus pares que en las marcas; importa construir comunidad.]
+  - [Participación, "Involucramiento y co-creación de valor con los usuarios (ej.: Lays y la votación del sabor)."]
+  - [Predicciones modeladas, Análisis cuantitativo de datos en tiempo real para anticipar el interés y el proceso de compra.]

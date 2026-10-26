@@ -1,0 +1,54 @@
+preguntas:
+  - tema: Precio
+    dif: 1
+    enunciado: ¿Qué límite impone la demanda al precio?
+    opciones:
+      - [Un límite inferior, Los costos marcan el límite inferior.]
+      - [Un límite superior, Correcto.]
+      - [Ninguno, Cada precio genera un nivel de demanda distinto.]
+      - [Solo en B2B, Aplica en general.]
+    correcta: 1
+    o: c 5 | 94
+  - tema: Objetivos
+    dif: 2
+    enunciado: Lanzás un gadget innovador con un precio inicial alto para quienes más lo desean y luego lo bajás. ¿Qué objetivo de fijación aplicás?
+    opciones:
+      - [Supervivencia, Se orienta a cubrir costos ante excesos de capacidad.]
+      - [Participación de mercado, Implica precios bajos de entrada.]
+      - [Desnatado, "Correcto: se capta «la nata» del mercado dispuesto a pagar más."]
+      - [Precio por subasta, "Es un método, no un objetivo."]
+    correcta: 2
+    o: c 5 | 94
+  - tema: Método
+    dif: 2
+    enunciado: Sumar al costo un porcentaje estándar para obtener el precio es…
+    opciones:
+      - [Fijación por valor percibido, "Parte de lo que el cliente valora, no del costo."]
+      - [Fijación mediante márgenes, Correcto.]
+      - [Fijación por subasta, Se basa en pujas.]
+      - [Desnatado, "Es un objetivo, no un método de cálculo."]
+    correcta: 1
+    o: c 5 | 95
+  - tema: Competencia
+    dif: 3
+    enunciado: "El competidor ofrece una garantía extendida que vos no ofrecés. Según el cuaderno, para comparar precios deberías…"
+    opciones:
+      - [Ignorarla, El cuaderno pide evaluar su valor.]
+      - [Restar el valor de esa característica de tu propio precio para ubicarte frente a su oferta, "Correcto: si él ofrece algo que vos no, ese valor se resta del tuyo."]
+      - [Sumarla al precio del competidor, Se suma lo que *vos* ofrecés y él no.]
+      - [Duplicar tu precio, No tiene fundamento.]
+    correcta: 1
+    o: c 5 | 94-95
+  - tema: Estructura de precios
+    dif: 2
+    enunciado: Nombrá cuatro estrategias de adaptación del precio final y da un ejemplo de una.
+    modelo: "Geográfica, descuentos y bonificaciones, promocionales y diferenciada. Ej.: descuento por pago en efectivo o por volumen (descuentos y bonificaciones)."
+    criterios:
+      - Menciona las cuatro estrategias
+      - Da un ejemplo coherente
+    o: c 5 | 95
+tarjetas:
+  - [Seis pasos para fijar un precio, Objetivo · demanda · costos · competencia · método · precio final.]
+  - [Límites del precio, Demanda = límite superior; costos = límite inferior.]
+  - [Objetivos de fijación, "Ganancias, supervivencia, participación de mercado, desnatado, liderazgo de producto/calidad."]
+  - [Estrategias de adaptación del precio, Geográfica; descuentos y bonificaciones; promocional; diferenciada.]

@@ -1,0 +1,66 @@
+preguntas:
+  - tema: SEO
+    dif: 1
+    enunciado: ¿Cuál es la diferencia central entre SEO y SEM?
+    opciones:
+      - [El SEO es pago y el SEM orgánico, Es al revés.]
+      - [El SEO busca ganarse posiciones orgánicas; el SEM paga anuncios para aparecer, Correcto.]
+      - [Son lo mismo, No lo son.]
+      - [El SEM solo existe en redes, Es en buscadores.]
+    correcta: 1
+    o: c 8 | 141-142
+  - tema: On page
+    dif: 2
+    enunciado: La meta description…
+    opciones:
+      - [Es un factor de ranking directo, No influye directamente en el ranking.]
+      - [Acompaña al título en los resultados e impacta en el CTR, Correcto.]
+      - [Debe repetirse 20 veces con la palabra clave, Eso es keyword stuffing.]
+      - [Reemplaza al h1, Cumplen funciones distintas.]
+    correcta: 1
+    o: c 8 | 143
+  - tema: Palabras clave
+    dif: 2
+    enunciado: Cuál es una palabra clave long-tail?
+    opciones:
+      - [celulares, Es short-tail (general y amplia).]
+      - [celulares con buena cámara por menos de 100 mil pesos, Correcto.]
+      - [ropa, Es short-tail.]
+      - [tienda, Es short-tail.]
+    correcta: 1
+    o: c 8 | 143
+  - tema: Off page
+    dif: 2
+    enunciado: ¿Qué práctica de link building debe evitarse?
+    opciones:
+      - [Colaboraciones con otros sitios, Es una técnica natural.]
+      - [Comprar enlaces, "Correcto: el cuaderno la desaconseja."]
+      - [Menciones en medios, Técnica natural.]
+      - [Contenido de valor que otros enlazan, Técnica natural.]
+    correcta: 1
+    o: c 8 | 145
+  - tema: Datos estructurados
+    dif: 3
+    enunciado: ¿Para qué sirven los datos estructurados (schema markup)?
+    opciones:
+      - [Para ocultar contenido, No es su fin.]
+      - ["Para describir el contenido con precisión, generar rich snippets, mejorar el CTR y la comprensión semántica", Correcto.]
+      - [Para aumentar los backlinks automáticamente, No lo hacen.]
+      - [Para reemplazar el HTTPS, No.]
+    correcta: 1
+    o: c 8 | 144
+  - tema: SEO
+    dif: 3
+    enunciado: Explicá por qué una tienda online debería combinar on page y off page y dá un ejemplo de cada uno.
+    modelo: "On page mejora cómo los buscadores entienden y valoran el sitio (ej.: title con palabra clave, HTTPS, velocidad). Off page construye autoridad externa (ej.: backlinks de medios). Se complementan: un sitio bien optimizado pero sin autoridad rankea peor que uno con ambas."
+    criterios:
+      - Distingue on page y off page
+      - Da un ejemplo de cada uno
+      - Justifica la combinación
+    o: c 8 | 142-146
+tarjetas:
+  - [SEO on page vs. off page, "On page: optimizaciones dentro del sitio (contenido, HTML, técnica). Off page: autoridad desde afuera (backlinks, menciones)."]
+  - [Factores on page, "Contenido de calidad, palabras clave, código HTML (title, meta description, h1), datos estructurados, estructura técnica."]
+  - [Short-tail vs. long-tail, "Short: generales y amplias. Long: frases específicas, menor competencia, intención más clara."]
+  - [Backlink, "Enlace entrante desde otro sitio: «voto de confianza»; pesa más cuanto mayor la autoridad del sitio que enlaza."]
+  - [Rich snippets, "Fragmentos enriquecidos (estrellas, precios, recetas) obtenidos con schema markup; mejoran el CTR."]

@@ -1,0 +1,66 @@
+preguntas:
+  - tema: Fases
+    dif: 1
+    enunciado: "Evaluar alternativas como conjuntos de atributos con distintas capacidades de brindar beneficios ocurre en la fase:"
+    opciones:
+      - [Reconocimiento del problema, Allí se identifica la necesidad.]
+      - [Búsqueda de información, Allí se recopila información.]
+      - [Evaluación de alternativas, Correcto.]
+      - [Comportamiento post compra, Es posterior a la compra.]
+    correcta: 2
+    o: c 3 | 58
+  - tema: Baja implicación
+    dif: 2
+    enunciado: "Cambiar de marca de galletitas seguido, por probar, aunque el producto sea barato, es:"
+    opciones:
+      - [Baja implicación sin diferencias de marca, Allí se repite por hábito.]
+      - [Comportamiento de búsqueda de variedad, "Correcto: baja implicación con diferencias de marca significativas."]
+      - [Compra de alta implicación, Es una compra barata y poco meditada.]
+      - [Compra B2B, No es compra organizacional.]
+    correcta: 1
+    o: c 3 | 60
+  - tema: Messy Middle
+    dif: 2
+    enunciado: El «lío del medio» describe el proceso de decisión como…
+    opciones:
+      - [Lineal y predecible, Es lo que el modelo discute.]
+      - [Un bucle que alterna exploración y evaluación, Correcto.]
+      - [Solo offline, Es digital.]
+      - [Un embudo de cuatro etapas, Es la visión tradicional.]
+    correcta: 1
+    o: c 9 | 167-168
+  - tema: Riesgo percibido
+    dif: 3
+    enunciado: Un cliente posterga la compra de un producto caro por miedo a quedar endeudado. ¿Qué riesgo percibido es?
+    opciones:
+      - [Funcional, Es el temor a que no funcione.]
+      - [Físico, Es el daño físico.]
+      - [Financiero, Correcto.]
+      - [No es un riesgo, "Sí lo es: modifica la decisión."]
+    correcta: 2
+    o: c 3 | 59
+  - tema: 4S
+    dif: 2
+    enunciado: Las personas usan la cámara del celular o preguntan a una IA para encontrar un producto. ¿Qué «S» ilustra?
+    opciones:
+      - [Streaming, Es consumo de contenido continuo.]
+      - [Scrolling, Es descubrimiento sin intención.]
+      - [Searching, "Correcto: la búsqueda incluye cámara, IA y voz."]
+      - [Shopping, Es la compra desde cualquier punto.]
+    correcta: 2
+    o: c 9 | 169
+  - tema: Recorrido
+    dif: 3
+    enunciado: ¿Por qué un esquema de embudo lineal puede ser insuficiente para explicar el comportamiento del consumidor actual? Usá dos ideas del cuaderno.
+    modelo: "Porque el recorrido es dinámico, fragmentado y personalizado: hay múltiples puntos de contacto simultáneos y cruzados, y el modelo del «lío del medio» muestra un bucle entre exploración y evaluación; además, los 4S indican que se descubre y se compra en cualquier momento."
+    criterios:
+      - Menciona recorrido no lineal/múltiples puntos de contacto
+      - Menciona exploración-evaluación o los 4S
+    o: c 9 | 167-169
+tarjetas:
+  - [Cinco fases de la decisión B2C, Reconocimiento del problema · búsqueda de información · evaluación de alternativas · decisión de compra · comportamiento post compra.]
+  - [Fuentes de información, "Personales, comerciales, públicas y de experiencia."]
+  - [Subdecisiones de compra, "Marca, distribuidor, cantidad, tiempo y forma de pago."]
+  - [Messy Middle, Bucle entre exploración y evaluación en el recorrido digital (Google).]
+  - ["4S (BCG, 2025)", "Streaming, Scrolling, Searching, Shopping."]
+  - ["ZMOT (Lecinski, 2011)", Momento en que la persona investiga online antes de comprar (ampliación; no está en el cuaderno).]

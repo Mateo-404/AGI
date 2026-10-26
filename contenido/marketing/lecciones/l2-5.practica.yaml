@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Canales
+    dif: 1
+    enunciado: Un canal que vende a quienes compran para revender o usar en su negocio es…
+    opciones:
+      - [Minorista, Vende directamente al consumidor final.]
+      - [Mayorista, Correcto.]
+      - [Push, "Es una estrategia, no un tipo de canal."]
+      - [Pull, "Es una estrategia, no un tipo de canal."]
+    correcta: 1
+    o: c 5 | 96
+  - tema: Push vs. pull
+    dif: 2
+    enunciado: Una marca con fuerte lealtad logra que los consumidores pidan su producto en farmacias y las farmacias lo soliciten. ¿Qué estrategia es?
+    opciones:
+      - [Empuje (push), Empuje usa fuerza de ventas/promoción comercial para inducir a intermediarios.]
+      - [Atracción (pull), "Correcto: el consumidor «tira» del canal; funciona mejor con lealtad fuerte."]
+      - [Desnatado, Es una estrategia de precio.]
+      - [Venta personal, "Es un modo de comunicación, no el mecanismo descripto."]
+    correcta: 1
+    o: c 5 | 97-98
+  - tema: Modos de comunicación
+    dif: 2
+    enunciado: ¿Cuál es la característica distintiva de la publicidad frente a las relaciones públicas?
+    opciones:
+      - ["Es una forma pagada, no personal, con patrocinador identificado", Correcto.]
+      - [Se dirige solo a empleados, Eso es un tipo de programa de relaciones públicas.]
+      - [No tiene patrocinador, Tiene patrocinador identificado.]
+      - [Es siempre gratuita, Es pagada.]
+    correcta: 0
+    o: c 5 | 99
+  - tema: Comunicación eficaz
+    dif: 3
+    enunciado: "En las etapas de una comunicación eficaz, ¿qué se define antes de elegir los canales?"
+    opciones:
+      - [La medición de resultados, Es de las últimas etapas.]
+      - ["Identificar el público meta, determinar objetivos y diseñar la comunicación", "Correcto: ese es el orden de la figura."]
+      - [La mezcla de medios, Viene después de canales y presupuesto.]
+      - ["Nada: se eligen primero los canales", No es el orden planteado.]
+    correcta: 1
+    o: c 5 | 99
+  - tema: Push/pull
+    dif: 3
+    enunciado: "Explicá con un ejemplo propio una situación donde convenga push y otra donde convenga pull, y por qué."
+    modelo: "Push: marca nueva y poco conocida que vende a distribuidores y les ofrece bonificaciones para que la recomienden (poca lealtad). Pull: marca consolidada que hace comunicación al consumidor para que lo pida en el punto de venta (lealtad fuerte)."
+    criterios:
+      - Push asociado a poca lealtad
+      - Pull asociado a lealtad fuerte
+      - Ejemplos coherentes
+    o: c 5 | 97-98
+tarjetas:
+  - [Canales de distribución, Minorista (al consumidor final) y mayorista (a quienes revenden o usan en su negocio).]
+  - [Push vs. pull, "Push: la empresa empuja el producto a los intermediarios (poca lealtad). Pull: los consumidores lo piden y atraen al canal (lealtad fuerte)."]
+  - [Los 8 modos de comunicación, Publicidad · promoción de ventas · eventos y experiencias · relaciones públicas · marketing directo · boca a boca · marketing interactivo · venta personal.]
+  - [Decisiones de una comunicación, "Qué decir, cómo, a quién, cuándo y con qué frecuencia."]

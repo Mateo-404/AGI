@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Embudo del email
+    dif: 1
+    enunciado: La métrica fundamental de la etapa de apertura es…
+    opciones:
+      - [CTR, Es la métrica de la etapa de reacción.]
+      - [Tasa de apertura, Correcto.]
+      - [Tasa de conversión, Es de la cuarta etapa.]
+      - [ROI, Es un resultado global.]
+    correcta: 1
+    o: c 6 | 110
+  - tema: Base de datos
+    dif: 2
+    enunciado: Comprar una lista de contactos para enviar una campaña es…
+    opciones:
+      - [Recomendable para crecer rápido, El cuaderno lo desaconseja en absoluto.]
+      - ["Una práctica desaconsejada: poco ética y daña la reputación y la entregabilidad", Correcto.]
+      - [Obligatoria en B2B, No.]
+      - [Indiferente, Tiene consecuencias.]
+    correcta: 1
+    o: c 6 | 112
+  - tema: Entregabilidad
+    dif: 2
+    enunciado: ¿Qué protocolo verifica que el contenido del email no fue modificado y proviene del dominio que lo envió?
+    opciones:
+      - [SPF, SPF autoriza servidores.]
+      - [DKIM, "Correcto: firma digital del mensaje."]
+      - [RGPD, Es un reglamento de datos personales.]
+      - [CTR, Es una métrica.]
+    correcta: 1
+    o: c 6 | 114
+  - tema: Embudo del email
+    dif: 3
+    enunciado: "Según el cuaderno, en la cuarta etapa (conversión) el trabajo clave está…"
+    opciones:
+      - [En el asunto del email, Eso es la apertura.]
+      - [En la plataforma de aterrizaje y el checkout, Correcto.]
+      - [En la IP propia, Es la recepción.]
+      - [En los horarios de envío, Es la reacción.]
+    correcta: 1
+    o: c 6 | 111
+  - tema: Planificación
+    dif: 3
+    enunciado: "Para una ONG que quiere recaudar donaciones por email, definí objetivo SMART, público y dos buenas prácticas de base de datos."
+    modelo: "Ej.: «Aumentar un 20 % las donaciones recurrentes en 3 meses». Público: donantes previos y personas suscriptas con consentimiento. Buenas prácticas: no usar listas compradas, incluir enlace de baja visible y depurar inactivos."
+    criterios:
+      - Objetivo con medida y plazo
+      - Público específico
+      - Dos buenas prácticas válidas
+    o: c 6 | 111-113
+tarjetas:
+  - [Cuatro momentos del embudo del email, Recepción · apertura (tasa de apertura) · reacción (CTR) · conversión.]
+  - [Seis pasos de una campaña, Objetivo · público · base de datos · plataformas de envío · diseño de la pieza · medición y mejora.]
+  - [SPF vs. DKIM, "SPF: servidores autorizados para enviar. DKIM: firma digital que verifica origen e integridad."]
+  - [Buenas prácticas de la base de datos, "Sin listas adquiridas, enlace de baja visible, depurar inactivos."]

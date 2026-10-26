@@ -1,0 +1,44 @@
+preguntas:
+  - tema: UX
+    dif: 1
+    enunciado: ¿Por qué la UX es crítica en el e-commerce?
+    opciones:
+      - [Porque la interfaz es el único punto de contacto entre el usuario y la marca, Correcto.]
+      - [Porque reemplaza al producto, No.]
+      - [Porque solo importa el diseño estético, El cuaderno dice que no es solo estético.]
+      - [Porque elimina la necesidad de SEO, Se complementan.]
+    correcta: 0
+    o: c 7 | 138
+  - tema: UX
+    dif: 2
+    enunciado: ¿Cuál de estos NO es un impacto directo de la UX según el cuaderno?
+    opciones:
+      - [Tasa de conversión, Sí lo es.]
+      - [Reducción de carritos abandonados, Sí lo es.]
+      - [Aumento del precio de las materias primas, "Correcto: no guarda relación con la UX."]
+      - [Percepción de marca, Sí lo es.]
+    correcta: 2
+    o: c 7 | 138
+  - tema: Cobertura
+    dif: 2
+    enunciado: "Sobre m-commerce, el cuaderno…"
+    opciones:
+      - [Lo define y explica en el Cap. 7, No aparece como concepto.]
+      - ["No lo desarrolla: solo hay indicios (responsive, UX)", Correcto.]
+      - [Lo prohíbe, No.]
+      - [Lo equipara a marketplace, No.]
+    correcta: 1
+    o: c 7 | 138-145
+  - tema: UX
+    dif: 3
+    enunciado: Elegí una tienda online que uses y evaluá dos principios de UX (uno bien resuelto y uno a mejorar) con evidencia concreta.
+    modelo: "Ej.: Buena navegación (filtros y buscador efectivos) pero velocidad mejorable en celular (tarda más de 3 segundos). Propuesta: comprimir imágenes y medir con PageSpeed Insights."
+    criterios:
+      - Aplica dos principios de la tabla 12
+      - Usa evidencia concreta
+      - Propone una mejora
+    o: c 7 | 138-139
+tarjetas:
+  - [Impacto de la UX, "Tasa de conversión, retención y lealtad, menos carritos abandonados y mejor percepción de marca."]
+  - [Seis principios de UX, "Simplicidad, navegación intuitiva, consistencia visual, velocidad de carga, personalización y evaluación continua."]
+  - ["Pagos, logística y m-commerce en el cuaderno", "Solo mencionados: requieren bibliografía complementaria."]

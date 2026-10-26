@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Modelo
+    dif: 1
+    enunciado: "En el modelo de comportamiento del consumidor, la «evaluación posterior a la compra» corresponde a la fase de:"
+    opciones:
+      - [Entrada, La entrada son las influencias externas.]
+      - [Proceso, "El proceso es el reconocimiento, la búsqueda y la evaluación de alternativas."]
+      - [Salida, "Correcto: junto con el comportamiento de compra."]
+      - [Ninguna, Sí pertenece a una fase.]
+    correcta: 2
+    o: c 3 | 49-50
+  - tema: Factores
+    dif: 2
+    enunciado: "¿Qué factores ejercen, según el cuaderno, la influencia más amplia y profunda en la compra?"
+    opciones:
+      - [Personales, Son relevantes pero no los de mayor alcance.]
+      - [Sociales, Tampoco.]
+      - [Culturales, Correcto.]
+      - [Situacionales, "Se tratan en la fase de decisión, no entre estos tres."]
+    correcta: 2
+    o: c 3 | 50
+  - tema: Familia
+    dif: 2
+    enunciado: "La familia en la que una persona nació y se crió se denomina, según el cuaderno:"
+    opciones:
+      - [De procreación, Es la formada por cónyuge e hijos.]
+      - [De orientación, "Correcto: madre/padre y hermanos."]
+      - [Grupo aspiracional, No es una categoría del cuaderno.]
+      - [Subcultura, No corresponde.]
+    correcta: 1
+    o: c 3 | 52
+  - tema: VALS
+    dif: 3
+    enunciado: "Un banco promociona un préstamo con un mensaje emotivo sin datos de tasas ni costos a un público «pensador práctico». Según el cuaderno, el error es…"
+    opciones:
+      - [Usar un canal digital, El canal no es el problema.]
+      - [Hablar a un perfil práctico con un mensaje emocional sin información concreta, "Correcto: este perfil necesita datos, características y relación calidad-precio."]
+      - [Incluir datos, Es lo que debería hacer.]
+      - [Segmentar por edad, No es el error planteado.]
+    correcta: 1
+    o: c 3 | 55
+  - tema: Ciclo de vida
+    dif: 2
+    enunciado: Elegí un evento crítico del ciclo de vida y explicá qué nuevas necesidades podría detonar y cómo lo aprovecharía un negocio.
+    modelo: "Ej.: mudanza → necesidades de muebles, servicios, decoración y logística; el negocio puede segmentar por «mudanza reciente» con ofertas de bienvenida y packs de instalación. Los eventos críticos detonan nuevas necesidades."
+    criterios:
+      - Elige un evento crítico válido
+      - Identifica nuevas necesidades
+      - Propone una acción de marketing
+    o: c 3 | 52
+tarjetas:
+  - [Fases del modelo de comportamiento del consumidor, Entrada (marketing + influencias sociológicas) → proceso (decisión + campo psicológico) → salida (compra + evaluación posterior).]
+  - [Tres grupos de factores, "Culturales (cultura, subcultura, clase social), sociales (grupos de referencia, familia, roles/estatus), personales (edad/ciclo de vida, ocupación, personalidad/autoconcepto, estilo de vida/valores)."]
+  - [Autoconcepto, "Real, ideal y según los demás: influye en la elección y uso de una marca."]
+  - [VALS, "Valores y estilos de vida: segmentación que combina ambos (SRI); sirve «o cualquier otro método» para conocer al cliente."]

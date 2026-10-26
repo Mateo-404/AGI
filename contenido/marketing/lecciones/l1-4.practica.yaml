@@ -1,0 +1,43 @@
+preguntas:
+  - tema: Estratégico vs. operativo
+    dif: 1
+    enunciado: El marketing operativo (táctico) se caracteriza por…
+    opciones:
+      - [Prever necesidades futuras y evaluar nichos nuevos, Es marketing estratégico.]
+      - ["Llevar a la práctica el marketing mix para alcanzar objetivos, a corto/medio plazo", Correcto.]
+      - [Definir la misión y la visión, Corresponde a la planificación estratégica de la organización.]
+      - [No requerir planificación, "Requiere planificar, ejecutar y controlar."]
+    correcta: 1
+    o: c 2 | 37-38
+  - tema: Estrategia
+    dif: 2
+    enunciado: ¿Cuál NO es una de las ideas que el cuaderno destaca de la definición de estrategia de Kotler (1993)?
+    opciones:
+      - [Cambios en el entorno, Sí es una de las cinco ideas.]
+      - [Aprovechamiento de recursos internos, Sí es una de las cinco ideas.]
+      - [Reducir costos por debajo de la competencia en todos los casos, "Correcto: no figura entre las ideas listadas."]
+      - [Ventaja competitiva, Sí es una de las cinco ideas.]
+    correcta: 2
+    o: c 9 | 161-162
+  - tema: Marketing relacional
+    dif: 3
+    enunciado: ¿Qué afirmación es honesta respecto de «marketing relacional» y el cuaderno?
+    opciones:
+      - [El cuaderno lo desarrolla en un capítulo propio, "No: el término no aparece."]
+      - ["El término no aparece, pero sus ideas (relaciones redituables, fidelización) sí están en las definiciones y en Marketing 2.0", Correcto.]
+      - [El cuaderno lo rechaza como concepto, No hay tal rechazo.]
+      - [Es sinónimo de marketing operativo, "No: son planos distintos."]
+    correcta: 1
+    o: c 1 | 13-17
+  - tema: Estratégico vs. operativo
+    dif: 2
+    enunciado: "Para una cafetería, da un ejemplo de decisión estratégica y otro de decisión operativa y justificá con el horizonte y el foco."
+    modelo: "Estratégica: decidir si expandirse a servicio corporativo de viandas en los próximos 2-3 años tras analizar el mercado (mediano/largo plazo, oportunidad). Operativa: fijar el combo de desayuno de esta semana, su precio y su presupuesto en redes (corto plazo, uso del marketing mix)."
+    criterios:
+      - Ejemplo estratégico coherente con horizonte largo y análisis de oportunidades
+      - Ejemplo operativo coherente con el mix y corto plazo
+      - Justifica con horizonte y foco
+    o: c 2 | 37-38
+tarjetas:
+  - [Marketing estratégico vs. operativo, "Estratégico: necesidades actuales y futuras, nichos, segmentos, oportunidades (medio/largo plazo). Operativo: aplicar el mix para lograr objetivos, controlar y ejecutar (corto/medio plazo)."]
+  - ["Estrategia según Kotler (1993): 5 ideas", Organización adaptada · oportunidad · cambios del entorno · recursos internos · ventaja competitiva.]

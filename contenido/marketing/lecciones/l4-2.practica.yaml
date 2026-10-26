@@ -1,0 +1,55 @@
+preguntas:
+  - tema: SEM
+    dif: 1
+    enunciado: "En el sistema de subasta de Google Ads, la posición de un anuncio depende de…"
+    opciones:
+      - [Solo del dinero ofertado, "No únicamente: también de la calidad y la experiencia."]
+      - ["La oferta, la calidad/relevancia del anuncio y la experiencia en la página de destino", Correcto.]
+      - [El azar, No.]
+      - [La cantidad de seguidores en redes, No es un factor mencionado.]
+    correcta: 1
+    o: c 8 | 146
+  - tema: Alcance
+    dif: 2
+    enunciado: "Para generar conversiones (ventas), el cuaderno recomienda en general un público…"
+    opciones:
+      - [Más amplio posible, Es más adecuado para reconocimiento de marca.]
+      - [Más específico, "Correcto: mayor precisión y relevancia."]
+      - [Indistinto, La elección depende del objetivo.]
+      - [Solo por dispositivo, Se combinan varias variables.]
+    correcta: 1
+    o: c 8 | 147
+  - tema: Shopping
+    dif: 2
+    enunciado: ¿Qué necesita un anunciante para usar Google Shopping?
+    opciones:
+      - [Un canal de YouTube, No es requisito.]
+      - ["Un sitio con e-commerce, cuenta en Merchant Center y un feed de productos", Correcto.]
+      - [Una app, No es requisito.]
+      - [Un perfil en Instagram, No es requisito.]
+    correcta: 1
+    o: c 8 | 150
+  - tema: Modelos de pago
+    dif: 3
+    enunciado: Una campaña de video que cobra por cada mil impresiones usa el modelo…
+    opciones:
+      - [CPC, Se paga por clic.]
+      - [CPA, Se paga por adquisición.]
+      - [CPM, "Correcto: costo por mil impresiones."]
+      - [CTR, "Es una métrica, no un modelo de pago."]
+    correcta: 2
+    o: c 8 | 148
+  - tema: SEM
+    dif: 3
+    enunciado: Una tienda nueva quiere visibilidad rápida. Explicá por qué el SEM puede ser útil y qué decisiones de alcance y presupuesto tomarías.
+    modelo: "El SEM permite acceder a los primeros puestos de inmediato y medir el ROI. Elegiría objetivo de ventas/conversiones, un público específico (ubicación, edad, dispositivo) y presupuesto diario con puja por clic (CPC), cuidando la calidad del anuncio y de la página de destino."
+    criterios:
+      - Justifica la inmediatez del SEM
+      - Define alcance acorde al objetivo
+      - Menciona presupuesto/puja y calidad
+    o: c 8 | 146-149
+tarjetas:
+  - [SEM, "Publicidad paga en buscadores (Google Ads): resultados inmediatos, subasta, medición precisa."]
+  - [Cuatro pasos de campaña, Objetivo · alcance · anuncio · presupuesto y puja.]
+  - [Qué define la posición del anuncio, "Oferta máxima, nivel de calidad (relevancia, experiencia, CTR esperado) y extensiones."]
+  - [Tipos de anuncio, "Búsqueda, Shopping, Red de Display, YouTube y campañas locales."]

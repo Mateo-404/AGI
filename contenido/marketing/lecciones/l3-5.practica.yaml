@@ -1,0 +1,43 @@
+preguntas:
+  - tema: B2B
+    dif: 1
+    enunciado: "En el mercado B2B la demanda es, entre otras características:"
+    opciones:
+      - ["Derivada, inelástica y fluctuante", "Correcto, según la figura del cuaderno."]
+      - [Siempre elástica, Se la describe como inelástica.]
+      - [Independiente del consumo final, Es derivada del consumo.]
+      - [Solo local, No se afirma.]
+    correcta: 0
+    o: c 3 | 68
+  - tema: Etapas
+    dif: 2
+    enunciado: "Acordar precios, plazos de entrega, condiciones de pago y garantías corresponde a:"
+    opciones:
+      - [Búsqueda de proveedores, Es buscar quién ofrece el producto.]
+      - [Rutina de pedido, Correcto.]
+      - [Especificación del producto, Define características.]
+      - [Identificación del problema, Es reconocer la necesidad.]
+    correcta: 1
+    o: c 3 | 69
+  - tema: Compra productiva
+    dif: 3
+    enunciado: ¿Por qué una compra productiva suele ser más compleja?
+    opciones:
+      - [Porque las especificaciones con el cliente están definidas de antemano y los cambios deben consensuarse, Correcto.]
+      - [Porque no interviene compras, Siempre interviene compras.]
+      - [Porque es siempre más barata, No se trata de precio.]
+      - [Porque solo se hace en e-commerce, No se afirma.]
+    correcta: 0
+    o: c 3 | 70
+  - tema: B2B vs. B2C
+    dif: 2
+    enunciado: Mencioná tres diferencias entre comprar como consumidor y comprar como empresa.
+    modelo: "Menos compradores pero de mayor tamaño, compradores profesionales y múltiples influencias de compra; demanda derivada, inelástica y fluctuante; relaciones más estrechas; proceso más formal con varias etapas."
+    criterios:
+      - Menciona al menos tres diferencias válidas
+      - Las relaciona con el mercado B2B
+    o: c 3 | 68
+tarjetas:
+  - [Seis etapas de compra B2B, Identificación del problema · especificación del producto · búsqueda de proveedores · elección · rutina de pedido · revisión de resultados.]
+  - [Rasgos del mercado de negocios, "Pocos compradores grandes, compradores profesionales, múltiples influencias, demanda derivada/inelástica/fluctuante, compra directa."]
+  - [Compra productiva vs. no productiva, "Productiva: va al producto final, más compleja. No productiva: más flexible; aprobación conjunta de varias áreas."]

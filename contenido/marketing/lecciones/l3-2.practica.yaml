@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Análisis
+    dif: 1
+    enunciado: ¿Qué pregunta guía el análisis del mercado en la etapa 1?
+    opciones:
+      - [¿Cuántos empleados tiene la competencia?, Pertenece al análisis de la competencia.]
+      - [¿Cómo está afectando el mundo digital al mercado al que se dirige la organización?, Correcto.]
+      - [¿Cuánto cuesta producir?, Es costos; no es la pregunta del análisis de mercado.]
+      - [¿Qué estrategia seguir?, Es la etapa 4.]
+    correcta: 1
+    o: c 2 | 41
+  - tema: 5 fuerzas
+    dif: 2
+    enunciado: Que sea fácil para nuevos negocios ingresar al mercado corresponde a…
+    opciones:
+      - [Poder de los proveedores, Habla de proveedores.]
+      - [Amenaza de nuevos competidores, Correcto.]
+      - [Poder del cliente, Habla del cliente.]
+      - [Productos sustitutos, Son alternativas de otra categoría.]
+    correcta: 1
+    o: c 2 | 43
+  - tema: 8 dimensiones
+    dif: 2
+    enunciado: "Revisar premios, políticas y comentarios de clientes pertenece a la dimensión:"
+    opciones:
+      - [Finanzas, "Son ventas, ingresos y ganancias."]
+      - [Reputación / imagen, Correcto.]
+      - [Tecnología, Es hardware y software.]
+      - [Alianzas, Son asociaciones y cámaras.]
+    correcta: 1
+    o: c 2 | 43
+  - tema: Inteligencia
+    dif: 3
+    enunciado: ¿Por qué el cuaderno incorpora la inteligencia de mercados en esta etapa?
+    opciones:
+      - [Porque el entorno es cambiante y requiere monitoreo sistemático, Correcto.]
+      - [Porque reemplaza al plan de marketing, No lo reemplaza.]
+      - [Porque solo sirve para grandes empresas, No lo dice.]
+      - [Porque elimina la necesidad de datos, "Al contrario: se basa en datos."]
+    correcta: 0
+    o: c 2 | 44
+  - tema: Análisis
+    dif: 3
+    enunciado: "Elegí un negocio y proponé qué fuentes usarías para analizar mercado, sector y competencia, y qué harías con los datos."
+    modelo: "Mercado: informes de la CACE/estadísticas de acceso y uso de Internet; sector: cámaras o asociaciones del rubro; competencia: revisar presencia digital y herramientas como Semrush o SimilarWeb. Luego seleccionar, priorizar, interpretar y plasmar en un informe para decidir, y repetir periódicamente."
+    criterios:
+      - Distingue fuentes para mercado/sector/competencia
+      - Menciona seleccionar-interpretar y entregable
+      - Menciona frecuencia/actualización
+    o: c 2 | 41-44
+tarjetas:
+  - [Tres análisis de la etapa 1, "Mercado (cómo lo afecta lo digital), sector (tendencias) y competencia (comparación y mejores prácticas)."]
+  - [5 fuerzas de Porter, Sustitutos · nuevos competidores · intensidad de la competencia · poder del cliente · poder de proveedores.]
+  - [Matriz de 8 dimensiones, "Procesos, finanzas, reputación/imagen, marketing y comunicación, organización, alianzas, tecnología, producto/mercado."]
+  - ["Inteligencia de mercados (Kotler, 1974)", "Diseño sistemático, recolección, análisis y presentación de información relevante para una situación de marketing."]

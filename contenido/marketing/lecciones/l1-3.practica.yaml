@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Miopía
+    dif: 1
+    enunciado: ¿En qué consiste la miopía de marketing?
+    opciones:
+      - [En no tener un plan de marketing, La miopía no es ausencia de plan; es un error de enfoque.]
+      - [En enfocarse en el producto y descuidar las necesidades (y beneficios) de los clientes, "Correcto, según Levitt (1960)."]
+      - [En segmentar demasiado el mercado, "No tiene relación: eso es hipersegmentación."]
+      - [En invertir poco en publicidad, La inversión publicitaria no define la miopía.]
+    correcta: 1
+    o: c 1 | 24-25
+  - tema: Metodología
+    dif: 2
+    enunciado: "Una ferretería publica una lista de especificaciones de taladros. ¿Qué metodología aplicarías primero, por ser la menos compleja?"
+    opciones:
+      - [Círculo de oro, Es la más compleja y exige trabajo organizacional profundo.]
+      - [Traducir características técnicas en beneficios percibidos por el cliente, "Correcto: es la Metodología 1, la más simple."]
+      - [Rediseñar la misión de la empresa, Es un trabajo de nivel organizacional (más complejo).]
+      - [Eliminar las especificaciones, Las especificaciones pueden mantenerse; se trata de traducirlas a beneficios.]
+    correcta: 1
+    o: c 1 | 26-27
+  - tema: Círculo de oro
+    dif: 2
+    enunciado: "Según Sinek, ¿cómo comunican las organizaciones exitosas?"
+    opciones:
+      - [Del Qué al Por qué, "Es lo que hacen habitualmente las organizaciones no exitosas, según el cuaderno."]
+      - [Solo desde el Cómo, No es el orden planteado.]
+      - [Del Por qué hacia el Cómo y el Qué, "Correcto: empiezan por el propósito y generan conexión emocional."]
+      - [Únicamente con precio, El modelo no se centra en precio.]
+    correcta: 2
+    o: c 1 | 28
+  - tema: Miopía
+    dif: 3
+    enunciado: "En el caso del dentista Guillermo, ¿por qué la figura 13 es mejor que la 12 desde la perspectiva de la miopía?"
+    opciones:
+      - ["Porque usa a una persona famosa, lo cual garantiza más ventas", El cuaderno dice expresamente que no se puede asegurar que ayude.]
+      - [Porque muestra el resultado (beneficio) en lugar de enumerar servicios técnicos incomprensibles, "Correcto: pasa del servicio al beneficio."]
+      - [Porque oculta los servicios, No se trata de ocultarlos sino de priorizar el resultado.]
+      - [Porque baja el precio, No hay referencia al precio.]
+    correcta: 1
+    o: c 1 | 25-26
+  - tema: Miopía
+    dif: 2
+    enunciado: "Elegí un producto o servicio que conozcas y mostrá, con la metodología 1, dos pares característica→beneficio. ¿Cómo cambia la comunicación?"
+    modelo: "Ejemplo: mochila con tela impermeable (característica) → tus cosas llegan secas aunque llueva (beneficio); cierre con candado (característica) → tranquilidad al viajar. La comunicación deja de listar atributos y habla del resultado para el usuario, evitando la miopía."
+    criterios:
+      - Presenta al menos dos pares característica→beneficio coherentes
+      - El beneficio está formulado desde la perspectiva del cliente
+      - Relaciona con la miopía (foco en la necesidad)
+    o: c 1 | 27
+tarjetas:
+  - ["Miopía de marketing (Levitt, 1960)", Enfocarse solo en el producto y perder de vista las necesidades latentes y los beneficios que busca el cliente.]
+  - [Tres metodologías contra la miopía, "1) Características → beneficios · 2) Definir la propuesta de valor · 3) Círculo de oro (Por qué, Cómo, Qué)."]
+  - ["Círculo de oro: orden de comunicación exitosa", Por qué → Cómo → Qué (de adentro hacia afuera).]
+  - [Un artículo es…, Solo una herramienta para resolver un problema de quien compra.]

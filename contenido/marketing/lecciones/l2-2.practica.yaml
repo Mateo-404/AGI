@@ -1,0 +1,56 @@
+preguntas:
+  - tema: Marketing 5.0
+    dif: 1
+    enunciado: "Según el cuaderno, ¿cuáles son las dos disciplinas sobre las que se apoyan las aplicaciones del Marketing 5.0?"
+    opciones:
+      - [Predictivo y aumentado, "Son aplicaciones, no disciplinas base."]
+      - [Basado en datos y ágil, Correcto.]
+      - [Contextual y ágil, El contextual es una aplicación.]
+      - [Inbound y outbound, Son estrategias de otra unidad (Cap. 3).]
+    correcta: 1
+    o: c 1 | 21
+  - tema: Aplicaciones
+    dif: 2
+    enunciado: "Un negocio usa sensores y reglas «si pasa X, enviar Y» para ofrecer contenido en tiempo real a quien está en el local. ¿Qué aplicación es?"
+    opciones:
+      - [Marketing predictivo, Predice antes del lanzamiento; no actúa en el contexto en vivo.]
+      - [Marketing contextual, "Correcto: sensores e interfaces en el espacio físico con desencadenantes y respuestas."]
+      - [Marketing aumentado, Se centra en potenciar a personas con chatbots/asistentes.]
+      - [Marketing 1.0, "Orientado al producto, sin personalización en tiempo real."]
+    correcta: 1
+    o: c 1 | 22
+  - tema: IA
+    dif: 2
+    enunciado: ¿Cuál de estas afirmaciones es coherente con las advertencias del cuaderno sobre IA?
+    opciones:
+      - [El contenido generado por IA siempre es correcto, El cuaderno dice lo contrario.]
+      - [Hay que validar lo que produce y considerar sesgos y privacidad, Correcto.]
+      - [La IA reemplaza completamente la mirada crítica, Se pide que no la reemplace.]
+      - [La IA no se puede usar con datos de clientes, "Se usa, con uso responsable de datos."]
+    correcta: 1
+    o: c 2 | 40
+  - tema: Aumentado vs. predictivo
+    dif: 3
+    enunciado: ¿Qué diferencia principal hay entre marketing predictivo y marketing aumentado?
+    opciones:
+      - [El predictivo estima resultados antes del lanzamiento; el aumentado potencia con tecnología el trabajo humano de cara al cliente, Correcto.]
+      - ["No hay diferencia: son sinónimos", Son dos aplicaciones distintas.]
+      - [El predictivo usa sensores; el aumentado usa regresión, "Están invertidas: el contextual usa sensores y el predictivo regresión."]
+      - [El aumentado solo existe en B2B, No hay tal limitación.]
+    correcta: 0
+    o: c 1 | 23-24
+  - tema: IA en marketing
+    dif: 3
+    enunciado: Proponé un uso de IA en una pyme y señalá una precaución que el cuaderno recomendaría.
+    modelo: "Ej.: usar IA para segmentar la base de clientes y redactar variantes de asunto de email. Precauciones: validar lo que produce (puede ser incorrecto), cuidar sesgos en los datos y respetar privacidad/consentimiento; la IA potencia el criterio profesional, no lo reemplaza."
+    criterios:
+      - Propone un uso concreto y plausible
+      - Menciona validación/sesgos/privacidad
+      - Explicita el rol humano
+    o: c 6 | 124-125
+tarjetas:
+  - [Estructura del Marketing 5.0, "Dos disciplinas (basado en datos, ágil) y tres aplicaciones (predictivo, contextual, aumentado)."]
+  - [Marketing predictivo, Análisis predictivos (a veces con ML) para predecir resultados antes del lanzamiento.]
+  - [Marketing contextual, Sensores e interfaces digitales en el espacio físico para interacciones personalizadas en tiempo real (IoT + IA).]
+  - [Marketing aumentado, "Tecnología (chatbots, asistentes) que potencia a quien atiende al cliente: velocidad digital + calidez humana."]
+  - [Advertencias de la IA, "Puede producir contenido incorrecto, tener sesgos y afectar privacidad: exige criterio humano."]

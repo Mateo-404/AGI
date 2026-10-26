@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Etapas
+    dif: 1
+    enunciado: ¿Qué etapa se caracteriza por centrarse en los valores y las emociones y por la diferenciación a través de ellos?
+    opciones:
+      - [Marketing 1.0, Se centra en el producto.]
+      - [Marketing 2.0, Se centra en el cliente y su satisfacción/fidelización.]
+      - [Marketing 3.0, "Correcto: busca alinear valores de la empresa y del cliente."]
+      - [Marketing 4.0, Se asocia a tecnología/colaboración.]
+    correcta: 2
+    o: c 1 | 18
+  - tema: Comunicación
+    dif: 2
+    enunciado: "La comunicación unidireccional por medios masivos como la TV corresponde principalmente a:"
+    opciones:
+      - [Marketing 1.0, "Correcto: los medios no permiten respuesta de la audiencia."]
+      - [Marketing 2.0, En 2.0 comienza a ser interactiva y bidireccional.]
+      - [Marketing 3.0, "Su énfasis es valores, no el tipo de medio."]
+      - [Marketing 5.0, Etapa de integración tecnología-humanidad.]
+    correcta: 0
+    o: c 1 | 16
+  - tema: Omnicanalidad
+    dif: 2
+    enunciado: "Un cliente consulta por WhatsApp, va al local y debe repetir todos sus datos. ¿Qué falla?"
+    opciones:
+      - [La segmentación geográfica, No es el problema descripto.]
+      - ["La omnicanalidad: los canales no están integrados", "Correcto: se exige poder continuar entre canales sin repetir información."]
+      - [El posicionamiento SEO, No tiene relación con el caso.]
+      - [El branding, No es la falla central.]
+    correcta: 1
+    o: c 1 | 19
+  - tema: Etapas
+    dif: 3
+    enunciado: ¿Qué rasgo aparece por primera vez en 2.0 respecto de 1.0 según el cuaderno?
+    opciones:
+      - ["Segmentación, personalización y retención/fidelización", Correcto.]
+      - [Big data y predicción, Es propio de Marketing 5.0.]
+      - [Chatbots y asistentes virtuales, Corresponde a marketing aumentado (5.0).]
+      - [Tienda online propia, No es un rasgo de esa etapa en el cuaderno.]
+    correcta: 0
+    o: c 1 | 17
+  - tema: Omnicanalidad
+    dif: 2
+    enunciado: "Definí omnicanalidad, da un ejemplo cotidiano y explicá el beneficio para el usuario."
+    modelo: "Omnicanalidad: unir acciones offline y online para que el usuario continúe su contacto en cualquier canal sin repetir información. Ejemplo: elegir un producto en la app y retirarlo en el local con el mismo pedido. Beneficio: experiencia personalizada y satisfacción más rápida de necesidades."
+    criterios:
+      - Define unión offline/online sin repetir información
+      - Ejemplo coherente
+      - Menciona personalización/rapidez como beneficio
+    o: c 1 | 19
+tarjetas:
+  - ["Marketing 1.0 a 4.0: foco", "1.0 producto · 2.0 cliente · 3.0 valores · 4.0 tecnología (cuadro de Shum Xie: colaboración)."]
+  - [Omnicanalidad, "Integrar offline y online para continuar entre canales sin repetir información; beneficio: personalización y satisfacción rápida."]
+  - ["Comunicación: 1.0 vs. 2.0", 1.0 unidireccional y masiva (TV); 2.0 interactiva y bidireccional con feedback.]
+  - [¿Por qué importa la brecha digital?, "No toda la población accede igual a lo digital: obliga a estrategias que contemplen distintos canales (omnicanalidad)."]

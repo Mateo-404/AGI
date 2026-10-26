@@ -1,0 +1,43 @@
+preguntas:
+  - tema: CM
+    dif: 1
+    enunciado: "La función principal del Community Manager es:"
+    opciones:
+      - [Solo publicar, Va mucho más allá.]
+      - ["Ser el vínculo entre la organización y su comunidad online, gestionando todo el proceso", Correcto.]
+      - [Fijar precios, No es su función.]
+      - [Programar el sitio, No lo es.]
+    correcta: 1
+    o: c 9 | 166
+  - tema: Reputación
+    dif: 2
+    enunciado: "Según el cuaderno, ante un error en redes lo más adecuado es…"
+    opciones:
+      - [Ignorarlo, Los errores quedan registrados.]
+      - ["Dar una respuesta adecuada, empática y oportuna y aprender de la situación", Correcto.]
+      - [Borrar los comentarios, No se recomienda.]
+      - [Esperar que se olvide, No se perdonan los errores.]
+    correcta: 1
+    o: c 9 | 167
+  - tema: 4S
+    dif: 2
+    enunciado: El «scrolleo» como el nuevo «mirar vidrieras» describe…
+    opciones:
+      - [Searching, Es búsqueda con intención.]
+      - [Scrolling, "Correcto: descubrimiento sin intención directa de compra."]
+      - [Streaming, Consumo de contenido continuo.]
+      - [Shopping, Compra fluida.]
+    correcta: 1
+    o: c 9 | 169
+  - tema: CM
+    dif: 3
+    enunciado: Describí cómo un CM haría el doble monitoreo para una cafetería de barrio y qué decisiones tomaría con lo observado.
+    modelo: "Hacia la comunidad: ver qué comentan y qué productos les interesan (ej. combos de desayuno). Hacia la competencia: relevar qué redes y contenidos usan otras cafeterías. Decisiones: ajustar el calendario de contenidos, reforzar lo que gusta y detectar oportunidades de diferenciación."
+    criterios:
+      - Distingue monitoreo a la comunidad y a la competencia
+      - Propone decisiones concretas
+    o: c 9 | 167
+tarjetas:
+  - [Funciones del CM, Conocer la comunidad · planificar contenido · producir y distribuir · interactuar · gestionar la reputación · medir y analizar.]
+  - [Doble monitoreo del CM, "Hacia la comunidad (qué se dice, qué les interesa) y hacia la competencia (redes, contenidos, fortalezas y fallas)."]
+  - [Premisas del mundo digital, "Los errores no se perdonan; siempre hay que dar una respuesta (adecuada, empática y oportuna)."]

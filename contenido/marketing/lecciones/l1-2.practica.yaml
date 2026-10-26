@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Necesidad/deseo/demanda
+    dif: 1
+    enunciado: "Una persona necesita alimentarse, prefiere un plato vegano y puede pagarlo. ¿Cómo se denomina que cuenta con poder de compra para ese plato?"
+    opciones:
+      - [Necesidad, "La necesidad es la carencia básica (alimentarse), no la forma ni el poder de compra."]
+      - [Deseo, El deseo es la forma específica (plato vegano); aún sin considerar el poder de compra.]
+      - [Demanda, "Correcto: necesidades y deseos respaldados por poder de compra."]
+      - [Posicionamiento, "Concepto de otra etapa (estrategia): no describe este estado."]
+    correcta: 2
+    o: c 1 | 32
+  - tema: Necesidad/deseo/demanda
+    dif: 2
+    enunciado: "Según el cuaderno, ¿qué es lo que SÍ afirma sobre el debate «¿crea o satisface necesidades?»"
+    opciones:
+      - [Que el marketing crea todas las necesidades, "Es la posición de algunos críticos citados, no la afirmación del cuaderno."]
+      - [Que las necesidades no existen sin publicidad, Contradice a Kotler y a la posición intermedia.]
+      - [Que un propósito fundamental es cubrir necesidades y deseos del público objetivo mejor que la competencia, "Correcto: el cuaderno lo presenta como lo «posible afirmar», dejando el debate abierto."]
+      - [Que el debate está resuelto a favor de Baudrillard, El cuaderno dice que es un debate in eternum.]
+    correcta: 2
+    o: c 1 | 33
+  - tema: Propuesta de valor
+    dif: 2
+    enunciado: ¿Cuál de estas NO es una de las preguntas que responde la propuesta de valor?
+    opciones:
+      - [¿Por qué nos eligen?, Sí lo es (pregunta a).]
+      - [¿Qué nos diferencia?, Sí lo es (pregunta b).]
+      - [¿Cuánto cuesta producir cada unidad?, "Correcto: es una pregunta de costos, no de propuesta de valor."]
+      - [¿Qué problema resolvemos que otros no?, Sí lo es (pregunta c).]
+    correcta: 2
+    o: c 1 | 29-30
+  - tema: Propuesta de valor
+    dif: 3
+    enunciado: "Una empresa define su propuesta de valor como «tenemos el mejor producto» sin explicar para quién ni por qué. Frente a las 5 características, ¿qué falla principalmente?"
+    opciones:
+      - [Es demasiado flexible, Nada indica exceso de flexibilidad; el problema es que no diferencia ni comunica el beneficio.]
+      - [No es única/diferenciadora ni muestra superioridad frente a alternativas de forma verificable, "Correcto: es una declaración genérica; no explica qué problema resuelve ni por qué es preferible."]
+      - [Es tangible, La propuesta puede ser intangible; no es un defecto.]
+      - [Es sostenible en el tiempo, No se puede juzgar sostenibilidad sin información; no es el defecto señalado.]
+    correcta: 1
+    o: c 1 | 30
+  - tema: Necesidad/deseo/demanda
+    dif: 2
+    enunciado: "Explicá con un ejemplo propio la diferencia entre necesidad, deseo y demanda y qué rol cumple el marketing en cada paso."
+    modelo: "Necesidad: carencia universal (p. ej., abrigarse). Deseo: forma concreta moldeada por cultura/personalidad (p. ej., una campera de determinada marca). Demanda: ese deseo con poder de compra (tiene el dinero y la intención). El marketing identifica la necesidad, orienta el deseo y estimula la demanda."
+    criterios:
+      - Define los tres conceptos con ejemplo coherente
+      - Distingue el rol del poder de compra
+      - Menciona identificar/orientar/estimular
+    o: c 1 | 32
+tarjetas:
+  - [Necesidad vs. deseo vs. demanda, "Necesidad: carencia percibida (universal). Deseo: forma cultural/individual de satisfacerla. Demanda: necesidad o deseo + poder de compra."]
+  - [Tres preguntas de la propuesta de valor, ¿Por qué nos eligen? ¿Qué nos diferencia? ¿Qué problema resolvemos que otros no?]
+  - [Cinco características de una buena propuesta de valor, Representativa de la identidad · única y diferenciadora · sostenible · claramente superior · aplicable y flexible.]
+  - [Los 5 pasos del proceso de marketing (Kotler y Armstrong), 1 entender mercado/necesidades · 2 diseñar estrategia · 3 programa integrado · 4 relaciones redituables · 5 captar valor.]

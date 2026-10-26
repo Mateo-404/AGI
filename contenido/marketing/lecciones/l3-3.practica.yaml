@@ -1,0 +1,66 @@
+preguntas:
+  - tema: Segmentación
+    dif: 1
+    enunciado: ¿Qué es un nicho según el cuaderno?
+    opciones:
+      - [El conjunto de todos los clientes posibles, Es el mercado.]
+      - [Una parte específica de un segmento, Correcto.]
+      - [Un competidor pequeño, No es eso.]
+      - [Una estrategia de precios, No es eso.]
+    correcta: 1
+    o: c 4 | 73
+  - tema: Normas
+    dif: 2
+    enunciado: Una pyme elige un segmento muy atractivo pero para el que carece de los recursos necesarios. ¿Qué norma incumple?
+    opciones:
+      - [¿Qué quiere la organización?, Se refiere a la coherencia con misión y objetivos.]
+      - [¿Qué capacidades tiene la organización?, "Correcto: debe haber concordancia entre oportunidad y recursos."]
+      - [¿Qué quiere ganar?, Se refiere a la rentabilidad.]
+      - [¿Qué puede en términos de competencia?, Se refiere a elegir segmentos con competencia baja.]
+    correcta: 1
+    o: c 4 | 74
+  - tema: Bases
+    dif: 2
+    enunciado: "En B2B, segmentar por número de empleados y sector industrial es base:"
+    opciones:
+      - [Geográfica, Es por ubicación.]
+      - [Firmográfica (equivalente demográfica en B2C), Correcto.]
+      - [Psicográfica, "Sería cultura del negocio, innovación, etc."]
+      - [Conductual, Sería por volumen o frecuencia de compra.]
+    correcta: 1
+    o: c 4 | 77
+  - tema: Estrategias
+    dif: 2
+    enunciado: "Una empresa ofrece sus productos solo a un segmento para lograr conocimiento profundo y fuerte presencia. Es:"
+    opciones:
+      - [Cobertura del mercado total, Atiende todos los grupos.]
+      - [Especialización en múltiples segmentos, Atiende varios segmentos.]
+      - [Concentración en un único segmento, Correcto.]
+      - [Marketing individual, Segmentos de uno.]
+    correcta: 2
+    o: c 4 | 83
+  - tema: Selección
+    dif: 3
+    enunciado: "Según Porter, un segmento es más atractivo cuando las barreras de entrada son…"
+    opciones:
+      - [Bajas y las de salida altas, Es lo contrario.]
+      - [Altas y las de salida bajas, Correcto.]
+      - [Indiferentes, Importan.]
+      - [Altas y las de salida también altas, Las de salida bajas son preferibles.]
+    correcta: 1
+    o: c 4 | 82
+  - tema: Posicionamiento
+    dif: 3
+    enunciado: Definí posicionamiento y explicá con el caso Ala/Skip por qué dos marcas de una misma empresa no son competencia directa.
+    modelo: "Posicionamiento: diseñar la oferta e imagen para ocupar un lugar distintivo en la mente del consumidor. Ala y Skip, ambas de Unilever, apuntan a segmentos distintos (familiar vs. independiente/audaz) con propuestas distintas (ensuciarse hace bien / mejor tecnología y libertad), por eso su posicionamiento está claramente diferenciado."
+    criterios:
+      - Define posicionamiento
+      - Diferencia segmentos y propuestas
+      - Concluye que el posicionamiento se apoya en el segmento
+    o: c 4 | 86-87
+tarjetas:
+  - ["Mercado, segmento, nicho, micronicho", Cada uno es una porción más pequeña y específica del anterior.]
+  - [Cuatro normas para segmentar, "Qué quiere, qué capacidades tiene, qué quiere ganar (rentabilidad) y qué puede en términos de competencia."]
+  - [Cuatro bases de segmentación, "Geográfica, demográfica/firmográfica, psicográfica/cultura del negocio, conductual/de uso."]
+  - [Cuatro estrategias de cobertura, "Mercado total, múltiples segmentos, único segmento, marketing individual."]
+  - [Posicionamiento (Kotler), Diseñar oferta e imagen para ocupar un lugar distintivo en la mente de los consumidores.]

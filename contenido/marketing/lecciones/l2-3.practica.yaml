@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Marketing mix
+    dif: 1
+    enunciado: Las 4P se denominan «variables controlables» porque…
+    opciones:
+      - [Las define el Estado, No hay tal referencia.]
+      - [Quienes hacen marketing pueden tomar decisiones sobre ellas, Correcto.]
+      - [No cambian nunca, Pueden ajustarse; el precio es el más fácil de ajustar.]
+      - [Se miden con Google Analytics, No es el criterio.]
+    correcta: 1
+    o: c 5 | 89
+  - tema: Niveles del producto
+    dif: 2
+    enunciado: "Un proveedor de bidones agrega entrega el mismo día y puerta a puerta, algo que sus competidores no ofrecen. ¿Qué nivel del producto es?"
+    opciones:
+      - [Beneficio básico, El beneficio básico es tener agua para beber.]
+      - [Producto esperado, Lo esperado es lo que cualquiera ofrece; esto supera lo normal.]
+      - [Producto ampliado, "Correcto: excede las expectativas y diferencia."]
+      - [Producto potencial, "El potencial son mejoras futuras, no algo ya ofrecido."]
+    correcta: 2
+    o: c 5 | 90
+  - tema: Marca
+    dif: 2
+    enunciado: "¿Dónde reside, en última instancia, la percepción de la marca según el cuaderno?"
+    opciones:
+      - [En el logo, "El logo es un elemento, no donde reside la percepción."]
+      - [En la mente de los consumidores, Correcto.]
+      - [En el registro de marcas, Es un aspecto legal.]
+      - [En el área de ventas, No es lo que sostiene el cuaderno.]
+    correcta: 1
+    o: c 5 | 92
+  - tema: E-branding
+    dif: 3
+    enunciado: ¿Cuál es la afirmación honesta sobre e-branding y el cuaderno?
+    opciones:
+      - [Está desarrollado en el Cap. 5 con el nombre de e-branding, No aparece el término.]
+      - [El cuaderno trata marca/branding en general; e-branding requiere bibliografía complementaria, Correcto.]
+      - [El e-branding reemplaza al branding, No hay tal afirmación.]
+      - [No es un tema del programa, Sí figura en la Unidad 3 del programa.]
+    correcta: 1
+    o: c 5 | 91-92
+  - tema: Niveles del producto
+    dif: 3
+    enunciado: Elegí un producto de tu rubro y describí los cinco niveles de Kotler.
+    modelo: "Ej. servicio de pastelería por encargo: beneficio básico = resolver un festejo; genérico = tortas; esperado = frescura, sabor, puntualidad; ampliado = diseño personalizado y entrega con packaging; potencial = suscripción de tortas mensual o kits para armar en casa."
+    criterios:
+      - Describe los cinco niveles
+      - El ampliado supera lo esperado
+      - El potencial es una mejora futura plausible
+    o: c 5 | 90
+tarjetas:
+  - [Las 4P, "Producto, precio, plaza (distribución) y promoción (comunicación): variables controlables del marketing mix."]
+  - [Cinco niveles del producto, Beneficio básico · genérico · esperado · ampliado · potencial.]
+  - [Marca (Kotler), "Nombre, término, símbolo o diseño (o combinación) que representa bienes/servicios de un vendedor y los diferencia de la competencia."]
+  - [Branding, Proceso de construir una marca gestionando estratégicamente sus activos; la percepción reside en la mente del consumidor.]

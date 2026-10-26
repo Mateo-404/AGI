@@ -1,0 +1,56 @@
+preguntas:
+  - tema: Modelos
+    dif: 1
+    enunciado: "En el dropshipping, el vendedor…"
+    opciones:
+      - [Posee el stock y hace el envío, Eso sería una tienda tradicional.]
+      - ["No posee stock ni envía: un tercero gestiona inventario y logística", Correcto.]
+      - [Cobra comisión por derivar tráfico, Eso es afiliación.]
+      - [Cobra una cuota mensual al cliente, Eso es suscripción.]
+    correcta: 1
+    o: c 7 | 132-133
+  - tema: Afiliación
+    dif: 2
+    enunciado: Una de las desventajas de la afiliación es…
+    opciones:
+      - [Alto riesgo financiero, "Se paga por rendimiento: bajo riesgo."]
+      - ["La canibalización: pagar comisión por ventas que habrían ocurrido igual", Correcto.]
+      - [No genera enlaces, Genera enlaces externos (SEO off page).]
+      - [No requiere control, Sí requiere un sistema de control.]
+    correcta: 1
+    o: c 7 | 134-135
+  - tema: Marketplace
+    dif: 2
+    enunciado: ¿Qué desafío principal enfrenta un vendedor que depende de un marketplace?
+    opciones:
+      - [Falta total de tráfico, Tienen tráfico masivo.]
+      - [Pérdida de control sobre la experiencia de marca y competencia intensa en precios, Correcto.]
+      - [No puede cobrar, Sí puede.]
+      - [No tiene logística disponible, Suele facilitarla.]
+    correcta: 1
+    o: c 7 | 136
+  - tema: Suscripción
+    dif: 3
+    enunciado: La clave del éxito del modelo de suscripción es…
+    opciones:
+      - [El mayor precio posible, No lo dice.]
+      - [Ofrecer valor sostenido y una relación personalizada para reducir la tasa de cancelación, Correcto.]
+      - [Eliminar el contacto con el cliente, Es lo contrario.]
+      - [Compras únicas, La suscripción es recurrente.]
+    correcta: 1
+    o: c 7 | 135-136
+  - tema: Elección de modelo
+    dif: 3
+    enunciado: "Para una marca nueva que quiere construir identidad propia, ¿qué rol le darías al marketplace y a la tienda propia? Justificá."
+    modelo: "Marketplace como canal para ganar visibilidad y confianza inicial con poca inversión, evaluando comisiones y competencia en precio; tienda propia como canal central para controlar la experiencia, construir marca y obtener datos de clientes, con inversión y diferenciación sostenidas."
+    criterios:
+      - Reconoce ventajas y límites del marketplace
+      - Reconoce el valor de la tienda propia para marca y datos
+      - Justifica una combinación
+    o: c 7 | 136-137
+tarjetas:
+  - [Dropshipping, Vendés sin stock ni envío; un tercero gestiona logística. Baja inversión pero alta dependencia y márgenes reducidos.]
+  - [Afiliación, "Terceros promocionan tus productos y cobran comisión por acción; riesgos: imagen y canibalización."]
+  - [Suscripción, "Pago periódico; ingresos previsibles; clave: valor sostenido y baja cancelación."]
+  - [Marketplace, Plataforma con múltiples vendedores; alta visibilidad y confianza; menos control de marca; cobra comisión.]
+  - [Tienda online propia, Control total de la experiencia y datos; mayor esfuerzo y necesidad de diferenciación.]

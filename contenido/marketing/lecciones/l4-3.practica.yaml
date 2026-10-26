@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Fórmulas
+    dif: 1
+    enunciado: Una campaña tuvo 200.000 impresiones y 4.000 clics. ¿Cuál es el CTR?
+    opciones:
+      - ["0,2 %", Error de cálculo.]
+      - [2 %, "Correcto: 4.000 ÷ 200.000 × 100."]
+      - [20 %, Error de cálculo.]
+      - [50 %, Error de cálculo.]
+    correcta: 1
+    o: c 8 | 159
+  - tema: Fórmulas
+    dif: 2
+    enunciado: "Con $600.000 de gasto y 20.000 clics, el CPC es:"
+    opciones:
+      - [$3, Error de cálculo.]
+      - [$30, "Correcto: 600.000 ÷ 20.000."]
+      - [$300, Error de cálculo.]
+      - ["$0,03", Error de cálculo.]
+    correcta: 1
+    o: c 8 | 159
+  - tema: Interpretación
+    dif: 3
+    enunciado: Una campaña tiene CTR alto pero tasa de conversión muy baja. ¿Qué diagnóstico es más plausible?
+    opciones:
+      - [El anuncio no genera interés, El CTR alto indica interés en el anuncio.]
+      - ["El anuncio atrae, pero la página de destino o la oferta no convierte", "Correcto: revisar landing y checkout."]
+      - [Faltan impresiones, No es lo que indican los datos.]
+      - [El CPC es incorrecto, No hay evidencia.]
+    correcta: 1
+    o: c 8 | 158-159
+  - tema: Cobertura
+    dif: 2
+    enunciado: El cuaderno define CPL como…
+    opciones:
+      - [Costo ÷ leads, "No lo define: no aparece."]
+      - [No lo menciona, "Correcto: CPL no figura; es una ampliación didáctica."]
+      - [Costo por llamada, No aparece.]
+      - [Como sinónimo de CPC, No aparece.]
+    correcta: 1
+    o: c 8 | 148-159
+  - tema: Métricas
+    dif: 3
+    enunciado: "Con costo $300.000, 150.000 impresiones, 3.000 clics y 60 conversiones, calculá CTR, CPC, tasa de conversión y costo por conversión e interpretá."
+    modelo: "CTR = 2 %; CPC = $100; tasa de conversión = 2 %; costo por conversión = $5.000. Interpretación: interés moderado; el costo por conversión debe compararse con el margen por venta para decidir si es rentable o conviene optimizar anuncio/landing."
+    criterios:
+      - Calcula las cuatro métricas correctamente
+      - Interpreta el costo por conversión frente al margen
+    o: c 8 | 159
+tarjetas:
+  - [CTR, "Clics ÷ impresiones × 100: capacidad del anuncio de generar interés."]
+  - [CPC, Costo ÷ clics.]
+  - [Tasa de conversión, Conversiones ÷ clics × 100.]
+  - [Costo por conversión, Gasto total ÷ conversiones.]
+  - [Remarketing (ampliación), Anuncios a personas que ya interactuaron con tu sitio o app.]

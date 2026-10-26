@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Definición
+    dif: 1
+    enunciado: ¿Qué rasgo comparten TODAS las definiciones de marketing del cuaderno?
+    opciones:
+      - [Buscan maximizar las ventas en el corto plazo, "Ninguna definición reduce el marketing a vender; las ventas pueden ser un objetivo, no la definición."]
+      - [Se orientan a satisfacer necesidades y a crear y captar valor entre las partes, "Correcto: es el hilo común que el cuaderno enumera (necesidades, proceso entre al menos dos partes, vínculos duraderos, valor)."]
+      - [Destacan la publicidad como actividad central, El cuaderno señala que la palabra publicidad no aparece en ninguna de las definiciones.]
+      - [Se limitan a las transacciones por Internet, Las definiciones 1–4 son generales; lo digital se incorpora en las definiciones de marketing digital.]
+    correcta: 1
+    o: c 1 | 14
+  - tema: Marketing vs. ventas
+    dif: 2
+    enunciado: 'Una pyme concluye que "hacer marketing" es lanzar promociones para vender más esta semana. Según el cuaderno, esa idea es:'
+    opciones:
+      - ["Correcta: el marketing se define por las ventas", El cuaderno dice expresamente que marketing no significa vender.]
+      - ["Incompleta: las ventas pueden ser un objetivo, pero el marketing es un proceso de creación de valor y relación con el cliente", "Correcto: potenciar ventas es un posible objetivo, no la definición."]
+      - [Incorrecta porque las promociones están prohibidas en marketing, Las promociones de ventas son uno de los 8 modos de comunicación (Cap. 5).]
+      - [Correcta si se hace por redes sociales, El canal no cambia la definición.]
+    correcta: 1
+    o: c 1 | 14
+  - tema: Marketing digital
+    dif: 2
+    enunciado: ¿Cuál de estas afirmaciones es coherente con lo que dice el cuaderno sobre marketing digital?
+    opciones:
+      - [Es una disciplina totalmente ajena al marketing, El cuaderno lo presenta como mirada ampliada del marketing o como un canal más.]
+      - [Es la aplicación de técnicas de comercialización a través de medios digitales; algunos autores lo ven como mirada ampliada y otros como un canal más, "Correcto: recoge la definición de Shum Xie y las dos posturas citadas."]
+      - [Solo existe desde que existe la inteligencia artificial, No hay tal afirmación; las etapas 4.0 y 5.0 se explican por separado.]
+      - [Reemplaza el marketing tradicional en todos los casos, "El cuaderno propone omnicanalidad (unir offline y online), no reemplazo."]
+    correcta: 1
+    o: c 1 | 15
+  - tema: Definición
+    dif: 1
+    enunciado: 'La definición "Proceso mediante el cual las compañías crean valor para los clientes y establecen relaciones estrechas con ellos, para recibir a cambio valor de los clientes" corresponde a:'
+    opciones:
+      - [Kotler y Keller (2012), "Correcto: es la definición 4 del cuaderno."]
+      - [Maciá Domene (2018), "Maciá define marketing digital, no esta."]
+      - [Asociación Argentina de Marketing (2024), La AAM lo define como ciencia socioeconómica.]
+      - [Shum Xie (2019), Shum Xie define marketing digital.]
+    correcta: 0
+    o: c 1 | 14
+  - tema: Marketing vs. publicidad
+    dif: 2
+    enunciado: 'Un compañero afirma: "marketing es hacer publicidad". Refutalo usando al menos dos ideas del cuaderno.'
+    modelo: "El cuaderno muestra que ninguna definición menciona la publicidad: marketing es un proceso de creación y captación de valor entre dos partes para satisfacer necesidades y construir vínculos duraderos y redituables. La publicidad es solo una herramienta (una de las 8 formas de comunicación) dentro del mix de promoción."
+    criterios:
+      - Menciona que ninguna definición incluye la publicidad
+      - Describe el marketing como proceso de valor/necesidades/relación
+      - Ubica la publicidad como herramienta (parte de la promoción)
+    o: c 1 | 14
+tarjetas:
+  - [¿Cuáles son los 4 rasgos comunes de las definiciones de marketing?, "Satisfacer necesidades · proceso entre al menos dos partes · vínculos duraderos, estrechos y redituables · captar y entregar valor."]
+  - ["Doble meta del marketing (Kotler y Armstrong, 2013)", Atraer nuevos clientes prometiéndoles valor superior y mantener y hacer crecer a los actuales satisfaciendo sus necesidades.]
+  - [¿Marketing es lo mismo que vender?, "No. Potenciar ventas puede ser un objetivo, pero la disciplina es creación/captación de valor y relación con el cliente."]
+  - [Dos posturas sobre el marketing digital, "Es una mirada ampliada del marketing, o es un \"canal más\" donde ejercer la disciplina."]
