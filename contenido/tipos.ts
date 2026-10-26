@@ -26,6 +26,7 @@ export type Bloque =
   | { t: 'acordeon'; titulo: string; bloques: Bloque[] }
   | { t: 'comparar'; titulo?: string; a: { titulo: string; items: string[] }; b: { titulo: string; items: string[] }; o?: Origen }
   | { t: 'explorable'; titulo: string; variante: 'pasos' | 'capas' | 'embudo' | 'linea'; nodos: Nodo[]; o?: Origen }
+  | { t: 'animacion'; archivo: 'seo' | 'marketing-digital'; titulo: string; descripcion: string; credito: string; o?: Origen }
   | { t: 'figura'; id: 'evolucion' | 'mix' | 'messy' | 'embudo' | 'subasta' | 'email' }
   | { t: 'calc'; tipo: 'metricas' | 'embudo' | 'precio' }
   | { t: 'asociar'; titulo: string; pares: [string, string][] }

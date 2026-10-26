@@ -1,7 +1,10 @@
 import type { Bloque, Origen, TipoCallout } from '@contenido/tipos'
 import { Tx, useImprimir } from './contexto'
 import { Asociar, Caso, Clasificar, Explorable } from './Interactivos'
+import { Icono } from './Icono'
+import type { NombreIcono } from './iconos'
 import { Figura } from './Figuras'
+import { Animacion } from './Animacion'
 import { CalcEmbudo, CalcMetricas, CalcPrecio } from './Calculadoras'
 
 export const etiquetaOrigen = (o?: Origen): string => {
@@ -12,6 +15,8 @@ export const etiquetaOrigen = (o?: Origen): string => {
 }
 
 export const Origen_ = ({ o }: { o?: Origen }) => (o ? <span className="origen" title="Ubicación en el material original">{etiquetaOrigen(o)}</span> : null)
+
+const ICONO_TIPO: Record<TipoCallout, NombreIcono> = { clave: 'lightbulb', ojo: 'warning', ia: 'timeline', ampliacion: 'info', discrepancia: 'fact_check', didactico: 'school' }
 
 const TITULOS: Record<TipoCallout, string> = {
   clave: 'Idea clave',
@@ -50,7 +55,7 @@ function BloqueView({ b }: { b: Bloque }) {
         </div>
       )
     case 'callout':
-      return <aside className={`callout ${b.tipo}`}><b className="t">{b.titulo ?? TITULOS[b.tipo]}</b><Tx t={b.x} /><Origen_ o={b.o} /></aside>
+      return <aside className={`callout ${b.tipo}`}><b className="t"><Icono nombre={ICONO_TIPO[b.tipo]} /> {b.titulo ?? TITULOS[b.tipo]}</b><Tx t={b.x} /><Origen_ o={b.o} /></aside>
     case 'ejemplo':
       return <div className="ejemplo"><h3 className="sub">Ejemplo desarrollado: {b.titulo}<Origen_ o={b.o} /></h3><ol>{b.pasos.map((p, i) => <li key={i}><Tx t={p} /></li>)}</ol></div>
     case 'acordeon':
@@ -73,6 +78,8 @@ function BloqueView({ b }: { b: Bloque }) {
       return <Explorable b={b} />
     case 'figura':
       return <Figura id={b.id} />
+    case 'animacion':
+      return <Animacion archivo={b.archivo} titulo={b.titulo} descripcion={b.descripcion} credito={b.credito} />
     case 'calc':
       return b.tipo === 'metricas' ? <CalcMetricas /> : b.tipo === 'embudo' ? <CalcEmbudo /> : <CalcPrecio />
     case 'asociar':

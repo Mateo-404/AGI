@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type PointerEvent as PE } from 'react'
+import { Icono } from './Icono'
 import { alternar, alTerminarCapitulo, detener, reproducir, setContinuo, setVelocidad, tomarPendienteContinuo, textoDeElemento, useVoz } from '@/logica/voz'
 
 const VELOCIDADES = [0.8, 1, 1.25, 1.5]
@@ -67,8 +68,8 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
         <section className="voz-panel" aria-label="Opciones de lectura en voz alta">
           <p className="voz-titulo">{activo ? tituloPagina : 'Escuchar esta página'}</p>
           <div className="voz-fila">
-            <button className="btn pri" onClick={leer}>{v.estado === 'hablando' ? 'Pausar' : v.estado === 'pausado' ? 'Seguir' : 'Reproducir'}</button>
-            {activo && <button className="btn" onClick={detener}>Detener</button>}
+            <button className="btn pri" onClick={leer}><Icono nombre={v.estado === 'hablando' ? 'pause' : 'play_arrow'} /> {v.estado === 'hablando' ? 'Pausar' : v.estado === 'pausado' ? 'Seguir' : 'Reproducir'}</button>
+            {activo && <button className="btn" onClick={detener}><Icono nombre="stop" /> Detener</button>}
           </div>
           {activo && <progress className="voz-barra" value={pct} max={100} aria-label="Avance de la lectura">{pct}%</progress>}
           <label className="voz-op">Velocidad
@@ -90,11 +91,7 @@ export function Reproductor({ tituloPagina, siguienteHref }: { tituloPagina: str
         onPointerUp={alSoltar}
         onPointerCancel={() => { arrastre.current = null }}
       >
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          {activo && v.estado === 'hablando'
-            ? <path d="M7 5h4v14H7zM13 5h4v14h-4z" />
-            : <path d="M5 9v6h4l5 4V5L9 9zM16.5 12a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z" />}
-        </svg>
+        {activo && v.estado === 'hablando' ? <Icono nombre="pause" /> : activo ? <Icono nombre="play_arrow" /> : <Icono nombre="volume_up" />}
       </button>
     </div>
   )

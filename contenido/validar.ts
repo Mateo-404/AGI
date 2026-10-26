@@ -19,6 +19,7 @@ function textos(b: Bloque, out: string[]): void {
     case 'clasificar': b.items.forEach((i) => push(i.x, i.porque)); break
     case 'caso': push(b.escenario); b.pasos.forEach((p) => { push(p.pregunta); p.opciones.forEach((o) => push(o.x, o.consecuencia)) }); break
     case 'calc': case 'figura': break
+    case 'animacion': push(b.descripcion); break
   }
 }
 

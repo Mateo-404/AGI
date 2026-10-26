@@ -1,5 +1,6 @@
 import { Component, useEffect, useState, type ReactNode } from 'react'
 import { ruta } from '@/logica/rutas'
+import { Icono } from './Icono'
 import { lecciones, leccionesDe, siguienteLeccion, unidades } from '@/logica/datos'
 import { setTamano, setTema, useProgreso } from '@/logica/progreso'
 import { AcercaPag, CoberturaPag, GlosarioPag, Inicio, LeccionPag, NoEncontrado, Practica, RepasoPag, TarjetasPag, UnidadPag } from './Paginas'
@@ -36,6 +37,7 @@ function Barra() {
   const p = useProgreso()
   const ciclo = () => setTema(p.tema === 'auto' ? 'oscuro' : p.tema === 'oscuro' ? 'claro' : 'auto')
   const etiqueta = p.tema === 'auto' ? 'Automático' : p.tema === 'oscuro' ? 'Oscuro' : 'Claro'
+  const iconoTema = p.tema === 'auto' ? 'brightness_auto' : p.tema === 'oscuro' ? 'dark_mode' : 'light_mode'
   const tamanos: [Parameters<typeof setTamano>[0], string][] = [['normal', 'A'], ['grande', 'A+'], ['muy-grande', 'A++']]
   return (
     <div className="barra-sup no-print">
@@ -47,7 +49,7 @@ function Barra() {
           <button key={t} className="btn sm" aria-pressed={p.tamano === t} onClick={() => setTamano(t)} aria-label={`Tamaño de letra ${t}`}>{txt}</button>
         ))}
       </div>
-      <button className="btn sm" onClick={ciclo} aria-label={`Tema: ${etiqueta}. Cambiar`}>Tema: {etiqueta}</button>
+      <button className="btn sm" onClick={ciclo} aria-label={`Tema: ${etiqueta}. Cambiar`}><Icono nombre={iconoTema} /> {etiqueta}</button>
     </div>
   )
 }
@@ -81,7 +83,7 @@ export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
       <a className="saltar" href="#principal">Saltar al contenido</a>
       <Barra />
       <div className="topbar no-print">
-        <button className="btn sm" aria-expanded={menu} aria-controls="nav" onClick={() => setMenu(!menu)}>Menú</button>
+        <button className="btn sm" aria-expanded={menu} aria-controls="nav" onClick={() => setMenu(!menu)}><Icono nombre={menu ? 'close' : 'menu'} /> Menú</button>
         <b style={{ fontFamily: 'var(--serif)' }}>Marketing Digital</b>
       </div>
       {menu && <div className="scrim" onClick={() => setMenu(false)} />}
@@ -102,13 +104,13 @@ export function Shell({ sub, enCurso }: { sub: string[]; enCurso: boolean }) {
             </details>
           ))}
           <h2>Practicar</h2>
-          <a className="item" href={ruta('marketing/practica')} aria-current={cur(sub[0] === 'practica')}>Cuestionarios y simulacro</a>
-          <a className="item" href={ruta('marketing/tarjetas')} aria-current={cur(sub[0] === 'tarjetas')}>Tarjetas de memoria</a>
-          <a className="item" href={ruta('marketing/repaso')} aria-current={cur(sub[0] === 'repaso')}>Repaso y progreso</a>
+          <a className="item" href={ruta('marketing/practica')} aria-current={cur(sub[0] === 'practica')}><Icono nombre="quiz" /> Cuestionarios y simulacro</a>
+          <a className="item" href={ruta('marketing/tarjetas')} aria-current={cur(sub[0] === 'tarjetas')}><Icono nombre="style" /> Tarjetas de memoria</a>
+          <a className="item" href={ruta('marketing/repaso')} aria-current={cur(sub[0] === 'repaso')}><Icono nombre="update" /> Repaso y progreso</a>
           <h2>Consultar</h2>
-          <a className="item" href={ruta('marketing/glosario')} aria-current={cur(sub[0] === 'glosario')}>Glosario</a>
-          <a className="item" href={ruta('marketing/cobertura')} aria-current={cur(sub[0] === 'cobertura')}>Cobertura del programa</a>
-          <a className="item" href={ruta('marketing/acerca')} aria-current={cur(sub[0] === 'acerca')}>Fuentes y limitaciones</a>
+          <a className="item" href={ruta('marketing/glosario')} aria-current={cur(sub[0] === 'glosario')}><Icono nombre="spellcheck" /> Glosario</a>
+          <a className="item" href={ruta('marketing/cobertura')} aria-current={cur(sub[0] === 'cobertura')}><Icono nombre="fact_check" /> Cobertura del programa</a>
+          <a className="item" href={ruta('marketing/acerca')} aria-current={cur(sub[0] === 'acerca')}><Icono nombre="info" /> Fuentes y limitaciones</a>
         </nav>
         <main id="principal" className="cont" tabIndex={-1}>
           <Reproductor tituloPagina={`Marketing Digital · ${sub.join(' ') || 'inicio'}`} siguienteHref={hrefSig} />

@@ -8,7 +8,7 @@ import { leccionPorId, terminoPorId } from '@/logica/datos'
 export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
   return (
     <>
-      <h3 className="sub">Objetivos de aprendizaje</h3>
+      <h2 className="sub">Objetivos de aprendizaje</h2>
       <ul>{l.objetivos.map((o, i) => <li key={i}>{o}</li>)}</ul>
       {l.previos.length > 0 && (
         <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>

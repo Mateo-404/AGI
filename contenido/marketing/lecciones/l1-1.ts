@@ -15,6 +15,14 @@ export const l11: Leccion = {
   previos: [],
   bloques: [
     {
+      t: 'animacion',
+      archivo: 'marketing-digital',
+      titulo: 'Marketing digital en movimiento',
+      descripcion: 'Animación de apoyo para la idea de marketing digital como vínculo constante con el público. No es contenido de la cátedra.',
+      credito: 'manju · Lottie Simple License',
+      o: { tipo: 'ampliacion', ref: 'LottieFiles, Free Digital Marketing Animation (manju)' },
+    },
+    {
       t: 'p',
       x: 'El cuaderno propone mirar a las organizaciones como a las personas: **buscan ser valoradas, reconocidas y elegidas**. Desde esa idea "humana", el marketing es la disciplina que estudia cómo una organización construye esa relación con su mercado.',
       o: cap('1', '10-11', 'Un enfoque bien "humano" de la disciplina'),

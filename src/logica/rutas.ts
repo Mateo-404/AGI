@@ -23,3 +23,8 @@ export function rutasCurso(): string[] {
     'repaso', 'glosario', 'cobertura', 'acerca',
   ]
 }
+
+/** URL de un archivo estático (sin barra final): `archivo('media/lottie/seo.json')`. */
+export function archivo(p: string): string {
+  return `${BASE}${p.replace(/^\/+/, '')}`
+}

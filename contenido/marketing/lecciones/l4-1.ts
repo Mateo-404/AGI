@@ -34,6 +34,14 @@ export const l41: Leccion = {
       b: { titulo: 'SEO off page', items: ['Estrategias **fuera** del sitio para mejorar su autoridad y reconocimiento', 'Objetivo principal: que sitios de calidad enlacen al nuestro (señal de valor para Google)', 'También: participación en redes, menciones en medios digitales, comentarios en blogs especializados'] },
       o: cap('8', '142', 'Tabla 13'),
     },
+    {
+      t: 'animacion',
+      archivo: 'seo',
+      titulo: 'Animación de SEO',
+      descripcion: 'Una animación de LottieFiles muestra el recorrido de los factores de SEO (palabras clave, metadatos y enlaces). No es contenido de la cátedra: es material visual de apoyo.',
+      credito: 'Riju Shah · Lottie Simple License',
+      o: { tipo: 'ampliacion', ref: 'LottieFiles, SEO Optimization (Riju Shah)' },
+    },
     { t: 'h', x: 'SEO on page: factores' },
     {
       t: 'explorable',
