@@ -1,0 +1,79 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: Qué es un sistema?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Un conjunto de elementos interrelacionados que trabajan juntos para lograr un
+      objetivo común
+    - Correcto.
+  - - Un conjunto de código computacional
+    - No.
+  - - Un tipo de base de datos
+    - No.
+  - - Un sistema operativo
+    - No.
+  tema: Sistema
+- correcta: 0
+  dif: 2
+  enunciado: Qué es un subsistema?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Un sistema que opera dentro de otro sistema mayor
+    - Correcto.
+  - - Una capa del sistema operativo
+    - No.
+  - - Un tipo de sistema informático
+    - No.
+  - - Un modelo de base de datos
+    - No.
+  tema: Subsistema
+- correcta: 0
+  dif: 1
+  enunciado: Qué son las entradas en un sistema?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Recursos, datos, energía o información que ingresan al sistema desde el entorno
+    - Correcto.
+  - - Salidas generadas por el sistema
+    - No.
+  - - Procesos que transforman el sistema
+    - No.
+  - - Retroalimentación del sistema
+    - No.
+  tema: Entradas
+- correcta: 0
+  dif: 2
+  enunciado: Qué son las salidas de un sistema?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Resultados, productos, servicios o información que el sistema genera
+    - Correcto.
+  - - Procesos que transforman las entradas
+    - No.
+  - - Elementos que componen el sistema
+    - No.
+  - - El entorno que rodea al sistema
+    - No.
+  tema: Salidas
+- correcta: 0
+  dif: 3
+  enunciado: Qué es la retroalimentación en un sistema?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - 'La influencia mutua: las salidas afectan las entradas futuras'
+    - Correcto.
+  - - La entrada principal del sistema
+    - No.
+  - - El proceso de inicialización del sistema
+    - No.
+  - - La salida final del sistema
+    - No.
+  tema: Retroalimentación
+tarjetas:
+- - Qué es un sistema?
+  - Conjunto de elementos interrelacionados que trabajan juntos para lograr un objetivo
+    común.
+- - Qué es un subsistema?
+  - Sistema que opera dentro de otro sistema mayor; sus salidas son las entradas del
+    sistema mayor.
