@@ -1,45 +1,53 @@
 preguntas:
-  - tema: Diseño
+  - tema: Arquitectura
     dif: 1
-    enunciado: ¿Qué define el diseño de software?
+    enunciado: "¿Qué define la arquitectura de software?"
     opciones:
-      - [La arquitectura y los detalles del sistema, "Correcto."]
-      - [ Solo el código, "No."]
-      - [ Solo las pruebas, "No."]
-      - [ Solo el despliegue, "No."]
+      - ["Estructura global: componentes, conectores, estilos, patrones", "Correcto."]
+      - ["Solo el código fuente", "No: eso es diseño detallado."]
+      - ["Solo la base de datos", "No."]
+      - ["Solo la interfaz", "No."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 3
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Microservicios
+    dif: 2
+    enunciado: "¿Cuándo conviene usar arquitectura de microservicios?"
+    opciones:
+      - ["Sistemas grandes, equipos autónomos, necesidad de escalabilidad independiente", "Correcto."]
+      - ["Proyectos pequeños", "No: overhead innecesario."]
+      - ["Apps monolíticas simples", "No."]
+      - ["Solo apps móviles", "No."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
   - tema: UML
     dif: 1
-    enunciado: ¿Qué es UML?
+    enunciado: "¿Qué muestra un diagrama de clases?"
     opciones:
-      - ["Un lenguaje de modelado para visualizar, especificar y documentar sistemas", "Correcto."]
-      - [ Un lenguaje de programación, "No."]
-      - [ Un sistema operativo, "No."]
-      - [ Un tipo de base de datos, "No."]
+      - ["Estructura estática: clases, atributos, métodos, relaciones", "Correcto."]
+      - ["Flujo de datos", "Eso es DFD."]
+      - ["Secuencia temporal", "Eso es secuencia."]
+      - ["Estados", "Eso es estado."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 3
-  - tema: Diagrama de clases
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Paradigmas
     dif: 2
-    enunciado: ¿Qué muestra un diagrama de clases?
+    enunciado: "¿Qué paradigma se basa en funciones puras e inmutabilidad?"
     opciones:
-      - ["La estructura estática del sistema (clases, atributos, métodos, relaciones)", "Correcto."]
-      - [La interacción entre actores y el sistema, "Eso es casos de uso."]
-      - [ El flujo de datos, "No."]
-      - [ El despliegue, "No."]
+      - ["Funcional", "Correcto."]
+      - ["Imperativo", "Ese usa estado mutable."]
+      - ["Orientado a objetos", "Ese usa objetos con estado."]
+      - ["Lógico", "Ese usa hechos y reglas."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 3
-  - tema: Casos de uso
-    dif: 2
-    enunciado: ¿Qué muestra un diagrama de casos de uso?
-    opciones:
-      - [La interacción entre actores y el sistema, "Correcto."]
-      - [La estructura estática, "Eso es diagrama de clases."]
-      - [ El código fuente, "No."]
-      - [ El hardware, "No."]
-    correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 3
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Arquitectura
+    dif: 3
+    enunciado: "Explicá con tus palabras la diferencia entre arquitectura hexagonal y microservicios."
+    modelo: "La arquitectura hexagonal aísla el núcleo de dominio con puertos y adaptadores para testabilidad; los microservicios son servicios independientes desplegables por red. Hexagonal es intra-proceso; micro es inter-proceso."
+    criterios:
+      - "Diferencia intra vs inter-proceso"
+      - "Menciona puertos/adaptadores vs servicios independientes"
+      - "Menciona testabilidad vs despliegue independiente"
 tarjetas:
-  - [¿Qué es UML?, "Lenguaje de modelado para visualizar, especificar y documentar sistemas."]
-  - [¿Qué muestra un diagrama de clases?, "La estructura estática del sistema."]
-  - [¿Qué muestra un diagrama de casos de uso?, "La interacción entre actores y el sistema."]
+  - ["¿Qué es una arquitectura?", "Estructura global: componentes, conectores, estilos, decisiones transversales."]
+  - ["¿Qué es un microservicio?", "Servicio pequeño, independiente, autónomo, desplegable independientemente."]
+  - ["¿Qué es UML?", "Lenguaje estándar para visualizar, especificar y documentar sistemas."]

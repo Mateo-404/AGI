@@ -1,55 +1,53 @@
 preguntas:
-  - tema: Manifiesto Ágil
+  - tema: "Manifiesto Ágil"
     dif: 1
-    enunciado: ¿Qué promueve el Manifiesto Ágil?
+    enunciado: "¿Cuáles son los 4 valores del Manifiesto Ágil?"
     opciones:
-      - [Entregas incrementales y adaptación continua, "Correcto."]
-      - [ Documentación exhaustiva, "No es el foco."]
-      - [ Planificación rígida, "No."]
-      - [ Procesos pesados, "No."]
+      - ["Individuos e interacciones, software funcionando, colaboración con el cliente, respuesta al cambio", "Correcto."]
+      - ["Procesos, documentación, contrato, plan", "Esos son los de la derecha (menos valorados)."]
+      - ["Planificación, control, documentación, contrato", "No."]
+      - ["Herramientas, procesos, documentación, plan", "Esos son los de la derecha."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 5
+    o: "a Apuntes de Ingeniería de Software · Unidad 5"
   - tema: Scrum
-    dif: 2
-    enunciado: ¿Cuáles son los roles de Scrum?
-    opciones:
-      - ["Product Owner, Scrum Master y Equipo de Desarrollo", "Correcto."]
-      - ["Gerente, analista y programador", "No son los roles de Scrum."]
-      - [" Cliente, proveedor y usuario", "No."]
-      - [" Director, actor y productor", "No."]
-    correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 5
-  - tema: Kanban
-    dif: 2
-    enunciado: ¿En qué se basa Kanban?
-    opciones:
-      - [En un tablero visual y límites WIP para gestionar el flujo, "Correcto."]
-      - [En sprints de duración fija, "Eso es Scrum."]
-      - [ En roles definidos, "Eso es Scrum."]
-      - [ En documentación exhaustiva, "No."]
-    correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 5
-  - tema: Scrum vs. Kanban
-    dif: 2
-    enunciado: ¿Cuál es una diferencia entre Scrum y Kanban?
-    opciones:
-      - [Scrum trabaja en sprints con entregas incrementales; Kanban en flujo continuo con tablero visual, "Correcto."]
-      - [Son idénticos, "No."]
-      - [ Kanban usa sprints, "No: Scrum usa sprints."]
-      - [ Scrum no tiene roles, "Scrum sí tiene roles."]
-    correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 5
-  - tema: JIRA
     dif: 1
-    enunciado: ¿Qué es JIRA?
+    enunciado: "¿Cuáles son los 3 roles de Scrum?"
     opciones:
-      - [Una herramienta de gestión de proyectos y seguimiento de issues, "Correcto."]
-      - [ Un lenguaje de programación, "No."]
-      - [ Un sistema operativo, "No."]
-      - [ Un tipo de prueba, "No."]
+      - ["Product Owner, Scrum Master, Equipo de Desarrollo", "Correcto."]
+      - ["Gerente, analista, programador", "No son roles Scrum."]
+      - ["PO, SM, QA", "Falta Dev Team."]
+      - ["Scrum Master, Product Owner, Stakeholder", "Stakeholder no es rol Scrum."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 5
+    o: "a Apuntes de Ingeniería de Software · Unidad 5"
+  - tema: Artefactos
+    dif: 2
+    enunciado: "¿Qué es el Product Backlog?"
+    opciones:
+      - ["Lista ordenada y dinámica de todo lo necesario en el producto", "Correcto."]
+      - ["Lista de tareas del Sprint", "Eso es Sprint Backlog."]
+      - ["Lista de bugs", "No."]
+      - ["Lista de releases", "No."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 5"
+  - tema: Eventos
+    dif: 2
+    enunciado: "¿Cuál es el propósito del Daily Scrum?"
+    opciones:
+      - ["Sincronización diaria: qué hice, qué haré, impedimentos", "Correcto."]
+      - ["Planificar el Sprint", "Eso es Sprint Planning."]
+      - ["Revisar el Incremento", "Eso es Sprint Review."]
+      - ["Mejorar el proceso", "Eso es Retrospective."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 5"
+  - tema: DoD
+    dif: 3
+    enunciado: "Explicá con tus palabras qué es la Definition of Done y por qué es importante."
+    modelo: "La Definition of Done es la lista de criterios que debe cumplir cada ítem para considerarse \"terminado\" (código revisado, tests pasan, documentado, integrado, deployable, aceptado por PO). Asegura transparencia y calidad."
+    criterios:
+      - "Menciona lista de criterios de \"terminado\""
+      - "Menciona transparencia y calidad"
+      - "Da ejemplos de criterios (tests, review, deploy)"
 tarjetas:
-  - [¿Cuáles son los roles de Scrum?, "Product Owner, Scrum Master y Equipo de Desarrollo."]
-  - [¿Qué es Kanban?, "Gestión visual del flujo con límites WIP."]
-  - [¿Qué es JIRA?, "Herramienta de gestión de proyectos y seguimiento de issues."]
+  - ["¿Cuáles son los 4 valores ágiles?", "Individuos, software funcionando, colaboración cliente, respuesta al cambio."]
+  - ["3 roles Scrum", "Product Owner, Scrum Master, Equipo de Desarrollo."]
+  - ["¿Qué es DoD?", "Criterios para considerar un ítem \"terminado\"."]

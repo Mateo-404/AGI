@@ -13,7 +13,7 @@ interface Props {
 /** Página de una materia: la misma estructura que Marketing, con su propio registro de contenido. */
 const { materia: slug, sub = [] } = Astro.props
 const m = datosDe(slug)
-if (slug === 'marketing') await diagramasListos()
+await diagramasListos()
 const [a, b] = sub
 const leccion = a === 'leccion' || (a === 'practica' && b === 'leccion') ? m.lecciones.find((l) => l.id === (a === 'leccion' ? b : sub[2])) : undefined
 const unidad = a === 'unidad' ? m.unidades.find((u) => u.n === Number(b)) : undefined

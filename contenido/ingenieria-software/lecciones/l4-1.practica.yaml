@@ -1,52 +1,53 @@
 preguntas:
-  - tema: Verificación
+  - tema: Clean Code
     dif: 1
-    enunciado: ¿Qué es la verificación en las pruebas de software?
+    enunciado: "¿Qué principio dice \"no te repitas\"?"
     opciones:
-      - [Comprobar que construimos el producto correctamente, "Correcto."]
-      - [Comprobar que construimos el producto correcto, "Eso es validación."]
-      - [ Comprobar el hardware, "No."]
-      - [ Comprobar el presupuesto, "No."]
+      - ["DRY (Don't Repeat Yourself)", "Correcto."]
+      - ["KISS", "Ese es Keep It Simple."]
+      - ["YAGNI", "Ese es You Aren't Gonna Need It."]
+      - ["SOLID", "Es un acrónimo de 5 principios."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 4
-  - tema: Validación
+    o: "a Apuntes de Ingeniería de Software · Unidad 4"
+  - tema: Clean Code
+    dif: 2
+    enunciado: "¿Qué significa YAGNI?"
+    opciones:
+      - ["You Aren't Gonna Need It: no implementes \"por si acaso\"", "Correcto."]
+      - ["You Are Gonna Need It", "Es lo opuesto."]
+      - ["Your API Grows Nicely", "No."]
+      - ["Yet Another Great New Idea", "No."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 4"
+  - tema: Revisión
     dif: 1
-    enunciado: ¿Qué es la validación en las pruebas de software?
+    enunciado: "¿Cuándo se debe hacer la revisión de código?"
     opciones:
-      - [Comprobar que construimos el producto correcto, "Correcto."]
-      - [Comprobar que construimos el producto correctamente, "Eso es verificación."]
-      - [ Comprobar el código fuente, "No."]
-      - [ Comprobar la documentación, "No."]
+      - ["Antes de mergear a main", "Correcto."]
+      - ["Después del deploy", "Demasiado tarde."]
+      - ["Solo al final del sprint", "Tarde."]
+      - ["Nunca", "Incorrecto."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 4
-  - tema: Niveles de prueba
+    o: "a Apuntes de Ingeniería de Software · Unidad 4"
+  - tema: IDEs
     dif: 2
-    enunciado: ¿Cuáles son los niveles de prueba?
+    enunciado: "¿Qué factores influyen en la elección de un IDE?"
     opciones:
-      - ["Unidad, integración, sistema y aceptación", "Correcto."]
-      - [Solo unidad, "Faltan los demás."]
-      - [ Solo integración, "Faltan los demás."]
-      - [ Solo aceptación, "Faltan los demás."]
+      - ["Lenguaje, ecosistema, plugins, equipo", "Correcto."]
+      - ["Solo el precio", "No."]
+      - ["Solo el color del tema", "No."]
+      - ["El nombre", "No."]
     correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 4
-  - tema: Tipos de caja
-    dif: 2
-    enunciado: ¿Qué es la prueba de caja negra?
-    opciones:
-      - ["El componente se trata como una caja opaca, sin conocer su estructura interna", "Correcto."]
-      - [Visibilidad total del código, "Eso es caja blanca."]
-      - [ Enfoque híbrido, "Eso es caja gris."]
-      - [ Prueba de rendimiento, "No."]
-    correcta: 0
-    o: a Apuntes de Ingeniería de Software · Unidad 4
-  - tema: Mantenimiento
+    o: "a Apuntes de Ingeniería de Software · Unidad 4"
+  - tema: Clean Code
     dif: 3
-    enunciado: Explicá con tus palabras los tipos de mantenimiento de software.
-    modelo: Los tipos de mantenimiento son correctivo (corrección de defectos), adaptativo (adaptación al entorno), perfectivo (mejoras y nuevas funcionalidades) y preventivo (reducción de degradación futura).
+    enunciado: "Explicá con tus palabras la diferencia entre DRY, KISS y YAGNI."
+    modelo: "DRY = no duplicar código (abstraer); KISS = mantenerlo simple, evitar complejidad innecesaria; YAGNI = no implementar funcionalidades \"por si acaso\" que no se necesitan hoy."
     criterios:
-      - Menciona al menos tres tipos
-      - Da una breve descripción de cada uno
+      - "Define DRY (no duplicar)"
+      - "Define KISS (simple)"
+      - "Define YAGNI (no anticipar)"
 tarjetas:
-  - [¿Qué es la verificación?, "Comprobar que construimos el producto correctamente."]
-  - [¿Qué es la validación?, "Comprobar que construimos el producto correcto."]
-  - [Tipos de mantenimiento, "Correctivo, adaptativo, perfectivo y preventivo."]
+  - ["¿Qué es DRY?", "Don't Repeat Yourself: no duplicar código, abstraer."]
+  - ["¿Qué es KISS?", "Keep It Simple, Stupid: evitar complejidad innecesaria."]
+  - ["¿Qué es YAGNI?", "You Aren't Gonna Need It: no implementar 'por si acaso'."]

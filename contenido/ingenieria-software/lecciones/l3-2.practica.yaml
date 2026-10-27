@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Secuencia
+    dif: 1
+    enunciado: "¿Qué modela un diagrama de secuencia?"
+    opciones:
+      - ["Interacción temporal entre objetos: quién envía qué mensaje a quién y en qué orden", "Correcto."]
+      - ["Estructura estática de clases", "Eso es diagrama de clases."]
+      - ["Estados de un objeto", "Eso es máquina de estados."]
+      - ["Flujo de trabajo", "Eso es diagrama de actividad."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Estado
+    dif: 2
+    enunciado: "¿Qué modela una máquina de estados?"
+    opciones:
+      - ["Estados de un objeto y transiciones disparadas por eventos", "Correcto."]
+      - ["Secuencia de mensajes", "Eso es secuencia."]
+      - ["Flujo de trabajo", "Eso es diagrama de actividad."]
+      - ["Clases y relaciones", "Eso es diagrama de clases."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Actividad
+    dif: 2
+    enunciado: "¿Para qué sirve un diagrama de actividad?"
+    opciones:
+      - ["Modelar flujos de trabajo y procesos de negocio con decisiones y paralelismo", "Correcto."]
+      - ["Mostrar clases", "No."]
+      - ["Mostrar secuencia de mensajes", "Eso es secuencia."]
+      - ["Mostrar despliegue", "Eso es diagrama de despliegue."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Patrones
+    dif: 2
+    enunciado: "¿A qué categoría pertenece el patrón Singleton?"
+    opciones:
+      - ["Creacional", "Correcto."]
+      - ["Estructural", "No."]
+      - ["Comportamiento", "No."]
+      - ["Arquitectural", "No."]
+    correcta: 0
+    o: "a Apuntes de Ingeniería de Software · Unidad 3"
+  - tema: Patrones
+    dif: 3
+    enunciado: "Explicá con tus palabras la diferencia entre patrón Adapter y Decorator."
+    modelo: "Adapter convierte una interfaz en otra que el cliente espera (cambio de interfaz); Decorator añade responsabilidad a un objeto dinámicamente sin cambiar su interfaz (agrega comportamiento)."
+    criterios:
+      - "Diferencia cambio de interfaz vs agregado de comportamiento"
+      - "Menciona que Adapter cambia interfaz"
+      - "Menciona que Decorator mantiene interfaz y agrega comportamiento"
+tarjetas:
+  - ["¿Qué es un diagrama de secuencia?", "Interacción temporal entre objetos: mensajes en orden."]
+  - ["¿Qué es una máquina de estados?", "Estados y transiciones de un objeto por eventos."]
+  - ["Categorías GoF", "Creacionales, Estructurales, Comportamiento."]
