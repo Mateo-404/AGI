@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Red de datos
+    dif: 1
+    enunciado: ¿Qué es una red de datos?
+    opciones:
+      - [Un conjunto de dispositivos interconectados que comparten recursos e información, "Correcto."]
+      - [ Un solo computador, "No."]
+      - [ Un cable, "No."]
+      - [ Un programa, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 2
+  - tema: Cliente-servidor
+    dif: 1
+    enunciado: ¿En qué consiste la arquitectura cliente-servidor?
+    opciones:
+      - [Los clientes solicitan servicios a un servidor central, "Correcto."]
+      - [ Todos los nodos son iguales, "Eso es P2P."]
+      - [ No hay servidor, "No."]
+      - [ Solo hay clientes, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 2
+  - tema: P2P
+    dif: 2
+    enunciado: ¿Qué es una red P2P?
+    opciones:
+      - [Una red donde todos los nodos son iguales y comparten recursos, "Correcto."]
+      - [ Una red con servidor central, "No."]
+      - [ Una red sin nodos, "No."]
+      - [ Una red inalámbrica, "No necesariamente."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 2
+  - tema: Clasificación
+    dif: 1
+    enunciado: ¿Cómo se clasifican las redes por tamaño?
+    opciones:
+      - ["LAN, MAN y WAN", "Correcto."]
+      - [ Solo LAN, "Faltan MAN y WAN."]
+      - [ Solo WAN, "Faltan LAN y MAN."]
+      - [ Solo MAN, "Faltan LAN y WAN."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 2
+tarjetas:
+  - [¿Qué es una red de datos?, "Conjunto de dispositivos interconectados que comparten recursos."]
+  - [¿Qué es cliente-servidor?, "Modelo donde los clientes solicitan servicios a un servidor central."]
+  - [¿Cómo se clasifican las redes por tamaño?, "LAN, MAN y WAN."]

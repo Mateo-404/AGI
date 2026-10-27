@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Paradigma
+    dif: 1
+    enunciado: ¿Qué es un paradigma de programación?
+    opciones:
+      - ["Un conjunto de conceptos, métodos y reglas que rigen el desarrollo de software", "Correcto."]
+      - [Un lenguaje de programación, "No: es un modelo conceptual."]
+      - [Un sistema operativo, "No."]
+      - [Un tipo de hardware, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Design Thinking
+    dif: 1
+    enunciado: ¿Qué es Design Thinking?
+    opciones:
+      - ["Una metodología centrada en la resolución creativa de problemas, basada en el usuario", "Correcto."]
+      - [Un algoritmo de ordenamiento, "No."]
+      - [Un lenguaje de programación, "No."]
+      - [ Un framework web, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Fases
+    dif: 2
+    enunciado: ¿Cuáles son las fases del Design Thinking?
+    opciones:
+      - ["Empatizar, definir, idear, prototipar y evaluar", "Correcto."]
+      - ["Análisis, diseño, implementación y pruebas", "Esas son fases del desarrollo de software."]
+      - ["Planificar, hacer, verificar y actuar", "Esas son las fases del PDCA."]
+      - ["Entrada, proceso y salida", "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: SCAMPER
+    dif: 2
+    enunciado: ¿Qué es SCAMPER?
+    opciones:
+      - ["Una técnica creativa: Sustituir, Combinar, Adaptar, Modificar, Poner en otro uso, Eliminar y Reorganizar", "Correcto."]
+      - [Un lenguaje de programación, "No."]
+      - [Un modelo de ciclo de vida, "No."]
+      - [Un tipo de prueba, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Aplicaciones
+    dif: 3
+    enunciado: Explicá con tus palabras dos beneficios del Design Thinking.
+    modelo: El Design Thinking promueve la innovación y la colaboración, y reduce el riesgo en la implementación al validar con usuarios.
+    criterios:
+      - Menciona al menos dos beneficios
+      - Los relaciona con la resolución de problemas
+tarjetas:
+  - [¿Qué es un paradigma de programación?, "Conjunto de conceptos, métodos y reglas que rigen el desarrollo de software."]
+  - [¿Cuáles son las fases del Design Thinking?, "Empatizar, definir, idear, prototipar y evaluar."]
+  - [¿Qué es SCAMPER?, "Sustituir, Combinar, Adaptar, Modificar, Poner en otro uso, Eliminar y Reorganizar."]

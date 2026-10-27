@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Planeación
+    dif: 1
+    enunciado: ¿Qué incluye la planeación de ventas?
+    opciones:
+      - ["Planeación estratégica, táctica y revolvente", "Correcto."]
+      - [ Solo ventas, "Faltan las demás."]
+      - [ Solo marketing, "No."]
+      - [ Solo finanzas, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 4
+  - tema: Pronóstico
+    dif: 2
+    enunciado: ¿Qué es el pronóstico de ventas?
+    opciones:
+      - [La estimación de las ventas futuras, "Correcto."]
+      - [ Las ventas pasadas, "No."]
+      - [ El precio, "No."]
+      - [ La publicidad, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 4
+  - tema: SIM
+    dif: 1
+    enunciado: ¿Para qué sirve el SIM?
+    opciones:
+      - ["Para recopilar, analizar y distribuir información para decidir", "Correcto."]
+      - [ Para vender directamente, "No."]
+      - [ Para producir, "No."]
+      - [ Para contabilizar, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 4
+  - tema: Potencial de mercado
+    dif: 2
+    enunciado: ¿Qué es el potencial de mercado?
+    opciones:
+      - [Las ventas máximas posibles de un producto en un mercado, "Correcto."]
+      - [ Las ventas actuales, "No."]
+      - [ El precio, "No."]
+      - [ La publicidad, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 4
+tarjetas:
+  - [¿Qué es el pronóstico de ventas?, "Estimación de las ventas futuras."]
+  - [¿Para qué sirve el SIM?, "Para recopilar y analizar información para decidir."]
+  - [¿Qué es el potencial de mercado?, "Ventas máximas posibles de un producto."]

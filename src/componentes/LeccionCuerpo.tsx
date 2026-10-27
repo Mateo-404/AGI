@@ -1,24 +1,34 @@
-import { ruta } from '@/logica/rutas'
+import { rutaMateria } from '@/logica/rutas'
 import type { Leccion } from '@contenido/tipos'
 import { Bloques, etiquetaOrigen } from './Bloques'
 import { Tx } from './contexto'
-import { leccionPorId, terminoPorId } from '@/logica/datos'
+import { MateriaScope, useMateria } from './contextoMateria'
 
 /** Objetivos y conocimientos previos: lo que va antes de los bloques. */
-export function LeccionCabecera({ l }: { l: Leccion }) {
+export function LeccionCabecera({ l, materia }: { l: Leccion; materia?: string }) {
+  return <MateriaScope materia={materia}><LeccionCabeceraBase l={l} /></MateriaScope>
+}
+
+function LeccionCabeceraBase({ l }: { l: Leccion }) {
+  const m = useMateria()
   return (
     <>
       <h2 className="sub">Objetivos de aprendizaje</h2>
       <ul>{l.objetivos.map((o, i) => <li key={i}>{o}</li>)}</ul>
       {l.previos.length > 0 && (
-        <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
+        <p className="meta">Conocimientos previos: {l.previos.map((id, i) => <span key={id}>{i > 0 && ', '}<a href={rutaMateria(m.slug, `leccion/${id}`)}>{m.leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
       )}
     </>
   )
 }
 
 /** Conceptos clave, síntesis, conexiones y referencias: lo que va después de los bloques. */
-export function LeccionPie({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+export function LeccionPie({ l, conPreguntas = false, materia }: { l: Leccion; conPreguntas?: boolean; materia?: string }) {
+  return <MateriaScope materia={materia}><LeccionPieBase l={l} conPreguntas={conPreguntas} /></MateriaScope>
+}
+
+function LeccionPieBase({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+  const m = useMateria()
   return (
     <>
       <h3>Conceptos clave</h3>
@@ -26,24 +36,24 @@ export function LeccionPie({ l, conPreguntas = false }: { l: Leccion; conPregunt
       <h3>Síntesis</h3>
       <ul>{l.sintesis.map((s, i) => <li key={i}><Tx t={s} /></li>)}</ul>
       {l.conexiones.length > 0 && (
-        <p>Conexiones: {l.conexiones.map((id, i) => <span key={id}>{i > 0 && ' · '}<a href={ruta(`marketing/leccion/${id}`)}>{leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
+        <p>Conexiones: {l.conexiones.map((id, i) => <span key={id}>{i > 0 && ' · '}<a href={rutaMateria(m.slug, `leccion/${id}`)}>{m.leccionPorId.get(id)?.titulo ?? id}</a></span>)}</p>
       )}
       <h3>Referencias al material original</h3>
       <ul>{l.referencias.map((o, i) => <li key={i}>{etiquetaOrigen(o)}</li>)}</ul>
       {conPreguntas && <PreguntasImpresas l={l} />}
-      <span hidden>{terminoPorId.size}</span>
+      <span hidden>{m.terminoPorId.size}</span>
     </>
   )
 }
 
 /** Cuerpo de una lección para el manual imprimible y las pruebas. En la web se arma en LeccionEstatica.astro, con los interactivos como islas. */
-export function LeccionCuerpo({ l, conPreguntas = false }: { l: Leccion; conPreguntas?: boolean }) {
+export function LeccionCuerpo({ l, conPreguntas = false, materia }: { l: Leccion; conPreguntas?: boolean; materia?: string }) {
   return (
-    <>
+    <MateriaScope materia={materia}>
       <LeccionCabecera l={l} />
       <Bloques bloques={l.bloques} />
       <LeccionPie l={l} conPreguntas={conPreguntas} />
-    </>
+    </MateriaScope>
   )
 }
 

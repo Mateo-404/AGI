@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Software
+    dif: 1
+    enunciado: ¿Qué es el software?
+    opciones:
+      - ["Un conjunto de instrucciones, estructuras de datos y documentos que controlan la operación de una computadora", "Correcto."]
+      - [Solo el hardware, "No."]
+      - [Solo los datos, "Faltan instrucciones y documentos."]
+      - [ Solo los programas ejecutables, "Faltan datos y documentos."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: Características
+    dif: 2
+    enunciado: ¿Cuál es una característica única del software?
+    opciones:
+      - [No se desgasta (no tiene degradación física), "Correcto."]
+      - [Se manufactura en fábricas, "El software se desarrolla con la mente."]
+      - [Es un activo contable siempre, "Generalmente no figura en balances."]
+      - [Tiene separación entre I+D y producción, "En software no hay esa separación."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: Ingeniería de Software
+    dif: 1
+    enunciado: ¿Qué es la ingeniería de software?
+    opciones:
+      - ["La aplicación de un enfoque sistemático, disciplinado y cuantificable al desarrollo, operación y mantenimiento del software", "Correcto."]
+      - [La programación sin metodología, "No."]
+      - [El diseño de hardware, "No."]
+      - [ La instalación de sistemas operativos, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: SI
+    dif: 2
+    enunciado: ¿En qué se diferencia un sistema de información de un sistema informático?
+    opciones:
+      - [El SI es más amplio; el sistema informático es solo una parte, "Correcto."]
+      - [Son lo mismo, "No: el SI incluye humanos, datos, actividades e informática."]
+      - [El sistema informático es más amplio, "Es al revés."]
+      - [ No hay diferencia, "Hay diferencia."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: 4 P
+    dif: 2
+    enunciado: ¿Cuáles son las 4 P del desarrollo de software?
+    opciones:
+      - ["Personas, Proceso, Proyecto y Producto", "Correcto."]
+      - ["Planificación, Programación, Prueba y Producción", "No."]
+      - ["Poder, Prestigio, Plata y Plazo", "No."]
+      - ["Pantalla, Procesador, Periféricos y Puertos", "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+tarjetas:
+  - [¿Qué es el software?, "Conjunto de instrucciones, estructuras de datos y documentos."]
+  - [¿Qué es la ingeniería de software?, "Enfoque sistemático, disciplinado y cuantificable para el desarrollo de software."]
+  - [¿Cuáles son las 4 P?, "Personas, Proceso, Proyecto y Producto."]

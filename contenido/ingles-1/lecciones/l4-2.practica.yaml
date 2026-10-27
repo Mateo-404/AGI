@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Frases
+    dif: 1
+    enunciado: ¿Para qué sirven las frases listas y expresiones?
+    opciones:
+      - [Para hablar de manera natural, "Correcto."]
+      - [ Para calcular, "No."]
+      - [ Para programar, "No."]
+      - [ Para cocinar, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+  - tema: Roadmap
+    dif: 1
+    enunciado: ¿Qué fuente recomienda el apunte para practicar pronunciación?
+    opciones:
+      - [BBC Learning English, "Correcto."]
+      - [ English Grammar in Use, "Esa es para gramática."]
+      - [ Oxford Online Grammar, "Esa es para gramática."]
+      - [ Youglish, "Esa es para ejemplos reales."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+  - tema: Youglish
+    dif: 2
+    enunciado: ¿Qué ofrece Youglish?
+    opciones:
+      - [Ejemplos reales usados por nativos, "Correcto."]
+      - [ Reglas gramaticales, "No."]
+      - [ Ejercicios de escritura, "No."]
+      - [ Diccionarios, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+  - tema: Roadmap
+    dif: 2
+    enunciado: ¿Qué recomienda Oxford Online Grammar?
+    opciones:
+      - ["Present simple, past simple, modales, preposiciones y contables/incontables", "Correcto."]
+      - [ Solo vocabulario de comida, "No."]
+      - [ Solo pronunciación, "No."]
+      - [ Solo escritura, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+tarjetas:
+  - [¿Para qué sirven las frases listas?, "Para hablar de manera natural."]
+  - [¿Qué es Youglish?, "Ejemplos reales usados por nativos."]
+  - [¿Qué recomienda BBC Learning English?, "Present simple, past simple, future, preguntas y pronunciación."]

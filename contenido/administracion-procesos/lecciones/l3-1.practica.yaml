@@ -1,0 +1,53 @@
+preguntas:
+  - tema: ERP
+    dif: 1
+    enunciado: ¿Qué es un ERP (Enterprise Resource Planning)?
+    opciones:
+      - ["Un sistema integrado que unifica los procesos de negocio en una única base de datos y plataforma", "Correcto."]
+      - [Un método de mejora continua, "No: es un sistema de información."]
+      - [Un tipo de diagrama de procesos, "No: es un software de gestión."]
+      - [Una norma de calidad, "No: la norma es ISO 9001."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 3
+  - tema: RPA
+    dif: 2
+    enunciado: ¿Cuándo conviene usar RPA?
+    opciones:
+      - ["Cuando el proceso está estable pero es manual y de alto volumen", "Correcto."]
+      - [Cuando se quiere rediseñar toda la organización, "Eso corresponde a un ERP."]
+      - [Cuando se desconoce el proceso real, "Eso corresponde a minería de procesos."]
+      - [Solo en procesos creativos, "RPA automatiza tareas repetitivas basadas en reglas."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 3
+  - tema: Minería de procesos
+    dif: 2
+    enunciado: ¿Qué salida produce la minería de procesos?
+    opciones:
+      - ["El modelo del proceso real, que se compara con el proceso documentado", "Correcto."]
+      - [Un robot de software, "Eso es RPA."]
+      - [Una base de datos unificada, "Eso es un ERP."]
+      - [Un manual de calidad, "No: descubre el proceso a partir de los logs."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 3
+  - tema: Comparación
+    dif: 3
+    enunciado: Explicá con tus palabras cuándo usarías ERP, RPA y minería de procesos.
+    modelo: Se usa ERP al rediseñar la gestión integral de la organización; RPA cuando el proceso está estable pero es manual y de alto volumen; minería de procesos para diagnosticar, controlar y mejorar procesos existentes a partir de datos.
+    criterios:
+      - Distingue el foco de cada tecnología
+      - Menciona al menos dos de las tres
+      - Da un criterio de uso para cada una
+  - tema: Transformación digital
+    dif: 1
+    enunciado: ¿En qué convergen el ERP, el RPA y la minería de procesos?
+    opciones:
+      - [En la transformación digital de los procesos, "Correcto."]
+      - [En la eliminación de todos los procesos, "No: los optimizan, no los eliminan."]
+      - [En la sustitución de las personas, "Liberan a las personas de tareas repetitivas."]
+      - [En la certificación ISO 9001, "No es el foco de estas tecnologías."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 3
+tarjetas:
+  - [¿Qué es un ERP?, "Sistema integrado que unifica los procesos de negocio en una única base de datos y plataforma."]
+  - [¿Qué es RPA?, "Tecnología que automatiza tareas repetitivas, basadas en reglas y de alto volumen."]
+  - [¿Qué es la minería de procesos?, "Disciplina que usa event logs para descubrir, monitorear y mejorar procesos."]

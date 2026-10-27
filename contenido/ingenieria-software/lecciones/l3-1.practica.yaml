@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Diseño
+    dif: 1
+    enunciado: ¿Qué define el diseño de software?
+    opciones:
+      - [La arquitectura y los detalles del sistema, "Correcto."]
+      - [ Solo el código, "No."]
+      - [ Solo las pruebas, "No."]
+      - [ Solo el despliegue, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 3
+  - tema: UML
+    dif: 1
+    enunciado: ¿Qué es UML?
+    opciones:
+      - ["Un lenguaje de modelado para visualizar, especificar y documentar sistemas", "Correcto."]
+      - [ Un lenguaje de programación, "No."]
+      - [ Un sistema operativo, "No."]
+      - [ Un tipo de base de datos, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 3
+  - tema: Diagrama de clases
+    dif: 2
+    enunciado: ¿Qué muestra un diagrama de clases?
+    opciones:
+      - ["La estructura estática del sistema (clases, atributos, métodos, relaciones)", "Correcto."]
+      - [La interacción entre actores y el sistema, "Eso es casos de uso."]
+      - [ El flujo de datos, "No."]
+      - [ El despliegue, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 3
+  - tema: Casos de uso
+    dif: 2
+    enunciado: ¿Qué muestra un diagrama de casos de uso?
+    opciones:
+      - [La interacción entre actores y el sistema, "Correcto."]
+      - [La estructura estática, "Eso es diagrama de clases."]
+      - [ El código fuente, "No."]
+      - [ El hardware, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 3
+tarjetas:
+  - [¿Qué es UML?, "Lenguaje de modelado para visualizar, especificar y documentar sistemas."]
+  - [¿Qué muestra un diagrama de clases?, "La estructura estática del sistema."]
+  - [¿Qué muestra un diagrama de casos de uso?, "La interacción entre actores y el sistema."]

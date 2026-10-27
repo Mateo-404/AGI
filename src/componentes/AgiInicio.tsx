@@ -1,4 +1,5 @@
-import { ruta } from '@/logica/rutas'
+import { rutaMateria } from '@/logica/rutas'
+import { listaMaterias } from '@contenido/materias'
 import { useEffect, useState } from 'react'
 
 type Materia = { nombre: string; slug: string | null; apuntes: boolean }
@@ -68,12 +69,13 @@ export function AgiInicio() {
             <ul className="agi-materias" style={{ listStyle: 'none', padding: 0 }}>
               {c.materias.map((m) => {
                 const est = !!estudiadas[m.nombre]
-                const href = m.nombre === 'Marketing digital' ? ruta('marketing/') : (m.apuntes && m.slug ? `https://github.com/Mateo-404/AGI/tree/main/apuntes/${m.slug}` : null)
+                const interna = !!m.slug && listaMaterias.includes(m.slug)
+                const href = interna ? rutaMateria(m.slug!) : (m.apuntes && m.slug ? `https://github.com/Mateo-404/AGI/tree/main/apuntes/${m.slug}` : null)
                 return (
                   <li key={m.nombre} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0', textDecoration: est ? 'line-through' : 'none', opacity: est ? 0.6 : 1 }}>
                     <input type="checkbox" checked={est} onChange={() => toggle(m.nombre)} aria-label={`Marcar ${m.nombre} como estudiada`} />
-                    {href ? <a href={href} target={m.slug === 'marketing' ? undefined : '_blank'} rel="noreferrer"><b>{m.nombre}</b></a> : <b>{m.nombre}</b>}
-                    {m.apuntes && m.slug !== 'marketing' && <span className="meta" style={{ fontSize: 12 }}>· apuntes</span>}
+                    {href ? <a href={href} target={interna ? undefined : '_blank'} rel="noreferrer"><b>{m.nombre}</b></a> : <b>{m.nombre}</b>}
+                    {m.apuntes && !interna && <span className="meta" style={{ fontSize: 12 }}>· apuntes</span>}
                   </li>
                 )
               })}

@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Sinergia
+    dif: 1
+    enunciado: ¿Cuál es el foco del Design Thinking?
+    opciones:
+      - ["Comprensión del usuario, ideación creativa y prototipado", "Correcto."]
+      - [Estructuración lógica y algorítmica, "Ese es el foco del Pensamiento Computacional."]
+      - [Solo la programación, "No."]
+      - [Solo la documentación, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Sinergia
+    dif: 2
+    enunciado: ¿Cómo se relacionan las fases de Design Thinking con las habilidades del Pensamiento Computacional?
+    opciones:
+      - ["Empatizar/Definir con abstracción y descomposición, Idear con patrones, Prototipar con algoritmización, Evaluar con generalización", "Correcto."]
+      - [No se relacionan, "Sí se relacionan."]
+      - [Solo en la fase de evaluación, "En todas las fases."]
+      - [Solo en la fase de prototipado, "En todas las fases."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Conclusión
+    dif: 2
+    enunciado: ¿Qué aporta cada enfoque?
+    opciones:
+      - [Design Thinking aporta la mirada centrada en la persona y Pensamiento Computacional la estructura lógica y escalabilidad, "Correcto."]
+      - [Solo Design Thinking aporta valor, "Ambos aportan."]
+      - [Solo Pensamiento Computacional aporta valor, "Ambos aportan."]
+      - [Ninguno aporta valor, "Ambos aportan."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+  - tema: Pensamiento Computacional
+    dif: 1
+    enunciado: ¿Qué es el Pensamiento Computacional?
+    opciones:
+      - ["Un enfoque estructurado de resolución de problemas basado en abstracción, descomposición, patrones y algoritmización", "Correcto."]
+      - [Un lenguaje de programación, "No."]
+      - [Un sistema operativo, "No."]
+      - [Un tipo de hardware, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 1
+tarjetas:
+  - [¿Qué aporta Design Thinking?, "La mirada centrada en la persona."]
+  - [¿Qué aporta Pensamiento Computacional?, "La estructura lógica y la escalabilidad."]
+  - [Relación Empatizar/Definir, "Abstracción y descomposición."]

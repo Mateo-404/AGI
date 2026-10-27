@@ -1,0 +1,25 @@
+import type { FilaCobertura } from '../tipos'
+
+export const cobertura: FilaCobertura[] = [
+  { unidad: 1, tema: 'Sistemas y sistemas de información', estado: 'CD', lecciones: ['is-l1-1'] },
+  { unidad: 1, tema: 'Dominios de aplicación del software', estado: 'CD', lecciones: ['is-l1-1'] },
+  { unidad: 1, tema: 'Ingeniería de Software (IS)', estado: 'CD', lecciones: ['is-l1-1'] },
+  { unidad: 2, tema: 'Ciclo de vida del software', estado: 'CD', lecciones: ['is-l2-1'] },
+  { unidad: 2, tema: 'Planificación (fuzzy front end)', estado: 'CD', lecciones: ['is-l2-1'] },
+  { unidad: 2, tema: 'Estudio de viabilidad', estado: 'CD', lecciones: ['is-l2-1'] },
+  { unidad: 2, tema: 'Análisis y requerimientos', estado: 'CD', lecciones: ['is-l2-1'] },
+  { unidad: 3, tema: 'Diseño de software', estado: 'CD', lecciones: ['is-l3-1'] },
+  { unidad: 3, tema: 'Paradigmas de programación', estado: 'CD', lecciones: ['is-l3-1'] },
+  { unidad: 3, tema: 'Diagramas de clases (UML)', estado: 'CD', lecciones: ['is-l3-1'] },
+  { unidad: 3, tema: 'Diagramas de casos de uso', estado: 'CD', lecciones: ['is-l3-1'] },
+  { unidad: 4, tema: 'Implementación', estado: 'CD', lecciones: ['is-l4-1'] },
+  { unidad: 4, tema: 'Pruebas (testing)', estado: 'CD', lecciones: ['is-l4-1'] },
+  { unidad: 4, tema: 'Despliegue', estado: 'CD', lecciones: ['is-l4-1'] },
+  { unidad: 4, tema: 'Mantenimiento', estado: 'CD', lecciones: ['is-l4-1'] },
+  { unidad: 4, tema: 'Modelos de ciclo de vida', estado: 'CD', lecciones: ['is-l4-1'] },
+  { unidad: 5, tema: 'Manifiesto Ágil', estado: 'CD', lecciones: ['is-l5-1'] },
+  { unidad: 5, tema: 'Scrum', estado: 'CD', lecciones: ['is-l5-1'] },
+  { unidad: 5, tema: 'Kanban', estado: 'CD', lecciones: ['is-l5-1'] },
+  { unidad: 5, tema: 'JIRA', estado: 'CD', lecciones: ['is-l5-1'] },
+  { unidad: 5, tema: 'Scrum vs. Kanban', estado: 'CD', lecciones: ['is-l5-1'] },
+]

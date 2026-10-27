@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Peronismo y universidad
+    dif: 1
+    enunciado: ¿Qué caracterizó al proyecto peronista de universidad?
+    opciones:
+      - ["Amplió el acceso con gratuidad e ingreso irrestricto, pero centralizó el control político y suprimió el cogobierno", "Correcto."]
+      - [Restauró la autonomía y el cogobierno de 1918, "No: los suprimió."]
+      - [Privatizó la universidad, "No."]
+      - [Eliminó la gratuidad, "No: la consagró."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Ley Guardo
+    dif: 2
+    enunciado: ¿Qué estableció la Ley Guardo (1947)?
+    opciones:
+      - [Suprimió el cogobierno paritario; el rector pasó a ser nombrado por el Poder Ejecutivo, "Correcto."]
+      - [Consagró la gratuidad universitaria, "Eso fue el Decreto 29.337 de 1949."]
+      - [Restauró la autonomía, "No: la suprimió."]
+      - [Creó la Universidad Obrera, "Eso fue la Ley 13.229 de 1948."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Universidad Obrera
+    dif: 2
+    enunciado: ¿Para quiénes estaba destinada la Universidad Obrera Nacional?
+    opciones:
+      - ["Para la clase trabajadora, con cursado en turno tarde/noche", "Correcto."]
+      - [Para la elite dirigente, "No: era para obreros."]
+      - [Para extranjeros, "No."]
+      - [Solo para docentes, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Impacto
+    dif: 1
+    enunciado: ¿Qué impacto tuvo la gratuidad universitaria peronista?
+    opciones:
+      - [La población estudiantil se cuadruplicó entre 1943 y 1955, "Correcto."]
+      - [Disminuyó la matrícula, "No: aumentó."]
+      - [Se cerraron universidades, "No."]
+      - [Se eliminó el voto femenino, "No: se lo consagró en 1947."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Decreto 29.337
+    dif: 3
+    enunciado: Explicá con tus palabras qué consagró el Decreto N° 29.337 de 1949.
+    modelo: El Decreto N° 29.337 de 1949 consagró la gratuidad universitaria (supresión de aranceles y tasas) y el ingreso irrestricto (eliminación de los exámenes de ingreso).
+    criterios:
+      - Menciona la gratuidad
+      - Menciona el ingreso irrestricto
+tarjetas:
+  - [¿Qué es la Ley Guardo?, "Primera ley universitaria peronista que suprimió el cogobierno paritario."]
+  - [¿Qué era la UON?, "Universidad Obrera Nacional, para la clase trabajadora, con cursado nocturno."]
+  - [¿Qué consagró el Decreto 29.337?, "Gratuidad universitaria e ingreso irrestricto."]

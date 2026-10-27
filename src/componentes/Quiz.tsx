@@ -1,9 +1,9 @@
-import { ruta } from '@/logica/rutas'
+import { rutaMateria } from '@/logica/rutas'
 import { useMemo, useState } from 'react'
 import type { Pregunta, PreguntaCorta, PreguntaMC } from '@contenido/tipos'
 import { registrarIntento, registrarQuiz } from '@/logica/progreso'
 import { barajar, puntajeCorregido, rndDe } from '@/logica/repaso'
-import { leccionDePregunta } from '@/logica/datos'
+import { useMateria } from './contextoMateria'
 import { Tx } from './contexto'
 import { Origen_ } from './Bloques'
 
@@ -71,6 +71,7 @@ export function PreguntaCortaView({ p, onFin }: { p: PreguntaCorta; onFin: (ok: 
 }
 
 export function QuizRunner({ preguntas, alcance, titulo, onSalir }: { preguntas: Pregunta[]; alcance: string; titulo: string; onSalir?: () => void }) {
+  const m = useMateria()
   const [i, setI] = useState(0)
   const [res, setRes] = useState<{ id: string; ok: boolean }[]>([])
   const [guardado, setGuardado] = useState(false)
@@ -83,7 +84,7 @@ export function QuizRunner({ preguntas, alcance, titulo, onSalir }: { preguntas:
     const er = mcRes.length - ac
     const k = mcs[0]?.opciones.length ?? 4
     const corr = puntajeCorregido(ac, er, k)
-    const falladas = res.filter((r) => !r.ok).map((r) => leccionDePregunta(r.id)).filter((l, j, a) => l && a.indexOf(l) === j)
+    const falladas = res.filter((r) => !r.ok).map((r) => m.leccionDePregunta(r.id)).filter((l, j, a) => l && a.indexOf(l) === j)
     if (!guardado) { registrarQuiz({ alcance, total: res.length, aciertos: res.filter((r) => r.ok).length, corregido: Number(corr.toFixed(2)) }); setGuardado(true) }
     return (
       <section className="inter" aria-live="polite">
@@ -91,7 +92,7 @@ export function QuizRunner({ preguntas, alcance, titulo, onSalir }: { preguntas:
         <p className="res">{res.filter((r) => r.ok).length} / {res.length}<small>Aciertos brutos (incluye respuestas cortas autoevaluadas)</small></p>
         {mcs.length > 0 && <p>Puntaje de opción múltiple corregido por azar: <b>{corr.toFixed(1)}</b> de {mcRes.length} <span className="meta">(aciertos − errores/({k}−1))</span></p>}
         <p className="aviso">Un buen resultado hoy no significa dominio: el tema se marca como <b>consolidado</b> recién con aciertos repetidos en días distintos.</p>
-        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={ruta(`marketing/leccion/${l!.id}`)}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
+        {falladas.length > 0 && (<><h3 className="sub">Recomendación de repaso</h3><ul className="rec">{falladas.map((l) => <li key={l!.id}><a href={rutaMateria(m.slug, `leccion/${l!.id}`)}>{l!.id} · {l!.titulo}</a></li>)}</ul></>)}
         <div className="fila"><button className="btn pri" onClick={() => { setI(0); setRes([]); setGuardado(false) }}>Repetir</button>{onSalir && <button className="btn" onClick={onSalir}>Volver</button>}</div>
       </section>
     )

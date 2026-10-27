@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Centro de compras
+    dif: 1
+    enunciado: ¿Qué es el centro de compras (UTD)?
+    opciones:
+      - [El conjunto de personas que participan en la decisión de compra organizacional, "Correcto."]
+      - [ Un solo comprador, "No: es un grupo."]
+      - [ El vendedor, "No."]
+      - [ El proveedor, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 2
+  - tema: Demanda derivada
+    dif: 2
+    enunciado: ¿Qué es la demanda derivada?
+    opciones:
+      - [La demanda de un producto que deriva de la demanda de otro (B2B), "Correcto."]
+      - [La demanda de consumo final, "No."]
+      - [ La oferta, "No."]
+      - [ El precio, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 2
+  - tema: Venta personal
+    dif: 1
+    enunciado: ¿Cuáles son las etapas de la venta personal?
+    opciones:
+      - ["Prospección, pre-approach, approach, presentación, objeciones, cierre y seguimiento", "Correcto."]
+      - [ Solo prospección, "Faltan las demás."]
+      - [ Solo cierre, "Faltan las demás."]
+      - [ Solo seguimiento, "Faltan las demás."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 2
+  - tema: Alineación
+    dif: 2
+    enunciado: ¿Por qué deben alinearse el proceso de venta y el de compra?
+    opciones:
+      - [Porque la empresa debe vender como el cliente compra, "Correcto."]
+      - [ Porque son independientes, "No."]
+      - [ Porque el cliente debe adaptarse a la empresa, "Es al revés."]
+      - [ Porque no importa la alineación, "Sí importa."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 2
+tarjetas:
+  - [¿Qué es el centro de compras?, "Conjunto de personas que participan en la decisión de compra organizacional."]
+  - [¿Qué es la demanda derivada?, "Demanda de un producto que deriva de la demanda de otro."]
+  - [Etapas de la venta personal, "Prospección, pre-approach, approach, presentación, objeciones, cierre y seguimiento."]

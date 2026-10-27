@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Contabilidad de costos
+    dif: 1
+    enunciado: ¿Cuál es el propósito de la contabilidad de costos?
+    opciones:
+      - ["Determinar, clasificar y analizar el costo de producción para la gestión interna", "Correcto."]
+      - [Informar a terceros sobre el patrimonio, "Eso es la contabilidad patrimonial."]
+      - [ Pagar impuestos, "No es su propósito principal."]
+      - [ Llevar la contabilidad fiscal, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Costo vs. gasto
+    dif: 2
+    enunciado: ¿Cuál es la diferencia entre costo y gasto?
+    opciones:
+      - [El costo se capitaliza en el inventario; el gasto se carga al resultado, "Correcto."]
+      - [Son lo mismo, "No."]
+      - [ El gasto se capitaliza, "Es al revés."]
+      - [ El costo no se registra, "Sí se registra."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Pérdida
+    dif: 1
+    enunciado: ¿Qué es una pérdida?
+    opciones:
+      - ["Una disminución del patrimonio sin contraprestación, ajena a la actividad principal", "Correcto."]
+      - [Un costo de producción, "No."]
+      - [ Un gasto del período, "No."]
+      - [ Un ingreso, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Contabilidad patrimonial
+    dif: 2
+    enunciado: ¿En qué se diferencia la contabilidad patrimonial de la de costos?
+    opciones:
+      - ["La patrimonial es externa, histórica y obligatoria; la de costos es interna, analítica y predictiva", "Correcto."]
+      - [Son idénticas, "No."]
+      - [ La de costos es obligatoria, "No: la patrimonial es la obligatoria."]
+      - [ La patrimonial es predictiva, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+tarjetas:
+  - [¿Qué es la contabilidad de costos?, "Sistema de información para la gestión interna."]
+  - [¿Qué es un costo?, "Gasto incurrido para producir un bien o servicio, que se capitaliza."]
+  - [¿Qué es un gasto?, "Erogación del período que se carga al resultado."]

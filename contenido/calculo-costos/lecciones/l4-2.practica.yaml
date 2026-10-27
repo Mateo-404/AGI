@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Apalancamiento
+    dif: 1
+    enunciado: ¿Qué es el apalancamiento operativo?
+    opciones:
+      - [El grado en que los costos fijos amplifican los cambios en la utilidad, "Correcto."]
+      - [Un tipo de préstamo, "No."]
+      - [ Un costo variable, "No."]
+      - [ Un ingreso, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Decisiones
+    dif: 2
+    enunciado: ¿En qué se basan las decisiones basadas en los costos?
+    opciones:
+      - ["En costos relevantes (incrementales), ignorando los costos hundidos", "Correcto."]
+      - [En costos hundidos, "Se ignoran los hundidos."]
+      - [ En costos promedio, "Se usan marginales."]
+      - [ En costos fijos totales, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: IA
+    dif: 2
+    enunciado: ¿Cómo se incorpora la IA en la evaluación de costos?
+    opciones:
+      - ["Para análisis predictivo, detección de anomalías y optimización", "Correcto."]
+      - [ Para eliminar los costos, "No."]
+      - [ Para pagar impuestos, "No."]
+      - [ Para sustituir contadores, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Errores
+    dif: 2
+    enunciado: ¿Cuál es un error frecuente en el análisis de costos?
+    opciones:
+      - [Incluir costos hundidos en las decisiones, "Correcto."]
+      - [ Usar costos marginales, "Eso es correcto."]
+      - [ Ignorar los costos fijos, "No es el error principal."]
+      - [ Usar el punto de equilibrio, "Eso es correcto."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+tarjetas:
+  - [¿Qué es el apalancamiento operativo?, "Grado en que los costos fijos amplifican los cambios en la utilidad."]
+  - [¿En qué se basan las decisiones?, "En costos relevantes, ignorando los hundidos."]
+  - [¿Cómo se usa la IA en costos?, "Análisis predictivo, detección de anomalías y optimización."]

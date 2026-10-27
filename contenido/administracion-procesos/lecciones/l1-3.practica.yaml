@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Mapa de procesos
+    dif: 1
+    enunciado: ¿Cuáles son los tres tipos de procesos que aparecen en el mapa de procesos?
+    opciones:
+      - ["Estratégicos, de negocio y de soporte", "Correcto."]
+      - ["Primarios, secundarios y terciarios", "No son los tipos del mapa de procesos."]
+      - ["De entrada, de salida y de control", "Son partes de un proceso, no tipos del mapa."]
+      - ["Manuales, automáticos y mixtos", "No es la clasificación del mapa de procesos."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Cadena de valor
+    dif: 2
+    enunciado: ¿Cómo se calcula el margen en la cadena de valor de Porter?
+    opciones:
+      - ["Valor pagado por el cliente menos sumatoria de costos de las actividades", "Correcto."]
+      - ["Sumatoria de costos menos valor pagado por el cliente", "Es al revés."]
+      - ["Valor pagado por el cliente más costos de las actividades", "No se suman; se restan los costos."]
+      - ["Costos fijos divididos por unidades vendidas", "Eso es otra métrica, no el margen de la cadena de valor."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Jerarquía
+    dif: 2
+    enunciado: ¿Qué es un proceso operativo?
+    opciones:
+      - ["El proceso que ya no puede dividirse en otros (nivel atómico)", "Correcto."]
+      - ["El proceso más importante de la organización", "No necesariamente; es el que llegó al nivel atómico."]
+      - ["El primer proceso del mapa", "No: es el nivel más bajo de la jerarquía."]
+      - ["Un proceso paralelo", "Los procesos paralelos son instancias separadas, no el nivel atómico."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Procesos paralelos
+    dif: 3
+    enunciado: ¿Cuándo conviene crear un proceso paralelo (instancia) en lugar de bifurcar un proceso existente?
+    opciones:
+      - ["Cuando el proceso no comparte entradas y/o salidas dentro de la cadena de valor", "Correcto."]
+      - ["Siempre que se pueda", "Hay que definir instancias sin abusar de la bifurcación."]
+      - ["Cuando el proceso es muy corto", "La longitud no es el criterio; el criterio son las entradas y salidas compartidas."]
+      - ["Cuando se quiere automatizar", "La automatización no determina la creación de instancias."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Minería de procesos
+    dif: 2
+    enunciado: ¿Qué entrada utiliza la minería de procesos (Process Mining) para descubrir el proceso real?
+    opciones:
+      - ["Registros de eventos (event logs) de los sistemas", "Correcto."]
+      - ["Entrevistas a los empleados", "Eso es relevamiento tradicional, no minería de procesos."]
+      - ["El organigrama de la empresa", "No es la fuente de datos de la minería de procesos."]
+      - ["El manual de calidad", "El manual documenta; la minería descubre a partir de los logs."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+tarjetas:
+  - [¿Qué es el mapa de procesos?, "Representación gráfica de la estructura de procesos de la organización (diagrama de valor)."]
+  - [Tipos de procesos en el mapa, "Estratégicos, de negocio (gestión) y de soporte."]
+  - [Fórmula del margen (cadena de valor), "Valor pagado por el cliente − sumatoria de costos de las actividades."]

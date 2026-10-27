@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Desigualdad educativa
+    dif: 1
+    enunciado: ¿Qué es la desigualdad educativa?
+    opciones:
+      - ["La distribución desigual de oportunidades y resultados en el acceso, la permanencia y la calidad de la educación", "Correcto."]
+      - [La falta de escuelas en el campo, "Es un aspecto, pero no la definición."]
+      - [El fracaso individual de los estudiantes, "La desigualdad es estructural, no individual."]
+      - [La diferencia de idiomas entre países, "No es el foco del apunte."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Vectores
+    dif: 1
+    enunciado: ¿Cuáles son los principales vectores de desigualdad educativa?
+    opciones:
+      - ["Nivel socioeconómico, origen regional, género y origen social y familiar", "Correcto."]
+      - [Edad y altura, "No son vectores del apunte."]
+      - [Solo el nivel socioeconómico, "Hay más vectores."]
+      - [La religión y el deporte, "No son los vectores listados."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Trayectorias
+    dif: 2
+    enunciado: ¿Cómo se relaciona el origen social con la trayectoria educativa?
+    opciones:
+      - ["La trayectoria es condicionada, no determinada, por el origen social", "Correcto."]
+      - [El origen social determina totalmente el resultado, "El apunte dice condicionada, no determinada."]
+      - [No hay relación, "Hay relación, pero no determinación."]
+      - [Solo afecta el acceso, "Afecta acceso, permanencia y calidad."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Meritocracia
+    dif: 2
+    enunciado: ¿Por qué se critica la meritocracia?
+    opciones:
+      - [Porque ignora las condiciones estructurales de partida desiguales, "Correcto."]
+      - [Porque premia el esfuerzo, "Eso no es un motivo de crítica."]
+      - [Porque es ilegal, "No es ilegal."]
+      - [Porque solo aplica a la universidad, "Aplica a la sociedad en general."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Inclusión
+    dif: 3
+    enunciado: Explicá con tus palabras qué estrategias institucionales busca la universidad pública para la inclusión educativa.
+    modelo: Cursos de nivelación, becas, acompañamiento académico y articulación con la escuela media.
+    criterios:
+      - Menciona al menos dos estrategias
+      - Relaciona con la interrupción de la desigualdad
+tarjetas:
+  - [¿Qué es la desigualdad educativa?, "Distribución desigual de oportunidades y resultados en el acceso, la permanencia y la calidad de la educación."]
+  - [Vectores de desigualdad, "Nivel socioeconómico, origen regional, género y origen social y familiar."]
+  - [¿Qué es la meritocracia?, "Principio según el cual el éxito depende solo del esfuerzo y el mérito individual."]

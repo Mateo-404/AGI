@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Requerimiento
+    dif: 1
+    enunciado: ¿Qué es un requerimiento según IEEE?
+    opciones:
+      - ["Una necesidad del usuario, una capacidad del sistema o su representación formal", "Correcto."]
+      - [Un lenguaje de programación, "No."]
+      - [Un tipo de base de datos, "No."]
+      - [ Un sistema operativo, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: Clasificación
+    dif: 2
+    enunciado: ¿Cómo se clasifican los requerimientos?
+    opciones:
+      - ["En funcionales, no funcionales y de dominio", "Correcto."]
+      - [En técnicos y no técnicos, "No es la clasificación del apunte."]
+      - [En grandes y pequeños, "No."]
+      - [ En internos y externos, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: No funcionales
+    dif: 2
+    enunciado: ¿Qué característica deben tener los requerimientos no funcionales?
+    opciones:
+      - [Deben ser cuantificables, "Correcto."]
+      - [Deben ser cualitativos, "Deben ser cuantificables."]
+      - [Deben ser opcionales, "No."]
+      - [ Deben ser secretos, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: Niveles
+    dif: 1
+    enunciado: ¿Cuáles son los niveles de descripción de un requerimiento?
+    opciones:
+      - ["Nivel de negocio, nivel de usuario y nivel de sistema", "Correcto."]
+      - ["Nivel de código, nivel de prueba y nivel de despliegue", "No."]
+      - [" Nivel bajo, medio y alto", "No."]
+      - [" Nivel físico, lógico y conceptual", "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 2
+  - tema: Técnicas
+    dif: 3
+    enunciado: Explicá con tus palabras por qué es importante combinar técnicas de recopilación de requerimientos.
+    modelo: Combinar técnicas de recopilación permite obtener una visión más completa y validar los requerimientos con los interesados, reduciendo la especificación deficiente que causa fallos en los proyectos.
+    criterios:
+      - Menciona la combinación de técnicas
+      - Menciona la validación con interesados
+      - Relaciona con la calidad de los requerimientos
+tarjetas:
+  - [¿Qué es un requerimiento?, "Especificación de qué debe implementarse en un sistema."]
+  - [¿Cómo se clasifican los requerimientos?, "En funcionales, no funcionales y de dominio."]
+  - [¿Qué deben ser los requerimientos no funcionales?, "Cuantificables."]

@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Calidad
+    dif: 1
+    enunciado: ¿Qué es la calidad en una organización, según los apuntes?
+    opciones:
+      - [La ausencia de defectos en el producto final, "La calidad no se logra solo inspeccionando el resultado; se gestiona en los procesos."]
+      - [La capacidad de traducir las necesidades del usuario en características medibles, "Correcto: es la definición central del apunte."]
+      - [El cumplimiento de la norma ISO 9001, "La norma es una herramienta; la calidad es el resultado de los procesos."]
+      - [La satisfacción del cliente medida por encuestas, "La satisfacción es una consecuencia; la calidad es la capacidad de traducir necesidades en características medibles."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Kaizen
+    dif: 2
+    enunciado: ¿Cuál de estos principios pertenece a Kaizen?
+    opciones:
+      - [Toda actividad es susceptible de mejora, "Correcto: es el principio de mejorabilidad universal."]
+      - [Evaluar la relación costo-beneficio antes de cambiar, "También es un principio de Kaizen (viabilidad), pero la pregunta pide uno; ambas son válidas — elegí la mejor formulación."]
+      - [Cambiar a la persona cuando falla, "Eso es enfoque organizacional, no Kaizen."]
+      - [Inspeccionar el producto final, "Kaizen se enfoca en los procesos, no en la inspección final."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: PDCA
+    dif: 2
+    enunciado: En el círculo de Deming, ¿qué ocurre al finalizar la fase «Actuar»?
+    opciones:
+      - [El ciclo termina, "El ciclo es cíclico: no termina, se reinicia."]
+      - [Se reinicia en la planificación incorporando el aprendizaje, "Correcto: la naturaleza cíclica del PDCA incorpora el aprendizaje del período anterior."]
+      - [Se vuelve a la fase «Hacer», "Se reinicia en Planificar, no en Hacer."]
+      - [Se documenta y se archiva, "La documentación es parte de la gestión, no el cierre del ciclo."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: ISO 9001
+    dif: 1
+    enunciado: ¿Qué significa «debe» en la terminología de ISO 9001:2015?
+    opciones:
+      - [Recomendación, "«Debería» es recomendación; «debe» es requisito."]
+      - [Requisito, "Correcto: debe = requisito, debería = recomendación, puede = permisión."]
+      - [Permiso, "«Puede» es permisión."]
+      - [Opción, "No hay opción: «debe» es obligatorio."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: ISO 9001
+    dif: 3
+    enunciado: Explicá con tus palabras en qué se diferencia el pensamiento basado en riesgos de las «acciones preventivas» de ISO 9001:2008.
+    modelo: El pensamiento basado en riesgos reemplaza las acciones preventivas de la versión 2008 y considera el riesgo como el efecto de la incertidumbre, que puede ser negativo o una oportunidad; no requiere metodología formal.
+    criterios:
+      - Menciona que reemplaza las acciones preventivas de 2008
+      - Define el riesgo como efecto de la incertidumbre
+      - Indica que puede ser negativo u oportunidad
+tarjetas:
+  - [¿Qué es la calidad?, "Capacidad de traducir las necesidades del usuario en características medibles del producto o servicio."]
+  - [¿Qué es Kaizen?, "Filosofía de mejora continua que involucra a todos los integrantes de la organización."]
+  - [Fases del PDCA, "Planificar, Hacer, Verificar, Actuar (cíclico)."]

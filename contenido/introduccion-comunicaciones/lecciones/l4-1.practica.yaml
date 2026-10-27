@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Ethernet
+    dif: 1
+    enunciado: ¿Qué es Ethernet?
+    opciones:
+      - [El estándar de red de área local (IEEE 802.3), "Correcto."]
+      - [ Un protocolo de transporte, "No."]
+      - [ Un sistema operativo, "No."]
+      - [ Un tipo de cable, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 4
+  - tema: CSMA/CD
+    dif: 2
+    enunciado: ¿Qué hace CSMA/CD?
+    opciones:
+      - [Detecta portadora y colisiones para acceder al medio, "Correcto."]
+      - [ Cifra los datos, "No."]
+      - [ Enruta paquetes, "No."]
+      - [ Asigna direcciones IP, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 4
+  - tema: MAC
+    dif: 1
+    enunciado: ¿Qué es la dirección MAC?
+    opciones:
+      - [La dirección física de 48 bits de la interfaz de red, "Correcto."]
+      - [ La dirección IP, "No."]
+      - [ El nombre del host, "No."]
+      - [ El puerto, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 4
+  - tema: Dispositivos
+    dif: 2
+    enunciado: ¿Qué dispositivo trabaja en la capa 2?
+    opciones:
+      - [El switch, "Correcto."]
+      - [ El router, "Eso es capa 3."]
+      - [ El hub, "Eso es capa 1."]
+      - [ El repetidor, "Eso es capa 1."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 4
+tarjetas:
+  - [¿Qué es Ethernet?, "Estándar de red de área local (IEEE 802.3)."]
+  - [¿Qué es CSMA/CD?, "Protocolo de acceso al medio por detección de portadora y colisiones."]
+  - [¿Qué es la dirección MAC?, "Dirección física de 48 bits de la interfaz de red."]

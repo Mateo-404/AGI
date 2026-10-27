@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { anteriorLeccion, siguienteLeccion } from '@/logica/datos'
+import { useMateria } from './contextoMateria'
 import { clasificarGesto, direccionEnCurso, objetivoExcluido, RECORRIDO, vibrar, type Direccion } from '@/logica/gestos'
 import { irA } from '@/logica/navegar'
-import { ruta } from '@/logica/rutas'
+import { rutaMateria } from '@/logica/rutas'
 import { Icono } from './Icono'
 
 /**
@@ -13,8 +13,9 @@ import { Icono } from './Icono'
  * Los gestos son un atajo: cada uno tiene su botón en pantalla. La lógica de qué cuenta como gesto está en src/logica/gestos.ts.
  */
 export function NavMovil({ actual, menu, setMenu }: { actual?: string; menu: boolean; setMenu: (v: boolean) => void }) {
-  const ant = actual ? anteriorLeccion(actual) : undefined
-  const sig = actual ? siguienteLeccion(actual) : undefined
+  const m = useMateria()
+  const ant = actual ? m.anterior(actual) : undefined
+  const sig = actual ? m.siguiente(actual) : undefined
   const [pista, setPista] = useState<{ lado: Direccion; titulo: string } | null>(null)
 
   // Deslizar en el contenido de una lección.
@@ -42,7 +43,7 @@ export function NavMovil({ actual, menu, setMenu }: { actual?: string; menu: boo
       if (!i || !c) return
       const d = clasificarGesto({ dx: c.clientX - i.x, dy: c.clientY - i.y, dt: e.timeStamp - i.t, x0: i.x, ancho: innerWidth })
       const l = d && destino(d)
-      if (l) { vibrar(); irA(ruta(`marketing/leccion/${l.id}`)) }
+      if (l) { vibrar(); irA(rutaMateria(m.slug, `leccion/${l.id}`)) }
     }
     const alCancelar = () => { ini = null; setPista(null) }
     addEventListener('touchstart', alIniciar, { passive: true })
@@ -55,7 +56,7 @@ export function NavMovil({ actual, menu, setMenu }: { actual?: string; menu: boo
       removeEventListener('touchend', alTerminar)
       removeEventListener('touchcancel', alCancelar)
     }
-  }, [actual, ant, sig])
+  }, [actual, ant, sig, m.slug])
 
   // Menú lateral: arrastrar hacia la izquierda para cerrar, y Escape.
   useEffect(() => {
@@ -119,15 +120,15 @@ export function NavMovil({ actual, menu, setMenu }: { actual?: string; menu: boo
         <button onClick={() => setMenu(!menu)} aria-expanded={menu} aria-controls="nav"><Icono nombre={menu ? 'close' : 'menu'} /><span>Menú</span></button>
         {actual ? (
           <>
-            {enlace(ant && ruta(`marketing/leccion/${ant.id}`), 'arrow_back', 'Anterior', ant ? `Lección anterior: ${ant.titulo}` : 'No hay lección anterior')}
-            {enlace(ruta(`marketing/practica/leccion/${actual}`), 'quiz', 'Practicar', 'Practicar esta lección')}
-            {enlace(sig && ruta(`marketing/leccion/${sig.id}`), 'arrow_forward', 'Siguiente', sig ? `Lección siguiente: ${sig.titulo}` : 'No hay lección siguiente')}
+            {enlace(ant && rutaMateria(m.slug, `leccion/${ant.id}`), 'arrow_back', 'Anterior', ant ? `Lección anterior: ${ant.titulo}` : 'No hay lección anterior')}
+            {enlace(rutaMateria(m.slug, `practica/leccion/${actual}`), 'quiz', 'Practicar', 'Practicar esta lección')}
+            {enlace(sig && rutaMateria(m.slug, `leccion/${sig.id}`), 'arrow_forward', 'Siguiente', sig ? `Lección siguiente: ${sig.titulo}` : 'No hay lección siguiente')}
           </>
         ) : (
           <>
-            {enlace(ruta('marketing'), 'home', 'Inicio', 'Inicio del curso')}
-            {enlace(ruta('marketing/practica'), 'quiz', 'Practicar', 'Cuestionarios y simulacro')}
-            {enlace(ruta('marketing/repaso'), 'update', 'Repaso', 'Repaso y progreso')}
+            {enlace(rutaMateria(m.slug), 'home', 'Inicio', 'Inicio del curso')}
+            {enlace(rutaMateria(m.slug, 'practica'), 'quiz', 'Practicar', 'Cuestionarios y simulacro')}
+            {enlace(rutaMateria(m.slug, 'repaso'), 'update', 'Repaso', 'Repaso y progreso')}
           </>
         )}
       </nav>

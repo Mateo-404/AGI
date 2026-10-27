@@ -8,9 +8,9 @@ Sitio de estudio de la Licenciatura en Administración y Gestión de la Informac
 | Ruta | Qué es |
 |---|---|
 | `/AGI` | Inicio de la carrera: perfil, plan de estudios, contactos y fuentes oficiales |
-| `/AGI/marketing` | Curso interactivo de Marketing Digital |
-| `/AGI/marketing/leccion/l2-1` | Una lección |
-| `/AGI/marketing/practica`, `tarjetas`, `glosario`, `repaso` | Práctica, tarjetas, glosario y progreso |
+| `/AGI/<materia>` | Curso interactivo de cada materia (marketing, administracion-procesos, calculo-costos, gestion-ventas, ingenieria-software, ingles-1, introduccion-comunicaciones, paradigmas-programacion, universidad-sociedad-conocimientos) |
+| `/AGI/<materia>/leccion/<id>` | Una lección |
+| `/AGI/<materia>/practica`, `tarjetas`, `glosario`, `repaso` | Práctica, tarjetas, glosario y progreso |
 
 Las URLs no llevan barra final: `ruta()` en `src/logica/rutas.ts` es la única forma de armar enlaces internos.
 
@@ -54,7 +54,7 @@ bun run preview      # sirve dist/ localmente
 Materiales imprimibles (manual, banco de preguntas, glosario, guía de repaso): `bun run materiales` y `bun run pdf`. Requieren la carpeta `fuentes/` local y Chromium.
 
 ## Apuntes
-Los apuntes de las demás materias (excepto Marketing Digital) están en `apuntes/<materia>/`.
+El contenido de todas las materias vive ahora en `contenido/<materia>/` (lecciones en Markdown). Ya no hay carpeta `apuntes/`.
 
 ## Estructura
 ```
@@ -63,7 +63,8 @@ contenido/      tipos, validación y cargador compartidos; marketing/ (una carpe
 tests/          pruebas de lógica, contenido, parser, diagramas, gestos, licencias y voz
 scripts/        verificar, diagramas, ilustracion, materiales, pdf, contraste
 docs/           auditoría académica, matriz de cobertura, decisiones técnicas, créditos multimedia
-skills/         skills para agentes: apuntes-md, diagramas, ilustraciones, agregar materia y lección, desplegar, lectura en voz
+skills/         skills para agentes: apuntes-md, diagramas, ilustraciones, agregar materia y lección, desplegar, lectura en voz, ponytail
+.opencode/      comandos de OpenCode: /ponytail, /ponytail-review, /ponytail-audit, /ponytail-debt, /ponytail-gain, /ponytail-help
 agents.md       instrucciones para agentes de IA
 .github/        workflow de publicación en GitHub Pages
 ```

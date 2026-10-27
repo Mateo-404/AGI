@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Manifiesto Ágil
+    dif: 1
+    enunciado: ¿Qué promueve el Manifiesto Ágil?
+    opciones:
+      - [Entregas incrementales y adaptación continua, "Correcto."]
+      - [ Documentación exhaustiva, "No es el foco."]
+      - [ Planificación rígida, "No."]
+      - [ Procesos pesados, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 5
+  - tema: Scrum
+    dif: 2
+    enunciado: ¿Cuáles son los roles de Scrum?
+    opciones:
+      - ["Product Owner, Scrum Master y Equipo de Desarrollo", "Correcto."]
+      - ["Gerente, analista y programador", "No son los roles de Scrum."]
+      - [" Cliente, proveedor y usuario", "No."]
+      - [" Director, actor y productor", "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 5
+  - tema: Kanban
+    dif: 2
+    enunciado: ¿En qué se basa Kanban?
+    opciones:
+      - [En un tablero visual y límites WIP para gestionar el flujo, "Correcto."]
+      - [En sprints de duración fija, "Eso es Scrum."]
+      - [ En roles definidos, "Eso es Scrum."]
+      - [ En documentación exhaustiva, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 5
+  - tema: Scrum vs. Kanban
+    dif: 2
+    enunciado: ¿Cuál es una diferencia entre Scrum y Kanban?
+    opciones:
+      - [Scrum trabaja en sprints con entregas incrementales; Kanban en flujo continuo con tablero visual, "Correcto."]
+      - [Son idénticos, "No."]
+      - [ Kanban usa sprints, "No: Scrum usa sprints."]
+      - [ Scrum no tiene roles, "Scrum sí tiene roles."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 5
+  - tema: JIRA
+    dif: 1
+    enunciado: ¿Qué es JIRA?
+    opciones:
+      - [Una herramienta de gestión de proyectos y seguimiento de issues, "Correcto."]
+      - [ Un lenguaje de programación, "No."]
+      - [ Un sistema operativo, "No."]
+      - [ Un tipo de prueba, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 5
+tarjetas:
+  - [¿Cuáles son los roles de Scrum?, "Product Owner, Scrum Master y Equipo de Desarrollo."]
+  - [¿Qué es Kanban?, "Gestión visual del flujo con límites WIP."]
+  - [¿Qué es JIRA?, "Herramienta de gestión de proyectos y seguimiento de issues."]

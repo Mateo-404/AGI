@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Why/Because
+    dif: 1
+    enunciado: ¿Cuál es la diferencia entre "why" y "because"?
+    opciones:
+      - [Why se usa para preguntar y because para responder, "Correcto."]
+      - [Son sinónimos, "No: uno pregunta y el otro responde."]
+      - [ Why se usa para responder, "Es al revés."]
+      - [ Because se usa para preguntar, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 6
+  - tema: Because
+    dif: 2
+    enunciado: ¿Qué regla debe cumplirse al responder con "because"?
+    opciones:
+      - [Especificar el sujeto de la oración, "Correcto."]
+      - [ Omitir el sujeto, "El sujeto es obligatorio."]
+      - [ Usar solo verbos en pasado, "No."]
+      - [ Usar signos de exclamación, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 6
+  - tema: Who
+    dif: 1
+    enunciado: ¿Cómo se pregunta por una sola persona con "who"?
+    opciones:
+      - [Who is...?, "Correcto."]
+      - [Who are...?, "Are se usa para varias personas."]
+      - [ Who am...?, "No."]
+      - [ Who was...?, "No es el presente."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 6
+  - tema: Who
+    dif: 1
+    enunciado: ¿Cómo se pregunta por varias personas con "who"?
+    opciones:
+      - [Who are...?, "Correcto."]
+      - [Who is...?, "Is se usa para una persona."]
+      - [ Who am...?, "No."]
+      - [ Who were...?, "No es el presente."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 6
+tarjetas:
+  - [¿Qué significa "why"?, "¿Por qué? (pregunta)."]
+  - [¿Qué significa "because"?, "Porque (respuesta)."]
+  - [Who + is, "Quién (singular)."]

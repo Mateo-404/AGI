@@ -1,0 +1,52 @@
+preguntas:
+  - tema: To be
+    dif: 1
+    enunciado: ¿Cómo se conjuga el verbo to be con "he"?
+    opciones:
+      - [is, "Correcto."]
+      - [am, "am se usa con I."]
+      - [are, "are se usa con you/we/they."]
+      - [be, "be es el infinitivo."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 1
+  - tema: To be
+    dif: 1
+    enunciado: ¿Cómo se forma la negativa con "they"?
+    opciones:
+      - [They aren't, "Correcto."]
+      - [They isn't, "isn't se usa con he/she/it."]
+      - [They am not, "am not se usa con I."]
+      - [They not are, "El orden es sujeto + aren't."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 1
+  - tema: Interrogativa
+    dif: 2
+    enunciado: ¿Cómo se forma una pregunta Yes/No con to be?
+    opciones:
+      - [Verbo be + sujeto + complemento, "Correcto."]
+      - [Sujeto + verbo be + complemento, "Ese es el orden afirmativo."]
+      - [Complemento + verbo be + sujeto, "No."]
+      - [Verbo be + complemento + sujeto, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 1
+  - tema: Contracciones
+    dif: 2
+    enunciado: ¿Cuál es la contracción de "I am"?
+    opciones:
+      - [I'm, "Correcto."]
+      - [I's, "No."]
+      - [I're, "No."]
+      - [I amn't, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 1
+  - tema: Usos
+    dif: 3
+    enunciado: Explicá con tus palabras dos usos del verbo to be.
+    modelo: El verbo to be se usa para identificar personas u objetos (She is Lorena) y para indicar origen (I am from the USA), entre otros usos.
+    criterios:
+      - Menciona al menos dos usos
+      - Da un ejemplo para cada uno
+tarjetas:
+  - [¿Cómo se conjuga to be con "I"?, "am (I'm)."]
+  - [¿Cómo se conjuga to be con "he/she/it"?, "is (he's/she's/it's)."]
+  - [Negativa con "they", "They aren't."]

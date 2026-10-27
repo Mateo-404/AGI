@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Proceso
+    dif: 1
+    enunciado: ¿Cuáles son los elementos mínimos de un proceso?
+    opciones:
+      - ["Entrada, actividades, salida, roles y controles", "Correcto: son los cinco elementos mínimos."]
+      - ["Entrada, salida y roles", "Faltan las actividades y los controles."]
+      - ["Actividades, roles y controles", "Faltan la entrada y la salida."]
+      - ["Entrada, actividades y salida", "Faltan los roles y los controles."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Controles
+    dif: 2
+    enunciado: ¿Qué afirma el apunte sobre los controles en un proceso?
+    opciones:
+      - [Los controles agregan valor y deben ser muchos, "Los controles no agregan valor; se establecen solo donde sean necesarios."]
+      - ["Los controles no agregan valor y se establecen solo donde sean necesarios", "Correcto."]
+      - [Los controles son opcionales en todos los casos, "No: lo que no se controla no se puede medir."]
+      - [Los controles reemplazan a los roles, "Los controles son seguimiento; los roles ejecutan las actividades."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: BPM
+    dif: 1
+    enunciado: ¿Qué es BPM (Business Process Management)?
+    opciones:
+      - [Un software de contabilidad, "No es un software: es una disciplina de gestión."]
+      - ["La disciplina que otorga agilidad operativa, adaptabilidad, innovación y control estratégico de los procesos de negocio", "Correcto."]
+      - [Un método de inspección de calidad, "No: se enfoca en la gestión de procesos interrelacionados."]
+      - [Un tipo de organigrama, "El organigrama es la estructura; BPM es la gestión de procesos."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Enfoques
+    dif: 2
+    enunciado: ¿Cuál es la diferencia central entre el enfoque organizacional y el enfoque en procesos?
+    opciones:
+      - [El organizacional mide el proceso y el de procesos mide individualmente, "Es al revés: el organizacional mide individualmente y el de procesos mide el proceso."]
+      - [El organizacional se basa en el organigrama vertical y el de procesos es transversal, "Correcto."]
+      - [El organizacional es más moderno, "El enfoque en procesos es el más efectivo para la mejora continua."]
+      - [No hay diferencia, "Son paradigmas distintos."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 1
+  - tema: Transformación digital
+    dif: 3
+    enunciado: Explicá con tus palabras los tres cambios que produce la digitalización en una organización.
+    modelo: La digitalización produce cambios en la oferta de productos y servicios, en la cadena de valor para producirlos y en el modelo de negocio.
+    criterios:
+      - Menciona el cambio en la oferta
+      - Menciona el cambio en la cadena de valor
+      - Menciona el cambio en el modelo de negocio
+tarjetas:
+  - [¿Qué es un proceso?, "Conjunto de actividades ordenadas que transforman entradas en salidas con valor para el cliente."]
+  - [¿Qué es BPM?, "Disciplina que otorga agilidad operativa, adaptabilidad, innovación y control estratégico de los procesos de negocio."]
+  - [Enfoque organizacional vs. procesos, "Vertical y por silos vs. transversal y por valor."]

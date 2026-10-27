@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Artículos
+    dif: 1
+    enunciado: ¿Cuándo se usa "an"?
+    opciones:
+      - [Cuando la siguiente palabra comienza con sonido de vocal, "Correcto."]
+      - [Cuando comienza con consonante, "Eso es a."]
+      - [Siempre antes de nombres propios, "No."]
+      - [ Nunca se usa, "Se usa frecuentemente."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: A/An
+    dif: 2
+    enunciado: ¿Qué artículo corresponde a "hospital"?
+    opciones:
+      - [A (a hospital), "Correcto: la H suena como consonante." ]
+      - [An (an hospital), "No: la H suena como J, es consonante."]
+      - [ The, "No es el artículo indefinido."]
+      - [ Ninguno, "Se usa a o an."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: There is/are
+    dif: 1
+    enunciado: ¿Cuándo se usa "there is"?
+    opciones:
+      - [Para hablar de una sola cosa (singular), "Correcto."]
+      - [Para hablar de varias cosas (plural), "Eso es there are."]
+      - [ Solo para personas, "No."]
+      - [ Solo para lugares, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: Interrogativa
+    dif: 2
+    enunciado: ¿Cómo se pregunta "¿Hay un perro?" en inglés?
+    opciones:
+      - [Is there a dog?, "Correcto."]
+      - [Are there a dog?, "Are there es para plural."]
+      - [There is a dog?, "El verbo debe ir al principio."]
+      - [ Do there is a dog?, "No se usa do."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: A/An
+    dif: 3
+    enunciado: Explicá con tus palabras cómo se elige entre "a" y "an".
+    modelo: "Se elige según el sonido inicial de la palabra siguiente: a antes de sonido de consonante, an antes de sonido de vocal."
+    criterios:
+      - Menciona el sonido inicial
+      - Distingue consonante de vocal
+tarjetas:
+  - [¿Cuándo se usa "a"?, "Antes de sonido de consonante."]
+  - [¿Cuándo se usa "an"?, "Antes de sonido de vocal."]
+  - [¿Cuándo se usa "there is"?, "Para singular (una sola cosa)."]

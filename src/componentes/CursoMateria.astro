@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro'
+import { Shell } from './Shell'
+import LeccionEstatica from './LeccionEstatica.astro'
+import { datosDe } from '../logica/datos'
+import { diagramasListos } from '../logica/diagramas-build'
+
+interface Props {
+  materia: string
+  sub?: string[]
+}
+
+/** Página de una materia: la misma estructura que Marketing, con su propio registro de contenido. */
+const { materia: slug, sub = [] } = Astro.props
+const m = datosDe(slug)
+if (slug === 'marketing') await diagramasListos()
+const [a, b] = sub
+const leccion = a === 'leccion' || (a === 'practica' && b === 'leccion') ? m.lecciones.find((l) => l.id === (a === 'leccion' ? b : sub[2])) : undefined
+const unidad = a === 'unidad' ? m.unidades.find((u) => u.n === Number(b)) : undefined
+const titulo = leccion ? `${leccion.titulo} · ${m.nombre}` : unidad ? `Unidad ${unidad.n} · ${m.nombre}` : `${m.nombre} · UNRaf 2026`
+const descripcion = leccion ? leccion.resumen : m.descripcion
+---
+<Base titulo={titulo} descripcion={descripcion}>
+  <Shell client:load sub={sub} enCurso={true} materia={slug}>
+    {a === 'leccion' && leccion && <LeccionEstatica l={leccion} materia={slug} />}
+  </Shell>
+</Base>

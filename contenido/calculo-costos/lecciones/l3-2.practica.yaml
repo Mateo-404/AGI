@@ -1,0 +1,41 @@
+preguntas:
+  - tema: Variación
+    dif: 1
+    enunciado: ¿Qué es una variación (desvío) de costos?
+    opciones:
+      - [La diferencia entre el costo estándar y el costo real incurrido, "Correcto."]
+      - [El costo total del período, "No."]
+      - [ El costo fijo, "No."]
+      - [ El costo variable, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Control
+    dif: 2
+    enunciado: ¿Para qué sirve el análisis de variaciones?
+    opciones:
+      - [Para tomar acciones correctivas y mejorar la gestión, "Correcto."]
+      - [ Para pagar impuestos, "No."]
+      - [ Para eliminar los costos, "No."]
+      - [ Para aumentar los precios sin análisis, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Causas
+    dif: 2
+    enunciado: ¿Cuáles son causas posibles de las variaciones?
+    opciones:
+      - ["Precios de materiales, eficiencia de la mano de obra y volumen de producción", "Correcto."]
+      - [ Solo el clima, "No es la causa principal."]
+      - [ Solo la suerte, "No."]
+      - [ Solo el azar, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Control de costos
+    dif: 3
+    enunciado: Explicá con tus palabras cómo se controlan los costos.
+    modelo: El control de costos se basa en el momento de registro y el análisis de las causas de las variaciones, para tomar acciones correctivas y mejorar la gestión.
+    criterios:
+      - Menciona el registro y el análisis
+      - Menciona las acciones correctivas
+tarjetas:
+  - [¿Qué es una variación?, "Diferencia entre costo estándar y costo real."]
+  - [¿Para qué sirve el análisis de variaciones?, "Para tomar acciones correctivas."]

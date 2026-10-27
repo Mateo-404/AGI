@@ -1,0 +1,45 @@
+preguntas:
+  - tema: CRM
+    dif: 1
+    enunciado: ¿Qué es el CRM?
+    opciones:
+      - [Un sistema de gestión de relaciones con clientes, "Correcto."]
+      - [ Un lenguaje de programación, "No."]
+      - [ Un sistema operativo, "No."]
+      - [ Un tipo de prueba, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 7
+  - tema: ERP
+    dif: 1
+    enunciado: ¿Qué es el ERP en ventas?
+    opciones:
+      - ["Un sistema integrado que unifica los procesos de negocio, incluidas las ventas", "Correcto."]
+      - [ Un tipo de publicidad, "No."]
+      - [ Un tipo de descuento, "No."]
+      - [ Un tipo de vendedor, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 7
+  - tema: Marketing digital
+    dif: 2
+    enunciado: ¿Qué amplía el marketing digital y el e-commerce?
+    opciones:
+      - [Los canales de venta, "Correcto."]
+      - [ Solo los costos, "No."]
+      - [ Solo los impuestos, "No."]
+      - [ Solo la burocracia, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 7
+  - tema: Ventas 4.0
+    dif: 2
+    enunciado: ¿Qué incorporan las ventas 4.0/5.0?
+    opciones:
+      - [Big Data e inteligencia artificial, "Correcto."]
+      - [ Solo papel, "No."]
+      - [ Solo teléfono, "No."]
+      - [ Solo fax, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 7
+tarjetas:
+  - [¿Qué es el CRM?, "Sistema de gestión de relaciones con clientes."]
+  - [¿Qué es el ERP?, "Sistema integrado que unifica los procesos de negocio."]
+  - [¿Qué amplía el marketing digital?, "Los canales de venta."]

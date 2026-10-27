@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Gerente
+    dif: 1
+    enunciado: ¿Cuáles son las funciones del gerente de ventas?
+    opciones:
+      - ["Planificar, organizar, dirigir y controlar", "Correcto."]
+      - [ Solo vender, "No: gestiona el equipo."]
+      - [ Solo administrar, "Falta dirigir y controlar."]
+      - [ Solo contratar, "Falta el resto."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 3
+  - tema: Estimación
+    dif: 2
+    enunciado: ¿Qué implica la estimación de mercado?
+    opciones:
+      - [La jerarquía de métricas de mercado y los métodos de estimación, "Correcto."]
+      - [ Solo el precio, "No."]
+      - [ Solo la publicidad, "No."]
+      - [ Solo la distribución, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 3
+  - tema: Presupuesto
+    dif: 2
+    enunciado: ¿Para qué sirve el presupuesto de ventas?
+    opciones:
+      - [Como base para el dimensionamiento de la fuerza de ventas, "Correcto."]
+      - [ Para eliminar vendedores, "No."]
+      - [ Para reducir precios, "No."]
+      - [ Para evitar ventas, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 3
+  - tema: Estructura
+    dif: 1
+    enunciado: ¿Qué tipos de estructura de fuerza de ventas se mencionan?
+    opciones:
+      - [Fuerza propia y agentes; estructura horizontal o vertical, "Correcto."]
+      - [ Solo fuerza propia, "Faltan los agentes."]
+      - [ Solo agentes, "Faltan la fuerza propia."]
+      - [ Ninguna, "Se mencionan varias."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 3
+tarjetas:
+  - [¿Cuáles son las funciones del gerente?, "Planificar, organizar, dirigir y controlar."]
+  - [¿Para qué sirve el presupuesto?, "Para dimensionar la fuerza de ventas."]
+  - [¿Qué tipos de estructura existen?, "Fuerza propia y agentes; horizontal o vertical."]

@@ -1,11 +1,12 @@
 import { useState, type ReactNode } from 'react'
 import type { Bloque, Nodo } from '@contenido/tipos'
 import { Tx, useImprimir } from './contexto'
+import { MateriaScope } from './contextoMateria'
 import { barajar, rndDe } from '@/logica/repaso'
 
 type De<T extends Bloque['t']> = Extract<Bloque, { t: T }>
 
-export function Explorable({ b }: { b: De<'explorable'> }) {
+function ExplorableBase({ b }: { b: De<'explorable'> }) {
   const imprimir = useImprimir()
   const [sel, setSel] = useState<string | null>(null)
   if (imprimir)
@@ -44,7 +45,7 @@ export function Explorable({ b }: { b: De<'explorable'> }) {
   )
 }
 
-export function Asociar({ b }: { b: De<'asociar'> }) {
+function AsociarBase({ b }: { b: De<'asociar'> }) {
   const imprimir = useImprimir()
   const [orden] = useState(() => barajar(b.pares.map((_, i) => i), rndDe(b.titulo)))
   const [resp, setResp] = useState<Record<number, number>>({})
@@ -77,7 +78,7 @@ export function Asociar({ b }: { b: De<'asociar'> }) {
   )
 }
 
-export function Clasificar({ b }: { b: De<'clasificar'> }) {
+function ClasificarBase({ b }: { b: De<'clasificar'> }) {
   const imprimir = useImprimir()
   const [resp, setResp] = useState<Record<number, number>>({})
   const [rev, setRev] = useState(false)
@@ -111,7 +112,7 @@ export function Clasificar({ b }: { b: De<'clasificar'> }) {
   )
 }
 
-export function Caso({ b }: { b: De<'caso'> }) {
+function CasoBase({ b }: { b: De<'caso'> }) {
   const imprimir = useImprimir()
   const [paso, setPaso] = useState(0)
   const [elec, setElec] = useState<number | null>(null)
@@ -146,6 +147,18 @@ export function Caso({ b }: { b: De<'caso'> }) {
     </section>
   )
 }
+
+/** Envoltorios que aíslan cada isla en la materia correcta: el contexto no cruza la hidratación de Astro. */
+type ConMateria<P> = P & { materia?: string }
+const conMateria = <P extends object>(Comp: (p: P) => ReactNode) =>
+  function ConMateria({ materia, ...resto }: ConMateria<P>) {
+    return <MateriaScope materia={materia}><Comp {...(resto as P)} /></MateriaScope>
+  }
+
+export const Explorable = conMateria(ExplorableBase)
+export const Asociar = conMateria(AsociarBase)
+export const Clasificar = conMateria(ClasificarBase)
+export const Caso = conMateria(CasoBase)
 
 /** Diagrama estático (solo para el manual imprimible): cadena, embudo o capas anidadas. */
 function Diagrama({ b }: { b: De<'explorable'> }) {

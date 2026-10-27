@@ -1,7 +1,5 @@
 import { existsSync, readFileSync } from 'node:fs'
-import { cobertura } from './marketing/cobertura'
-import { glosario, lecciones, unidades } from './marketing/indice'
-import type { Bloque } from './tipos'
+import type { Bloque, Materia } from './tipos'
 
 /** Recorre todo el texto de una lección (para comprobar enlaces [[...]]). */
 function textos(b: Bloque, out: string[]): void {
@@ -42,9 +40,11 @@ export function problemaDiagrama(codigo: string): string | undefined {
 let docCreditos: string | undefined
 const creditos = (): string => (docCreditos ??= readFileSync(new URL('../docs/creditos-multimedia.md', import.meta.url), 'utf8'))
 
-export function validarContenido(): string[] {
+/** Valida una materia (ids, enlaces, orígenes, preguntas y cobertura). */
+export function validarMateria(m: Materia): string[] {
   const errores: string[] = []
-  const err = (m: string) => errores.push(m)
+  const err = (e: string) => errores.push(`${m.slug}: ${e}`)
+  const { lecciones, glosario, unidades, cobertura } = m
   const unico = (nombre: string, ids: string[]) => {
     const vistos = new Set<string>()
     for (const id of ids) vistos.has(id) ? err(`${nombre} duplicado: ${id}`) : vistos.add(id)
@@ -78,7 +78,7 @@ export function validarContenido(): string[] {
     const txt: string[] = []
     const rec = (bs: Bloque[], dentroDeAcordeon = false) => bs.forEach((b) => {
       textos(b, txt)
-      // Toda afirmación del curso lleva origen (cuaderno, didáctico o ampliación): ver agents.md.
+      // Toda afirmación del curso lleva origen (bibliografía, didáctico o ampliación): ver agents.md.
       if (['p', 'def', 'lista', 'tabla', 'callout', 'ejemplo', 'comparar'].includes(b.t) && !(b as { o?: unknown }).o) err(`${l.id}: bloque "${b.t}" sin origen`)
       if (b.t === 'diagrama') { const pb = problemaDiagrama(b.codigo); if (pb) err(`${l.id}: diagrama «${b.titulo ?? b.codigo.split('\n')[0]}»: ${pb}`) }
       if (b.t === 'imagen') {
@@ -95,8 +95,8 @@ export function validarContenido(): string[] {
     rec(l.bloques)
     txt.push(...l.sintesis)
     for (const s of txt) {
-      for (const m of s.matchAll(/\[\[>([\w-]+)\|/g)) if (!lids.has(m[1]!)) err(`${l.id}: enlace roto a lección ${m[1]}`)
-      for (const m of s.matchAll(/\[\[([\w-]+)\]\]/g)) if (!gids.has(m[1]!)) err(`${l.id}: enlace roto a glosario ${m[1]}`)
+      for (const en of s.matchAll(/\[\[>([\w-]+)\|/g)) if (!lids.has(en[1]!)) err(`${l.id}: enlace roto a lección ${en[1]}`)
+      for (const en of s.matchAll(/\[\[([\w-]+)\]\]/g)) if (!gids.has(en[1]!)) err(`${l.id}: enlace roto a glosario ${en[1]}`)
     }
   }
   for (const g of glosario) {

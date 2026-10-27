@@ -1,0 +1,45 @@
+preguntas:
+  - tema: OSI
+    dif: 1
+    enunciado: ¿Cuántas capas tiene el modelo OSI?
+    opciones:
+      - [Siete, "Correcto."]
+      - [ Cuatro, "Eso es TCP/IP."]
+      - [ Cinco, "No."]
+      - [ Tres, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 3
+  - tema: Capa física
+    dif: 1
+    enunciado: ¿Qué capa se encarga de la transmisión de bits por el medio?
+    opciones:
+      - [La capa física (capa 1), "Correcto."]
+      - [ La capa de enlace, "No."]
+      - [ La capa de red, "No."]
+      - [ La capa de transporte, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 3
+  - tema: Encapsulamiento
+    dif: 2
+    enunciado: ¿Qué es el encapsulamiento?
+    opciones:
+      - [El proceso de agregar encabezados a los datos al descender por las capas, "Correcto."]
+      - [ La eliminación de datos, "No."]
+      - [ La compresión, "No."]
+      - [ El cifrado, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 3
+  - tema: Dispositivos
+    dif: 2
+    enunciado: ¿Qué dispositivo trabaja en la capa 3?
+    opciones:
+      - [El router, "Correcto."]
+      - [ El hub, "Eso es capa 1."]
+      - [ El switch, "Eso es capa 2."]
+      - [ El repetidor, "Eso es capa 1."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 3
+tarjetas:
+  - [¿Cuántas capas tiene OSI?, "Siete."]
+  - [¿Qué es el encapsulamiento?, "Agregar encabezados al descender por las capas."]
+  - [¿Qué dispositivo trabaja en capa 3?, "El router."]

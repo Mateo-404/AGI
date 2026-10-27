@@ -1,0 +1,9 @@
+---
+import CursoMateria from '../../componentes/CursoMateria.astro'
+import { paginasDe } from '../../logica/rutas'
+
+export const getStaticPaths = () => paginasDe('universidad-sociedad-conocimientos')
+
+const { sub } = Astro.props as { sub: string[] }
+---
+<CursoMateria materia="universidad-sociedad-conocimientos" sub={sub} />

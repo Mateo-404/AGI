@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Punto de equilibrio
+    dif: 1
+    enunciado: ¿Qué es el punto de equilibrio?
+    opciones:
+      - [El volumen de ventas en el que los ingresos igualan a los costos totales, "Correcto."]
+      - [El volumen de máxima utilidad, "No."]
+      - [ El volumen mínimo de producción, "No."]
+      - [ El volumen máximo de ventas, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Fórmula PE
+    dif: 2
+    enunciado: ¿Cómo se calcula el punto de equilibrio?
+    opciones:
+      - [Costos fijos dividido por (precio de venta unitario menos costo variable unitario), "Correcto."]
+      - [Costos variables dividido por precio de venta, "No."]
+      - [ Precio de venta menos costos fijos, "No."]
+      - [ Costos totales dividido por unidades, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Margen de seguridad
+    dif: 2
+    enunciado: ¿Qué es el margen de seguridad?
+    opciones:
+      - [La diferencia entre las ventas reales y las ventas en el punto de equilibrio, "Correcto."]
+      - [La utilidad total, "No."]
+      - [ El costo total, "No."]
+      - [ El precio de venta, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Contribución marginal
+    dif: 1
+    enunciado: ¿Qué es la contribución marginal?
+    opciones:
+      - [La diferencia entre el precio de venta y el costo variable unitario, "Correcto."]
+      - [El costo fijo unitario, "No."]
+      - [ El costo total, "No."]
+      - [ El precio de venta, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 4
+  - tema: Análisis marginal
+    dif: 3
+    enunciado: Explicá con tus palabras qué es el análisis marginal.
+    modelo: El análisis marginal evalúa el costo y beneficio incremental de una decisión, comparando costo marginal y beneficio marginal.
+    criterios:
+      - Menciona el costo y beneficio incremental
+      - Menciona la toma de decisiones
+tarjetas:
+  - [¿Qué es el punto de equilibrio?, "Volumen donde ingresos = costos totales."]
+  - [¿Qué es el margen de seguridad?, "Diferencia entre ventas reales y ventas en el punto de equilibrio."]
+  - [¿Qué es la contribución marginal?, "Precio de venta menos costo variable unitario."]

@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Sistemas de costos
+    dif: 1
+    enunciado: ¿Cuándo se usa el sistema de costos por órdenes de producción?
+    opciones:
+      - [Cuando la producción es por lotes o pedidos específicos, "Correcto."]
+      - [Cuando la producción es continua y homogénea, "Eso es por procesos."]
+      - [ Siempre, "No."]
+      - [ Nunca, "Sí se usa."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Costeo
+    dif: 2
+    enunciado: ¿Qué diferencia hay entre costeo por absorción y costeo variable?
+    opciones:
+      - [El costeo por absorción asigna todos los costos de producción; el variable solo los variables, "Correcto."]
+      - [Son iguales, "No."]
+      - [ El costeo variable incluye los fijos, "Es al revés."]
+      - [ El costeo por absorción excluye los fijos, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Costos predeterminados
+    dif: 1
+    enunciado: ¿Qué es un costo predeterminado?
+    opciones:
+      - [Un costo calculado antes de la producción (estimado o estándar), "Correcto."]
+      - [Un costo registrado después de producir, "Eso es histórico."]
+      - [ Un costo real, "No."]
+      - [ Un costo fijo, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Costo estándar
+    dif: 2
+    enunciado: ¿Para qué sirve el costo estándar?
+    opciones:
+      - [Como referencia para medir la eficiencia y analizar variaciones, "Correcto."]
+      - [ Para pagar impuestos, "No."]
+      - [ Para eliminar los costos variables, "No."]
+      - [ Para fijar el salario, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 3
+  - tema: Variaciones
+    dif: 3
+    enunciado: Explicá con tus palabras qué es una variación de costos.
+    modelo: Una variación (desvío) es la diferencia entre el costo estándar y el costo real incurrido, que se analiza para tomar acciones correctivas.
+    criterios:
+      - Menciona la diferencia entre estándar y real
+      - Menciona el análisis para acciones correctivas
+tarjetas:
+  - [¿Qué es el costeo por absorción?, "Asigna todos los costos de producción al producto."]
+  - [¿Qué es el costeo variable?, "Asigna solo los costos variables de producción."]
+  - [¿Qué es un costo estándar?, "Costo predeterminado basado en normas de eficiencia."]

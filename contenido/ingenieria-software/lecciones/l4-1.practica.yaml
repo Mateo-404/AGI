@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Verificación
+    dif: 1
+    enunciado: ¿Qué es la verificación en las pruebas de software?
+    opciones:
+      - [Comprobar que construimos el producto correctamente, "Correcto."]
+      - [Comprobar que construimos el producto correcto, "Eso es validación."]
+      - [ Comprobar el hardware, "No."]
+      - [ Comprobar el presupuesto, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 4
+  - tema: Validación
+    dif: 1
+    enunciado: ¿Qué es la validación en las pruebas de software?
+    opciones:
+      - [Comprobar que construimos el producto correcto, "Correcto."]
+      - [Comprobar que construimos el producto correctamente, "Eso es verificación."]
+      - [ Comprobar el código fuente, "No."]
+      - [ Comprobar la documentación, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 4
+  - tema: Niveles de prueba
+    dif: 2
+    enunciado: ¿Cuáles son los niveles de prueba?
+    opciones:
+      - ["Unidad, integración, sistema y aceptación", "Correcto."]
+      - [Solo unidad, "Faltan los demás."]
+      - [ Solo integración, "Faltan los demás."]
+      - [ Solo aceptación, "Faltan los demás."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 4
+  - tema: Tipos de caja
+    dif: 2
+    enunciado: ¿Qué es la prueba de caja negra?
+    opciones:
+      - ["El componente se trata como una caja opaca, sin conocer su estructura interna", "Correcto."]
+      - [Visibilidad total del código, "Eso es caja blanca."]
+      - [ Enfoque híbrido, "Eso es caja gris."]
+      - [ Prueba de rendimiento, "No."]
+    correcta: 0
+    o: a Apuntes de Ingeniería de Software · Unidad 4
+  - tema: Mantenimiento
+    dif: 3
+    enunciado: Explicá con tus palabras los tipos de mantenimiento de software.
+    modelo: Los tipos de mantenimiento son correctivo (corrección de defectos), adaptativo (adaptación al entorno), perfectivo (mejoras y nuevas funcionalidades) y preventivo (reducción de degradación futura).
+    criterios:
+      - Menciona al menos tres tipos
+      - Da una breve descripción de cada uno
+tarjetas:
+  - [¿Qué es la verificación?, "Comprobar que construimos el producto correctamente."]
+  - [¿Qué es la validación?, "Comprobar que construimos el producto correcto."]
+  - [Tipos de mantenimiento, "Correctivo, adaptativo, perfectivo y preventivo."]

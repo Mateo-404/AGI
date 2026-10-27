@@ -1,0 +1,44 @@
+preguntas:
+  - tema: Centros de costo
+    dif: 1
+    enunciado: ¿Qué es un centro de costo?
+    opciones:
+      - [Una unidad organizativa donde se acumulan los costos para su control y asignación, "Correcto."]
+      - [Un tipo de cuenta contable, "No."]
+      - [ Un producto, "No."]
+      - [ Un empleado, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Costo directo
+    dif: 1
+    enunciado: ¿Qué es un costo directo?
+    opciones:
+      - [Un costo trazable directamente a un producto o servicio, "Correcto."]
+      - [Un costo que se distribuye por criterios, "Eso es indirecto."]
+      - [ Un costo fijo, "No necesariamente."]
+      - [ Un costo variable, "No necesariamente."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Costo indirecto
+    dif: 2
+    enunciado: ¿Cómo se asignan los costos indirectos?
+    opciones:
+      - [Por criterios o bases de reparto, "Correcto."]
+      - [Directamente al producto, "Eso es costo directo."]
+      - [ No se asignan, "Sí se asignan."]
+      - [ Solo al final del año, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+  - tema: Unidad de análisis
+    dif: 2
+    enunciado: ¿Qué es una unidad de análisis?
+    opciones:
+      - ["El objeto sobre el que se mide el costo (producto, servicio, proyecto)", "Correcto."]
+      - [ Un centro de costo, "Es diferente."]
+      - [ Un empleado, "No."]
+      - [ Un proveedor, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 1
+tarjetas:
+  - [¿Qué es un centro de costo?, "Unidad organizativa donde se acumulan costos."]
+  - [¿Qué es un costo directo?, "Costo trazable directamente a un producto o servicio."]

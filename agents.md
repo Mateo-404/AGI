@@ -5,7 +5,7 @@ Instrucciones para agentes de IA que trabajen en este repositorio. Leé también
 ## Qué es
 Sitio estático con **Astro** (islas de React + TypeScript, con **bun**) publicado en GitHub Pages desde la rama `main`:
 - `/AGI` → inicio de la carrera (Somos #AGI). Proyecto personal de Mateo Gariboglio; **no es oficial de la UNRaf**. Puede usar la identidad visual de la UNRaf como referencia, pero debe aclararlo.
-- `/AGI/marketing` → curso interactivo de Marketing Digital (30 lecciones, práctica, glosario, tarjetas, progreso local). Cada página es un HTML real; es una app instalable y funciona sin conexión.
+- `/AGI/<materia>` → curso interactivo de cada materia (marketing, administracion-procesos, calculo-costos, gestion-ventas, ingenieria-software, ingles-1, introduccion-comunicaciones, paradigmas-programacion, universidad-sociedad-conocimientos): lecciones, práctica, glosario, tarjetas, progreso local. Cada página es un HTML real; es una app instalable y funciona sin conexión.
 - **Una carpeta por materia** (`contenido/<materia>/` y, si hace falta, `src/pages/<materia>/`). Una rama `main` permanente; las ramas son solo para cambios temporales. Ver `skills/agregar-materia/SKILL.md`.
 
 ## Comandos (siempre con bun)
@@ -59,6 +59,7 @@ El contenido vive en `contenido/marketing/lecciones/lN-M.md` (apunte) y `lN-M.pr
 - Todo funciona sin conexión una vez cargado (service worker generado en el build). No llames APIs externas para contenido esencial.
 - Accesibilidad: foco visible, controles con nombre, `prefers-reduced-motion` respetado, contraste AA en ambos temas (`bun run contraste`).
 - Idioma de la interfaz y de los textos: español rioplatense (voseo), con tildes correctas.
+- **Código:** aplicá [`skills/ponytail/SKILL.md`](skills/ponytail/SKILL.md) (la solución más chica que resuelve el pedido) y usá `/ponytail-review`, `/ponytail-audit`, `/ponytail-debt`, `/ponytail-gain` o `/ponytail-help` cuando corresponda.
 
 ## Móvil y gestos
 Hay barra inferior, deslizar entre lecciones, menú arrastrable y tarjetas que se califican deslizando (`src/logica/gestos.ts`, `src/componentes/NavMovil.tsx`). **Cada gesto tiene su botón visible** y nunca debe bloquear el scroll vertical ni interferir con el gesto «atrás» del sistema (se ignoran los 24 px de los bordes). Un componente nuevo con scroll horizontal o arrastre lleva `data-sin-gesto`.

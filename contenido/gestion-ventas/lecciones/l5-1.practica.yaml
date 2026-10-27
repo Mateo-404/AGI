@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Reclutamiento
+    dif: 1
+    enunciado: ¿Qué es el reclutamiento?
+    opciones:
+      - [El proceso de atraer candidatos para la fuerza de ventas, "Correcto."]
+      - [ El proceso de elegir candidatos, "Eso es selección."]
+      - [ El proceso de formar vendedores, "Eso es capacitación."]
+      - [ El proceso de pagar vendedores, "Eso es compensación."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 5
+  - tema: Selección
+    dif: 1
+    enunciado: ¿Qué es la selección?
+    opciones:
+      - [El proceso de elegir a los mejores candidatos, "Correcto."]
+      - [ El proceso de atraer candidatos, "Eso es reclutamiento."]
+      - [ El proceso de formar vendedores, "Eso es capacitación."]
+      - [ El proceso de pagar vendedores, "Eso es compensación."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 5
+  - tema: Capacitación
+    dif: 2
+    enunciado: ¿Para qué sirve la capacitación de la fuerza de ventas?
+    opciones:
+      - [Para formar y desarrollar a los vendedores, "Correcto."]
+      - [ Para contratar, "No."]
+      - [ Para despedir, "No."]
+      - [ Para pagar, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 5
+  - tema: Motivación
+    dif: 2
+    enunciado: ¿Qué es la compensación en la fuerza de ventas?
+    opciones:
+      - [El sistema de remuneración de los vendedores (fijo + variable), "Correcto."]
+      - [ La motivación intrínseca, "No."]
+      - [ La capacitación, "No."]
+      - [ La evaluación, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 5
+  - tema: Evaluación
+    dif: 3
+    enunciado: Explicá con tus palabras por qué es importante la evaluación del desempeño.
+    modelo: La evaluación del desempeño mide el rendimiento de los vendedores y permite tomar decisiones de mejora, capacitación y compensación.
+    criterios:
+      - Menciona la medición del rendimiento
+      - Relaciona con decisiones de mejora
+tarjetas:
+  - [¿Qué es el reclutamiento?, "Proceso de atraer candidatos."]
+  - [¿Qué es la selección?, "Proceso de elegir a los mejores candidatos."]
+  - [¿Qué es la compensación?, "Sistema de remuneración (fijo + variable)."]

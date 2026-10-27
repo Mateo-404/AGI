@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Gestión de ventas
+    dif: 1
+    enunciado: ¿Cuáles son las tres fases de la gestión de ventas?
+    opciones:
+      - ["Formulación y planeación, implementación y evaluación y control", "Correcto."]
+      - [Solo ventas, "Faltan las demás."]
+      - [ Solo marketing, "No."]
+      - [ Solo finanzas, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 1
+  - tema: Venta consultiva
+    dif: 2
+    enunciado: ¿En qué consiste la venta consultiva?
+    opciones:
+      - ["En la venta de relaciones (relationship selling), centrada en el cliente y el valor a largo plazo", "Correcto."]
+      - [En la venta transaccional clásica, "Es lo opuesto."]
+      - [ En la venta por catálogo, "No."]
+      - [ En la venta online únicamente, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 1
+  - tema: Megatendencias
+    dif: 1
+    enunciado: ¿Cuáles son las megatendencias en ventas?
+    opciones:
+      - ["Tecnología, liderazgo de servicio, innovación y ética comercial", "Correcto."]
+      - [ Solo precio, "Faltan las demás."]
+      - [ Solo publicidad, "Faltan las demás."]
+      - [ Solo distribución, "Faltan las demás."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 1
+  - tema: Gerente de ventas
+    dif: 2
+    enunciado: ¿Cuál es el rol del gerente de ventas?
+    opciones:
+      - ["Planificar, organizar, dirigir y controlar la fuerza de ventas", "Correcto."]
+      - [ Solo vender, "No: gestiona el equipo."]
+      - [ Solo administrar, "Falta dirigir y controlar."]
+      - [ Solo contratar, "Falta el resto."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 1
+tarjetas:
+  - [¿Cuáles son las 3 fases de la gestión de ventas?, "Formulación, implementación y control."]
+  - [¿Qué es la venta consultiva?, "Venta de relaciones centrada en el cliente."]
+  - [¿Cuáles son las megatendencias?, "Tecnología, liderazgo de servicio, innovación y ética."]

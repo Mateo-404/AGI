@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Revolución Libertadora
+    dif: 1
+    enunciado: ¿Qué restableció el Decreto-Ley N° 6.403/55?
+    opciones:
+      - ["La autonomía, el cogobierno tripartito y los concursos públicos", "Correcto."]
+      - [La gratuidad peronista, "No: la derogó."]
+      - [El arancelamiento, "Eso fue la dictadura de 1976."]
+      - [La privatización total, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Conflicto laica o libre
+    dif: 2
+    enunciado: ¿Qué autorizó la decisión de Frondizi en 1958?
+    opciones:
+      - [A las universidades privadas a emitir títulos profesionales habilitantes, "Correcto."]
+      - [La gratuidad universitaria, "No."]
+      - [El cogobierno estudiantil, "No."]
+      - [El cierre de las universidades privadas, "No: las autorizó."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Época de oro
+    dif: 1
+    enunciado: ¿Qué se creó durante la época de oro científica (1955-1966)?
+    opciones:
+      - [El CONICET y grandes institutos de investigación, "Correcto."]
+      - [La Universidad Obrera, "Eso fue el peronismo."]
+      - [La UCA, "Eso fue el conflicto laica o libre."]
+      - [La Ley Avellaneda, "Eso fue 1885."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Onganía
+    dif: 2
+    enunciado: ¿Qué consecuencias tuvo el golpe de Onganía en las universidades?
+    opciones:
+      - [Anuló la autonomía y el cogobierno y provocó la fuga de más de 1.300 docentes e investigadores, "Correcto."]
+      - [Restauró la gratuidad, "No."]
+      - [Creó el CONICET, "No: eso fue 1958."]
+      - [Amplió las carreras de ciencias sociales, "No: las cerró."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Cordobazo
+    dif: 3
+    enunciado: Explicá con tus palabras qué fue el Cordobazo y qué consecuencia tuvo.
+    modelo: El Cordobazo fue una histórica pueblada obrero-estudiantil en Córdoba el 29/05/1969 que debilitó a Onganía y provocó su caída en 1970.
+    criterios:
+      - Menciona que fue una pueblada obrero-estudiantil
+      - Menciona la fecha y el lugar
+      - Menciona la consecuencia (caída de Onganía)
+tarjetas:
+  - [¿Qué fue la Noche de los Bastones Largos?, "Desalojo violento de la UBA en 1966 que causó la renuncia de más de 1.300 docentes."]
+  - [¿Qué es el CONICET?, "Consejo Nacional de Investigaciones Científicas y Técnicas, creado en 1958."]
+  - [¿Qué fue el Cordobazo?, "Pueblada obrero-estudiantil en Córdoba en 1969 que debilitó a Onganía."]

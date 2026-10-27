@@ -120,3 +120,38 @@ export interface Ampliacion {
   consultada: string
   nota: string
 }
+
+/** Estado de un tema en la matriz de cobertura (mismos códigos en todas las materias). */
+export type EstadoCobertura = 'CD' | 'CP' | 'M' | 'NL' | 'BC'
+
+export const ESTADOS: Record<EstadoCobertura, string> = {
+  CD: 'Cubierto y desarrollado',
+  CP: 'Cubierto parcialmente',
+  M: 'Mencionado, pero requiere desarrollo didáctico',
+  NL: 'No localizado en las fuentes',
+  BC: 'Requiere bibliografía complementaria para cumplir el programa',
+}
+
+export interface FilaCobertura {
+  unidad: number
+  tema: string
+  estado: EstadoCobertura
+  lecciones: string[]
+}
+
+/** Una materia completa tal como la consumen el sitio y las pruebas. */
+export interface Materia {
+  slug: string
+  nombre: string
+  corto: string
+  descripcion: string
+  lecciones: Leccion[]
+  unidades: Unidad[]
+  glosario: TerminoGlosario[]
+  cobertura: FilaCobertura[]
+  ampliaciones: Ampliacion[]
+  /** Bibliografía y fuentes que se muestran en «Fuentes y limitaciones». */
+  fuentes?: string[]
+  /** Aclaración propia de la materia para la página «Acerca». */
+  nota?: string
+}

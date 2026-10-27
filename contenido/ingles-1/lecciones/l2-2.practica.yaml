@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Have to
+    dif: 1
+    enunciado: ¿Qué expresa "have to"?
+    opciones:
+      - [Obligación general o externa (reglas), "Correcto."]
+      - [Obligación personal, "Eso es must."]
+      - [ Consejo, "Eso es should."]
+      - [ Prohibición, "Eso es mustn't."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 4
+  - tema: Must
+    dif: 1
+    enunciado: ¿Qué expresa "must"?
+    opciones:
+      - [Obligación personal o interna, "Correcto."]
+      - [Obligación externa, "Eso es have to."]
+      - [ Consejo, "Eso es should."]
+      - [ Opcional, "Eso es don't have to."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 4
+  - tema: Mustn't
+    dif: 2
+    enunciado: ¿Qué significa "mustn't"?
+    opciones:
+      - [Prohibición: algo no está permitido, "Correcto."]
+      - [No es necesario, "Eso es don't have to."]
+      - [ Consejo negativo, "Eso es shouldn't."]
+      - [ Obligación, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 4
+  - tema: Should
+    dif: 1
+    enunciado: ¿Para qué se usa "should"?
+    opciones:
+      - [Para dar consejos o recomendaciones, "Correcto."]
+      - [Para obligación externa, "Eso es have to."]
+      - [ Para prohibir, "Eso es mustn't."]
+      - [ Para expresar certeza, "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 4
+  - tema: Diferencia
+    dif: 3
+    enunciado: Explicá con tus palabras la diferencia entre "mustn't" y "don't have to".
+    modelo: Mustn't significa que algo está prohibido (no puedes hacerlo); don't have to significa que no es necesario (puedes hacerlo si quieres).
+    criterios:
+      - Menciona que mustn't es prohibición
+      - Menciona que don't have to es opcional
+tarjetas:
+  - [Have to, "Obligación externa o general."]
+  - [Must / Mustn't, "Obligación personal / prohibición."]
+  - [Should, "Consejo o recomendación."]

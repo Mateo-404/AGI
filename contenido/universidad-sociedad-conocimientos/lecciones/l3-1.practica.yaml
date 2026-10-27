@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Conocimiento
+    dif: 1
+    enunciado: ¿Qué es el conocimiento científico?
+    opciones:
+      - [Un sistema de ideas conectadas lógicamente que articula componentes teóricos con empíricos mediante el método científico, "Correcto."]
+      - [El saber cotidiano basado en la vivencia, "Eso es el conocimiento vulgar."]
+      - [La fe en verdades absolutas, "Eso es el conocimiento mítico-religioso."]
+      - [La expresión subjetiva y estética, "Eso es el conocimiento artístico."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Características
+    dif: 2
+    enunciado: ¿Cuál de estas es una característica del conocimiento científico?
+    opciones:
+      - [Verificable (empírico), "Correcto."]
+      - [Dogmático e inmutable, "El conocimiento científico es abierto y falible."]
+      - [Basado solo en la autoridad, "Eso es el conocimiento mítico-religioso."]
+      - [Subjetivo y no comunicable, "El conocimiento científico es comunicable y busca objetividad."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Ciencia y tecnología
+    dif: 2
+    enunciado: ¿Cómo se diferencian ciencia, técnica y tecnología?
+    opciones:
+      - [La ciencia produce conocimiento verificado; la técnica son procedimientos; la tecnología aplica la ciencia, "Correcto."]
+      - [Son sinónimos, "No: son conceptos distintos."]
+      - [La técnica es superior a la ciencia, "No."]
+      - [La tecnología no usa la ciencia, "La tecnología es la aplicación del conocimiento científico."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Universidad
+    dif: 1
+    enunciado: ¿Cuáles son las tres tareas fundamentales de la universidad en el SUA?
+    opciones:
+      - ["Docencia, investigación y extensión", "Correcto."]
+      - [Solo docencia, "Faltan investigación y extensión."]
+      - [Solo investigación, "Faltan docencia y extensión."]
+      - [Gestión administrativa, "No es una tarea fundamental."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Tecnología
+    dif: 3
+    enunciado: Explicá con tus palabras por qué la tecnología no es neutral.
+    modelo: La tecnología no es neutral porque las tecnologías son productos socioculturales moldeados desde su génesis, diseño e implementación por valores e intereses sociales (Karina Pedace).
+    criterios:
+      - Menciona que las tecnologías son productos socioculturales
+      - Menciona valores o intereses sociales
+      - Menciona la génesis o el diseño
+tarjetas:
+  - [¿Qué es el conocimiento científico?, "Sistema de ideas conectadas lógicamente que articula teoría y evidencia mediante el método científico."]
+  - [Características del conocimiento científico, "Analítico, fáctico, verificable, metódico, sistemático, explicativo, abierto, útil."]
+  - [¿Qué es la tecnología?, "Aplicación del conocimiento científico a la resolución de problemas prácticos."]

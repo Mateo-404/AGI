@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Topologías
+    dif: 1
+    enunciado: ¿Cuáles son las topologías de red LAN?
+    opciones:
+      - ["Estrella, bus, anillo, malla y árbol", "Correcto."]
+      - [ Solo estrella, "Faltan las demás."]
+      - [ Solo bus, "Faltan las demás."]
+      - [ Solo anillo, "Faltan las demás."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 5
+  - tema: Cableado
+    dif: 2
+    enunciado: ¿Qué es el cableado estructurado?
+    opciones:
+      - [Un sistema de cableado organizado por estándares (TIA/EIA), "Correcto."]
+      - [ Un cable suelto, "No."]
+      - [ Un protocolo, "No."]
+      - [ Un software, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 5
+  - tema: Wi-Fi
+    dif: 1
+    enunciado: ¿En qué estándar se basa Wi-Fi?
+    opciones:
+      - [IEEE 802.11, "Correcto."]
+      - [ IEEE 802.3, "Eso es Ethernet."]
+      - [ IEEE 802.15, "No."]
+      - [ IEEE 802.16, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 5
+  - tema: Topologías inalámbricas
+    dif: 2
+    enunciado: ¿Cuáles son las topologías inalámbricas?
+    opciones:
+      - [Ad hoc e infraestructura, "Correcto."]
+      - [ Solo estrella, "No."]
+      - [ Solo bus, "No."]
+      - [ Solo anillo, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 5
+tarjetas:
+  - [¿Cuáles son las topologías LAN?, "Estrella, bus, anillo, malla y árbol."]
+  - [¿Qué es el cableado estructurado?, "Sistema de cableado organizado por estándares (TIA/EIA)."]
+  - [¿En qué estándar se basa Wi-Fi?, "IEEE 802.11."]

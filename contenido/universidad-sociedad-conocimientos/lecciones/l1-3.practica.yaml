@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Cuarta Revolución Industrial
+    dif: 1
+    enunciado: ¿Qué es la Cuarta Revolución Industrial?
+    opciones:
+      - ["La transformación económica y social impulsada por tecnologías digitales como la IA, el big data y la automatización", "Correcto."]
+      - [La Revolución Francesa, "No corresponde."]
+      - [La Revolución Industrial del siglo XVIII, "Esa fue la primera."]
+      - [La invención de la imprenta, "Eso es anterior."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: IA y trabajo
+    dif: 2
+    enunciado: ¿Cuál de estos es un impacto de la IA en el mundo del trabajo?
+    opciones:
+      - [Automatización de tareas rutinarias, "Correcto."]
+      - [Eliminación total del trabajo humano, "El apunte no dice eso; habla de transformación y creación de ocupaciones."]
+      - [Prohibición de las universidades, "No."]
+      - [Fin de la ciencia, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: IA
+    dif: 1
+    enunciado: ¿Qué es la inteligencia artificial?
+    opciones:
+      - [Una rama de la informática que desarrolla sistemas capaces de realizar tareas que requieren inteligencia humana, "Correcto."]
+      - [Un programa de ofimática, "No."]
+      - [Un tipo de hardware, "No."]
+      - [ Una red social, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Rol de la universidad
+    dif: 2
+    enunciado: ¿Cuál es el rol de la universidad frente a la IA?
+    opciones:
+      - [Formar profesionales capaces de usar críticamente la tecnología y comprender sus límites éticos, "Correcto."]
+      - [Prohibir el uso de la IA, "No: busca el uso crítico."]
+      - [Ignorar la tecnología, "No: debe adaptarse."]
+      - [ Sustituir a los docentes por IA, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Ética
+    dif: 3
+    enunciado: Explicá con tus palabras qué implica la ética en la IA.
+    modelo: La ética en la IA es el conjunto de principios que orientan el desarrollo y uso responsable de los sistemas de IA para evitar sesgos, discriminación y daños sociales.
+    criterios:
+      - Menciona principios de uso responsable
+      - Menciona evitar sesgos o discriminación
+      - Menciona daños sociales
+tarjetas:
+  - [¿Qué es la Cuarta Revolución Industrial?, "Transformación económica y social impulsada por tecnologías digitales."]
+  - [¿Qué es la IA?, "Rama de la informática que desarrolla sistemas capaces de realizar tareas que requieren inteligencia humana."]
+  - [Rol de la universidad frente a la IA, "Formar para el uso crítico y ético de la tecnología."]

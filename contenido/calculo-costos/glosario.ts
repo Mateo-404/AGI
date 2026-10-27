@@ -1,0 +1,35 @@
+import type { TerminoGlosario } from '../tipos'
+
+const t = (id: string, termino: string, lec: string, def: string, ...rel: string[]): TerminoGlosario => ({ id, termino, def, lec, rel: rel.length ? rel : undefined })
+
+export const glosario: TerminoGlosario[] = [
+  t('contabilidad-costos', 'Contabilidad de costos', 'cc-l1-1', 'Sistema de información para la gestión interna: determinar, clasificar y analizar el costo de producción de bienes y servicios.', 'costo', 'contabilidad-patrimonial'),
+  t('contabilidad-patrimonial', 'Contabilidad patrimonial', 'cc-l1-1', 'Contabilidad externa, histórica y obligatoria, que informa a terceros sobre la situación patrimonial.', 'contabilidad-costos'),
+  t('costo', 'Costo', 'cc-l1-1', 'Gasto incurrido para producir un bien o servicio; se capitaliza en el inventario hasta la venta.', 'gasto', 'perdida'),
+  t('gasto', 'Gasto', 'cc-l1-1', 'Erogación del período que se carga directamente al resultado (no se capitaliza).', 'costo'),
+  t('perdida', 'Pérdida', 'cc-l1-1', 'Disminución del patrimonio sin contraprestación, ajena a la actividad principal.', 'costo', 'gasto'),
+  t('costo-primo', 'Costo primo', 'cc-l2-1', 'Suma de la materia prima directa y la mano de obra directa.', 'costo-conversion'),
+  t('costo-conversion', 'Costo de conversión', 'cc-l2-1', 'Suma de la mano de obra directa y los costos indirectos de fabricación.', 'costo-primo'),
+  t('costo-produccion', 'Costo de producción', 'cc-l2-1', 'Costo primo más los costos indirectos de fabricación; base para valuar inventarios.', 'costo-primo', 'costo-conversion'),
+  t('costo-venta', 'Costo de venta', 'cc-l2-1', 'Costo de producción de los bienes vendidos en el período.', 'costo-produccion'),
+  t('costo-total', 'Costo total', 'cc-l2-1', 'Suma de todos los costos (de producción y no de producción) del período.', 'costo-produccion'),
+  t('mpd', 'Materia prima directa (MPD)', 'cc-l2-1', 'Materiales que forman parte integral del producto y cuyo costo es trazable al mismo.', 'mod', 'cif'),
+  t('mod', 'Mano de obra directa (MOD)', 'cc-l2-1', 'Trabajo de los operarios que transforman la materia prima en producto terminado.', 'mpd', 'cif'),
+  t('cif', 'Costos indirectos de fabricación (CIF)', 'cc-l2-1', 'Costos de producción no directamente trazables al producto (supervisión, depreciación, servicios).', 'mpd', 'mod'),
+  t('costo-fijo', 'Costo fijo', 'cc-l2-2', 'Costo que no varía con el volumen de producción en el corto plazo.', 'costo-variable'),
+  t('costo-variable', 'Costo variable', 'cc-l2-2', 'Costo que varía proporcionalmente con el volumen de producción.', 'costo-fijo'),
+  t('costo-directo', 'Costo directo', 'cc-l2-2', 'Costo trazable directamente a un producto o servicio.', 'costo-indirecto'),
+  t('costo-indirecto', 'Costo indirecto', 'cc-l2-2', 'Costo que no es trazable directamente y se distribuye por criterios.', 'costo-directo'),
+  t('costo-historico', 'Costo histórico', 'cc-l3-1', 'Costo registrado a posteriori, una vez incurrido.', 'costo-predeterminado'),
+  t('costo-predeterminado', 'Costo predeterminado', 'cc-l3-1', 'Costo calculado antes de la producción (estimado o estándar).', 'costo-historico', 'costo-estandar'),
+  t('costo-estandar', 'Costo estándar', 'cc-l3-1', 'Costo predeterminado basado en normas de eficiencia y precios esperados.', 'costo-predeterminado'),
+  t('costeo-absorcion', 'Costeo por absorción (full costing)', 'cc-l3-1', 'Método que asigna al producto todos los costos de producción (fijos y variables).', 'costeo-variable'),
+  t('costeo-variable', 'Costeo variable (direct costing)', 'cc-l3-1', 'Método que asigna al producto solo los costos variables de producción.', 'costeo-absorcion'),
+  t('variacion', 'Variación (desvío)', 'cc-l3-2', 'Diferencia entre el costo estándar y el costo real incurrido.', 'costo-estandar'),
+  t('punto-equilibrio', 'Punto de equilibrio (PE)', 'cc-l4-1', 'Volumen de ventas en el que los ingresos igualan a los costos totales (utilidad cero).', 'margen-seguridad'),
+  t('margen-seguridad', 'Margen de seguridad (MS)', 'cc-l4-1', 'Diferencia entre las ventas reales y las ventas en el punto de equilibrio.', 'punto-equilibrio'),
+  t('contribucion-marginal', 'Contribución marginal (CMg)', 'cc-l4-1', 'Diferencia entre el precio de venta y el costo variable unitario.', 'punto-equilibrio'),
+  t('cvu', 'Relación costo-volumen-utilidad (CVU)', 'cc-l4-1', 'Análisis de cómo afectan los cambios en costos, volumen y precio a la utilidad.', 'punto-equilibrio', 'apalancamiento-operativo'),
+  t('apalancamiento-operativo', 'Apalancamiento operativo (GAO)', 'cc-l4-1', 'Grado en que los costos fijos amplifican los cambios en la utilidad ante cambios en las ventas.', 'cvu'),
+  t('analisis-marginal', 'Análisis marginal', 'cc-l4-2', 'Evaluación del costo y beneficio incremental de una decisión (costo marginal vs. beneficio marginal).', 'cvu'),
+]

@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Diseño de procesos
+    dif: 1
+    enunciado: ¿Cuáles son las seis etapas del diseño de procesos?
+    opciones:
+      - ["Identificación, relevamiento, modelado, documentación, validación y comunicación", "Correcto."]
+      - ["Planificar, hacer, verificar y actuar", "Esas son las fases del PDCA, no las etapas del diseño."]
+      - ["Identificación, ejecución, control y cierre", "No coincide con la metodología del apunte."]
+      - ["Análisis, diseño, implementación y mantenimiento", "Es otra secuencia genérica, no la del apunte."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 2
+  - tema: Modelado
+    dif: 2
+    enunciado: ¿Qué diferencia hay entre As Is y To Be en el modelado de procesos?
+    opciones:
+      - ["As Is es el proceso actual y To Be es el propuesto con mejoras", "Correcto."]
+      - ["As Is es el propuesto y To Be es el actual", "Es al revés."]
+      - ["Ambos son el proceso actual", "No: To Be incorpora las mejoras."]
+      - ["As Is es un software y To Be un método", "No son herramientas; son modelos del proceso."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 2
+  - tema: BPMN
+    dif: 1
+    enunciado: ¿Para qué se usa la notación BPMN?
+    opciones:
+      - [Para representar gráficamente procesos de negocio de forma estandarizada, "Correcto."]
+      - [Para medir la calidad del producto, "No mide calidad; representa procesos."]
+      - [Para calcular el margen de la cadena de valor, "No: es una notación de procesos."]
+      - [Para auditar el SGC, "La auditoría es otra actividad; BPMN representa procesos."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 2
+  - tema: Mejora continua
+    dif: 2
+    enunciado: ¿Cómo se integra el diseño de procesos con la mejora continua?
+    opciones:
+      - ["Tras la implementación se miden resultados, se detectan desvíos y se vuelven a aplicar las etapas de diseño", "Correcto."]
+      - [El diseño se hace una sola vez, "El diseño no es un evento único."]
+      - [La mejora continua reemplaza al diseño, "Se integran, no se reemplazan."]
+      - [Solo se aplica en la etapa de comunicación, "Se aplica a todo el ciclo."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 2
+  - tema: SMART
+    dif: 2
+    enunciado: Explicá qué significa que un objetivo sea SMART.
+    modelo: Un objetivo SMART es Específico, Medible, Alcanzable, Relevante y con Tiempo definido (Specific, Measurable, Achievable, Relevant, Time-bound).
+    criterios:
+      - Menciona al menos cuatro de las cinco letras (E, M, A, R, T)
+      - Da el significado de cada una
+tarjetas:
+  - [¿Cuáles son las 6 etapas del diseño de procesos?, "Identificación, relevamiento, modelado, documentación, validación y comunicación."]
+  - [¿Qué es As Is?, "Modelo del proceso actual, tal como se ejecuta hoy."]
+  - [¿Qué es To Be?, "Modelo del proceso propuesto, con las mejoras incorporadas."]

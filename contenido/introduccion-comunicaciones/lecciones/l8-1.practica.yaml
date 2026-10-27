@@ -1,0 +1,55 @@
+preguntas:
+  - tema: Seguridad física
+    dif: 1
+    enunciado: ¿Qué es la seguridad física?
+    opciones:
+      - [La protección de los equipos y las instalaciones de red, "Correcto."]
+      - [ La protección de datos, "Eso es seguridad lógica."]
+      - [ El cifrado, "No."]
+      - [ El firewall, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Seguridad lógica
+    dif: 1
+    enunciado: ¿Qué es la seguridad lógica?
+    opciones:
+      - ["La protección de datos y sistemas mediante controles de acceso, cifrado y políticas", "Correcto."]
+      - [ La protección de equipos, "Eso es seguridad física."]
+      - [ El cableado, "No."]
+      - [ El hardware, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Cifrado
+    dif: 2
+    enunciado: ¿Qué es el cifrado?
+    opciones:
+      - [El proceso de convertir información en un formato ilegible sin la clave, "Correcto."]
+      - [ La compresión, "No."]
+      - [ La eliminación, "No."]
+      - [ La duplicación, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Malware
+    dif: 1
+    enunciado: ¿Qué es el malware?
+    opciones:
+      - [Software malicioso que daña o accede sin autorización a sistemas, "Correcto."]
+      - [ Un antivirus, "No."]
+      - [ Un firewall, "No."]
+      - [ Un router, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Amenazas
+    dif: 2
+    enunciado: ¿Cuáles son amenazas comunes en redes?
+    opciones:
+      - ["Malware, phishing, DDoS e ingeniería social", "Correcto."]
+      - [ Solo el clima, "No."]
+      - [ Solo la electricidad, "No."]
+      - [ Solo el ruido, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+tarjetas:
+  - [¿Qué es la seguridad física?, "Protección de equipos e instalaciones de red."]
+  - [¿Qué es la seguridad lógica?, "Protección de datos y sistemas."]
+  - [¿Qué es el cifrado?, "Proceso de convertir información en formato ilegible sin la clave."]

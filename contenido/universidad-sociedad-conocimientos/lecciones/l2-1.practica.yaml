@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Reforma 1918
+    dif: 1
+    enunciado: ¿Dónde y cuándo se inició la Reforma Universitaria de 1918?
+    opciones:
+      - [En junio de 1918 en la Universidad Nacional de Córdoba, "Correcto."]
+      - [En 1916 en la UBA, "No: fue en 1918 en Córdoba."]
+      - [En 1943 con el peronismo, "No."]
+      - [En 1966 con Onganía, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Manifiesto Liminar
+    dif: 2
+    enunciado: ¿Qué es el Manifiesto Liminar?
+    opciones:
+      - ["El documento fundacional de la Reforma, titulado «A los hombres libres de Sudamérica», redactado el 21/06/1918", "Correcto."]
+      - [La constitución argentina, "No."]
+      - [Un decreto peronista, "No."]
+      - [La ley de educación superior, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Principios de la Reforma
+    dif: 1
+    enunciado: ¿Cuáles son los cinco principios de la Reforma de 1918?
+    opciones:
+      - ["Cogobierno, autonomía, concursos públicos, gratuidad y extensión", "Correcto."]
+      - ["Privatización, arancelamiento y cupos", "Es lo opuesto."]
+      - [Centralización y dogmatismo, "Es lo que la Reforma combatía."]
+      - [Voto femenino y peronismo, "No son principios de la Reforma."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Ley Sáenz Peña
+    dif: 2
+    enunciado: ¿Qué instauró la Ley Sáenz Peña (1912)?
+    opciones:
+      - ["El voto secreto, obligatorio e individual para varones mayores de 18 años", "Correcto."]
+      - [El voto femenino, "El voto femenino fue en 1947."]
+      - [La autonomía universitaria, "Eso fue la Reforma de 1918."]
+      - [La gratuidad universitaria, "Eso fue el peronismo."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Legado
+    dif: 3
+    enunciado: Explicá con tus palabras el legado de la Reforma Universitaria de 1918.
+    modelo: La Reforma de 1918 creó un modelo universitario que trascendió a Argentina y se difundió por toda América Latina, sirviendo de faro a luchas posteriores como el Cordobazo y la defensa de la gratuidad y el acceso educativo.
+    criterios:
+      - Menciona la proyección latinoamericana
+      - Menciona el modelo de universidad pública
+      - Menciona su influencia en luchas posteriores
+tarjetas:
+  - [¿Qué es la Reforma de 1918?, "Movimiento estudiantil que delineó el modelo de universidad pública, autónoma y participativa."]
+  - [¿Cuáles son los 5 principios de la Reforma?, "Cogobierno, autonomía, concursos públicos, gratuidad y extensión."]
+  - [¿Qué es el Manifiesto Liminar?, "Documento fundacional de la Reforma, «A los hombres libres de Sudamérica»."]

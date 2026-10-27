@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Información
+    dif: 1
+    enunciado: ¿Qué es la información?
+    opciones:
+      - [Datos procesados con significado y contexto, "Correcto."]
+      - [ Un valor sin procesar, "Eso es un dato."]
+      - [ Un canal, "No."]
+      - [ Un cable, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 1
+  - tema: Shannon
+    dif: 2
+    enunciado: ¿Qué cuantifica la teoría de la información de Shannon?
+    opciones:
+      - [La información y la capacidad de un canal, "Correcto."]
+      - [ El precio de los equipos, "No."]
+      - [ La velocidad de los autos, "No."]
+      - [ El tamaño de los edificios, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 1
+  - tema: Señales
+    dif: 1
+    enunciado: ¿Cuál es la diferencia entre señal analógica y digital?
+    opciones:
+      - [La analógica es continua; la digital es discreta, "Correcto."]
+      - [ Son iguales, "No."]
+      - [ La analógica es discreta, "Es al revés."]
+      - [ La digital es continua, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 1
+  - tema: Entropía
+    dif: 2
+    enunciado: ¿Qué mide la entropía?
+    opciones:
+      - [La incertidumbre o información promedio de una fuente, "Correcto."]
+      - [ El tamaño del canal, "No."]
+      - [ La velocidad de transmisión, "No."]
+      - [ El costo, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 1
+tarjetas:
+  - [¿Qué es la información?, "Datos procesados con significado y contexto."]
+  - [¿Qué mide la entropía?, "La incertidumbre o información promedio de una fuente."]
+  - [¿Qué es una señal digital?, "Señal discreta en el tiempo y en amplitud (bits)."]

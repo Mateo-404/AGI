@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Paradigmas
+    dif: 1
+    enunciado: ¿En qué dos grupos se dividen los paradigmas de programación?
+    opciones:
+      - [Imperativos y declarativos, "Correcto."]
+      - [Rápidos y lentos, "No."]
+      - [Modernos y antiguos, "No."]
+      - [ Pagos y gratuitos, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 3
+  - tema: Imperativo
+    dif: 2
+    enunciado: ¿Qué caracteriza al paradigma imperativo?
+    opciones:
+      - [Una secuencia definida de instrucciones que determinan qué debe hacer la computadora, "Correcto."]
+      - [Declarar qué se quiere obtener sin especificar cómo, "Eso es declarativo."]
+      - [ Solo usar funciones, "Eso es funcional."]
+      - [ Solo usar objetos, "Eso es orientado a objetos."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 3
+  - tema: POO
+    dif: 1
+    enunciado: ¿Cuáles son los pilares de la programación orientada a objetos?
+    opciones:
+      - ["Abstracción, encapsulamiento, polimorfismo y herencia", "Correcto."]
+      - ["Secuencia, selección e iteración", "Esos son del paradigma estructurado."]
+      - [" Inducción, deducción y abducción", "Son operaciones lógicas."]
+      - [" Entrada, proceso y salida", "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 3
+  - tema: POO
+    dif: 2
+    enunciado: ¿Qué es una clase en POO?
+    opciones:
+      - [Una plantilla o molde que define la estructura básica del objeto, "Correcto."]
+      - [Un objeto ya creado, "Eso es una instancia."]
+      - [ Un tipo de variable, "No."]
+      - [ Un algoritmo, "No."]
+    correcta: 0
+    o: a Apuntes de Paradigmas de Programación · Unidad 3
+  - tema: Otros paradigmas
+    dif: 3
+    enunciado: Explicá con tus palabras la diferencia entre los paradigmas funcional, lógico y reactivo.
+    modelo: El paradigma funcional se basa en funciones sin datos mutables; el lógico se apoya en hechos y reglas para deducir respuestas; el reactivo maneja flujos de datos asíncronos y reacciona a cambios en tiempo real.
+    criterios:
+      - Distingue al menos dos de los tres paradigmas
+      - Menciona la base de cada uno
+tarjetas:
+  - [¿Qué es una clase?, "Plantilla o molde que define la estructura básica del objeto."]
+  - [¿Cuáles son los pilares de la POO?, "Abstracción, encapsulamiento, polimorfismo y herencia."]
+  - [¿Qué es el paradigma reactivo?, "Maneja flujos de datos asíncronos y reacciona a cambios en tiempo real."]

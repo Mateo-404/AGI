@@ -1,0 +1,45 @@
+preguntas:
+  - tema: TCP/IP
+    dif: 1
+    enunciado: ¿Cuántas capas tiene el modelo TCP/IP?
+    opciones:
+      - [Cuatro, "Correcto."]
+      - [ Siete, "Eso es OSI."]
+      - [ Cinco, "No."]
+      - [ Tres, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 6
+  - tema: TCP vs. UDP
+    dif: 2
+    enunciado: ¿Cuál es la diferencia entre TCP y UDP?
+    opciones:
+      - [TCP es confiable y orientado a conexión; UDP no, "Correcto."]
+      - [ Son iguales, "No."]
+      - [ UDP es confiable, "Es al revés."]
+      - [ TCP es sin conexión, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 6
+  - tema: ARP
+    dif: 2
+    enunciado: ¿Qué hace ARP?
+    opciones:
+      - [Resuelve direcciones IP a direcciones MAC, "Correcto."]
+      - [ Enruta paquetes, "No."]
+      - [ Cifra datos, "No."]
+      - [ Comprime datos, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 6
+  - tema: Subnetting
+    dif: 2
+    enunciado: ¿Qué es el subnetting?
+    opciones:
+      - [La división de una red en subredes, "Correcto."]
+      - [ La unión de redes, "No."]
+      - [ El cifrado, "No."]
+      - [ La compresión, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 6
+tarjetas:
+  - [¿Cuántas capas tiene TCP/IP?, "Cuatro."]
+  - [¿Qué es TCP?, "Protocolo de transporte confiable y orientado a conexión."]
+  - [¿Qué es UDP?, "Protocolo de transporte no confiable y sin conexión."]

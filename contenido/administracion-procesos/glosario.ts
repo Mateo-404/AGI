@@ -1,0 +1,38 @@
+import type { TerminoGlosario } from '../tipos'
+
+const t = (id: string, termino: string, lec: string, def: string, ...rel: string[]): TerminoGlosario => ({ id, termino, def, lec, rel: rel.length ? rel : undefined })
+
+export const glosario: TerminoGlosario[] = [
+  t('calidad', 'Calidad', 'ap-l1-1', 'Capacidad organizacional de traducir las necesidades del usuario en características medibles del producto o servicio, brindando satisfacción y garantizando su consistencia mediante la estandarización de procesos.', 'proceso', 'iso-9001'),
+  t('kaizen', 'Kaizen', 'ap-l1-1', 'Filosofía de mejora continua (del japonés kai = cambio, zen = mejorar), aplicable a procesos específicos o a toda la organización, involucrando a todos los integrantes.', 'pdca', 'mejora-continua'),
+  t('pdca', 'Círculo de Deming (PDCA/PHVA)', 'ap-l1-1', 'Ciclo de mejora Planificar–Hacer–Verificar–Actuar, de naturaleza cíclica: al finalizar Actuar, el ciclo reinicia en la planificación incorporando el aprendizaje.', 'kaizen'),
+  t('iso-9001', 'ISO 9001:2015', 'ap-l1-1', 'Norma internacional de requisitos para un Sistema de Gestión de la Calidad: demuestra la capacidad de proveer productos y servicios conformes y aumentar la satisfacción del cliente.', 'sgc', 'phva'),
+  t('sgc', 'Sistema de Gestión de la Calidad (SGC)', 'ap-l1-1', 'Conjunto de procesos interrelacionados que una organización gestiona como un sistema para lograr la calidad prevista y la mejora continua.', 'iso-9001'),
+  t('phva', 'PHVA (Planificar-Hacer-Verificar-Actuar)', 'ap-l1-1', 'Marco que estructura los capítulos 4 a 10 de ISO 9001:2015: Planificar (caps. 4, 6, 7), Hacer (cap. 8), Verificar (cap. 9) y Actuar (cap. 10).', 'pdca'),
+  t('informacion-documentada', 'Información documentada', 'ap-l1-1', 'En ISO 9001:2015, documentos activos (políticas, procedimientos) se mantienen y los registros de evidencia se conservan (protegidos contra modificación).', 'sgc'),
+  t('pensamiento-riesgos', 'Pensamiento basado en riesgos', 'ap-l1-1', 'Enfoque de ISO 9001:2015 que reemplaza las «acciones preventivas» de la versión 2008; el riesgo es el efecto de la incertidumbre y puede ser negativo u oportunidad.', 'iso-9001'),
+  t('proceso', 'Proceso', 'ap-l1-2', 'Conjunto de actividades ordenadas e interrelacionadas que transforman una o más entradas en salidas que agregan valor al cliente, con el propósito de alcanzar una meta organizacional.', 'bpm', 'entrada', 'salida'),
+  t('entrada', 'Entrada (input)', 'ap-l1-2', 'Todo aquello que dispara o da inicio a la ejecución de un proceso.', 'proceso', 'salida'),
+  t('salida', 'Salida (output)', 'ap-l1-2', 'Resultado del proceso; puede ser material, recurso o información usada por otro proceso.', 'proceso', 'entrada'),
+  t('bpm', 'Gestión basada en procesos (BPM)', 'ap-l1-2', 'Comprensión y gestión de los procesos interrelacionados como un sistema para contribuir a la eficacia y eficiencia de la organización en el logro de sus resultados previstos (ISO 9001).', 'proceso', 'mapa-procesos'),
+  t('transformacion-digital', 'Transformación digital', 'ap-l1-2', 'Cambio producido por la digitalización en la oferta de productos y servicios, la cadena de valor y el modelo de negocio.', 'bpm'),
+  t('mapa-procesos', 'Mapa de procesos', 'ap-l1-3', 'Representación gráfica de la estructura de procesos de la organización; es un diagrama de valor (Beltrán Sanz, 2009) que agrupa los procesos por jerarquías.', 'cadena-valor', 'jerarquia-procesos'),
+  t('proceso-estrategico', 'Proceso estratégico', 'ap-l1-3', 'Proceso orientado al diseño global de la organización, a las definiciones estratégicas y a la planificación; define los grandes caminos para concretar la misión.', 'mapa-procesos'),
+  t('proceso-negocio', 'Proceso de negocio (gestión)', 'ap-l1-3', 'Proceso que deriva directamente de la misión y genera el producto o servicio que se entrega al usuario; razón de ser de la organización.', 'mapa-procesos', 'cadena-valor'),
+  t('proceso-soporte', 'Proceso de soporte', 'ap-l1-3', 'Proceso que da soporte y permite el correcto funcionamiento de todos los demás procesos de la organización.', 'mapa-procesos'),
+  t('cadena-valor', 'Cadena de valor', 'ap-l1-3', 'Herramienta de gestión (Michael Porter, 1986) que desagrega la organización en actividades generadoras de valor; margen = valor pagado por el cliente − sumatoria de costos de las actividades.', 'mapa-procesos', 'ventaja-competitiva'),
+  t('ventaja-competitiva', 'Ventaja competitiva', 'ap-l1-3', 'Beneficio que surge de realizar los procesos de forma nueva o mejor que la competencia; los procesos son los que la proporcionan.', 'cadena-valor'),
+  t('jerarquia-procesos', 'Jerarquía de procesos', 'ap-l1-3', 'Agrupamiento lógico de los procesos de la organización en niveles (N1 mapa, N2 subprocesos 1, N3 subprocesos 2, N4+ operativo), dinámico y codificado.', 'mapa-procesos'),
+  t('proceso-operativo', 'Proceso operativo', 'ap-l1-3', 'Proceso que ya no puede dividirse en otros; llegó al nivel atómico, donde solo se identifican sus actividades.', 'jerarquia-procesos'),
+  t('proceso-paralelo', 'Proceso paralelo (instancia)', 'ap-l1-3', 'Proceso separado que se crea cuando un proceso no comparte entradas y/o salidas dentro de la cadena de valor o el proceso principal.', 'jerarquia-procesos'),
+  t('mineria-procesos', 'Minería de procesos (Process Mining)', 'ap-l1-3', 'Disciplina que usa datos de los sistemas de información (event logs) para descubrir, monitorear y mejorar procesos de forma automática.', 'as-is'),
+  t('as-is', 'As Is (proceso actual)', 'ap-l2-1', 'Modelo del proceso tal como se ejecuta hoy; se contrasta con el To Be para evidenciar brechas y fundamentar el rediseño.', 'to-be', 'bpmn'),
+  t('to-be', 'To Be (proceso propuesto)', 'ap-l2-1', 'Modelo del proceso con las mejoras incorporadas, resultado de la etapa de modelado del diseño.', 'as-is', 'bpmn'),
+  t('bpmn', 'BPMN (Business Process Model and Notation)', 'ap-l2-1', 'Notación estándar para representar gráficamente procesos de negocio, que permite estandarizar la comunicación entre áreas técnicas y de negocio.', 'as-is', 'to-be'),
+  t('smart', 'Objetivos SMART', 'ap-l2-1', 'Objetivos Específicos, Medibles, Alcanzables, Relevantes y con Tiempo definido (Specific, Measurable, Achievable, Relevant, Time-bound).', 'diseno-procesos'),
+  t('diseno-procesos', 'Diseño de procesos', 'ap-l2-1', 'Proyecto estructurado en seis etapas secuenciales (identificación, relevamiento, modelado, documentación, validación y comunicación) para pasar de una situación actual a una propuesta mejorada.', 'smart', 'mejora-continua'),
+  t('mejora-continua', 'Mejora continua', 'ap-l2-1', 'Integración del diseño con el ciclo PDCA: tras la implementación se miden resultados, se detectan desvíos y se vuelven a aplicar las etapas de diseño.', 'kaizen', 'pdca'),
+  t('erp', 'ERP (Enterprise Resource Planning)', 'ap-l3-1', 'Sistema integrado que unifica los procesos de negocio de una organización en una única base de datos y una única plataforma.', 'rpa', 'transformacion-digital'),
+  t('rpa', 'RPA (Robotic Process Automation)', 'ap-l3-1', 'Tecnología que automatiza tareas repetitivas, basadas en reglas y de alto volumen, mediante robots de software que interactúan con las interfaces de los sistemas existentes sin modificarlos.', 'erp', 'mineria-procesos'),
+  t('gestion-cambio', 'Gestión del cambio', 'ap-l4-1', 'Transición organizacional de una gestión por áreas (silos) a una gestión por procesos transversales; no es solo un cambio técnico, es un cambio cultural.', 'bpm'),
+]

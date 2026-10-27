@@ -1,0 +1,35 @@
+import type { TerminoGlosario } from '../tipos'
+
+const t = (id: string, termino: string, lec: string, def: string, ...rel: string[]): TerminoGlosario => ({ id, termino, def, lec, rel: rel.length ? rel : undefined })
+
+export const glosario: TerminoGlosario[] = [
+  t('gestion-ventas', 'Gestión de ventas', 'gv-l1-1', 'Proceso de administración de la fuerza de ventas: formulación, implementación y control.', 'fuerza-ventas'),
+  t('fuerza-ventas', 'Fuerza de ventas', 'gv-l1-1', 'Conjunto de vendedores y gerentes que se encargan de la venta personal.', 'gestion-ventas'),
+  t('venta-personal', 'Venta personal', 'gv-l6-1', 'Comunicación interpersonal directa entre vendedor y cliente para realizar una venta.', 'proceso-venta'),
+  t('proceso-venta', 'Proceso de venta', 'gv-l2-1', 'Secuencia de etapas que la empresa sigue para vender.', 'proceso-compra'),
+  t('proceso-compra', 'Proceso de compra', 'gv-l2-1', 'Secuencia de etapas que el cliente sigue para comprar (B2C y B2B).', 'proceso-venta', 'centro-compras'),
+  t('centro-compras', 'Centro de compras', 'gv-l2-1', 'Conjunto de personas que participan en la decisión de compra organizacional.', 'proceso-compra'),
+  t('utd', 'Unidad de toma de decisiones (UTD)', 'gv-l2-1', 'Grupo de personas involucradas en la decisión de compra B2B.', 'centro-compras'),
+  t('demanda-derivada', 'Demanda derivada', 'gv-l2-1', 'Demanda de un producto que deriva de la demanda de otro (B2B).', 'proceso-compra'),
+  t('gerente-ventas', 'Gerente de ventas', 'gv-l3-1', 'Responsable de planificar, organizar, dirigir y controlar la fuerza de ventas.', 'fuerza-ventas'),
+  t('estimacion-mercado', 'Estimación de mercado', 'gv-l3-1', 'Cálculo del potencial de mercado y de ventas.', 'pronostico'),
+  t('pronostico', 'Pronóstico de ventas', 'gv-l4-1', 'Estimación de las ventas futuras basada en datos históricos y tendencias.', 'estimacion-mercado'),
+  t('potencial-mercado', 'Potencial de mercado', 'gv-l4-1', 'Ventas máximas posibles de un producto en un mercado.', 'pronostico'),
+  t('sim', 'Sistema de Información de Marketing (SIM)', 'gv-l4-1', 'Sistema que recopila, analiza y distribuye información para la toma de decisiones de marketing y ventas.', 'crm'),
+  t('planeacion-ventas', 'Planeación de ventas', 'gv-l4-1', 'Proceso de definir objetivos y estrategias de ventas.', 'pronostico'),
+  t('reclutamiento', 'Reclutamiento', 'gv-l5-1', 'Proceso de atraer candidatos para la fuerza de ventas.', 'seleccion'),
+  t('seleccion', 'Selección', 'gv-l5-1', 'Proceso de elegir a los mejores candidatos.', 'reclutamiento'),
+  t('capacitacion', 'Capacitación', 'gv-l5-1', 'Proceso de formar y desarrollar a los vendedores.', 'motivacion'),
+  t('motivacion', 'Motivación', 'gv-l5-1', 'Proceso de incentivar a los vendedores para alcanzar los objetivos.', 'compensacion'),
+  t('compensacion', 'Compensación', 'gv-l5-1', 'Sistema de remuneración de los vendedores (fijo + variable).', 'motivacion'),
+  t('evaluacion-desempeno', 'Evaluación del desempeño', 'gv-l5-1', 'Medición del rendimiento de los vendedores.', 'compensacion'),
+  t('prospeccion', 'Prospección', 'gv-l6-1', 'Búsqueda de clientes potenciales.', 'calificacion'),
+  t('calificacion', 'Calificación', 'gv-l6-1', 'Evaluación de si un prospecto es un cliente viable.', 'prospeccion'),
+  t('objecion', 'Objeción', 'gv-l6-1', 'Resistencia o duda del cliente durante la venta.', 'cierre'),
+  t('cierre', 'Cierre de la venta', 'gv-l6-1', 'Etapa final del proceso de venta donde se concreta la transacción.', 'objecion'),
+  t('crm', 'CRM (Customer Relationship Management)', 'gv-l7-1', 'Sistema de gestión de relaciones con clientes.', 'sim'),
+  t('erp-ventas', 'ERP en ventas', 'gv-l7-1', 'Sistema integrado que unifica los procesos de negocio, incluidas las ventas.', 'crm'),
+  t('rse', 'Responsabilidad Social Empresaria (RSE)', 'gv-l8-1', 'Compromiso de la empresa con la sociedad y el medio ambiente.', 'etica-ventas'),
+  t('etica-ventas', 'Ética en ventas', 'gv-l8-1', 'Conjunto de principios morales que guían el comportamiento de los vendedores.', 'rse', 'kohlberg'),
+  t('kohlberg', 'Desarrollo moral de Kohlberg', 'gv-l8-1', 'Teoría de las etapas del desarrollo moral.', 'etica-ventas'),
+]

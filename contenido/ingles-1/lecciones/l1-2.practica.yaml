@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Presente simple
+    dif: 1
+    enunciado: ¿Cómo se conjuga el verbo en la tercera persona del singular?
+    opciones:
+      - ["Se agrega -s, -es o -ies según la terminación", "Correcto."]
+      - [No se modifica, "Eso es para I/you/we/they."]
+      - [Se agrega -ing, "Eso es para el continuo."]
+      - [Se usa don't, "Eso es para la negativa."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Negación
+    dif: 1
+    enunciado: ¿Cómo se niega en presente simple con "he"?
+    opciones:
+      - [He doesn't + verbo base, "Correcto."]
+      - [He don't + verbo base, "don't se usa con I/you/we/they."]
+      - [He isn't + verbo base, "isn't se usa con to be."]
+      - [He not + verbo base, "Falta el auxiliar."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Interrogación
+    dif: 2
+    enunciado: ¿Cómo se pregunta en presente simple con "she"?
+    opciones:
+      - [Does she + verbo base?, "Correcto."]
+      - [Do she + verbo base?, "Do se usa con I/you/we/they."]
+      - [Is she + verbo base?, "Is se usa con to be."]
+      - [ She + verbo base?, "Falta el auxiliar."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Preferencias
+    dif: 2
+    enunciado: ¿Qué forma verbal sigue a verbos como like, enjoy, love o hate?
+    opciones:
+      - [La forma -ing, "Correcto: I like watching films."]
+      - [El infinitivo, "No: se usa -ing."]
+      - [El pasado, "No."]
+      - [ El gerundio sin cambios, "Se usa -ing."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Posesivos
+    dif: 3
+    enunciado: Explicá con tus palabras cómo se usan los adjetivos posesivos.
+    modelo: Los adjetivos posesivos indican pertenencia y varían según el poseedor (my, your, his, her, our, their), no según el objeto poseído.
+    criterios:
+      - Menciona que indican pertenencia
+      - Menciona que varían según el poseedor
+tarjetas:
+  - [¿Cómo se conjuga en 3ra persona singular?, "Se agrega -s, -es o -ies."]
+  - [Negación con he/she/it, "doesn't + verbo base."]
+  - [Interrogación con she, "Does she + verbo base?"]

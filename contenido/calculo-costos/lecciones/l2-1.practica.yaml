@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Elementos del costo
+    dif: 1
+    enunciado: ¿Cuáles son los elementos del costo de producción?
+    opciones:
+      - ["Materia prima directa, mano de obra directa y costos indirectos de fabricación", "Correcto."]
+      - [Solo materia prima, "Faltan MOD y CIF."]
+      - [ Solo mano de obra, "Faltan MPD y CIF."]
+      - [ Solo costos indirectos, "Faltan MPD y MOD."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Costo primo
+    dif: 2
+    enunciado: ¿Cómo se calcula el costo primo?
+    opciones:
+      - [Materia prima directa + mano de obra directa, "Correcto."]
+      - [Mano de obra directa + CIF, "Eso es costo de conversión."]
+      - [ MPD + MOD + CIF, "Eso es costo de producción."]
+      - [ Solo materia prima, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Costo de conversión
+    dif: 2
+    enunciado: ¿Cómo se calcula el costo de conversión?
+    opciones:
+      - [Mano de obra directa + costos indirectos de fabricación, "Correcto."]
+      - [Materia prima directa + mano de obra directa, "Eso es costo primo."]
+      - [ MPD + MOD + CIF, "Eso es costo de producción."]
+      - [ Solo CIF, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: CIF
+    dif: 1
+    enunciado: ¿Qué son los costos indirectos de fabricación (CIF)?
+    opciones:
+      - [Costos de producción no directamente trazables al producto, "Correcto."]
+      - [Materiales que forman parte del producto, "Eso es MPD."]
+      - [ Trabajo de los operarios directos, "Eso es MOD."]
+      - [ Costos de venta, "No."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Costo de producción
+    dif: 3
+    enunciado: Explicá con tus palabras cómo se obtiene el costo de producción.
+    modelo: El costo de producción se obtiene sumando el costo primo (MPD + MOD) con los costos indirectos de fabricación (CIF), es decir, MPD + MOD + CIF.
+    criterios:
+      - Menciona MPD, MOD y CIF
+      - Indica que se suman
+tarjetas:
+  - [¿Qué es el costo primo?, "MPD + MOD."]
+  - [¿Qué es el costo de conversión?, "MOD + CIF."]
+  - [¿Qué es el costo de producción?, "MPD + MOD + CIF."]

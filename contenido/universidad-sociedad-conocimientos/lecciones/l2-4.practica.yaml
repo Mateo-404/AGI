@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Ley Taiana
+    dif: 1
+    enunciado: ¿Qué restituyó la Ley Taiana (1974)?
+    opciones:
+      - ["Los principios reformistas: autonomía, autarquía, gratuidad y cogobierno tripartito", "Correcto."]
+      - [El arancelamiento universitario, "No."]
+      - [La privatización de las universidades, "No."]
+      - [Los exámenes de ingreso eliminatorios, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Dictadura
+    dif: 2
+    enunciado: ¿Qué porcentaje de las personas desaparecidas durante la dictadura eran estudiantes universitarios?
+    opciones:
+      - [El 21%, "Correcto."]
+      - [El 50%, "No."]
+      - [El 5%, "No."]
+      - [El 80%, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Vaciamiento
+    dif: 2
+    enunciado: ¿Cuáles fueron estrategias de vaciamiento universitario durante la dictadura?
+    opciones:
+      - ["Cesantías de docentes, cierre de carreras, arancelamiento y cupos", "Correcto."]
+      - [Ampliación de la gratuidad, "No: se aranceló."]
+      - [Creación de nuevas universidades públicas, "Eso fue en los 90."]
+      - [Restablecimiento del cogobierno, "No: se eliminó."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: Normalización
+    dif: 1
+    enunciado: ¿Qué restableció la normalización democrática a partir de 1983?
+    opciones:
+      - [El ingreso irrestricto y la gratuidad, "Correcto."]
+      - [El arancelamiento, "No: se derogó."]
+      - [La intervención militar, "No."]
+      - [Los cupos de ingreso, "No: se eliminaron."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 2
+  - tema: LES
+    dif: 3
+    enunciado: Explicá con tus palabras qué cambió la Ley de Educación Superior de 1995.
+    modelo: La LES de 1995 englobó universidades públicas, privadas e institutos no universitarios; creó la CONEAU para evaluar y acreditar carreras; habilitó el autofinanciamiento y garantizó la mayoría docente en los claustros.
+    criterios:
+      - Menciona la creación de la CONEAU
+      - Menciona el autofinanciamiento
+      - Menciona la mayoría docente
+tarjetas:
+  - [¿Qué fue la Ley Taiana?, "Ley de 1974 que restituyó los principios reformistas."]
+  - [¿Qué fue la normalización?, "Reconstrucción institucional tras el retorno a la democracia."]
+  - [¿Qué creó la LES de 1995?, "La CONEAU y el autofinanciamiento universitario."]

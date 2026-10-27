@@ -1,0 +1,42 @@
+preguntas:
+  - tema: RSE
+    dif: 1
+    enunciado: ¿Qué es la Responsabilidad Social Empresaria (RSE)?
+    opciones:
+      - [El compromiso de la empresa con la sociedad y el medio ambiente, "Correcto."]
+      - [ El lucro a toda costa, "No."]
+      - [ La evasión fiscal, "No."]
+      - [ La publicidad engañosa, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 8
+  - tema: Ética
+    dif: 1
+    enunciado: ¿Qué es la ética en ventas?
+    opciones:
+      - [El conjunto de principios morales que guían el comportamiento de los vendedores, "Correcto."]
+      - [ El precio, "No."]
+      - [ La publicidad, "No."]
+      - [ La distribución, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 8
+  - tema: Preocupaciones éticas
+    dif: 2
+    enunciado: ¿Cuáles son preocupaciones éticas en la gestión comercial?
+    opciones:
+      - ["Engaño, presión, conflicto de intereses y discriminación", "Correcto."]
+      - [ Solo el precio, "No."]
+      - [ Solo la publicidad, "No."]
+      - [ Solo la distribución, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 8
+  - tema: Decisión ética
+    dif: 3
+    enunciado: Explicá con tus palabras cómo decidir éticamente en ventas.
+    modelo: Decidir éticamente implica aplicar métodos de decisión ética y círculos de Melé, junto con liderazgo ético, códigos de conducta, capacitación y sistemas de control.
+    criterios:
+      - Menciona métodos de decisión ética
+      - Menciona buenas prácticas
+tarjetas:
+  - [¿Qué es la RSE?, "Compromiso de la empresa con la sociedad y el medio ambiente."]
+  - [¿Qué es la ética en ventas?, "Principios morales que guían el comportamiento de los vendedores."]
+  - [Preocupaciones éticas, "Engaño, presión, conflicto de intereses y discriminación."]

@@ -1,0 +1,53 @@
+preguntas:
+  - tema: Gestión del cambio
+    dif: 1
+    enunciado: ¿Por qué la gestión basada en procesos se considera un cambio cultural y no solo técnico?
+    opciones:
+      - [Porque deja de organizarse por áreas (silos) para organizarse por procesos transversales, "Correcto."]
+      - [Porque requiere comprar un ERP, "El cambio es cultural, no solo tecnológico."]
+      - [Porque elimina la jerarquía, "No elimina la jerarquía; cambia el foco de gestión."]
+      - [Porque es obligatorio por ISO 9001, "ISO 9001 es una herramienta, no el motivo cultural."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 4
+  - tema: Núcleo del cambio
+    dif: 2
+    enunciado: ¿Cuál de estas frases refleja el núcleo del cambio organizacional según el apunte?
+    opciones:
+      - [«El problema son los empleados», "Esa es la visión del enfoque organizacional, no del cambio."]
+      - [«El problema es el proceso», "Correcto: se pasa de culpar a las personas a mejorar el proceso."]
+      - [«Cambiar la persona», "El cambio es del proceso, no de la persona."]
+      - [«Corregir el error», "Se busca reducir el margen de error, no corregir el error aislado."]
+    correcta: 1
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 4
+  - tema: Estrategias
+    dif: 1
+    enunciado: ¿Cuáles son las estrategias clave para la transición hacia la gestión por procesos?
+    opciones:
+      - ["Liderazgo, comunicación, capacitación, gestión planificada y mejora continua", "Correcto."]
+      - [Compra de software y reducción de personal, "No son las estrategias del apunte."]
+      - [Auditoría externa y certificación, "Son actividades de verificación, no estrategias de transición."]
+      - [Reorganización del organigrama, "El cambio es de foco, no solo de organigrama."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 4
+  - tema: Factores de éxito
+    dif: 2
+    enunciado: ¿Qué factores de éxito menciona el apunte para la gestión por procesos?
+    opciones:
+      - ["Enfoque al cliente, compromiso de las personas, decisiones basadas en evidencia, gestión de riesgos, documentación y auditoría interna", "Correcto."]
+      - [Reducción de costos y automatización total, "No son los factores listados."]
+      - [Certificación ISO y eliminación de controles, "No: los controles se establecen donde sean necesarios."]
+      - [Velocidad de entrega y marketing, "No son los factores del apunte."]
+    correcta: 0
+    o: a Apuntes de Administración y diseño de procesos organizacionales · Unidad 4
+  - tema: Resultado esperado
+    dif: 3
+    enunciado: Explicá con tus palabras el resultado esperado de una organización que gestiona sus procesos como un sistema.
+    modelo: Una organización que gestiona sus procesos interrelacionados como un sistema logra eficacia y eficiencia en el logro de sus resultados previstos, con capacidad de adaptarse, innovar y mejorar continuamente.
+    criterios:
+      - Menciona la gestión de procesos como sistema
+      - Menciona eficacia y eficiencia
+      - Menciona adaptación, innovación o mejora continua
+tarjetas:
+  - [¿Por qué la gestión por procesos es un cambio cultural?, "Porque deja de organizarse por áreas (silos) para organizarse por procesos transversales."]
+  - [Núcleo del cambio, "Pasar de «el problema son los empleados» a «el problema es el proceso»."]
+  - [Factores de éxito, "Enfoque al cliente, compromiso, decisiones basadas en evidencia, gestión de riesgos, documentación y auditoría."]

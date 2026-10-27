@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Diseño de red
+    dif: 1
+    enunciado: ¿Cuáles son las fases del diseño de una red?
+    opciones:
+      - ["Análisis de requisitos, diseño lógico, diseño físico e implementación", "Correcto."]
+      - [ Solo análisis, "Faltan las demás."]
+      - [ Solo implementación, "Faltan las demás."]
+      - [ Solo diseño físico, "Faltan las demás."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 7
+  - tema: IoT
+    dif: 1
+    enunciado: ¿Qué es el IoT?
+    opciones:
+      - [La red de objetos físicos conectados a Internet, "Correcto."]
+      - [ Un sistema operativo, "No."]
+      - [ Un lenguaje de programación, "No."]
+      - [ Un tipo de cable, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 7
+  - tema: Tendencias
+    dif: 2
+    enunciado: ¿Cuáles son tendencias en redes?
+    opciones:
+      - ["SDN, virtualización, 5G y edge computing", "Correcto."]
+      - [ Solo cableado, "Faltan las demás."]
+      - [ Solo hubs, "Faltan las demás."]
+      - [ Solo switches, "Faltan las demás."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 7
+  - tema: Análisis
+    dif: 2
+    enunciado: ¿Qué es el análisis de solicitud de red?
+    opciones:
+      - [La recolección de requerimientos y restricciones para el diseño, "Correcto."]
+      - [ La instalación, "No."]
+      - [ La compra de equipos, "No."]
+      - [ El monitoreo, "No."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 7
+tarjetas:
+  - [¿Cuáles son las fases del diseño de red?, "Análisis, diseño lógico, diseño físico e implementación."]
+  - [¿Qué es el IoT?, "Red de objetos físicos conectados a Internet."]
+  - [¿Cuáles son tendencias en redes?, "SDN, virtualización, 5G y edge computing."]

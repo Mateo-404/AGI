@@ -1,5 +1,6 @@
 import type { Bloque, Origen, TipoCallout } from '@contenido/tipos'
 import { Tx, useImprimir } from './contexto'
+import { MateriaScope } from './contextoMateria'
 import { Asociar, Caso, Clasificar, Explorable } from './Interactivos'
 import { Icono } from './Icono'
 import type { NombreIcono } from './iconos'
@@ -28,11 +29,15 @@ const TITULOS: Record<TipoCallout, string> = {
   didactico: 'Explicación didáctica (no está en el cuaderno)',
 }
 
-export function Bloques({ bloques }: { bloques: Bloque[] }) {
-  return <>{bloques.map((b, i) => <BloqueView key={i} b={b} />)}</>
+export function Bloques({ bloques, materia }: { bloques: Bloque[]; materia?: string }) {
+  return <MateriaScope materia={materia}>{bloques.map((b, i) => <BloqueView key={i} b={b} />)}</MateriaScope>
 }
 
-export function BloqueView({ b }: { b: Bloque }) {
+export function BloqueView({ b, materia }: { b: Bloque; materia?: string }) {
+  return <MateriaScope materia={materia}><BloqueViewBase b={b} /></MateriaScope>
+}
+
+function BloqueViewBase({ b }: { b: Bloque }) {
   const imprimir = useImprimir()
   switch (b.t) {
     case 'p':

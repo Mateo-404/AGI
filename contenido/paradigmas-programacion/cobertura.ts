@@ -1,0 +1,28 @@
+import type { FilaCobertura } from '../tipos'
+
+export const cobertura: FilaCobertura[] = [
+  { unidad: 1, tema: 'Paradigma de programación', estado: 'CD', lecciones: ['pp-l1-1'] },
+  { unidad: 1, tema: 'Design Thinking (características, fases, aplicaciones)', estado: 'CD', lecciones: ['pp-l1-1'] },
+  { unidad: 1, tema: 'Sinergia entre Design Thinking y Pensamiento Computacional', estado: 'CD', lecciones: ['pp-l1-2'] },
+  { unidad: 2, tema: 'Software: concepto y características', estado: 'CD', lecciones: ['pp-l2-1'] },
+  { unidad: 2, tema: 'Ingeniería de Software y sus capas', estado: 'CD', lecciones: ['pp-l2-1'] },
+  { unidad: 2, tema: 'Sistema de información', estado: 'CD', lecciones: ['pp-l2-1'] },
+  { unidad: 2, tema: 'Desarrollo de software y las 4 P', estado: 'CD', lecciones: ['pp-l2-1'] },
+  { unidad: 2, tema: 'Actividades del desarrollo de software', estado: 'CD', lecciones: ['pp-l2-1'] },
+  { unidad: 2, tema: 'Requerimientos: definición, gestión e ingeniería', estado: 'CD', lecciones: ['pp-l3-1'] },
+  { unidad: 2, tema: 'Clasificación de requerimientos', estado: 'CD', lecciones: ['pp-l3-1'] },
+  { unidad: 2, tema: 'Niveles de descripción de un requerimiento', estado: 'CD', lecciones: ['pp-l3-1'] },
+  { unidad: 2, tema: 'Características de un buen requerimiento', estado: 'CD', lecciones: ['pp-l3-1'] },
+  { unidad: 2, tema: 'Técnicas de recopilación de requerimientos', estado: 'CD', lecciones: ['pp-l3-1'] },
+  { unidad: 3, tema: 'Paradigmas imperativo y declarativo', estado: 'CD', lecciones: ['pp-l4-1'] },
+  { unidad: 3, tema: 'Paradigma estructurado', estado: 'CD', lecciones: ['pp-l4-1'] },
+  { unidad: 3, tema: 'Paradigma orientado a objetos (POO)', estado: 'CD', lecciones: ['pp-l4-1'] },
+  { unidad: 3, tema: 'Paradigmas funcional, lógico y reactivo', estado: 'CD', lecciones: ['pp-l4-1'] },
+  { unidad: 4, tema: 'Implementación y código limpio', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Verificación y validación', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Niveles de prueba', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Tipos de prueba por caja', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Técnicas de casos', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Despliegue y mantenimiento', estado: 'CD', lecciones: ['pp-l4-2'] },
+  { unidad: 4, tema: 'Modelos de ciclo de vida', estado: 'CD', lecciones: ['pp-l4-2'] },
+]

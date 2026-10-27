@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Venta personal
+    dif: 1
+    enunciado: ¿Qué es la venta personal?
+    opciones:
+      - [La comunicación interpersonal directa entre vendedor y cliente, "Correcto."]
+      - [ La venta por catálogo, "No."]
+      - [ La venta online, "No."]
+      - [ La venta mayorista, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 6
+  - tema: Siete pasos
+    dif: 2
+    enunciado: ¿Cuáles son los siete pasos de la venta personal?
+    opciones:
+      - ["Prospección, pre-approach, approach, presentación, objeciones, cierre y seguimiento", "Correcto."]
+      - [ Solo prospección y cierre, "Faltan los demás."]
+      - [ Solo presentación, "Faltan los demás."]
+      - [ Solo seguimiento, "Faltan los demás."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 6
+  - tema: Objeciones
+    dif: 2
+    enunciado: ¿Qué son las objeciones en la venta?
+    opciones:
+      - [Resistencias o dudas del cliente, "Correcto."]
+      - [ El precio, "No necesariamente."]
+      - [ El producto, "No."]
+      - [ El vendedor, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 6
+  - tema: Cierre
+    dif: 1
+    enunciado: ¿Qué es el cierre de la venta?
+    opciones:
+      - [La etapa final donde se concreta la transacción, "Correcto."]
+      - [ El inicio, "No."]
+      - [ La presentación, "No."]
+      - [ El seguimiento, "No."]
+    correcta: 0
+    o: a Apuntes de Gestión de Ventas · Unidad 6
+tarjetas:
+  - [¿Qué es la venta personal?, "Comunicación interpersonal directa entre vendedor y cliente."]
+  - [¿Cuáles son los 7 pasos?, "Prospección, pre-approach, approach, presentación, objeciones, cierre y seguimiento."]
+  - [¿Qué son las objeciones?, "Resistencias o dudas del cliente."]

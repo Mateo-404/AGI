@@ -1,0 +1,45 @@
+preguntas:
+  - tema: Costo fijo
+    dif: 1
+    enunciado: ¿Qué es un costo fijo?
+    opciones:
+      - [Un costo que no varía con el volumen de producción en el corto plazo, "Correcto."]
+      - [Un costo que varía proporcionalmente con el volumen, "Eso es variable."]
+      - [ Un costo trazable directamente, "Eso es directo."]
+      - [ Un costo que se distribuye, "Eso es indirecto."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Costo variable
+    dif: 1
+    enunciado: ¿Qué es un costo variable?
+    opciones:
+      - [Un costo que varía proporcionalmente con el volumen de producción, "Correcto."]
+      - [Un costo que no varía con el volumen, "Eso es fijo."]
+      - [ Un costo trazable directamente, "Eso es directo."]
+      - [ Un costo que se distribuye, "Eso es indirecto."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Costo directo
+    dif: 2
+    enunciado: ¿Cuál es la diferencia entre costo directo e indirecto?
+    opciones:
+      - [El directo es trazable al producto; el indirecto se distribuye por criterios, "Correcto."]
+      - [Son lo mismo, "No."]
+      - [ El directo es fijo y el indirecto variable, "No necesariamente."]
+      - [ El indirecto es trazable, "Es al revés."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+  - tema: Rubros
+    dif: 2
+    enunciado: ¿Cuál es el orden de los rubros del precio de venta?
+    opciones:
+      - ["Costo primo, costo de conversión, costo de producción, costo de venta, costo total", "Correcto."]
+      - ["Costo total, costo de venta, costo de producción, costo de conversión, costo primo", "Es al revés."]
+      - [ Solo costo de producción, "Faltan los demás."]
+      - [ Solo costo total, "Faltan los demás."]
+    correcta: 0
+    o: a Apuntes de Cálculo de costos y rendimientos · Unidad 2
+tarjetas:
+  - [¿Qué es un costo fijo?, "Costo que no varía con el volumen de producción."]
+  - [¿Qué es un costo variable?, "Costo que varía proporcionalmente con el volumen."]
+  - [¿Qué es un costo directo?, "Costo trazable directamente a un producto."]

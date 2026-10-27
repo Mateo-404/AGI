@@ -1,0 +1,52 @@
+preguntas:
+  - tema: Vías del conocimiento
+    dif: 1
+    enunciado: ¿Cuáles son algunas vías del conocimiento humano mencionadas en el apunte?
+    opciones:
+      - ["Experiencia, intuición, razón, autoridad y tradición científica", "Correcto."]
+      - [Solo la experiencia, "Hay más vías."]
+      - [Solo la autoridad, "Hay más vías."]
+      - [Solo la razón, "Hay más vías."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Inducción
+    dif: 2
+    enunciado: ¿Qué es la inducción?
+    opciones:
+      - [El razonamiento que va de lo particular a lo general, "Correcto."]
+      - [El razonamiento que va de lo general a lo particular, "Eso es deducción."]
+      - [La conjetura de la hipótesis más probable, "Eso es abducción."]
+      - [La descomposición en partes, "Eso es análisis."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Deducción
+    dif: 2
+    enunciado: ¿Qué es la deducción?
+    opciones:
+      - [El razonamiento que va de lo general a lo particular, "Correcto."]
+      - [El razonamiento que va de lo particular a lo general, "Eso es inducción."]
+      - [La conjetura de la hipótesis más probable, "Eso es abducción."]
+      - [La recomposición en un todo, "Eso es síntesis."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Funciones de la ciencia
+    dif: 1
+    enunciado: ¿Cuáles son las tres funciones de la ciencia?
+    opciones:
+      - ["Describir, explicar y predecir", "Correcto."]
+      - ["Observar, medir y pesar", "No son las funciones del apunte."]
+      - ["Crear, destruir y transformar", "No."]
+      - ["Leer, escribir y calcular", "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 3
+  - tema: Proyecto de investigación
+    dif: 3
+    enunciado: Explicá con tus palabras los 7 elementos del proyecto de investigación según Marradi et al.
+    modelo: "Los 7 elementos son: tema y fundamentación, antecedentes y marco teórico, objetivos, hipótesis, actividades y metodología, factibilidad y presupuesto, y bibliografía."
+    criterios:
+      - Menciona al menos cuatro elementos
+      - Los presenta como partes de un proyecto de investigación
+tarjetas:
+  - [¿Qué es la inducción?, "Razonamiento de lo particular a lo general."]
+  - [¿Qué es la deducción?, "Razonamiento de lo general a lo particular."]
+  - [Funciones de la ciencia, "Describir, explicar y predecir."]

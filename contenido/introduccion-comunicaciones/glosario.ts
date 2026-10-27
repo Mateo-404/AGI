@@ -1,0 +1,38 @@
+import type { TerminoGlosario } from '../tipos'
+
+const t = (id: string, termino: string, lec: string, def: string, ...rel: string[]): TerminoGlosario => ({ id, termino, def, lec, rel: rel.length ? rel : undefined })
+
+export const glosario: TerminoGlosario[] = [
+  t('informacion', 'Información', 'ic-l1-1', 'Datos procesados con significado y contexto.', 'dato', 'simbodo'),
+  t('dato', 'Dato', 'ic-l1-1', 'Representación de un hecho o valor, sin procesar.', 'informacion'),
+  t('simbodo', 'Símbodo', 'ic-l1-1', 'Unidad mínima de información con significado.', 'informacion'),
+  t('shannon', 'Teoría de la información (Shannon)', 'ic-l1-1', 'Marco matemático para cuantificar la información y la capacidad de un canal.', 'entropia'),
+  t('entropia', 'Entropía', 'ic-l1-1', 'Medida de la incertidumbre o información promedio de una fuente.', 'shannon'),
+  t('senial-analogica', 'Señal analógica', 'ic-l1-1', 'Señal continua en el tiempo y en amplitud.', 'senial-digital'),
+  t('senial-digital', 'Señal digital', 'ic-l1-1', 'Señal discreta en el tiempo y en amplitud (bits).', 'senial-analogica'),
+  t('red-datos', 'Red de datos', 'ic-l2-1', 'Conjunto de dispositivos interconectados que comparten recursos e información.', 'cliente-servidor', 'p2p'),
+  t('cliente-servidor', 'Arquitectura cliente-servidor', 'ic-l2-1', 'Modelo en el que los clientes solicitan servicios a un servidor central.', 'p2p', 'red-datos'),
+  t('p2p', 'Peer-to-peer (P2P)', 'ic-l2-1', 'Modelo en el que todos los nodos son iguales y comparten recursos entre sí.', 'cliente-servidor'),
+  t('osi', 'Modelo OSI', 'ic-l3-1', 'Modelo de referencia de 7 capas para la comunicación en redes.', 'tcp-ip', 'encapsulamiento'),
+  t('encapsulamiento', 'Encapsulamiento', 'ic-l3-1', 'Proceso de agregar encabezados (y trailers) a los datos al descender por las capas.', 'osi'),
+  t('ethernet', 'Ethernet', 'ic-l4-1', 'Estándar de red de área local (IEEE 802.3) que define el formato de trama y el acceso al medio.', 'csma-cd', 'mac'),
+  t('csma-cd', 'CSMA/CD', 'ic-l4-1', 'Protocolo de acceso al medio por detección de portadora y detección de colisiones.', 'ethernet'),
+  t('mac', 'Dirección MAC', 'ic-l4-1', 'Dirección física de 48 bits asignada a la interfaz de red.', 'ethernet', 'ip'),
+  t('topologia', 'Topología de red', 'ic-l5-1', 'Forma en que se conectan los dispositivos en una red.', 'lan'),
+  t('lan', 'LAN (Local Area Network)', 'ic-l5-1', 'Red de área local que cubre un espacio reducido.'),
+  t('cableado-estructurado', 'Cableado estructurado', 'ic-l5-1', 'Sistema de cableado organizado por estándares (TIA/EIA) para redes.', 'ethernet'),
+  t('wifi', 'Wi-Fi (IEEE 802.11)', 'ic-l5-1', 'Estándar de red inalámbrica de área local.', 'lan'),
+  t('tcp-ip', 'Modelo TCP/IP', 'ic-l6-1', 'Modelo de 4 capas (acceso a la red, interred, transporte, aplicación) usado en Internet.', 'osi', 'ip'),
+  t('ip', 'Protocolo IP', 'ic-l6-1', 'Protocolo de la capa de interred que direcciona y enruta paquetes.', 'tcp-ip', 'mac'),
+  t('subnetting', 'Subnetting / CIDR', 'ic-l6-1', 'División de una red en subredes y notación de prefijo de red.', 'ip'),
+  t('tcp', 'TCP (Transmission Control Protocol)', 'ic-l6-1', 'Protocolo de transporte confiable y orientado a conexión.', 'udp'),
+  t('udp', 'UDP (User Datagram Protocol)', 'ic-l6-1', 'Protocolo de transporte no confiable y sin conexión.', 'tcp'),
+  t('arp', 'ARP (Address Resolution Protocol)', 'ic-l6-1', 'Protocolo que resuelve direcciones IP a direcciones MAC.', 'ip', 'mac'),
+  t('icmp', 'ICMP', 'ic-l6-1', 'Protocolo de control de mensajes de Internet, usado en diagnóstico (ping).', 'ip'),
+  t('diseno-red', 'Diseño de red', 'ic-l7-1', 'Proceso de planificación e implementación de una red.', 'iot'),
+  t('iot', 'Internet of Things (IoT)', 'ic-l7-1', 'Red de objetos físicos conectados a Internet.', 'diseno-red'),
+  t('seguridad-fisica', 'Seguridad física', 'ic-l8-1', 'Protección de los equipos y las instalaciones de red.', 'seguridad-logica'),
+  t('seguridad-logica', 'Seguridad lógica', 'ic-l8-1', 'Protección de datos y sistemas mediante controles de acceso, cifrado y políticas.', 'seguridad-fisica', 'cifrado'),
+  t('cifrado', 'Cifrado', 'ic-l8-1', 'Proceso de convertir información en un formato ilegible sin la clave.', 'seguridad-logica'),
+  t('malware', 'Malware', 'ic-l8-1', 'Software malicioso que daña o accede sin autorización a sistemas.', 'seguridad-logica'),
+]

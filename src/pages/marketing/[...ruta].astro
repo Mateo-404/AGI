@@ -1,26 +1,10 @@
 ---
-import Base from '../../layouts/Base.astro'
-import { Shell } from '../../componentes/Shell'
-import LeccionEstatica from '../../componentes/LeccionEstatica.astro'
-import { rutasCurso } from '../../logica/rutas'
-import { lecciones, unidades } from '@contenido/marketing/indice'
-import { diagramasListos } from '../../logica/diagramas-build'
+import CursoMateria from '../../componentes/CursoMateria.astro'
+import { paginasDe } from '../../logica/rutas'
 
 /** Una página HTML real por cada ruta del curso: /AGI/marketing, /AGI/marketing/leccion/l2-1, etc. */
-export function getStaticPaths() {
-  return rutasCurso().map((r) => ({ params: { ruta: r || undefined }, props: { sub: r ? r.split('/') : [] } }))
-}
+export const getStaticPaths = () => paginasDe('marketing')
 
 const { sub } = Astro.props as { sub: string[] }
-await diagramasListos()
-const [a, b] = sub
-const leccion = a === 'leccion' || (a === 'practica' && b === 'leccion') ? lecciones.find((l) => l.id === (a === 'leccion' ? b : sub[2])) : undefined
-const unidad = a === 'unidad' ? unidades.find((u) => u.n === Number(b)) : undefined
-const titulo = leccion ? `${leccion.titulo} · Marketing Digital` : unidad ? `Unidad ${unidad.n} · Marketing Digital` : 'Marketing Digital · UNRaf 2026'
-const descripcion = leccion ? leccion.resumen : 'Curso interactivo de Marketing Digital (UNRaf 2026) basado en el cuaderno de cátedra.'
 ---
-<Base titulo={titulo} descripcion={descripcion}>
-  <Shell client:load sub={sub} enCurso={true}>
-    {a === 'leccion' && leccion && <LeccionEstatica l={leccion} />}
-  </Shell>
-</Base>
+<CursoMateria materia="marketing" sub={sub} />

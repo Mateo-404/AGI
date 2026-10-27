@@ -1,0 +1,55 @@
+preguntas:
+  - tema: SUA
+    dif: 1
+    enunciado: ¿Qué es el Sistema Universitario Argentino (SUA)?
+    opciones:
+      - [Una red institucional que coordina la actividad universitaria en todo el territorio nacional, "Correcto."]
+      - [Un ministerio del gobierno nacional, "No: es una red de instituciones."]
+      - [Una sola universidad, "El SUA articula muchas instituciones."]
+      - [Un programa de becas, "No: es el sistema universitario."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Universidad pública
+    dif: 1
+    enunciado: ¿Cuáles son los rasgos de la universidad pública argentina?
+    opciones:
+      - ["Gratuita, laica, autónoma, con cogobierno y financiada por el Estado", "Correcto."]
+      - ["Privada, arancelada y con fines de lucro", "Es lo opuesto."]
+      - [Solo de posgrado, "No: incluye carreras de grado."]
+      - [Dependiente del poder ejecutivo, "La autonomía la separa del poder político."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Autonomía
+    dif: 2
+    enunciado: ¿Qué implica la autonomía universitaria?
+    opciones:
+      - ["Dictar sus propios estatutos, elegir autoridades y administrar recursos sin injerencia directa del poder político", "Correcto."]
+      - [Depender del Ministerio de Educación, "La autonomía evita la injerencia directa."]
+      - [Cobrar aranceles, "La gratuidad es un rasgo de la universidad pública."]
+      - [Elegir al presidente de la nación, "No corresponde a la universidad."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: Cogobierno
+    dif: 2
+    enunciado: ¿Qué es el cogobierno universitario?
+    opciones:
+      - ["Un modelo donde las decisiones se comparten entre docentes, estudiantes, graduados y no docentes", "Correcto."]
+      - [El gobierno de una sola autoridad, "Eso es autoritarismo, no cogobierno."]
+      - [Un sistema de becas, "No: es un modelo de gestión."]
+      - [La autonomía individual del rector, "El cogobierno es compartido."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+  - tema: UNRaf
+    dif: 1
+    enunciado: ¿Cuándo fue creada la UNRaf y por qué ley?
+    opciones:
+      - [En 2014 por la Ley N° 27.062, "Correcto."]
+      - [En 1918 por la Reforma Universitaria, "No: la UNRaf es mucho más reciente."]
+      - [En 1885 por la Ley Avellaneda, "No corresponde a la UNRaf."]
+      - [En 1955 por la Revolución Libertadora, "No."]
+    correcta: 0
+    o: a Apuntes de Universidad, sociedad y conocimientos · Unidad 1
+tarjetas:
+  - [¿Qué es el SUA?, "Red institucional que articula la actividad universitaria en todo el territorio nacional."]
+  - [¿Cuáles son los rasgos de la universidad pública argentina?, "Gratuita, laica, autónoma, con cogobierno y financiada por el Estado."]
+  - [¿Cuándo se creó la UNRaf?, "En 2014, por la Ley N° 27.062."]
