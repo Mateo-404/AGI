@@ -1,9 +1,55 @@
 import { ruta } from '@/logica/rutas'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+
+type Materia = { nombre: string; slug: string | null; apuntes: boolean }
+
+const CUATRIMESTRES: { n: number; titulo: string; materias: Materia[] }[] = [
+  { n: 1, titulo: '1.º cuatrimestre', materias: [
+    { nombre: 'Administración de capital humano', slug: 'administracion-capital-humano', apuntes: true },
+    { nombre: 'Administración y diseño de procesos organizacionales', slug: 'administracion-procesos', apuntes: true },
+    { nombre: 'Introducción a las comunicaciones', slug: 'introduccion-comunicaciones', apuntes: true },
+    { nombre: 'Paradigmas de Programación', slug: 'paradigmas-programacion', apuntes: true },
+    { nombre: 'Inglés I', slug: 'ingles-1', apuntes: true },
+  ]},
+  { n: 2, titulo: '2.º cuatrimestre', materias: [
+    { nombre: 'Universidad, sociedad y conocimientos', slug: 'universidad-sociedad-conocimientos', apuntes: true },
+    { nombre: 'Marketing digital', slug: 'marketing', apuntes: false },
+    { nombre: 'Cálculo de Costos y Rendimiento', slug: 'calculo-costos', apuntes: true },
+    { nombre: 'Ingeniería de Software', slug: 'ingenieria-software', apuntes: true },
+    { nombre: 'Gestión de Ventas', slug: 'gestion-ventas', apuntes: true },
+  ]},
+  { n: 3, titulo: '3.º cuatrimestre', materias: [
+    { nombre: 'Control de Gestión', slug: null, apuntes: false },
+    { nombre: 'Introducción a la Optimización', slug: null, apuntes: false },
+    { nombre: 'Introducción a la Gestión de Datos', slug: null, apuntes: false },
+    { nombre: 'Gestión de Operaciones', slug: null, apuntes: false },
+  ]},
+  { n: 4, titulo: '4.º cuatrimestre', materias: [
+    { nombre: 'Gestión Estratégica', slug: null, apuntes: false },
+    { nombre: 'Financiamiento e Inversión', slug: null, apuntes: false },
+    { nombre: 'Gestión y Administración de las Tecnologías', slug: null, apuntes: false },
+    { nombre: 'Inglés II', slug: null, apuntes: false },
+  ]},
+  { n: 5, titulo: '5.º cuatrimestre', materias: [
+    { nombre: 'Unidad Curricular Electiva', slug: null, apuntes: false },
+    { nombre: 'Aprendizaje Automático y Minería de Datos', slug: null, apuntes: false },
+    { nombre: 'Prospectiva Tecnológica', slug: null, apuntes: false },
+    { nombre: 'Trabajo Final de Grado', slug: null, apuntes: false },
+  ]},
+]
+
+const CLAVE_MATERIAS = 'agi:materias-estudiadas:v1'
 
 /** Portada del proyecto. Usa la identidad visual de UNRaf como referencia; no es un sitio oficial. */
 export function AgiInicio() {
   useEffect(() => { document.title = 'Somos #AGI · Proyecto personal' }, [])
+  const [estudiadas, setEstudiadas] = useState<Record<string, boolean>>(() => {
+    try { if (typeof localStorage === 'undefined') return {}; return JSON.parse(localStorage.getItem(CLAVE_MATERIAS) || '{}') } catch { return {} }
+  })
+  useEffect(() => {
+    try { if (typeof localStorage !== 'undefined') localStorage.setItem(CLAVE_MATERIAS, JSON.stringify(estudiadas)) } catch {}
+  }, [estudiadas])
+  const toggle = (nombre: string) => setEstudiadas((e) => ({ ...e, [nombre]: !e[nombre] }))
   return (
     <div className="agi">
       <header className="agi-cab">
@@ -15,20 +61,25 @@ export function AgiInicio() {
 
       <section className="agi-sec" aria-labelledby="materias">
         <h2 id="materias">Materias</h2>
-        <p>Hoy hay un curso interactivo publicado: Marketing Digital. El resto del plan figura abajo para ubicarlo; todavía no tienen contenido en este proyecto.</p>
-        <ul className="agi-materias">
-          <li><a className="agi-materia activa" href={ruta('marketing/')}><b>Marketing Digital</b><span>Curso interactivo · 30 lecciones · práctica, glosario y tarjetas</span></a></li>
-        </ul>
-        <details className="agi-plan">
-          <summary>Plan de estudios del CCC (por cuatrimestre)</summary>
-          <ol>
-            <li><b>1.º cuatrimestre:</b> Administración de capital humano · Administración y diseño de procesos organizacionales · Introducción a las Comunicaciones · Paradigmas de Programación · Inglés I</li>
-            <li><b>2.º cuatrimestre:</b> Universidad, sociedad y conocimientos · <a href={ruta('marketing/')}>Marketing digital</a> · Cálculo de Costos y Rendimiento · Ingeniería de Software · Gestión de Ventas</li>
-            <li><b>3.º cuatrimestre:</b> Control de Gestión · Introducción a la Optimización · Introducción a la Gestión de Datos · Gestión de Operaciones</li>
-            <li><b>4.º cuatrimestre:</b> Gestión Estratégica · Financiamiento e Inversión · Gestión y Administración de las Tecnologías · Inglés II</li>
-            <li><b>5.º cuatrimestre:</b> Unidad Curricular Electiva · Aprendizaje Automático y Minería de Datos · Prospectiva Tecnológica · Trabajo Final de Grado</li>
-          </ol>
-        </details>
+        <p>Marcá las materias que ya estudiaste (aunque sea fuera de este sitio): quedan tachadas. Las que tienen apuntes enlazan al material disponible.</p>
+        {CUATRIMESTRES.map((c) => (
+          <div key={c.n} style={{ marginBottom: 16 }}>
+            <h3 style={{ marginBottom: 6 }}>{c.titulo}</h3>
+            <ul className="agi-materias" style={{ listStyle: 'none', padding: 0 }}>
+              {c.materias.map((m) => {
+                const est = !!estudiadas[m.nombre]
+                const href = m.nombre === 'Marketing digital' ? ruta('marketing/') : (m.apuntes && m.slug ? `https://github.com/Mateo-404/AGI/tree/main/apuntes/${m.slug}` : null)
+                return (
+                  <li key={m.nombre} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '4px 0', textDecoration: est ? 'line-through' : 'none', opacity: est ? 0.6 : 1 }}>
+                    <input type="checkbox" checked={est} onChange={() => toggle(m.nombre)} aria-label={`Marcar ${m.nombre} como estudiada`} />
+                    {href ? <a href={href} target={m.slug === 'marketing' ? undefined : '_blank'} rel="noreferrer"><b>{m.nombre}</b></a> : <b>{m.nombre}</b>}
+                    {m.apuntes && m.slug !== 'marketing' && <span className="meta" style={{ fontSize: 12 }}>· apuntes</span>}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        ))}
       </section>
 
       <section className="agi-sec" aria-labelledby="perfil">
