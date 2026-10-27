@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Cuál de estos es uno de los 4 valores del Manifiesto Ágil?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Individuos e interacciones sobre procesos y herramientas'
+    - 'Correcto: junto con software funcionando, colaboración con el cliente y respuesta al cambio.'
+  - - 'Documentación exhaustiva sobre software funcionando'
+    - 'No: está invertido.'
+  - - 'Negociación contractual sobre colaboración con el cliente'
+    - 'No: está invertido.'
+  - - 'Seguimiento de un plan sobre respuesta al cambio'
+    - 'No: está invertido.'
+  tema: Manifiesto Ágil
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuál es la responsabilidad del Product Owner?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Maximizar el valor del producto y ser dueño del Product Backlog'
+    - 'Correcto: decide qué y por qué.'
+  - - 'Facilitar los eventos de Scrum y eliminar impedimentos'
+    - 'No: eso es el Scrum Master.'
+  - - 'Escribir todo el código del incremento'
+    - 'No: eso es el equipo de desarrollo.'
+  - - 'Probar el incremento en producción'
+    - 'No.'
+  tema: Scrum
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuál es el rol del Scrum Master?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Servant leader: facilita, elimina impedimentos y protege al equipo'
+    - 'Correcto.'
+  - - 'Decidir el orden del Product Backlog'
+    - 'No: eso es del Product Owner.'
+  - - 'Ser el jefe que asigna las tareas'
+    - 'No: el equipo es autoorganizado.'
+  - - 'Controlar al equipo con métricas de productividad'
+    - 'No.'
+  tema: Scrum
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuánto dura como máximo el Daily Scrum?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - '15 minutos'
+    - 'Correcto: qué hice, qué haré, impedimentos.'
+  - - '1 hora'
+    - 'No.'
+  - - '4 horas'
+    - 'No: esa es la duración máxima de la Sprint Review.'
+  - - 'No tiene límite'
+    - 'No.'
+  tema: Scrum
+- correcta: 0
+  dif: 3
+  enunciado: 'Qué es la Definition of Done?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'La lista de criterios que un ítem debe cumplir para considerarse terminado'
+    - 'Correcto: código revisado, tests, integrado, deployable, aceptado por PO.'
+  - - 'La fecha límite del proyecto'
+    - 'No.'
+  - - 'El documento de arquitectura'
+    - 'No.'
+  - - 'El presupuesto del sprint'
+    - 'No.'
+  tema: Scrum
+- dif: 3
+  enunciado: 'Qué es el Incremento en Scrum y qué condiciones debe cumplir?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  modelo: 'Es la suma de los ítems del Sprint Backlog completados más los incrementos anteriores; debe ser usable y cumplir la Definition of Done.'
+  criterios:
+  - 'Menciona la suma de ítems completados del Sprint (más incrementos anteriores)'
+  - 'Menciona que debe ser usable y/o cumplir la DoD'
+  tema: Scrum
+tarjetas:
+- - 'Cuáles son los 4 valores del Manifiesto Ágil?'
+  - 'Individuos e interacciones, software funcionando, colaboración con el cliente y respuesta al cambio (por encima de procesos, documentación, contratos y planes).'
+- - 'Cuáles son los 3 roles de Scrum?'
+  - 'Product Owner (maximiza valor, dueño del backlog), Scrum Master (facilita, servant leader) y equipo de desarrollo (autoorganizado).'
+- - 'Cuáles son los eventos de Scrum?'
+  - 'Sprint, Sprint Planning, Daily Scrum, Sprint Review y Sprint Retrospective.'
+- - 'Qué es la Definition of Done?'
+  - 'La lista de criterios que un ítem debe cumplir para considerarse terminado (código revisado, tests, integrado, deployable, aceptado).'

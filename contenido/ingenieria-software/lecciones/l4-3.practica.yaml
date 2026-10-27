@@ -1,0 +1,92 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Un bug de login se corrige después de la entrega. Qué tipo de mantenimiento es?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Correctivo'
+    - 'Correcto: corrección de defectos detectados.'
+  - - 'Adaptativo'
+    - 'No: ese responde a cambios del entorno.'
+  - - 'Perfectivo'
+    - 'No: ese agrega mejoras.'
+  - - 'Preventivo'
+    - 'No: ese reduce la degradación futura.'
+  tema: Mantenimiento
+- correcta: 0
+  dif: 2
+  enunciado: 'El equipo agrega la exportación a PDF que pidieron los usuarios. Qué tipo de mantenimiento es?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Perfectivo'
+    - 'Correcto: mejoras y nuevas funcionalidades (la parte más grande del mantenimiento).'
+  - - 'Correctivo'
+    - 'No: no es un defecto.'
+  - - 'Adaptativo'
+    - 'No: el entorno no cambió.'
+  - - 'Preventivo'
+    - 'No.'
+  tema: Mantenimiento
+- correcta: 0
+  dif: 2
+  enunciado: 'Hay que actualizar el sistema por una nueva ley de protección de datos. Qué tipo de mantenimiento es?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Adaptativo'
+    - 'Correcto: adaptación a cambios del entorno (SO, HW, regulaciones).'
+  - - 'Correctivo'
+    - 'No: no hay defecto.'
+  - - 'Perfectivo'
+    - 'No: no es una mejora pedida.'
+  - - 'Preventivo'
+    - 'No.'
+  tema: Mantenimiento
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué regla de oro hay que cumplir antes de desplegar a producción?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Tener un rollback plan probado'
+    - 'Correcto.'
+  - - 'Borrar los logs del servidor'
+    - 'No.'
+  - - 'Desactivar el monitoreo'
+    - 'No: al contrario, hay que monitorear (hypercare).'
+  - - 'Desplegar un viernes a la tarde'
+    - 'No: es una práctica riesgosa.'
+  tema: Despliegue
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuándo conviene el modelo en cascada (waterfall)?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Cuando los requisitos son estables, conocidos y regulados'
+    - 'Correcto.'
+  - - 'Cuando los requisitos cambian mucho'
+    - 'No: para eso conviene ágil.'
+  - - 'En proyectos con alto riesgo e innovación'
+    - 'No: para eso conviene el espiral.'
+  - - 'Cuando el tiempo al mercado es crítico'
+    - 'No: para eso conviene el evolutivo/incremental.'
+  tema: Modelos de ciclo de vida
+- correcta: 0
+  dif: 3
+  enunciado: 'Qué distingue al modelo espiral del modelo iterativo?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Agrega análisis de riesgos en cada ciclo'
+    - 'Correcto: cada vuelta evalúa y reduce riesgos.'
+  - - 'No tiene iteraciones'
+    - 'No: itera por definición.'
+  - - 'Entrega todo al final'
+    - 'No: eso es cascada.'
+  - - 'Los requisitos nunca cambian'
+    - 'No.'
+  tema: Modelos de ciclo de vida
+tarjetas:
+- - 'Cuáles son los 4 tipos de mantenimiento?'
+  - 'Correctivo (defectos), adaptativo (entorno), perfectivo (mejoras) y preventivo (degradación futura).'
+- - 'Qué es el rollback plan?'
+  - 'El plan para volver al estado anterior si el despliegue falla; debe estar probado antes de desplegar.'
+- - 'Qué modelo de ciclo de vida conviene con requisitos cambiantes?'
+  - 'Ágil (Scrum, Kanban, XP): ciclos cortos y adaptación continua.'

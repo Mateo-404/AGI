@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Qué pregunta responde la verificación?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - '"¿Construimos el producto correctamente?" (cumple la especificación)'
+    - 'Correcto.'
+  - - '"¿Construimos el producto correcto?" (satisface la necesidad)'
+    - 'No: esa es la validación.'
+  - - '"¿Cuánto costó el producto?"'
+    - 'No.'
+  - - '"¿Cuándo se entrega el producto?"'
+    - 'No.'
+  tema: Verificación y validación
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué pregunta responde la validación?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - '"¿Construimos el producto correcto?" (satisface la necesidad real del usuario)'
+    - 'Correcto.'
+  - - '"¿Construimos el producto correctamente?"'
+    - 'No: esa es la verificación.'
+  - - '"¿El código compila?"'
+    - 'No.'
+  - - '"¿Pasó el linting?"'
+    - 'No.'
+  tema: Verificación y validación
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuál es el orden correcto de los niveles de prueba?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Unidad → Integración → Sistema → Aceptación'
+    - 'Correcto: de lo aislado al contexto completo.'
+  - - 'Aceptación → Sistema → Integración → Unidad'
+    - 'No: es el orden inverso.'
+  - - 'Sistema → Unidad → Aceptación → Integración'
+    - 'No.'
+  - - 'Integración → Unidad → Sistema → Aceptación'
+    - 'No.'
+  tema: Niveles de prueba
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué caracteriza a las pruebas de caja blanca?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Visibilidad total del código: prueban lógica interna, caminos y cobertura'
+    - 'Correcto.'
+  - - 'Solo se ven entradas y salidas, sin mirar el código'
+    - 'No: eso es caja negra.'
+  - - 'Perspectiva de caja negra con conocimiento parcial del interior'
+    - 'No: eso es caja gris.'
+  - - 'Pruebas ejecutadas por el cliente final'
+    - 'No: eso se acerca a la aceptación.'
+  tema: Tipos de prueba
+- correcta: 0
+  dif: 3
+  enunciado: 'Para un campo de edad válido entre 1 y 120, cuáles valores probaría el análisis de valores límite?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - '0, 1, 120 y 121'
+    - 'Correcto: los bordes y sus vecinos inmediatos.'
+  - - '50, 60 y 70'
+    - 'No: son valores típicos, no límites.'
+  - - 'Solo 1 y 120'
+    - 'Incompleto: también importan los vecinos (0 y 121), donde se concentran los errores.'
+  - - 'Valores aleatorios'
+    - 'No: la técnica apunta a los bordes.'
+  tema: Técnicas de casos
+- dif: 3
+  enunciado: 'En qué consiste la partición de equivalencia?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  modelo: 'Agrupar entradas que se espera produzcan el mismo comportamiento y probar un valor representativo de cada partición (por ejemplo, en edad 1-120: menor a 1, entre 1 y 120, mayor a 120).'
+  criterios:
+  - 'Menciona agrupar entradas con el mismo comportamiento esperado'
+  - 'Menciona probar un valor por cada partición'
+  tema: Técnicas de casos
+tarjetas:
+- - 'Qué diferencia hay entre verificación y validación?'
+  - 'Verificación: ¿construimos el producto correctamente? (cumple specs). Validación: ¿construimos el producto correcto? (satisface la necesidad).'
+- - 'Cuáles son los 4 niveles de prueba?'
+  - 'Unidad, integración, sistema y aceptación.'
+- - 'Qué diferencia hay entre caja blanca, negra y gris?'
+  - 'Blanca: código visible (caminos, cobertura). Negra: solo entradas/salidas. Gris: híbrida con conocimiento parcial.'
+- - 'Qué diferencia hay entre pruebas alfa y beta?'
+  - 'Alfa: usuarios internos, versiones tempranas. Beta: subconjunto de usuarios externos en sus entornos reales.'

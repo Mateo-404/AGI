@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Qué define la arquitectura de software?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'La estructura global: componentes, conectores, estilos y decisiones transversales'
+    - 'Correcto: es el nivel macro.'
+  - - 'Los algoritmos y estructuras de datos de cada módulo'
+    - 'No: eso es el diseño detallado.'
+  - - 'Los casos de prueba del sistema'
+    - 'No.'
+  - - 'El presupuesto del proyecto'
+    - 'No.'
+  tema: Diseño de arquitectura
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuándo conviene una arquitectura de microservicios?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'En sistemas grandes, con equipos autónomos y necesidad de escalabilidad'
+    - 'Correcto.'
+  - - 'En una landing page estática'
+    - 'No: sería sobreingeniería.'
+  - - 'En un script de una sola vez'
+    - 'No.'
+  - - 'Siempre, en todo tipo de proyecto'
+    - 'No: la elección depende del contexto.'
+  tema: Estilos de arquitectura
+- correcta: 0
+  dif: 3
+  enunciado: 'Qué caracteriza a la arquitectura hexagonal (ports & adapters)?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'Un núcleo de dominio aislado, con adaptadores en los bordes'
+    - 'Correcto: mejora testabilidad y desacoplamiento.'
+  - - 'Toda la lógica en un único módulo monolítico'
+    - 'No.'
+  - - 'Comunicación asíncrona mediante eventos, exclusivamente'
+    - 'No: eso es lo esencial del estilo event-driven.'
+  - - 'Procesamiento en cadena de transformaciones'
+    - 'No: eso es el estilo pipe-filter.'
+  tema: Estilos de arquitectura
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué muestra un diagrama de clases UML?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'La estructura estática: clases, atributos, métodos y relaciones'
+    - 'Correcto.'
+  - - 'La interacción temporal entre objetos'
+    - 'No: eso es el diagrama de secuencia.'
+  - - 'La topología física de despliegue'
+    - 'No: eso es el diagrama de despliegue.'
+  - - 'Los estados por los que pasa un objeto'
+    - 'No: eso es la máquina de estados.'
+  tema: UML
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué muestra un diagrama de casos de uso?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'La interacción entre actores y el sistema para lograr metas del usuario'
+    - 'Correcto.'
+  - - 'Las tablas de la base de datos'
+    - 'No.'
+  - - 'El cronograma del proyecto'
+    - 'No.'
+  - - 'Los paquetes del código'
+    - 'No.'
+  tema: UML
+- dif: 3
+  enunciado: 'Cuál es la diferencia entre arquitectura y diseño detallado?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  modelo: 'La arquitectura define la estructura global (componentes, conectores, estilos, decisiones transversales); el diseño detallado define algoritmos, estructuras de datos, interfaces y clases. Los cambios de arquitectura son mucho más costosos.'
+  criterios:
+  - 'Distingue el nivel global (arquitectura) del nivel de detalle (algoritmos, interfaces, clases)'
+  - 'Menciona que los cambios de arquitectura son más costosos'
+  tema: Diseño de software
+tarjetas:
+- - 'Qué es la arquitectura de software?'
+  - 'La estructura global del sistema: componentes, conectores, estilos y decisiones transversales.'
+- - 'Nombrá tres estilos de arquitectura.'
+  - 'Capas, cliente-servidor, microservicios, orientado a eventos, hexagonal o tubería-filtro.'
+- - 'Qué muestra un diagrama de clases?'
+  - 'La estructura estática del sistema: clases, atributos, métodos y relaciones.'
+- - 'Qué muestra un diagrama de casos de uso?'
+  - 'La interacción entre actores y el sistema mediante casos de uso (metas del usuario).'

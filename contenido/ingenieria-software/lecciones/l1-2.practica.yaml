@@ -1,102 +1,96 @@
 preguntas:
 - correcta: 0
   dif: 1
-  enunciado: Qué es la Ingeniería de Software?
+  enunciado: 'Cuál es la definición de Ingeniería de Software según la IEEE?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
-      operación y mantenimiento del software
-    - Correcto.
-  - - Diseño y construcción de aplicaciones de software
-    - No.
-  - - Gestión de proyectos de software
-    - No.
-  - - Creación de especificaciones de requisitos
-    - No.
+  - - 'Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo, operación y mantenimiento del software'
+    - 'Correcto: es la definición de IEEE 610.12.'
+  - - 'Diseño y construcción de aplicaciones de software'
+    - 'No: la construcción es solo una parte.'
+  - - 'Gestión de proyectos de software'
+    - 'No: la gestión es una disciplina dentro de la IS, no su definición.'
+  - - 'Creación de especificaciones de requisitos'
+    - 'No: los requisitos son solo una fase.'
   tema: Ingeniería de Software
 - correcta: 0
   dif: 2
-  enunciado: Cuándo se acuñó el término "crisis del software"?
+  enunciado: 'Dónde y cuándo se reconoció públicamente la "crisis del software"?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - 1968, Conferencia de la OTAN en Garmisch
-    - Correcto.
-  - - 1970, Conferencia de la IEEE en Nueva York
-    - No.
-  - - 1965, Conferencia de la ACM en Boston
-    - No.
-  - - 1972, Conferencia de la IFIP en París
-    - No.
+  - - '1968, Conferencia de la OTAN en Garmisch'
+    - 'Correcto: allí se acuñó el término.'
+  - - '1970, Conferencia de la IEEE en Nueva York'
+    - 'No.'
+  - - '1965, Conferencia de la ACM en Boston'
+    - 'No.'
+  - - '1972, Conferencia de la IFIP en París'
+    - 'No.'
   tema: Crisis del software
 - correcta: 0
   dif: 2
-  enunciado: Cuál es el orden correcto de las 4 capas de la IS?
+  enunciado: 'Cuál es el orden correcto de las cuatro capas de la Ingeniería de Software?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - Calidad → Proceso → Métodos → Herramientas
-    - Correcto.
-  - - Herramientas → Métodos → Proceso → Calidad
-    - No.
-  - - Proceso → Calidad → Herramientas → Métodos
-    - No.
-  - - Métodos → Herramientas → Calidad → Proceso
-    - No.
-  tema: 4 capas IS
+  - - 'Calidad → Proceso → Métodos → Herramientas'
+    - 'Correcto: la calidad es la base que sostiene todo lo demás.'
+  - - 'Herramientas → Métodos → Proceso → Calidad'
+    - 'No: es el orden inverso.'
+  - - 'Proceso → Calidad → Herramientas → Métodos'
+    - 'No.'
+  - - 'Métodos → Herramientas → Calidad → Proceso'
+    - 'No.'
+  tema: Capas de la IS
 - correcta: 0
   dif: 2
-  enunciado: Qué representa la capa de Calidad en la IS?
+  enunciado: 'Qué es la capa de Calidad de la Ingeniería de Software?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - Base cultural de mejora continua
-    - Correcto.
-  - - No.
-    - No.
-  tema: Capa Calidad
-- correcta: 0
-  dif: 3
-  enunciado: Qué representa la capa de Proceso en la IS?
-  o: a Apuntes de Ingeniería de Software · Unidad 1
-  opciones:
-  - - Marco de trabajo con hitos y control
-    - Correcto.
-  - - No.
-    - No.
-  tema: Capa Proceso
+  - - 'La base cultural de mejora continua que sostiene todo el proceso'
+    - 'Correcto: continuous improvement, craftsmanship.'
+  - - 'El marco de trabajo con hitos y control'
+    - 'No: esa es la capa de Proceso.'
+  - - 'El soporte automatizado para construir software'
+    - 'No: esa es la capa de Herramientas.'
+  tema: Capas de la IS
 - correcta: 0
   dif: 2
-  enunciado: Qué significa CASE en Ingeniería de Software?
+  enunciado: 'Qué es la capa de Proceso de la Ingeniería de Software?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - Computer-Aided Software Engineering
-    - Correcto.
-  - - No.
-    - No.
-  tema: Herramientas CASE
+  - - 'Un marco de trabajo con hitos y control (ciclo de vida, milestones, gates)'
+    - 'Correcto.'
+  - - 'La base cultural de mejora continua'
+    - 'No: esa es la capa de Calidad.'
+  - - 'Las técnicas para construir técnicamente el software'
+    - 'No: esa es la capa de Métodos.'
+  tema: Capas de la IS
 - correcta: 0
-  dif: 3
-  enunciado: Cuáles son las disciplinas técnicas de la IS?
+  dif: 2
+  enunciado: 'Qué significa CASE en Ingeniería de Software?'
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - - Requerimientos, análisis, diseño, implementación, prueba, despliegue
-    - Correcto.
-  - - No.
-    - No.
-  tema: Disciplinas técnicas
-- criterios:
-  - Menciona enfoque sistemático, disciplinado, cuantificable
-  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
-  dif: 3
-  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
-  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
-    y cuantificable para el desarrollo, operación y mantenimiento del software.
-  tema: Síntesis IS
+  - - 'Computer-Aided Software Engineering'
+    - 'Correcto: soporte automatizado para el desarrollo.'
+  - - 'Computer-Aided System Evaluation'
+    - 'No.'
+  - - 'Cost Analysis for Software Engineering'
+    - 'No.'
+  tema: Herramientas
+- dif: 3
+  enunciado: 'Cuáles son las disciplinas técnicas de la Ingeniería de Software?'
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  modelo: 'Requerimientos, análisis, diseño, implementación, prueba y despliegue.'
+  criterios:
+  - 'Menciona requerimientos y análisis'
+  - 'Menciona diseño, implementación, prueba o despliegue'
+  tema: Disciplinas de la IS
 tarjetas:
-- - Qué es la Ingeniería de Software?
-  - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
-    operación y mantenimiento del software.
-- - Cuándo surgió el término "crisis del software"?
-  - 1968, Conferencia de la OTAN en Garmisch.
-- - Cuáles son las 4 capas de la IS?
-  - Calidad → Proceso → Métodos → Herramientas.
-- - Qué representa la capa de Calidad?
-  - Base cultural de mejora continua.
+- - 'Cuál es la definición de Ingeniería de Software (IEEE)?'
+  - 'Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo, operación y mantenimiento del software.'
+- - 'Cuándo y dónde se acuñó el término "crisis del software"?'
+  - 'En 1968, en la Conferencia de la OTAN en Garmisch.'
+- - 'Cuáles son las 4 capas de la IS, en orden?'
+  - 'Calidad → Proceso → Métodos → Herramientas.'
+- - 'Qué significa CASE?'
+  - 'Computer-Aided Software Engineering: soporte automatizado para el desarrollo de software.'

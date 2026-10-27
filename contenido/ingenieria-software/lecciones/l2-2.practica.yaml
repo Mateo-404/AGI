@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Qué muestra un diagrama de Gantt?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'Actividades como barras en el tiempo, con inicio, fin, dependencias e hitos'
+    - 'Correcto.'
+  - - 'La estructura de clases del sistema'
+    - 'No: eso es un diagrama UML de clases.'
+  - - 'El flujo de mensajes entre objetos'
+    - 'No: eso es un diagrama de secuencia.'
+  - - 'Los costos de cada tarea del proyecto'
+    - 'No.'
+  tema: Gantt
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué es la ruta crítica de un proyecto?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'La secuencia de actividades sin holgura que determina la duración mínima del proyecto'
+    - 'Correcto: cualquier retraso ahí retrasa el proyecto completo.'
+  - - 'La secuencia de actividades con mayor holgura'
+    - 'No: la ruta crítica tiene holgura cero.'
+  - - 'El camino más corto del diagrama de clases'
+    - 'No.'
+  - - 'La lista de riesgos críticos del proyecto'
+    - 'No.'
+  tema: PERT
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué es la holgura (slack) de una actividad?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'El tiempo que puede retrasarse sin afectar la fecha de fin del proyecto'
+    - 'Correcto: holgura total = LF - EF.'
+  - - 'El costo extra de la actividad'
+    - 'No.'
+  - - 'La duración de la actividad'
+    - 'No.'
+  - - 'El número de dependencias de la actividad'
+    - 'No.'
+  tema: PERT
+- correcta: 0
+  dif: 2
+  enunciado: 'En qué consiste el Planning Poker?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'El equipo estima por consenso usando cartas con valores (por ejemplo Fibonacci)'
+    - 'Correcto: la estimación grupal reduce sesgos.'
+  - - 'Un solo experto estima todo el backlog'
+    - 'No: la regla es nunca estimar solos.'
+  - - 'Un sorteo para asignar tareas'
+    - 'No.'
+  - - 'Una técnica de testing'
+    - 'No.'
+  tema: Estimación
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué son los story points?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'Una estimación relativa del esfuerzo usada en Scrum (escala tipo Fibonacci)'
+    - 'Correcto.'
+  - - 'El precio en dinero de cada historia'
+    - 'No: es relativa, no monetaria.'
+  - - 'La cantidad de líneas de código'
+    - 'No.'
+  - - 'Los puntos de un tablero Kanban'
+    - 'No.'
+  tema: Estimación
+- dif: 3
+  enunciado: 'Para qué sirve una red PERT y qué permite calcular?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  modelo: 'Es una red de actividades con sus dependencias que permite calcular la ruta crítica (la secuencia más larga, sin holgura) y con eso la duración mínima del proyecto.'
+  criterios:
+  - 'Menciona la red de actividades con dependencias'
+  - 'Menciona la ruta crítica o la duración mínima del proyecto'
+  tema: PERT
+tarjetas:
+- - 'Qué muestra un diagrama de Gantt?'
+  - 'Actividades como barras en el tiempo: inicio, fin, duración, dependencias e hitos.'
+- - 'Qué es la ruta crítica?'
+  - 'La secuencia de actividades sin holgura que determina la duración mínima del proyecto.'
+- - 'Qué es la holgura de una actividad?'
+  - 'El tiempo que puede retrasarse sin afectar la fecha de fin del proyecto.'
+- - 'Por qué conviene estimar en grupo (Planning Poker, Delphi)?'
+  - 'Reduce sesgos individuales y mejora la precisión de la estimación.'

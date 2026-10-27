@@ -1,0 +1,82 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Cuáles son las 4 actividades de la ingeniería de requerimientos?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'Estudio de factibilidad, elicitación, especificación y validación'
+    - 'Correcto.'
+  - - 'Análisis, diseño, codificación y pruebas'
+    - 'No: esas son fases del desarrollo.'
+  - - 'Planificación, ejecución, control y cierre'
+    - 'No: esas son de gestión de proyectos.'
+  - - 'Instalación, capacitación, migración y monitoreo'
+    - 'No: esas son actividades del despliegue.'
+  tema: Ingeniería de requerimientos
+- correcta: 0
+  dif: 2
+  enunciado: '"El sistema debe responder en menos de 2 segundos" es un requerimiento...'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'No funcional (restricción de calidad: rendimiento)'
+    - 'Correcto.'
+  - - 'Funcional'
+    - 'No: no describe un servicio, sino una restricción de calidad.'
+  - - 'De dominio'
+    - 'No: no deriva de leyes ni reglas de negocio.'
+  tema: Tipos de requerimientos
+- correcta: 0
+  dif: 2
+  enunciado: '"El cálculo del IVA debe seguir la normativa de AFIP" es un requerimiento...'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'De dominio'
+    - 'Correcto: deriva del área de aplicación (leyes, estándares, reglas de negocio).'
+  - - 'Funcional'
+    - 'No: no describe un servicio del sistema.'
+  - - 'No funcional'
+    - 'No: no es una restricción de calidad.'
+  tema: Tipos de requerimientos
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué es un SRS (Software Requirements Specification)?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'El documento formal con todos los requerimientos; contrato entre cliente y desarrollador'
+    - 'Correcto.'
+  - - 'El diagrama de clases del sistema'
+    - 'No.'
+  - - 'El plan de pruebas del sistema'
+    - 'No.'
+  - - 'El manual de usuario'
+    - 'No.'
+  tema: SRS
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuál de estas es una técnica de elicitación de requerimientos?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - 'Entrevistas y talleres con stakeholders'
+    - 'Correcto: también observación, prototipos y user stories.'
+  - - 'Compilar el código'
+    - 'No.'
+  - - 'Diagramar la topología de red'
+    - 'No.'
+  - - 'Ejecutar las pruebas de sistema'
+    - 'No.'
+  tema: Elicitación
+- dif: 3
+  enunciado: 'Mencioná tres características de un buen requerimiento según IEEE 830.'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  modelo: 'Cualquier combinación de: necesario, completo, consistente, correcto, factible, modificable, priorizado, verificable, rastreable o claro.'
+  criterios:
+  - 'Menciona tres o más atributos de la lista IEEE 830'
+  - 'Los atributos mencionados pertenecen a la lista IEEE 830'
+  tema: Requerimientos
+tarjetas:
+- - 'Cuáles son las 4 actividades de la ingeniería de requerimientos?'
+  - 'Estudio de factibilidad, elicitación, especificación (SRS) y validación.'
+- - 'Qué diferencia hay entre requerimientos funcionales y no funcionales?'
+  - 'Los funcionales dicen qué debe hacer el sistema; los no funcionales son restricciones de calidad (rendimiento, seguridad, usabilidad).'
+- - 'Qué es el SRS?'
+  - 'El documento que describe todos los requerimientos del sistema; es el contrato entre cliente y desarrollador.'

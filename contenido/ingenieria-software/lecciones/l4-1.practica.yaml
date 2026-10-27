@@ -1,0 +1,84 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'En qué consiste la fase de implementación?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Traducir el diseño previo a código ejecutable y bases de datos'
+    - 'Correcto: recién después del análisis de requisitos y el diseño.'
+  - - 'Definir los requerimientos del sistema'
+    - 'No: eso es la fase de requerimientos.'
+  - - 'Poner el sistema en producción'
+    - 'No: eso es el despliegue.'
+  - - 'Corregir bugs después de la entrega'
+    - 'No: eso es mantenimiento correctivo.'
+  tema: Implementación
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué significa DRY?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Don''t Repeat Yourself: no duplicar lógica, abstraer'
+    - 'Correcto.'
+  - - 'Document Runtime Yields'
+    - 'No.'
+  - - 'Debug Rapidly Yesterday'
+    - 'No.'
+  tema: Clean Code
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué significa YAGNI?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'You Aren''t Gonna Need It: no implementar cosas "por si acaso"'
+    - 'Correcto: simplicidad primero.'
+  - - 'Your Agile New Interface'
+    - 'No.'
+  - - 'Yet Another Good Naming Idea'
+    - 'No.'
+  tema: Clean Code
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuándo se hace la revisión técnica del código?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Antes de mergear a la rama principal'
+    - 'Correcto: detecta defectos temprano y comparte conocimiento.'
+  - - 'Después del lanzamiento a producción'
+    - 'No: sería demasiado tarde.'
+  - - 'Solo cuando hay un bug reportado'
+    - 'No.'
+  - - 'Nunca, si hay tests automatizados'
+    - 'No: los tests no reemplazan la revisión.'
+  tema: Revisión técnica
+- correcta: 0
+  dif: 3
+  enunciado: 'Según Clean Code, cómo deberían ser las funciones?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  opciones:
+  - - 'Pequeñas, con una sola responsabilidad (idealmente menos de 20 líneas)'
+    - 'Correcto.'
+  - - 'Largas y completas, para evitar saltos en la lectura'
+    - 'No.'
+  - - 'Con la mayor cantidad de parámetros posible'
+    - 'No.'
+  - - 'Con nombres de una letra para ser concisas'
+    - 'No: los nombres deben ser reveladores.'
+  tema: Clean Code
+- dif: 3
+  enunciado: 'Qué deberían explicar los comentarios según Clean Code?'
+  o: a Apuntes de Ingeniería de Software · Unidad 4
+  modelo: 'El porqué de las decisiones, no el qué: el código mismo ya dice qué hace; los comentarios explican la razón.'
+  criterios:
+  - 'Menciona que los comentarios explican el porqué, no el qué'
+  - 'Reconoce que el código debe explicarse por sí mismo'
+  tema: Clean Code
+tarjetas:
+- - 'Qué significa DRY?'
+  - 'Don''t Repeat Yourself: no duplicar lógica; abstraer lo que se repite.'
+- - 'Qué significa KISS?'
+  - 'Keep It Simple, Stupid: evitar complejidad innecesaria.'
+- - 'Qué significa YAGNI?'
+  - 'You Aren''t Gonna Need It: no implementar funcionalidad "por si acaso".'
+- - 'Cuándo se hace la revisión técnica (code review)?'
+  - 'Antes de mergear a la rama principal: pull request, pair programming o inspección formal.'

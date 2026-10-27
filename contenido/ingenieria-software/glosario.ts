@@ -50,4 +50,11 @@ export const glosario: TerminoGlosario[] = [
   t('scrum', 'Scrum', 'is-l5-1', 'Marco ágil con roles, artefactos y eventos para gestionar el desarrollo en sprints.', 'agil', 'kanban'),
   t('kanban', 'Kanban', 'is-l5-1', 'Método ágil de gestión visual del flujo de trabajo mediante tablero y límites WIP.', 'agil', 'scrum'),
   t('jira', 'JIRA', 'is-l5-1', 'Herramienta de gestión de proyectos y seguimiento de issues.', 'scrum', 'kanban'),
+  t('gantt', 'Diagrama de Gantt', 'is-l2-2', 'Gráfico de barras que muestra actividades en el tiempo: inicio, fin, duración, dependencias e hitos.', 'pert', 'ruta-critica'),
+  t('pert', 'PERT', 'is-l2-2', 'Red de actividades con dependencias que permite calcular la ruta crítica y la duración mínima del proyecto.', 'gantt', 'ruta-critica'),
+  t('caja-blanca', 'Prueba de caja blanca', 'is-l4-2', 'Prueba con visibilidad total del código: lógica interna, caminos y cobertura.', 'caja-negra', 'prueba'),
+  t('caja-negra', 'Prueba de caja negra', 'is-l4-2', 'Prueba con caja opaca: solo se ven entradas y salidas, sin mirar el código.', 'caja-blanca', 'prueba'),
+  t('caja-gris', 'Prueba de caja gris', 'is-l4-2', 'Híbrido: perspectiva de caja negra con conocimiento parcial del interior.', 'caja-blanca', 'caja-negra'),
+  t('manifiesto-agil', 'Manifiesto Ágil', 'is-l5-1', 'Documento de 2001 con 4 valores y 12 principios para el desarrollo ágil de software.', 'agil', 'scrum'),
+  t('scrumban', 'Scrumban', 'is-l5-2', 'Híbrido de Scrum y Kanban: sprints opcionales, límites WIP obligatorios y entregas continuas.', 'scrum', 'kanban'),
 ]

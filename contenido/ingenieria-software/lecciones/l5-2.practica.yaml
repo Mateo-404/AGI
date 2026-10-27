@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'En qué se basa el método Kanban?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Un tablero visual del flujo de trabajo y límites WIP'
+    - 'Correcto: visualizar, limitar WIP y gestionar el flujo.'
+  - - 'Sprints fijos con ceremonias'
+    - 'No: eso es Scrum.'
+  - - 'Un compilador incremental'
+    - 'No.'
+  - - 'Diagramas UML de despliegue'
+    - 'No.'
+  tema: Kanban
+- correcta: 0
+  dif: 2
+  enunciado: 'Para qué sirven los límites WIP?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Evitar la multitarea y hacer visibles los cuellos de botella'
+    - 'Correcto: si una columna se llena, ahí está el problema.'
+  - - 'Aumentar la cantidad de trabajo en paralelo'
+    - 'No: al revés, la limitan.'
+  - - 'Priorizar el backlog'
+    - 'No: eso es trabajo del PO.'
+  - - 'Medir la velocidad del equipo'
+    - 'No: la velocity es de Scrum.'
+  tema: Kanban
+- correcta: 0
+  dif: 3
+  enunciado: 'Qué dice la Ley de Little?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Cycle time = WIP / Throughput'
+    - 'Correcto: reducir WIP reduce el cycle time.'
+  - - 'Cycle time = Throughput / WIP'
+    - 'No: está invertida.'
+  - - 'WIP = Cycle time * Throughput'
+    - 'No.'
+  - - 'Throughput = Cycle time - WIP'
+    - 'No.'
+  tema: Kanban
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué es Scrumban?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Un híbrido de Scrum y Kanban: sprints opcionales con límites WIP obligatorios'
+    - 'Correcto: útil en transiciones y equipos mixtos.'
+  - - 'Una herramienta de CI/CD'
+    - 'No.'
+  - - 'Un lenguaje de programación'
+    - 'No.'
+  - - 'Un tipo de prueba de integración'
+    - 'No.'
+  tema: Scrumban
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuál es la principal diferencia entre Scrum y Kanban?'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  opciones:
+  - - 'Scrum usa sprints fijos; Kanban es flujo continuo'
+    - 'Correcto.'
+  - - 'Kanban tiene roles obligatorios y Scrum no'
+    - 'No: es al revés.'
+  - - 'Scrum no mide nada y Kanban usa velocity'
+    - 'No: la velocity es métrica de Scrum.'
+  - - 'Son idénticos con distinto nombre'
+    - 'No.'
+  tema: Kanban
+- dif: 3
+  enunciado: 'Mencioná dos métricas típicas de Kanban.'
+  o: a Apuntes de Ingeniería de Software · Unidad 5
+  modelo: 'Lead time, cycle time o throughput (también el cumulative flow diagram).'
+  criterios:
+  - 'Menciona lead time, cycle time o throughput'
+  - 'Menciona una segunda métrica válida'
+  tema: Kanban
+tarjetas:
+- - 'En qué se basa Kanban?'
+  - 'Tablero visual, límites WIP, gestión del flujo, políticas explícitas y mejora continua.'
+- - 'Qué es un límite WIP?'
+  - 'El máximo de ítems permitidos en una columna del tablero; evita multitarea y expone cuellos de botella.'
+- - 'Qué dice la Ley de Little?'
+  - 'Cycle time = WIP / Throughput: menos trabajo en progreso reduce el tiempo de ciclo.'
+- - 'Qué es Scrumban?'
+  - 'Híbrido de Scrum y Kanban: sprints opcionales, límites WIP obligatorios y entregas continuas o por hitos.'

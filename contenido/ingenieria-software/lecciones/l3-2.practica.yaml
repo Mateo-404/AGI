@@ -1,0 +1,88 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: 'Qué modela un diagrama de secuencia?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'La interacción temporal entre objetos: qué mensaje se envía, a quién y en qué orden'
+    - 'Correcto.'
+  - - 'Los estados por los que pasa un objeto'
+    - 'No: eso es la máquina de estados.'
+  - - 'La topología física de servidores'
+    - 'No: eso es el diagrama de despliegue.'
+  - - 'La estructura estática de clases'
+    - 'No: eso es el diagrama de clases.'
+  tema: UML
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué elementos tiene una máquina de estados UML?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'Estados, transiciones y eventos disparadores'
+    - 'Correcto.'
+  - - 'Actores y casos de uso'
+    - 'No.'
+  - - 'Componentes y conectores'
+    - 'No.'
+  - - 'Mensajes síncronos y asíncronos'
+    - 'No: eso es del diagrama de secuencia.'
+  tema: UML
+- correcta: 0
+  dif: 2
+  enunciado: 'Qué muestra un diagrama de despliegue?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'La topología física: nodos, artefactos y conexiones de red'
+    - 'Correcto.'
+  - - 'El flujo de trabajo del negocio'
+    - 'No: eso es el diagrama de actividad.'
+  - - 'Los casos de uso del sistema'
+    - 'No.'
+  - - 'El ciclo de vida de un pedido'
+    - 'No: eso lo modela la máquina de estados.'
+  tema: UML
+- correcta: 0
+  dif: 2
+  enunciado: 'Cuáles son las tres categorías de patrones GoF?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'Creacionales, estructurales y de comportamiento'
+    - 'Correcto: 23 patrones clásicos.'
+  - - 'Funcionales, no funcionales y de dominio'
+    - 'No: esa es la clasificación de requerimientos.'
+  - - 'Unitarias, de integración y de sistema'
+    - 'No: esos son niveles de prueba.'
+  - - 'Simples, compuestos y complejos'
+    - 'No.'
+  tema: Patrones de diseño
+- correcta: 0
+  dif: 2
+  enunciado: 'Singleton es un patrón...'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  opciones:
+  - - 'Creacional: garantiza una única instancia de una clase'
+    - 'Correcto.'
+  - - 'Estructural: compone clases y objetos'
+    - 'No.'
+  - - 'De comportamiento: define interacciones entre objetos'
+    - 'No.'
+  - - 'De despliegue'
+    - 'No existe esa categoría en GoF.'
+  tema: Patrones de diseño
+- dif: 3
+  enunciado: 'Para qué sirve un diagrama de actividad y en qué se diferencia de un flowchart?'
+  o: a Apuntes de Ingeniería de Software · Unidad 3
+  modelo: 'Modela flujos de trabajo y procesos de negocio con decisiones, paralelismo y sincronización; se diferencia del flowchart por su semántica UML (tokens, fork/join, swimlanes).'
+  criterios:
+  - 'Menciona flujos de trabajo o procesos de negocio'
+  - 'Menciona la semántica UML (fork/join, swimlanes, decisiones) como diferencia con un flowchart'
+  tema: UML
+tarjetas:
+- - 'Qué modela un diagrama de secuencia?'
+  - 'La interacción temporal entre objetos: mensajes, orden y líneas de vida.'
+- - 'Qué modela la máquina de estados?'
+  - 'Los estados de un objeto y las transiciones entre ellos, disparadas por eventos.'
+- - 'Cuáles son las 3 categorías de patrones GoF?'
+  - 'Creacionales, estructurales y de comportamiento.'
+- - 'Qué muestra un diagrama de despliegue?'
+  - 'La topología física: nodos, artefactos y conexiones de red.'

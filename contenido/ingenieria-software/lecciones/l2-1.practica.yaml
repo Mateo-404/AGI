@@ -1,106 +1,82 @@
 preguntas:
 - correcta: 0
   dif: 1
-  enunciado: ¿Qué es la Ingeniería de Software?
+  enunciado: 'Qué es el ciclo de vida del software?'
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
-      operación y mantenimiento del software
-    - Correcto.
-  - - Diseño y construcción de aplicaciones de software
-    - No.
-  - - Gestión de proyectos de software
-    - No.
-  - - Creación de especificaciones de requisitos
-    - No.
-  tema: Ingeniería de Software
+  - - 'El conjunto de fases que atraviesa el software desde su concepción hasta su retiro'
+    - 'Correcto.'
+  - - 'El tiempo que tarda en codificarse un programa'
+    - 'No: el ciclo de vida es mucho más que la codificación.'
+  - - 'El presupuesto de un proyecto de software'
+    - 'No.'
+  - - 'La licencia bajo la que se distribuye el software'
+    - 'No.'
+  tema: Ciclo de vida
 - correcta: 0
   dif: 2
-  enunciado: ¿Cuándo conviene usar el modelo en cascada?
+  enunciado: 'Qué es el Fuzzy Front End de la planificación?'
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - - Cuando los requisitos son estables, conocidos y regulados
-    - Correcto.
-  - - Cuando los requisitos cambian mucho
-    - No.
-  - - Cuando hay mucho riesgo
-    - No.
-  - - Cuando el equipo es inexperto
-    - No.
-  tema: Modelo Cascada
+  - - 'La fase inicial donde la incertidumbre es máxima y se definen objetivos y alcance'
+    - 'Correcto: es el "frente difuso" antes de comprometer recursos significativos.'
+  - - 'La última fase del ciclo de vida'
+    - 'No: es la primera.'
+  - - 'Una técnica de testing exploratorio'
+    - 'No.'
+  - - 'El panel de control del servidor de producción'
+    - 'No.'
+  tema: Planificación
 - correcta: 0
   dif: 2
-  enunciado: ¿Cuándo conviene usar el modelo ágil?
+  enunciado: 'Qué tipo de viabilidad evalúa el ROI, el NPV y el payback?'
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - - Cuando los requisitos cambian, hay incertidumbre alta y necesidad de feedback
-      rápido
-    - Correcto.
-  - - Cuando los requisitos son estables
-    - No.
-  - - Cuando el equipo es nuevo
-    - No.
-  - - Cuando no hay riesgo
-    - No.
-  tema: Modelo Ágil
-- criterios:
-  - Menciona fallos consistentes en tiempo, costo y calidad
-  dif: 3
-  enunciado: ¿Qué es la crisis de software?
-  modelo: Conjunto de problemas sistemáticos en proyectos de software que fallan consistentemente
-    en cumplir objetivos de tiempo, costo y calidad.
-  tema: Crisis de software
+  - - 'La viabilidad económica'
+    - 'Correcto: compara costos contra beneficios.'
+  - - 'La viabilidad técnica'
+    - 'No: esa evalúa si la tecnología y las competencias existen.'
+  - - 'La viabilidad operacional'
+    - 'No: esa evalúa si la organización puede usar el sistema.'
+  tema: Estudio de viabilidad
 - correcta: 0
   dif: 2
-  enunciado: ¿Cuál es el objetivo de la estimación de esfuerzo?
+  enunciado: 'Qué pregunta responde la viabilidad operacional?'
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - - Determinar el esfuerzo, tiempo o recursos necesarios para una actividad de software
-    - Correcto.
-  - - Calcular el precio final del software
-    - No.
-  - - Determinar el equipo necesario
-    - No.
-  - - Estimar la complejidad del código
-    - No.
-  tema: Estimación de esfuerzo
-- correcta: 1
-  dif: 3
-  enunciado: ¿Cuál técnica NO se usa habitualmente en la estimación de esfuerzo?
-  o: a Apuntes de Ingeniería de Software · Unidad 2
-  opciones:
-  - - Análisis paramétrico
-    - No.
-  - - Poker planning
-    - No.
-  - - Estimación bottom-up
-    - No.
-  - - Análisis de regresión
-    - No.
-  tema: Técnicas de estimación
+  - - '¿La organización podrá usar el sistema? ¿La gente lo usará?'
+    - 'Correcto: considera cambios culturales, entrenamiento y procesos.'
+  - - '¿Existe la tecnología para construirlo?'
+    - 'No: esa es la viabilidad técnica.'
+  - - '¿El proyecto es rentable?'
+    - 'No: esa es la viabilidad económica.'
+  tema: Estudio de viabilidad
 - correcta: 0
   dif: 2
-  enunciado: ¿Qué es la holgura en la ruta crítica?
+  enunciado: 'Con qué fase comienza el ciclo de vida del software?'
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - - Tiempo que una actividad puede retrasarse sin afectar la fecha de fin del proyecto
-    - Correcto.
-  - - No.
-    - No.
-  tema: Holgura
-- criterios:
-  - Menciona enfoque sistemático, disciplinado, cuantificable
-  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
-  dif: 3
-  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
-  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
-    y cuantificable para el desarrollo, operación y mantenimiento del software.
-  tema: Síntesis IS
+  - - 'La concepción (idea, necesidad)'
+    - 'Correcto: de ahí salen planificación, requerimientos, diseño, etc.'
+  - - 'El diseño'
+    - 'No: llega después de los requerimientos.'
+  - - 'La codificación'
+    - 'No: es la fase 5.'
+  - - 'El mantenimiento'
+    - 'No: es casi la última.'
+  tema: Ciclo de vida
+- dif: 3
+  enunciado: 'Por qué se llama Fuzzy Front End a la planificación inicial?'
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  modelo: 'Porque es la zona nebulosa inicial del proyecto, donde la incertidumbre es máxima y las decisiones tomadas tienen el mayor impacto.'
+  criterios:
+  - 'Menciona la alta incertidumbre inicial'
+  - 'Menciona que las decisiones de esa fase tienen gran impacto'
+  tema: Planificación
 tarjetas:
-- - ¿Qué es Ingeniería de Software?
-  - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
-    operación y mantenimiento del software.
-- - ¿Para qué modelo se usa la cascada?
-  - Para requisitos estables, conocidos y regulados.
-- - ¿Para qué modelo se usa ágil?
-  - Para requisitos cambiantes, incertidumbre alta y necesidad de feedback rápido.
+- - 'Qué es el ciclo de vida del software?'
+  - 'El conjunto de fases que atraviesa el software desde su concepción hasta su retiro.'
+- - 'Cuáles son los tres tipos de estudio de viabilidad?'
+  - 'Técnica (¿se puede construir?), económica (¿conviene?) y operacional (¿se usará?).'
+- - 'Qué es el Fuzzy Front End?'
+  - 'La fase inicial del proyecto donde la incertidumbre es máxima y las decisiones tienen mayor impacto.'
