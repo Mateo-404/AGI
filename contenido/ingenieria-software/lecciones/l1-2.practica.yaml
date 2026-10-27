@@ -1,0 +1,110 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: Qué es la Ingeniería de Software?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
+      operación y mantenimiento del software
+    - Correcto.
+  - - Diseño y construcción de aplicaciones de software
+    - No.
+  - - Gestión de proyectos de software
+    - No.
+  - - Creación de especificaciones de requisitos
+    - No.
+  tema: Ingeniería de Software
+- correcta: 0
+  dif: 2
+  enunciado: Cuándo se acuñó el término "crisis del software"?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - 1968, Conferencia de la OTAN en Garmisch
+    - Correcto.
+  - - 1970, Conferencia de la IEEE en Nueva York
+    - No.
+  - - 1965, Conferencia de la ACM en Boston
+    - No.
+  - - 1972, Conferencia de la IFIP en París
+    - No.
+  tema: Crisis del software
+- correcta: 0
+  dif: 2
+  enunciado: Cuál es el orden correcto de las 4 capas de la IS?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - - Calidad → Proceso → Métodos → Herramientas
+    - Correcto.
+  - - Herramientas → Métodos → Proceso → Calidad
+    - No.
+  - - Proceso → Calidad → Herramientas → Métodos
+    - No.
+  - - Métodos → Herramientas → Calidad → Proceso
+    - No.
+  tema: 4 capas IS
+- correcta: 0
+  dif: 2
+  enunciado: Qué representa la capa de Calidad en la IS?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - Base cultural de mejora continua
+  - No.
+  tema: Capa Calidad
+- correcta: 0
+  dif: 3
+  enunciado: Qué representa la capa de Proceso en la IS?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - Marco de trabajo con hitos y control
+  - No.
+  tema: Capa Proceso
+- correcta: 0
+  dif: 2
+  enunciado: Qué significa CASE en Ingeniería de Software?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - Computer-Aided Software Engineering
+  - No.
+  tema: Herramientas CASE
+- correcta: 0
+  dif: 3
+  enunciado: Cuáles son las disciplinas técnicas de la IS?
+  o: a Apuntes de Ingeniería de Software · Unidad 1
+  opciones:
+  - Requerimientos, análisis, diseño, implementación, prueba, despliegue
+  - No.
+  tema: Disciplinas técnicas
+- criterios:
+  - Menciona enfoque sistemático, disciplinado, cuantificable
+  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
+  dif: 3
+  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
+  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
+    y cuantificable para el desarrollo, operación y mantenimiento del software.
+  tema: Síntesis IS
+- criterios:
+  - Menciona enfoque sistemático, disciplinado, cuantificable
+  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
+  dif: 3
+  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
+  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
+    y cuantificable para el desarrollo, operación y mantenimiento del software.
+  tema: Síntesis IS
+- criterios:
+  - Menciona enfoque sistemático, disciplinado, cuantificable
+  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
+  dif: 3
+  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
+  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
+    y cuantificable para el desarrollo, operación y mantenimiento del software.
+  tema: Síntesis IS
+tarjetas:
+- - Qué es la Ingeniería de Software?
+  - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
+    operación y mantenimiento del software.
+- - Cuándo surgió el término "crisis del software"?
+  - 1968, Conferencia de la OTAN en Garmisch.
+- - Cuáles son las 4 capas de la IS?
+  - Calidad → Proceso → Métodos → Herramientas.
+- - Qué representa la capa de Calidad?
+  - Base cultural de mejora continua.

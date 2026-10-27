@@ -1,0 +1,100 @@
+preguntas:
+- correcta: 0
+  dif: 1
+  enunciado: ¿Qué es la Ingeniería de Software?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
+      operación y mantenimiento del software
+    - Correcto.
+  - - Diseño y construcción de aplicaciones de software
+    - No.
+  - - Gestión de proyectos de software
+    - No.
+  - - Creación de especificaciones de requisitos
+    - No.
+  tema: Ingeniería de Software
+- correcta: 0
+  dif: 2
+  enunciado: ¿Cuándo conviene usar el modelo en cascada?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - Cuando los requisitos son estables, conocidos y regulados
+    - Correcto.
+  - - Cuando los requisitos cambian mucho
+    - No.
+  - - Cuando hay mucho riesgo
+    - No.
+  - - Cuando el equipo es inexperto
+    - No.
+  tema: Modelo Cascada
+- correcta: 0
+  dif: 2
+  enunciado: ¿Cuándo conviene usar el modelo ágil?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - Cuando los requisitos cambian, hay incertidumbre alta y necesidad de feedback
+      rápido
+    - Correcto.
+  - - Cuando los requisitos son estables
+    - No.
+  - - Cuando el equipo es nuevo
+    - No.
+  - - Cuando no hay riesgo
+    - No.
+  tema: Modelo Ágil
+- criterios:
+  - Menciona fallos consistentes en tiempo, costo y calidad
+  dif: 3
+  enunciado: ¿Qué es la crisis de software?
+  modelo: Conjunto de problemas sistemáticos en proyectos de software que fallan consistentemente
+    en cumplir objetivos de tiempo, costo y calidad.
+  tema: Crisis de software
+- correcta: 0
+  dif: 2
+  enunciado: ¿Cuál es el objetivo de la estimación de esfuerzo?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - - Determinar el esfuerzo, tiempo o recursos necesarios para una actividad de software
+    - Correcto.
+  - - Calcular el precio final del software
+    - No.
+  - - Determinar el equipo necesario
+    - No.
+  - - Estimar la complejidad del código
+    - No.
+  tema: Estimación de esfuerzo
+- correcta: 1
+  dif: 3
+  enunciado: ¿Cuál técnica NO se usa habitualmente en la estimación de esfuerzo?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - Análisis paramétrico
+  - Poker planning
+  - Estimación bottom-up
+  - Análisis de regresión
+  tema: Técnicas de estimación
+- correcta: 0
+  dif: 2
+  enunciado: ¿Qué es la holgura en la ruta crítica?
+  o: a Apuntes de Ingeniería de Software · Unidad 2
+  opciones:
+  - Tiempo que una actividad puede retrasarse sin afectar la fecha de fin del proyecto
+  - No.
+  tema: Holgura
+- criterios:
+  - Menciona enfoque sistemático, disciplinado, cuantificable
+  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
+  dif: 3
+  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
+  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
+    y cuantificable para el desarrollo, operación y mantenimiento del software.
+  tema: Síntesis IS
+tarjetas:
+- - ¿Qué es Ingeniería de Software?
+  - Aplicación de un enfoque sistemático, disciplinado y cuantificable para el desarrollo,
+    operación y mantenimiento del software.
+- - ¿Para qué modelo se usa la cascada?
+  - Para requisitos estables, conocidos y regulados.
+- - ¿Para qué modelo se usa ágil?
+  - Para requisitos cambiantes, incertidumbre alta y necesidad de feedback rápido.
