@@ -47,15 +47,18 @@ preguntas:
   enunciado: Qué representa la capa de Calidad en la IS?
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - Base cultural de mejora continua
-  - No.
+  - - Base cultural de mejora continua
+    - Correcto.
+  - - No.
+    - No.
   tema: Capa Calidad
 - correcta: 0
   dif: 3
   enunciado: Qué representa la capa de Proceso en la IS?
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - Marco de trabajo con hitos y control
+  - - Marco de trabajo con hitos y control
+    - Correcto.
   - No.
   tema: Capa Proceso
 - correcta: 0
@@ -63,7 +66,8 @@ preguntas:
   enunciado: Qué significa CASE en Ingeniería de Software?
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - Computer-Aided Software Engineering
+  - - Computer-Aided Software Engineering
+    - Correcto.
   - No.
   tema: Herramientas CASE
 - correcta: 0
@@ -71,25 +75,10 @@ preguntas:
   enunciado: Cuáles son las disciplinas técnicas de la IS?
   o: a Apuntes de Ingeniería de Software · Unidad 1
   opciones:
-  - Requerimientos, análisis, diseño, implementación, prueba, despliegue
+  - - Requerimientos, análisis, diseño, implementación, prueba, despliegue
+    - Correcto.
   - No.
   tema: Disciplinas técnicas
-- criterios:
-  - Menciona enfoque sistemático, disciplinado, cuantificable
-  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
-  dif: 3
-  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
-  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
-    y cuantificable para el desarrollo, operación y mantenimiento del software.
-  tema: Síntesis IS
-- criterios:
-  - Menciona enfoque sistemático, disciplinado, cuantificable
-  - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
-  dif: 3
-  enunciado: Cuál es la definición sintetizada de Ingeniería de Software?
-  modelo: La Ingeniería de Software es la aplicación de un enfoque sistemático, disciplinado
-    y cuantificable para el desarrollo, operación y mantenimiento del software.
-  tema: Síntesis IS
 - criterios:
   - Menciona enfoque sistemático, disciplinado, cuantificable
   - 'Menciona las 4 capas: Calidad→Proceso→Métodos→Herramientas'
