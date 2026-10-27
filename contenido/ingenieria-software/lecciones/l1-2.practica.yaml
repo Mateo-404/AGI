@@ -59,7 +59,8 @@ preguntas:
   opciones:
   - - Marco de trabajo con hitos y control
     - Correcto.
-  - No.
+  - - No.
+    - No.
   tema: Capa Proceso
 - correcta: 0
   dif: 2
@@ -68,7 +69,8 @@ preguntas:
   opciones:
   - - Computer-Aided Software Engineering
     - Correcto.
-  - No.
+  - - No.
+    - No.
   tema: Herramientas CASE
 - correcta: 0
   dif: 3
@@ -77,7 +79,8 @@ preguntas:
   opciones:
   - - Requerimientos, análisis, diseño, implementación, prueba, despliegue
     - Correcto.
-  - No.
+  - - No.
+    - No.
   tema: Disciplinas técnicas
 - criterios:
   - Menciona enfoque sistemático, disciplinado, cuantificable

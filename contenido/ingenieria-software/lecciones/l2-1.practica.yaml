@@ -69,18 +69,24 @@ preguntas:
   enunciado: ¿Cuál técnica NO se usa habitualmente en la estimación de esfuerzo?
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - Análisis paramétrico
-  - Poker planning
-  - Estimación bottom-up
-  - Análisis de regresión
+  - - Análisis paramétrico
+    - No.
+  - - Poker planning
+    - No.
+  - - Estimación bottom-up
+    - No.
+  - - Análisis de regresión
+    - No.
   tema: Técnicas de estimación
 - correcta: 0
   dif: 2
   enunciado: ¿Qué es la holgura en la ruta crítica?
   o: a Apuntes de Ingeniería de Software · Unidad 2
   opciones:
-  - Tiempo que una actividad puede retrasarse sin afectar la fecha de fin del proyecto
-  - No.
+  - - Tiempo que una actividad puede retrasarse sin afectar la fecha de fin del proyecto
+    - Correcto.
+  - - No.
+    - No.
   tema: Holgura
 - criterios:
   - Menciona enfoque sistemático, disciplinado, cuantificable
