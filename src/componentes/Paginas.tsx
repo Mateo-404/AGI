@@ -1,5 +1,6 @@
 import { rutaMateria } from '@/logica/rutas'
 import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import type { CSSProperties } from 'react'
 import { ESTADOS } from '@contenido/tipos'
 import { useMateria } from './contextoMateria'
 import { clasificarGesto, vibrar } from '@/logica/gestos'
@@ -8,6 +9,7 @@ import { dominada, estaVencida, fechasSugeridas, nivel, rndDe, seleccionPonderad
 import type { Leccion } from '@contenido/tipos'
 import { QuizRunner } from './Quiz'
 import { Tx } from './contexto'
+import { getUnidadIcon } from '@/design/tokens'
 
 const NIVEL_TXT: Record<Nivel, string> = { 'sin-evidencia': 'Sin evidencia', 'en-practica': 'En práctica', consolidado: 'Consolidado' }
 
@@ -104,11 +106,28 @@ export function UnidadPag({ n }: { n: number }) {
   const nivelDe = useNivelLeccion()
   if (!u) return <NoEncontrado />
   const ls = m.leccionesDe(n)
+  const unidadIcon = getUnidadIcon(m.slug, n)
+  const cuatriColor = `var(--color-cuatri-${u.cuatri || 1})`
+  const cuatriBg = `var(--color-cuatri-${u.cuatri || 1}-bg, var(--color-brand-light))`
+  
   return (
     <>
-      <p className="meta"><a href={rutaMateria(m.slug)}>Inicio</a> › Unidad {n}</p>
-      <h1>Unidad {n}. {u.titulo}</h1>
-      <p className="meta">{u.programa}. Lectura obligatoria: {u.lecturaObligatoria}.</p>
+      {/* Unit cover image - Notion style */}
+      <div className="unit-cover" style={{ '--cuatri-color': cuatriColor, '--cuatri-bg': cuatriBg } as CSSProperties} aria-hidden="true">
+        <div className="unit-cover-pattern" />
+        <div className="unit-cover-content">
+          <p className="unit-cover-number">{unidadIcon} Unidad {n}</p>
+          <h1 className="unit-cover-title">{u.titulo}</h1>
+          <div className="unit-cover-meta">
+            <span>{u.programa}</span>
+            <span>·</span>
+            <span>Lectura: {u.lecturaObligatoria}</span>
+            <span>·</span>
+            <span>{ls.length} lecciones · {ls.reduce((a, l) => a + l.minutos, 0)} min</span>
+          </div>
+        </div>
+      </div>
+      
       <div className="grid" style={{ gridTemplateColumns: '1fr' }}>
         {ls.map((l) => (
           <a key={l.id} href={rutaMateria(m.slug, `leccion/${l.id}`)} className="tarjeta" style={{ textDecoration: 'none', color: 'inherit' }}>

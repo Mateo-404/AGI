@@ -9,6 +9,7 @@ import { Reproductor } from './Reproductor'
 import { Instalar } from './Instalar'
 import { NavMovil } from './NavMovil'
 import { MateriaProvider } from './contextoMateria'
+import { getUnidadIcon } from '@/design/tokens'
 
 class Limite extends Component<{ children: ReactNode; inicio: string }, { error?: Error }> {
   state: { error?: Error } = {}
@@ -42,6 +43,12 @@ function Barra({ m, enCurso }: { m: ReturnType<typeof datosDe>; enCurso: boolean
   const etiqueta = p.tema === 'auto' ? 'Automático' : p.tema === 'oscuro' ? 'Oscuro' : 'Claro'
   const iconoTema = p.tema === 'auto' ? 'brightness_auto' : p.tema === 'oscuro' ? 'dark_mode' : 'light_mode'
   const tamanos: [Parameters<typeof setTamano>[0], string][] = [['normal', 'A'], ['grande', 'A+'], ['muy-grande', 'A++']]
+  
+  // Calculate progress for current materia
+  const totalLecciones = m.lecciones.length
+  const vistasLecciones = m.lecciones.filter(l => p.vistas[l.id]).length
+  const progresoPct = totalLecciones ? Math.round((vistasLecciones / totalLecciones) * 100) : 0
+  
   return (
     <div className="barra-sup no-print">
       <a className="marca-sup" href={ruta()}>Somos #AGI</a>
@@ -52,6 +59,11 @@ function Barra({ m, enCurso }: { m: ReturnType<typeof datosDe>; enCurso: boolean
           <button key={t} className="btn sm" aria-pressed={p.tamano === t} onClick={() => setTamano(t)} aria-label={`Tamaño de letra ${t}`}>{txt}</button>
         ))}
       </div>
+      {enCurso && (
+        <div className="header-progress" role="progressbar" aria-valuenow={progresoPct} aria-valuemin={0} aria-valuemax={100} aria-label={`Progreso en ${m.nombre}`}>
+          <div className="header-progress-bar" style={{ width: `${progresoPct}%` }} />
+        </div>
+      )}
       <button className="btn sm" onClick={ciclo} aria-label={`Tema: ${etiqueta}. Cambiar`}><Icono nombre={iconoTema} /> {etiqueta}</button>
     </div>
   )
@@ -100,7 +112,7 @@ export function Shell({ sub, enCurso, materia = 'marketing', children }: { sub: 
           <h2>Estudiar</h2>
           {m.unidades.map((u) => (
             <details key={u.n} open={unidadActual === u.n}>
-              <summary>Unidad {u.n} · {u.titulo}</summary>
+              <summary><span className="unidad-icon" aria-hidden>{getUnidadIcon(m.slug, u.n)}</span> Unidad {u.n} · {u.titulo}</summary>
               <div className="sub">
                 {m.leccionesDe(u.n).map((l) => (
                   <a key={l.id} className="item" href={rutaMateria(m.slug, `leccion/${l.id}`)} aria-current={cur(actual === l.id)}>

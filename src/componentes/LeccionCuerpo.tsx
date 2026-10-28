@@ -1,8 +1,10 @@
+import type { CSSProperties } from 'react'
 import { rutaMateria } from '@/logica/rutas'
 import type { Leccion } from '@contenido/tipos'
 import { Bloques, etiquetaOrigen } from './Bloques'
 import { Tx } from './contexto'
 import { MateriaScope, useMateria } from './contextoMateria'
+import { getUnidadIcon } from '@/design/tokens'
 
 /** Objetivos y conocimientos previos: lo que va antes de los bloques. */
 export function LeccionCabecera({ l, materia }: { l: Leccion; materia?: string }) {
@@ -11,8 +13,26 @@ export function LeccionCabecera({ l, materia }: { l: Leccion; materia?: string }
 
 function LeccionCabeceraBase({ l }: { l: Leccion }) {
   const m = useMateria()
+  const unidadIcon = getUnidadIcon(m.slug, l.unidad)
+  const cuatriColor = `var(--color-cuatri-${m.unidades.find(u => u.n === l.unidad)?.cuatri || 1})`
+  const cuatriBg = `var(--color-cuatri-${m.unidades.find(u => u.n === l.unidad)?.cuatri || 1}-bg, var(--color-brand-light))`
+  
   return (
     <>
+      {/* Unit cover image - Notion style */}
+      <div className="unit-cover" style={{ '--cuatri-color': cuatriColor, '--cuatri-bg': cuatriBg } as CSSProperties} aria-hidden="true">
+        <div className="unit-cover-pattern" />
+        <div className="unit-cover-content">
+          <p className="unit-cover-number">{unidadIcon} Unidad {l.unidad}</p>
+          <h1 className="unit-cover-title">{l.titulo}</h1>
+          <div className="unit-cover-meta">
+            <span>{l.minutos} min</span>
+            <span>·</span>
+            <span>{l.resumen}</span>
+          </div>
+        </div>
+      </div>
+      
       <h2 className="sub">Objetivos de aprendizaje</h2>
       <ul>{l.objetivos.map((o, i) => <li key={i}>{o}</li>)}</ul>
       {l.previos.length > 0 && (

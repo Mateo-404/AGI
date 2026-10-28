@@ -102,6 +102,8 @@ export interface Unidad {
   /** Tema del programa 2026 que cubre la unidad. */
   programa: string
   lecturaObligatoria: string
+  /** Cuatrimestre al que pertenece (1-5), para colores temáticos. */
+  cuatri?: number
 }
 
 export interface TerminoGlosario {
