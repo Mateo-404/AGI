@@ -3,30 +3,30 @@ preguntas:
     dif: 1
     enunciado: ¿Para qué sirven las frases listas y expresiones?
     opciones:
-      - [Para hablar de manera natural, "Correcto."]
-      - [ Para calcular, "No."]
-      - [ Para programar, "No."]
-      - [ Para cocinar, "No."]
+      - ["Para hablar de manera natural", "Correcto."]
+      - [" Para calcular", "No."]
+      - [" Para programar", "No."]
+      - [" Para cocinar", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 9
   - tema: Roadmap
     dif: 1
     enunciado: ¿Qué fuente recomienda el apunte para practicar pronunciación?
     opciones:
-      - [BBC Learning English, "Correcto."]
-      - [ English Grammar in Use, "Esa es para gramática."]
-      - [ Oxford Online Grammar, "Esa es para gramática."]
-      - [ Youglish, "Esa es para ejemplos reales."]
+      - ["BBC Learning English", "Correcto."]
+      - [" English Grammar in Use", "Esa es para gramática."]
+      - [" Oxford Online Grammar", "Esa es para gramática."]
+      - [" Youglish", "Esa es para ejemplos reales."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 9
   - tema: Youglish
     dif: 2
     enunciado: ¿Qué ofrece Youglish?
     opciones:
-      - [Ejemplos reales usados por nativos, "Correcto."]
-      - [ Reglas gramaticales, "No."]
-      - [ Ejercicios de escritura, "No."]
-      - [ Diccionarios, "No."]
+      - ["Ejemplos reales usados por nativos", "Correcto."]
+      - [" Reglas gramaticales", "No."]
+      - [" Ejercicios de escritura", "No."]
+      - [" Diccionarios", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 9
   - tema: Roadmap
@@ -34,12 +34,35 @@ preguntas:
     enunciado: ¿Qué recomienda Oxford Online Grammar?
     opciones:
       - ["Present simple, past simple, modales, preposiciones y contables/incontables", "Correcto."]
-      - [ Solo vocabulario de comida, "No."]
-      - [ Solo pronunciación, "No."]
-      - [ Solo escritura, "No."]
+      - [" Solo vocabulario de comida", "No."]
+      - [" Solo pronunciación", "No."]
+      - [" Solo escritura", "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+  - tema: Chunks
+    dif: 2
+    enunciado: ¿Cuál de estas es una expresión nativa simple (chunk)?
+    opciones:
+      - ["To be honest...", "Correcto: chunk para 'para ser sincero'."]
+      - ["I am honest", "Oración completa, no chunk fijo."]
+      - ["Honestly speaking", "Posible pero menos fijo que 'To be honest'."]
+      - ["The honesty", "Sustantivo, no expresión."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 9
+  - tema: Expresiones trabajo
+    dif: 2
+    enunciado: ¿Qué significa "I'm swamped" en contexto laboral?
+    opciones:
+      - ["Estoy muy ocupado / saturado", "Correcto: expresión coloquial."]
+      - ["Estoy nadando", "Sentido literal, no el uso idiomático."]
+      - ["Estoy en la ciénaga", "Traducción literal incorrecta."]
+      - ["Estoy aburrido", "No: swamped = abrumado de trabajo."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 9
 tarjetas:
   - [¿Para qué sirven las frases listas?, "Para hablar de manera natural."]
   - [¿Qué es Youglish?, "Ejemplos reales usados por nativos."]
   - [¿Qué recomienda BBC Learning English?, "Present simple, past simple, future, preguntas y pronunciación."]
+  - [Chunk para "para ser sincero", "To be honest..."]
+  - [Chunk para "muy ocupado", "I'm swamped."]
+  - [Chunk para "no puede ser", "No way!"]

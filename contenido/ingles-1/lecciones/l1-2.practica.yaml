@@ -4,39 +4,39 @@ preguntas:
     enunciado: ¿Cómo se conjuga el verbo en la tercera persona del singular?
     opciones:
       - ["Se agrega -s, -es o -ies según la terminación", "Correcto."]
-      - [No se modifica, "Eso es para I/you/we/they."]
-      - [Se agrega -ing, "Eso es para el continuo."]
-      - [Se usa don't, "Eso es para la negativa."]
+      - ["No se modifica", "Eso es para I/you/we/they."]
+      - ["Se agrega -ing", "Eso es para el continuo."]
+      - ["Se usa don't", "Eso es para la negativa."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 2
   - tema: Negación
     dif: 1
     enunciado: ¿Cómo se niega en presente simple con "he"?
     opciones:
-      - [He doesn't + verbo base, "Correcto."]
-      - [He don't + verbo base, "don't se usa con I/you/we/they."]
-      - [He isn't + verbo base, "isn't se usa con to be."]
-      - [He not + verbo base, "Falta el auxiliar."]
+      - ["He doesn't + verbo base", "Correcto."]
+      - ["He don't + verbo base", "don't se usa con I/you/we/they."]
+      - ["He isn't + verbo base", "isn't se usa con to be."]
+      - ["He not + verbo base", "Falta el auxiliar."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 2
   - tema: Interrogación
     dif: 2
     enunciado: ¿Cómo se pregunta en presente simple con "she"?
     opciones:
-      - [Does she + verbo base?, "Correcto."]
-      - [Do she + verbo base?, "Do se usa con I/you/we/they."]
-      - [Is she + verbo base?, "Is se usa con to be."]
-      - [ She + verbo base?, "Falta el auxiliar."]
+      - ["Does she + verbo base?", "Correcto."]
+      - ["Do she + verbo base?", "Do se usa con I/you/we/they."]
+      - ["Is she + verbo base?", "Is se usa con to be."]
+      - [" She + verbo base?", "Falta el auxiliar."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 2
   - tema: Preferencias
     dif: 2
     enunciado: ¿Qué forma verbal sigue a verbos como like, enjoy, love o hate?
     opciones:
-      - [La forma -ing, "Correcto: I like watching films."]
-      - [El infinitivo, "No: se usa -ing."]
-      - [El pasado, "No."]
-      - [ El gerundio sin cambios, "Se usa -ing."]
+      - ["La forma -ing", "Correcto: I like watching films."]
+      - ["El infinitivo", "No: se usa -ing."]
+      - ["El pasado", "No."]
+      - [" El gerundio sin cambios", "Se usa -ing."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 2
   - tema: Posesivos
@@ -46,7 +46,31 @@ preguntas:
     criterios:
       - Menciona que indican pertenencia
       - Menciona que varían según el poseedor
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Reglas -s/-es/-ies
+    dif: 2
+    enunciado: ¿Qué forma toma "watch" en tercera persona?
+    opciones:
+      - ["watches", "Correcto: termina en -ch, se agrega -es."]
+      - ["watchs", "Incorrecto: verbos en -ch toman -es."]
+      - ["watchies", "Incorrecto: solo consonante+y cambia a -ies."]
+      - ["watching", "Incorrecto: eso es -ing."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
+  - tema: Demostrativos
+    dif: 1
+    enunciado: ¿Cuál es el demostrativo para "esos libros" (lejos, plural)?
+    opciones:
+      - ["those books", "Correcto."]
+      - ["these books", "These es para cerca."]
+      - ["that books", "That es singular."]
+      - ["this books", "This es singular y cerca."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 2
 tarjetas:
   - [¿Cómo se conjuga en 3ra persona singular?, "Se agrega -s, -es o -ies."]
   - [Negación con he/she/it, "doesn't + verbo base."]
   - [Interrogación con she, "Does she + verbo base?"]
+  - [Verbo tras "like", "like + -ing (liking)."]
+  - [Posesivo de "we", "our."]
+  - [Demostrativo plural lejano, "those."]

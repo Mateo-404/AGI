@@ -3,53 +3,158 @@ preguntas:
     dif: 1
     enunciado: ¿Qué es la seguridad física?
     opciones:
-      - [La protección de los equipos y las instalaciones de red, "Correcto."]
-      - [ La protección de datos, "Eso es seguridad lógica."]
-      - [ El cifrado, "No."]
-      - [ El firewall, "No."]
+      - ["Protección de los equipos y las instalaciones de red", "Correcto."]
+      - ["Protección de datos", "Incorrecto: eso es seguridad lógica."]
+      - ["Cifrado de comunicaciones", "Incorrecto."]
+      - ["Firewall", "Incorrecto."]
     correcta: 0
     o: a Apuntes de Introducción a las comunicaciones · Unidad 8
   - tema: Seguridad lógica
     dif: 1
-    enunciado: ¿Qué es la seguridad lógica?
+    enunciado: ¿Qué pilares componen la triada CIA de la seguridad lógica?
     opciones:
-      - ["La protección de datos y sistemas mediante controles de acceso, cifrado y políticas", "Correcto."]
-      - [ La protección de equipos, "Eso es seguridad física."]
-      - [ El cableado, "No."]
-      - [ El hardware, "No."]
+      - ["Confidencialidad, Integridad, Disponibilidad", "Correcto."]
+      - ["Cifrado, Firewall, Antivirus", "Incorrecto: son controles, no pilares."]
+      - ["Autenticación, Autorización, Accounting", "Incorrecto: eso es AAA."]
+      - ["Prevención, Detección, Respuesta", "Incorrecto: son fases de operación."]
     correcta: 0
     o: a Apuntes de Introducción a las comunicaciones · Unidad 8
-  - tema: Cifrado
+  - tema: Cifrado simétrico
     dif: 2
-    enunciado: ¿Qué es el cifrado?
+    enunciado: ¿Qué algoritmo de cifrado simétrico es el estándar actual (FIPS 197)?
     opciones:
-      - [El proceso de convertir información en un formato ilegible sin la clave, "Correcto."]
-      - [ La compresión, "No."]
-      - [ La eliminación, "No."]
-      - [ La duplicación, "No."]
+      - ["AES (Advanced Encryption Standard)", "Correcto: 128/192/256 bits, modo GCM/CCM preferido (AEAD)."]
+      - ["3DES", "Incorrecto: obsoleto (NIST 2023)."]
+      - ["RC4", "Incorrecto: roto/prohibido."]
+      - ["DES", "Incorrecto: obsoleto (56 bits)."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Cifrado asimétrico
+    dif: 2
+    enunciado: ¿Qué algoritmo asimétrico moderno basado en curvas elípticas es preferido para firmas y claves SSH?
+    opciones:
+      - ["EdDSA (Ed25519)", "Correcto: 256 bits, rápido, seguro, lado cliente TLS 1.3."]
+      - ["RSA-1024", "Incorrecto: inseguro."]
+      - ["DH-1024", "Incorrecto: obsoleto."]
+      - ["DSA", "Incorrecto: legado, 1024 bits."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: TLS 1.3
+    dif: 2
+    enunciado: ¿Qué caracteriza al handshake TLS 1.3?
+    opciones:
+      - ["1-RTT, solo cipher suites AEAD, certificados cifrados tras ServerHello", "Correcto."]
+      - ["2-RTT, soporta RSA key exchange", "Incorrecto: TLS 1.2."]
+      - ["3-RTT, cifrado opcional", "Incorrecto."]
+      - ["Handshake en claro", "Incorrecto: ServerHello en adelante va cifrado."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: IPsec
+    dif: 2
+    enunciado: ¿Qué protocolo IPsec proporciona cifrado + integridad + autenticación?
+    opciones:
+      - ["ESP (Encapsulating Security Payload, proto 50)", "Correcto."]
+      - ["AH (Authentication Header, proto 51)", "Incorrecto: solo integridad/auth, sin cifrado."]
+      - ["IKEv2", "Incorrecto: protocolo de intercambio de claves, no de datos."]
+      - ["L2TP", "Incorrecto: túnel sin cifrado propio (usa IPsec)."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: AAA
+    dif: 2
+    enunciado: ¿Cuál es la diferencia clave entre RADIUS y TACACS+ para administración de dispositivos?
+    opciones:
+      - ["TACACS+ usa TCP 49, cifra todo el payload y separa Auth/Autz/Acct; RADIUS usa UDP 1812 y cifra solo password", "Correcto."]
+      - ["RADIUS usa TCP y cifra todo; TACACS+ usa UDP", "Incorrecto: al revés."]
+      - ["Son idénticos", "Incorrecto."]
+      - ["TACACS+ es solo para wireless", "Incorrecto: es para admin de dispositivos (CLI)."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: 802.1X
+    dif: 2
+    enunciado: En 802.1X, ¿qué rol desempeña el switch / Access Point?
+    opciones:
+      - ["Autenticador (reenvía EAPOL a RADIUS, controla estado del puerto)", "Correcto."]
+      - ["Suplicante (cliente)", "Incorrecto: el suplicante es el endpoint."]
+      - ["Servidor de autenticación", "Incorrecto: es el RADIUS."]
+      - ["Ninguno", "Incorrecto."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Zero Trust
+    dif: 2
+    enunciado: ¿Cuál es el principio central de Zero Trust?
+    opciones:
+      - ["Nunca confíes, siempre verifica (sin perímetro de confianza implícita)", "Correcto."]
+      - ["Confía en la red interna, verifica solo lo externo", "Incorrecto: modelo tradicional."]
+      - ["Solo MFA es suficiente", "Incorrecto: necesario pero no suficiente."]
+      - ["Elimina todos los firewalls", "Incorrecto: los redistribuye (microsegmentación)."]
     correcta: 0
     o: a Apuntes de Introducción a las comunicaciones · Unidad 8
   - tema: Malware
     dif: 1
-    enunciado: ¿Qué es el malware?
+    enunciado: ¿Qué es el ransomware?
     opciones:
-      - [Software malicioso que daña o accede sin autorización a sistemas, "Correcto."]
-      - [ Un antivirus, "No."]
-      - [ Un firewall, "No."]
-      - [ Un router, "No."]
+      - ["Malware que cifra archivos y exige rescate para descifrarlos", "Correcto."]
+      - ["Software que muestra publicidad", "Incorrecto: adware."]
+      - ["Programa que espía teclas", "Incorrecto: keylogger."]
+      - ["Gusano que se propaga solo", "Incorrecto: característica de gusano, no definición de ransomware."]
     correcta: 0
     o: a Apuntes de Introducción a las comunicaciones · Unidad 8
-  - tema: Amenazas
+  - tema: Firewall
     dif: 2
-    enunciado: ¿Cuáles son amenazas comunes en redes?
+    enunciado: ¿Qué capacidad distingue a un NGFW (Next-Gen Firewall) de un firewall stateful tradicional?
     opciones:
-      - ["Malware, phishing, DDoS e ingeniería social", "Correcto."]
-      - [ Solo el clima, "No."]
-      - [ Solo la electricidad, "No."]
-      - [ Solo el ruido, "No."]
+      - ["App-ID (identificación L7), User-ID, SSL Inspection, IPS integrado", "Correcto."]
+      - ["Tabla de estado 5-tupla", "Incorrecto: eso es stateful tradicional."]
+      - ["Reglas por IP/puerto", "Incorrecto: básico."]
+      - ["NAT", "Incorrecto: ambos lo hacen."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: IDS vs IPS
+    dif: 2
+    enunciado: ¿Cuál es la diferencia operativa entre IDS e IPS?
+    opciones:
+      - ["IDS es pasivo (alerta, SPAN/TAP); IPS es en línea (bloquea/drop/reset)", "Correcto."]
+      - ["IPS es pasivo; IDS es en línea", "Incorrecto: al revés."]
+      - ["IDS solo usa firmas; IPS solo anomalía", "Incorrecto: ambos pueden usar ambos."]
+      - ["Son lo mismo", "Incorrecto."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: VPN
+    dif: 2
+    enunciado: ¿Qué protocolo VPN moderno usa Noise Protocol Framework, corre en kernel y tiene handshake 1-RTT?
+    opciones:
+      - ["WireGuard", "Correcto."]
+      - ["IPsec IKEv1", "Incorrecto: legado, complejo."]
+      - ["OpenVPN", "Incorrecto: user-space, TLS."]
+      - ["L2TP/IPsec", "Incorrecto: doble encapsulamiento, más overhead."]
+    correcta: 0
+    o: a Apuntes de Introducción a las comunicaciones · Unidad 8
+  - tema: Respuesta a incidentes
+    dif: 2
+    enunciado: Según NIST SP 800-61, ¿cuál es el orden correcto de las fases?
+    opciones:
+      - ["Preparation → Identification → Containment → Eradication → Recovery → Lessons Learned", "Correcto."]
+      - ["Identification → Containment → Eradication → Recovery → Preparation → Lessons Learned", "Incorrecto."]
+      - ["Containment → Identification → Eradication → Recovery → Preparation → Lessons Learned", "Incorrecto."]
+      - ["Recovery → Eradication → Containment → Identification → Preparation → Lessons Learned", "Incorrecto."]
     correcta: 0
     o: a Apuntes de Introducción a las comunicaciones · Unidad 8
 tarjetas:
-  - [¿Qué es la seguridad física?, "Protección de equipos e instalaciones de red."]
-  - [¿Qué es la seguridad lógica?, "Protección de datos y sistemas."]
-  - [¿Qué es el cifrado?, "Proceso de convertir información en formato ilegible sin la clave."]
+  - ["¿Seguridad física vs lógica?", "Física: equipos, instalaciones, energía. Lógica: datos, sistemas, comunicaciones (CIA+)."]
+  - ["¿Triada CIA?", "Confidencialidad, Integridad, Disponibilidad."]
+  - ["¿Cifrado simétrico estándar?", "AES-GCM / ChaCha20-Poly1305 (AEAD)."]
+  - ["¿Cifrado asimétrico moderno?", "ECDSA/Ed25519 (firmas), ECDH (key exchange), ML-KEM/ML-DSA (post-cuántico)."]
+  - ["¿TLS 1.3 handshake?", "1-RTT, ServerHello+cert+verify+finished cifrado, solo AEAD suites."]
+  - ["¿IPsec ESP vs AH?", "ESP: cifrado+integridad+auth (proto 50). AH: solo integridad+auth (proto 51)."]
+  - ["¿RADIUS vs TACACS+?", "RADIUS: UDP 1812, cifra password, acceso red. TACACS+: TCP 49, cifra todo, admin CLI, autz por comando."]
+  - ["¿802.1X roles?", "Suplicante (cliente), Autenticador (switch/AP), Servidor Auth (RADIUS). EAPOL + EAP."]
+  - ["¿EAP métodos?", "EAP-TLS (cert mutuo), PEAP-MSCHAPv2 (túnel TLS + credenciales), EAP-TTLS, EAP-FAST."]
+  - ["¿Zero Trust pilares?", "Identidad fuerte (MFA/FIDO2), Dispositivo sano, Menor privilegio, Política atributos (ABAC), Monitoreo continuo."]
+  - ["¿Amenazas top?", "Malware/ransomware, Phishing/BEC, DDoS, Exploits/CVE, Credential theft/stuffing, Insider, Supply chain."]
+  - ["¿NGFW claves?", "App-ID (L7), User-ID (AD/RADIUS), SSL Inspect, IPS, URL/File filtering."]
+  - ["¿IDS vs IPS?", "IDS: pasivo (SPAN/TAP), alerta. IPS: en línea, bloquea (drop/reset). Tuning crítico en IPS."]
+  - ["¿VPN tipos?", "IPsec site-to-site (IKEv2+ESP tunnel), Remote Access (IPsec/IKEv2+EAP, SSL/TLS, WireGuard), ZTNA (app-level, identity)."]
+  - ["¿SIEM/SOAR/XDR?", "SIEM: logs+correlación+alertas. SOAR: playbooks auto. XDR: unifica endpoint+red+cloud+email+identidad."]
+  - ["¿EDR/XDR?", "EDR: telemetría kernel/usuario, detección comportamiento, respuesta (aislar, rollback). XDR: extiende a red/cloud/email."]
+  - ["¿Ciclo incidente NIST?", "Preparation → Identification → Containment → Eradication → Recovery → Lessons Learned."]
+  - ["¿MTTD / MTTR?", "Mean Time To Detect / Mean Time To Respond (o Recover). Métricas clave de madurez SOC."]

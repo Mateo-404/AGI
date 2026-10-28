@@ -3,40 +3,50 @@ preguntas:
     dif: 1
     enunciado: ¿Para qué se usa el presente continuo?
     opciones:
-      - [Para acciones en progreso en el momento de hablar, "Correcto."]
-      - [Para rutinas y hábitos, "Eso es presente simple."]
-      - [Para verdades permanentes, "Eso es presente simple."]
-      - [ Para el pasado, "No."]
+      - ["Para acciones en progreso en el momento de hablar", "Correcto."]
+      - ["Para rutinas y hábitos", "Eso es presente simple."]
+      - ["Para verdades permanentes", "Eso es presente simple."]
+      - ["Para el pasado", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 3
   - tema: Estructura
     dif: 1
     enunciado: ¿Cuál es la estructura afirmativa del presente continuo?
     opciones:
-      - [Subject + to be + verb-ing, "Correcto."]
-      - [Subject + verbo base, "Eso es presente simple."]
-      - [To be + subject + verb-ing, "Ese es el orden interrogativo."]
-      - [ Subject + not + verb-ing, "Ese es el orden negativo."]
+      - ["Subject + to be + verb-ing", "Correcto."]
+      - ["Subject + verbo base", "Eso es presente simple."]
+      - ["To be + subject + verb-ing", "Ese es el orden interrogativo."]
+      - ["Subject + not + verb-ing", "Ese es el orden negativo."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 3
   - tema: -ing
     dif: 2
     enunciado: ¿Qué ocurre con los verbos terminados en -e al agregar -ing?
     opciones:
-      - [Se suprime la e y se agrega -ing, "Correcto: believe → believing."]
-      - [Se duplica la última consonante, "Eso es para verbos CVC."]
-      - [ No se modifica, "No: se suprime la e."]
-      - [ Se agrega -es, "No."]
+      - ["Se suprime la e y se agrega -ing", "Correcto: believe → believing."]
+      - ["Se duplica la última consonante", "Eso es para verbos CVC."]
+      - ["No se modifica", "No: se suprime la e."]
+      - ["Se agrega -es", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 3
   - tema: CVC
     dif: 2
     enunciado: ¿Cuándo se duplica la última consonante al agregar -ing?
     opciones:
-      - [En verbos monosilábicos CVC, "Correcto: jog → jogging."]
-      - [En todos los verbos, "No: solo en CVC."]
-      - [ Nunca, "Sí se duplica en CVC."]
-      - [ Solo en verbos largos, "No."]
+      - ["En verbos monosilábicos CVC", "Correcto: jog → jogging."]
+      - ["En todos los verbos", "No: solo en CVC."]
+      - ["Nunca", "Sí se duplica en CVC."]
+      - ["Solo en verbos largos", "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 3
+  - tema: Excepción WXYZ
+    dif: 2
+    enunciado: ¿Por qué "play" se convierte en "playing" y no "playying"?
+    opciones:
+      - ["Porque termina en Y, que es una excepción WXYZ", "Correcto: no duplica."]
+      - ["Porque es verbo irregular", "No."]
+      - ["Porque termina en vocal", "No: termina en consonante+y."]
+      - ["Porque es monosílabo", "No: todos los CVC monosílabos duplican salvo WXYZ."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 3
   - tema: Diferencia
@@ -46,7 +56,21 @@ preguntas:
     criterios:
       - Menciona el uso del presente simple
       - Menciona el uso del presente continuo
+    o: a Apuntes de Inglés I · Tema 3
+  - tema: Verbos de estado
+    dif: 2
+    enunciado: ¿Cuál de estas oraciones es INCORRECTA?
+    opciones:
+      - ["I am knowing him", "Incorrecto: know es verbo de estado, no va en continuo."]
+      - ["I know him", "Correcto: presente simple para estado."]
+      - ["I am understanding now", "Incorrecto: understand es verbo de estado."]
+      - ["I understand now", "Correcto: presente simple."]
+    correcta: 0
+    o: d
 tarjetas:
   - [¿Cuál es la estructura del presente continuo?, "Subject + to be + verb-ing."]
   - [Regla de -ing para verbos en -e, "Se suprime la e: believe → believing."]
   - [Regla CVC, "Se duplica la última consonante: jog → jogging."]
+  - [Excepción WXYZ, "No duplicar si termina en W, X, Y, Z: play → playing."]
+  - [Palabras clave presente simple, "always, usually, often, sometimes, never, every day."]
+  - [Palabras clave presente continuo, "now, right now, at the moment, at present."]

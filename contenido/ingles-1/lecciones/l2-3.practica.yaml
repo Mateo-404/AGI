@@ -3,40 +3,50 @@ preguntas:
     dif: 1
     enunciado: ¿Cuándo se usa "an"?
     opciones:
-      - [Cuando la siguiente palabra comienza con sonido de vocal, "Correcto."]
-      - [Cuando comienza con consonante, "Eso es a."]
-      - [Siempre antes de nombres propios, "No."]
-      - [ Nunca se usa, "Se usa frecuentemente."]
+      - ["Cuando la siguiente palabra comienza con sonido de vocal", "Correcto."]
+      - ["Cuando comienza con consonante", "Eso es a."]
+      - ["Siempre antes de nombres propios", "No."]
+      - [" Nunca se usa", "Se usa frecuentemente."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 5
   - tema: A/An
     dif: 2
     enunciado: ¿Qué artículo corresponde a "hospital"?
     opciones:
-      - [A (a hospital), "Correcto: la H suena como consonante." ]
-      - [An (an hospital), "No: la H suena como J, es consonante."]
-      - [ The, "No es el artículo indefinido."]
-      - [ Ninguno, "Se usa a o an."]
+      - ["A (a hospital)", "Correcto: la H suena como consonante." ]
+      - ["An (an hospital)", "No: la H suena como J, es consonante."]
+      - [" The", "No es el artículo indefinido."]
+      - [" Ninguno", "Se usa a o an."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 5
   - tema: There is/are
     dif: 1
     enunciado: ¿Cuándo se usa "there is"?
     opciones:
-      - [Para hablar de una sola cosa (singular), "Correcto."]
-      - [Para hablar de varias cosas (plural), "Eso es there are."]
-      - [ Solo para personas, "No."]
-      - [ Solo para lugares, "No."]
+      - ["Para hablar de una sola cosa (singular)", "Correcto."]
+      - ["Para hablar de varias cosas (plural)", "Eso es there are."]
+      - [" Solo para personas", "No."]
+      - [" Solo para lugares", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 5
   - tema: Interrogativa
     dif: 2
     enunciado: ¿Cómo se pregunta "¿Hay un perro?" en inglés?
     opciones:
-      - [Is there a dog?, "Correcto."]
-      - [Are there a dog?, "Are there es para plural."]
-      - [There is a dog?, "El verbo debe ir al principio."]
-      - [ Do there is a dog?, "No se usa do."]
+      - ["Is there a dog?", "Correcto."]
+      - ["Are there a dog?", "Are there es para plural."]
+      - ["There is a dog?", "El verbo debe ir al principio."]
+      - [" Do there is a dog?", "No se usa do."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: Excepciones A/An
+    dif: 2
+    enunciado: ¿Por qué se dice "an hour" y no "a hour"?
+    opciones:
+      - ["Porque la H es muda y la palabra suena como si empezara con vocal", "Correcto."]
+      - ["Porque hour es plural", "No: hour es singular."]
+      - ["Porque es una excepción arbitraria", "No: sigue la regla del sonido."]
+      - ["Porque hour empieza con h", "Todas las palabras con h no llevan an."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 5
   - tema: A/An
@@ -46,7 +56,21 @@ preguntas:
     criterios:
       - Menciona el sonido inicial
       - Distingue consonante de vocal
+    o: a Apuntes de Inglés I · Tema 5
+  - tema: There is/are negativas
+    dif: 2
+    enunciado: ¿Cuál es la forma negativa correcta para "There are some books"?
+    opciones:
+      - ["There aren't any books", "Correcto: plural negativo usa aren't + any."]
+      - ["There isn't any books", "Isn't es para singular."]
+      - ["There aren't some books", "En negativo se usa any, no some."]
+      - ["There not are books", "Orden incorrecto."]
+    correcta: 0
+    o: d
 tarjetas:
   - [¿Cuándo se usa "a"?, "Antes de sonido de consonante."]
   - [¿Cuándo se usa "an"?, "Antes de sonido de vocal."]
   - [¿Cuándo se usa "there is"?, "Para singular (una sola cosa)."]
+  - [¿Cuándo se usa "there are"?, "Para plural (dos o más cosas)."]
+  - [Negativa plural de there are, "There aren't any..."]
+  - [Excepción H muda, "an hour, an honest, an honor."]

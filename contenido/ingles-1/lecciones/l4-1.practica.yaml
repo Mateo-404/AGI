@@ -4,41 +4,65 @@ preguntas:
     enunciado: ¿En qué categorías se organiza el vocabulario útil del apunte?
     opciones:
       - ["Rutina diaria, trabajo, emociones, conversación informal y verbos comunes", "Correcto."]
-      - [Solo gramática, "No."]
-      - [ Solo matemáticas, "No."]
-      - [ Solo deportes, "No."]
+      - ["Solo gramática", "No."]
+      - [" Solo matemáticas", "No."]
+      - [" Solo deportes", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 8
   - tema: Vocabulario
     dif: 2
     enunciado: ¿Dónde se encuentran los listados detallados de vocabulario?
     opciones:
-      - [En el material de estudio (RemNote), "Correcto."]
-      - [En este apunte, "El apunte solo los menciona."]
-      - [ En un diccionario, "No."]
-      - [ En la gramática, "No."]
+      - ["En el material de estudio (RemNote)", "Correcto."]
+      - ["En este apunte", "El apunte solo los menciona."]
+      - [" En un diccionario", "No."]
+      - [" En la gramática", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 8
   - tema: Vocabulario
     dif: 1
     enunciado: ¿Para qué sirve aprender vocabulario de rutina diaria?
     opciones:
-      - [Para describir actividades cotidianas en inglés, "Correcto."]
-      - [ Para calcular, "No."]
-      - [ Para programar, "No."]
-      - [ Para cocinar, "No específicamente."]
+      - ["Para describir actividades cotidianas en inglés", "Correcto."]
+      - [" Para calcular", "No."]
+      - [" Para programar", "No."]
+      - [" Para cocinar", "No específicamente."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 8
   - tema: Vocabulario
     dif: 2
     enunciado: ¿Qué tipo de palabras incluye el vocabulario de emociones?
     opciones:
-      - [Palabras para expresar sentimientos y estados de ánimo, "Correcto."]
-      - [ Solo números, "No."]
-      - [ Solo colores, "No."]
-      - [ Solo países, "No."]
+      - ["Palabras para expresar sentimientos y estados de ánimo", "Correcto."]
+      - [" Solo números", "No."]
+      - [" Solo colores", "No."]
+      - [" Solo países", "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 8
+  - tema: Chunks
+    dif: 2
+    enunciado: ¿Qué son los "chunks" en conversación informal?
+    opciones:
+      - ["Expresiones fijas de uso frecuente (frases hechas)", "Correcto."]
+      - ["Palabras sueltas", "No: son frases completas."]
+      - [" Solo verbos", "No."]
+      - [" Términos técnicos", "No."]
+    correcta: 0
+    o: a Apuntes de Inglés I · Tema 8
+  - tema: Verbos comunes
+    dif: 2
+    enunciado: ¿Cuál de estos NO es un verbo común de acción?
+    opciones:
+      - ["meeting", "Correcto: meeting es sustantivo (reunión)."]
+      - ["do", "Verbo común."]
+      - ["make", "Verbo común."]
+      - ["take", "Verbo común."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 8
 tarjetas:
   - [¿En qué categorías se organiza el vocabulario?, "Rutina, trabajo, emociones, conversación y verbos."]
   - [¿Dónde están los listados detallados?, "En el material de estudio (RemNote)."]
+  - [Ejemplo de chunk saludo, "How's it going? / What's up?"]
+  - [Ejemplo de chunk despedida, "See you later / Take care."]
+  - [Verbos top 5, "do, make, get, take, go."]
+  - [Emoción positiva, "happy, excited, proud, grateful."]

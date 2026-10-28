@@ -4,29 +4,29 @@ preguntas:
     enunciado: ¿Cómo se forma una pregunta con to be?
     opciones:
       - ["Se mueve el verbo (am, is, are) al principio de la oración", "Correcto."]
-      - [Se agrega "do" al principio, "No: eso es para otros verbos."]
-      - [ Se pone el sujeto al final, "No."]
-      - [ Se usa signo de exclamación, "No."]
+      - ["Se agrega \"do\" al principio", "No: eso es para otros verbos."]
+      - [" Se pone el sujeto al final", "No."]
+      - [" Se usa signo de exclamación", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 7
   - tema: His/Her
     dif: 1
     enunciado: ¿Cuándo se usa "his"?
     opciones:
-      - [Para indicar posesión masculina, "Correcto."]
-      - [Para indicar posesión femenina, "Eso es her."]
-      - [ Para indicar posesión plural, "No."]
-      - [ Para indicar posesión de objetos, "No: his/her se refieren a personas."]
+      - ["Para indicar posesión masculina", "Correcto."]
+      - ["Para indicar posesión femenina", "Eso es her."]
+      - [" Para indicar posesión plural", "No."]
+      - [" Para indicar posesión de objetos", "No: his/her se refieren a personas."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 7
   - tema: His/Her
     dif: 1
     enunciado: ¿Cuándo se usa "her"?
     opciones:
-      - [Para indicar posesión femenina, "Correcto."]
-      - [Para indicar posesión masculina, "Eso es his."]
-      - [ Para indicar posesión plural, "No."]
-      - [ Para indicar posesión de objetos, "No."]
+      - ["Para indicar posesión femenina", "Correcto."]
+      - ["Para indicar posesión masculina", "Eso es his."]
+      - [" Para indicar posesión plural", "No."]
+      - [" Para indicar posesión de objetos", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 7
   - tema: Respuestas
@@ -39,7 +39,30 @@ preguntas:
       - [" Yes, he is in the kitchen", "No: la respuesta es negativa."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 7
+  - tema: His vs He's
+    dif: 2
+    enunciado: ¿Cuál oración usa "his" correctamente como posesivo?
+    opciones:
+      - ["His car is red", "Correcto: his = posesivo (el auto de él)."]
+      - ["He's car is red", "Incorrecto: he's = he is."]
+      - ["His is happy", "Incorrecto: his necesita sustantivo después."]
+      - ["He's happy", "Correcto pero he's = he is (verbo), no posesivo."]
+    correcta: 0
+    o: d
+  - tema: Her vs She's
+    dif: 2
+    enunciado: ¿Cuál oración usa "her" correctamente como posesivo?
+    opciones:
+      - ["Her book is blue", "Correcto: her = posesivo (el libro de ella)."]
+      - ["She's book is blue", "Incorrecto: she's = she is."]
+      - ["Her is tall", "Incorrecto: her necesita sustantivo después."]
+      - ["She's tall", "Correcto pero she's = she is (verbo), no posesivo."]
+    correcta: 0
+    o: d
 tarjetas:
   - [¿Cómo se forma una pregunta con to be?, "Verbo + sujeto + complemento."]
   - [¿Qué significa "his"?, "Posesión masculina (su/sus de él)."]
   - [¿Qué significa "her"?, "Posesión femenina (su/sus de ella)."]
+  - [Respuesta corta afirmativa (he), "Yes, he is."]
+  - [Respuesta corta negativa (she), "No, she isn't."]
+  - [His vs He's, "His = posesivo; He's = He is / He has."]

@@ -3,43 +3,66 @@ preguntas:
     dif: 1
     enunciado: ¿Cuál es la diferencia entre "why" y "because"?
     opciones:
-      - [Why se usa para preguntar y because para responder, "Correcto."]
-      - [Son sinónimos, "No: uno pregunta y el otro responde."]
-      - [ Why se usa para responder, "Es al revés."]
-      - [ Because se usa para preguntar, "Es al revés."]
+      - ["Why se usa para preguntar y because para responder", "Correcto."]
+      - ["Son sinónimos", "No: uno pregunta y el otro responde."]
+      - [" Why se usa para responder", "Es al revés."]
+      - [" Because se usa para preguntar", "Es al revés."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 6
   - tema: Because
     dif: 2
     enunciado: ¿Qué regla debe cumplirse al responder con "because"?
     opciones:
-      - [Especificar el sujeto de la oración, "Correcto."]
-      - [ Omitir el sujeto, "El sujeto es obligatorio."]
-      - [ Usar solo verbos en pasado, "No."]
-      - [ Usar signos de exclamación, "No."]
+      - ["Especificar el sujeto de la oración", "Correcto."]
+      - [" Omitir el sujeto", "El sujeto es obligatorio."]
+      - [" Usar solo verbos en pasado", "No."]
+      - [" Usar signos de exclamación", "No."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 6
   - tema: Who
     dif: 1
     enunciado: ¿Cómo se pregunta por una sola persona con "who"?
     opciones:
-      - [Who is...?, "Correcto."]
-      - [Who are...?, "Are se usa para varias personas."]
-      - [ Who am...?, "No."]
-      - [ Who was...?, "No es el presente."]
+      - ["Who is...?", "Correcto."]
+      - ["Who are...?", "Are se usa para varias personas."]
+      - [" Who am...?", "No."]
+      - [" Who was...?", "No es el presente."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 6
   - tema: Who
     dif: 1
     enunciado: ¿Cómo se pregunta por varias personas con "who"?
     opciones:
-      - [Who are...?, "Correcto."]
-      - [Who is...?, "Is se usa para una persona."]
-      - [ Who am...?, "No."]
-      - [ Who were...?, "No es el presente."]
+      - ["Who are...?", "Correcto."]
+      - ["Who is...?", "Is se usa para una persona."]
+      - [" Who am...?", "No."]
+      - [" Who were...?", "No es el presente."]
     correcta: 0
     o: a Apuntes de Inglés I · Tema 6
+  - tema: Because (sujeto)
+    dif: 2
+    enunciado: ¿Cuál respuesta es correcta a "Why is the door open?"
+    opciones:
+      - ["Because the window is open", "Correcto: sujeto (the window) + verbo."]
+      - ["Because is open", "Incorrecto: falta sujeto."]
+      - ["Because open", "Incorrecto: falta sujeto y verbo."]
+      - ["Because it open", "Incorrecto: falta verbo (it is open)."]
+    correcta: 0
+    o: d
+  - tema: Who (pasado)
+    dif: 2
+    enunciado: ¿Cómo se pregunta "¿Quién estaba en la fiesta?" en pasado?
+    opciones:
+      - ["Who was at the party?", "Correcto: who + was (singular)."]
+      - ["Who were at the party?", "Solo si se espera plural."]
+      - ["Who did at the party?", "No se usa did con to be."]
+      - ["Who at the party?", "Falta verbo."]
+    correcta: 0
+    o: d
 tarjetas:
   - [¿Qué significa "why"?, "¿Por qué? (pregunta)."]
   - [¿Qué significa "because"?, "Porque (respuesta)."]
   - [Who + is, "Quién (singular)."]
+  - [Who + are, "Quiénes (plural)."]
+  - [Regla de because, "Siempre con sujeto: Because + sujeto + verbo."]
+  - [Respuesta a "Why not?", "Because + sujeto + verbo (ej. Because it is raining)."]
