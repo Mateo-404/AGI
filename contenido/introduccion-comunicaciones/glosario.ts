@@ -63,6 +63,8 @@ export const glosario: TerminoGlosario[] = [
   t('adhoc', 'Ad-hoc (IBSS)', 'ic-l5-1', 'Wi-Fi sin AP; estaciones se comunican directamente (peer-to-peer).', 'wifi', 'infraestructura'),
   t('infraestructura', 'Infraestructura (BSS/ESS)', 'ic-l5-1', 'Wi-Fi con AP central; BSS=1 AP, ESS=múltiples APs mismo SSID (roaming).', 'wifi', 'adhoc'),
   t('mesh-wifi', 'Wi-Fi Mesh (802.11s)', 'ic-l5-1', 'APs interconectados inalámbricamente (backhaul mesh) para extender cobertura.', 'infraestructura'),
+  t('tia-eia-568', 'TIA/EIA-568', 'ic-l5-1', 'Estándar de cableado estructurado comercial (6 subsistemas, horizontal máx. 100 m).', 'cableado-estructurado'),
+  t('ieee-802-11', 'IEEE 802.11', 'ic-l5-1', 'Estándar base para WLAN (Wi-Fi). Define PHY y MAC. Versiones: a/b/g/n/ac/ax/be.', 'wifi'),
 
   // Unidad 6
   t('tcp-ip', 'Modelo TCP/IP', 'ic-l6-1', 'Modelo de 4 capas (Aplicación, Transporte, Interred, Acceso a la red) usado en Internet.', 'osi', 'ip'),
